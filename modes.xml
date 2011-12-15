@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+  <mode name="tt-ba" install="yes">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="tt-ba.automorf.hfst"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="tt-ba.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer">
+        <file name="apertium-tt-ba.tt-ba.t1x"/>
+        <file name="tt-ba.t1x.bin"/>
+        <file name="tt-ba.autobil.bin"/>
+      </program>
+      <program name="hfst-proc $1">
+        <file name="tt-ba.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+  
+  <mode name="tt-ba-morph" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="tt-ba.automorf.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="tt-ba-tagger" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="tt-ba.automorf.hfst"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="tt-ba.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+    </pipeline>
+  </mode>
+
+  <mode name="tt-ba-biltrans" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="tt-ba.automorf.hfst"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="tt-ba.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="tt-ba.autobil.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+  <mode name="tt-ba-transfer" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="tt-ba.automorf.hfst"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="tt-ba.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer">
+        <file name="apertium-tt-ba.tt-ba.t1x"/>
+        <file name="tt-ba.t1x.bin"/>
+        <file name="tt-ba.autobil.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+  <mode name="ba-tt" install="yes">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="ba-tt.automorf.hfst"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ba-tt.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer">
+        <file name="apertium-tt-ba.ba-tt.t1x"/>
+        <file name="ba-tt.t1x.bin"/>
+        <file name="ba-tt.autobil.bin"/>
+      </program>
+      <program name="hfst-proc $1">
+        <file name="ba-tt.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+  
+  <mode name="ba-tt-morph" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="ba-tt.automorf.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="ba-tt-tagger" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="ba-tt.automorf.hfst"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ba-tt.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+    </pipeline>
+  </mode>
+
+  <mode name="ba-tt-biltrans" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="ba-tt.automorf.hfst"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ba-tt.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="ba-tt.autobil.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+  <mode name="ba-tt-transfer" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="ba-tt.automorf.hfst"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ba-tt.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer">
+        <file name="apertium-tt-ba.ba-tt.t1x"/>
+        <file name="ba-tt.t1x.bin"/>
+        <file name="ba-tt.autobil.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+</modes>
+
+

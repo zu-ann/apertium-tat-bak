@@ -15,6 +15,13 @@ all:
 	apertium-validate-dictionary apertium-tt-ba.tt-ba.dix 
 	lt-comp lr apertium-tt-ba.tt-ba.dix tt-ba.autobil.bin
 	lt-comp rl apertium-tt-ba.tt-ba.dix ba-tt.autobil.bin
+	apertium-validate-transfer apertium-tt-ba.tt-ba.t1x
+	apertium-preprocess-transfer apertium-tt-ba.tt-ba.t1x tt-ba.t1x.bin
+	apertium-validate-transfer apertium-tt-ba.ba-tt.t1x
+	apertium-preprocess-transfer apertium-tt-ba.ba-tt.t1x ba-tt.t1x.bin
+	apertium-validate-modes modes.xml
+	apertium-gen-modes modes.xml
+	cp *.mode modes/
 
 clean:
-	rm -rf .deps *.hfst *.bin
+	rm -rf .deps modes *.hfst *.bin *.mode 
