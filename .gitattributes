@@ -1,2 +1,8 @@
 * text=auto !eol
+/Makefile -text
+/apertium-tt-ba.ba.lexc -text
+/apertium-tt-ba.ba.twol -text
+/apertium-tt-ba.tt-ba.dix -text
+/apertium-tt-ba.tt.lexc -text
+/apertium-tt-ba.tt.twol -text
 dev/ru-tt-ba.txt -text
