@@ -24,6 +24,9 @@ Multichar_Symbols
 
 
 %{L%}              ! 
+%{G%}              ! 
+%{D%}              ! 
+%{E%}              ! 
 %{A%}              ! 
 
 %>                 !
@@ -39,10 +42,19 @@ Pronouns ;
 Nouns ; 
 Adjectives ; 
 
+LEXICON CASE 
+
+%<nom%>: # ;
+%<gen%>:%>н%{E%}ң # ;
+%<dat%>:%>%{G%}%{A%} # ;
+%<acc%>:%>н%{E%} # ;
+%<loc%>:%>%{D%}%{A%} # ;
+%<abl%>:%>%{D%}%{A%}н # ;
+
 LEXICON NLEX
 
-%<n%>: # ; 
-%<n%>%<pl%>:%>%{L%}%{A%}р # ; 
+%<n%>: CASE ; 
+%<n%>%<pl%>:%>%{L%}%{A%}р CASE ; 
 
 LEXICON ALEX
 

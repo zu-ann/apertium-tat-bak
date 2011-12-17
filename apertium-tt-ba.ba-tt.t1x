@@ -12,6 +12,15 @@
   
   <section-def-attrs>
     
+    <def-attr n="case">
+      <attr-item tags="nom"/>
+      <attr-item tags="acc"/>
+      <attr-item tags="dat"/>
+      <attr-item tags="gen"/>
+      <attr-item tags="loc"/>
+      <attr-item tags="abl"/>
+    </def-attr>
+       
     <def-attr n="nbr">
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
@@ -40,6 +49,7 @@
             <clip pos="1" side="tl" part="lemh"/>
             <clip pos="1" side="tl" part="a_nom"/>
             <clip pos="1" side="tl" part="nbr"/>
+            <clip pos="1" side="tl" part="case"/>
             <clip pos="1" side="tl" part="lemq"/>
           </lu>
         </out>
