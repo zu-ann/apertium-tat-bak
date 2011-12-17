@@ -2,8 +2,13 @@
   <alphabet/>
   <sdefs>
     <sdef n="n"        c="Noun"/>
+    <sdef n="cnjcoo"   c="Co-ordinating conjunction"/>
   </sdefs>
   <section id="main" type="standard">
+    <e><p><l>вә<s n="n"/></l><r>үә<s n="n"/></r></p></e>
+    <e><p><l>һәм<s n="n"/></l><r>һәм<s n="n"/></r></p></e>
+    <e><p><l>ә<s n="n"/></l><r>ә<s n="n"/></r></p></e>
+
     <e><p><l>кеше<s n="n"/></l><r>кеше<s n="n"/></r></p></e>
     <e><p><l>ел<s n="n"/></l><r>йыл<s n="n"/></r></p></e>
     <e><p><l>вакыт<s n="n"/></l><r>ваҡыт<s n="n"/></r></p></e>

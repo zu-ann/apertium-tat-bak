@@ -1,7 +1,7 @@
-
 Multichar_Symbols 
 
 %<n%>              ! Имя существительное 
+%<cnjcoo%>         ! Союз
 
 %<pl%>             ! Множественное число
 
@@ -10,14 +10,29 @@ Multichar_Symbols
 
 %>                 !
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                       M O R P H O T A C T I C S                         !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 LEXICON Root
 
 Nouns ; 
+Conjunctions ; 
 
 LEXICON NLEX
 
 %<n%>: # ; 
 %<n%>%<pl%>:%>%{L%}%{A%}р # ; 
+
+LEXICON CCLEX
+
+%<cnjcoo%>: # ; 
+
+LEXICON Conjunctions
+
+үә:үә CCLEX ; ! ""
+һәм:һәм CCLEX ; ! ""  
+ә:ә CCLEX ; ! ""
 
 LEXICON Nouns 
 
