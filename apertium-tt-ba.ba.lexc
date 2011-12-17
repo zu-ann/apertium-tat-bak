@@ -1,9 +1,24 @@
 Multichar_Symbols 
 
 %<n%>              ! Имя существительное 
+%<prn%>            ! Местоимение
 %<cnjcoo%>         ! Союз
 
+%<pers%>           ! 
+
+%<p1%>             !
+%<p2%>             !
+%<p3%>             !
+
+%<sg%>             ! Единственное число
 %<pl%>             ! Множественное число
+
+%<nom%>            ! Именительный
+%<gen%>            ! Родительный
+%<dat%>            ! Дательный
+%<acc%>            ! Винительый
+%<loc%>            ! 
+%<abl%>            ! 
 
 %{L%}              ! 
 %{A%}              ! 
@@ -17,12 +32,57 @@ Multichar_Symbols
 LEXICON Root
 
 Nouns ; 
+Pronouns ; 
 Conjunctions ; 
 
 LEXICON NLEX
 
 %<n%>: # ; 
 %<n%>%<pl%>:%>%{L%}%{A%}р # ; 
+
+LEXICON PRNLEX-PERS
+
+мин%<prn%>%<pers%>%<p1%>%<sg%>:мин # ; 
+мин%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:минең # ; 
+мин%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:миңә # ; 
+мин%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:мине # ; 
+мин%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:миндә # ; 
+мин%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:минән # ; 
+
+һин%<prn%>%<pers%>%<p2%>%<sg%>:һин # ; 
+һин%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:һинең # ; 
+һин%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:һиңә # ; 
+һин%<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:һине # ; 
+һин%<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:һиндә # ; 
+һин%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:һинән # ; 
+
+ул%<prn%>%<pers%>%<p3%>%<sg%>:ул # ; 
+ул%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:улың # ; 
+ул%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:уға # ; 
+ул%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:уны # ; 
+ул%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:унда # ; 
+ул%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:унан # ; 
+
+беҙ%<prn%>%<pers%>%<p1%>%<pl%>:беҙ # ; 
+беҙ%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:беҙҙең # ; 
+беҙ%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:беҙғә # ; 
+беҙ%<prn%>%<pers%>%<p1%>%<pl%>%<acc%>:беҙҙе # ; 
+беҙ%<prn%>%<pers%>%<p1%>%<pl%>%<loc%>:беҙҙә # ; 
+беҙ%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:беҙҙән # ; 
+
+һеҙ%<prn%>%<pers%>%<p2%>%<pl%>:һеҙ # ; 
+һеҙ%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:һеҙҙең # ; 
+һеҙ%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:һеҙғә # ; 
+һеҙ%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:һеҙҙе # ; 
+һеҙ%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:һеҙҙә # ; 
+һеҙ%<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:һеҙҙән # ; 
+
+улар%<prn%>%<pers%>%<p3%>%<pl%>:улар # ; 
+улар%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:уларҙың # ; 
+улар%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:уларға # ; 
+улар%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:уларҙы # ; 
+улар%<prn%>%<pers%>%<p3%>%<pl%>%<loc%>:уларҙа # ; 
+улар%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:уларҙан # ; 
 
 LEXICON CCLEX
 
@@ -33,6 +93,10 @@ LEXICON Conjunctions
 үә:үә CCLEX ; ! ""
 һәм:һәм CCLEX ; ! ""  
 ә:ә CCLEX ; ! ""
+
+LEXICON Pronouns
+
+PRNLEX-PERS ; 
 
 LEXICON Nouns 
 

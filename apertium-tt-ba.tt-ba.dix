@@ -2,13 +2,28 @@
   <alphabet/>
   <sdefs>
     <sdef n="n"        c="Noun"/>
+    <sdef n="prn"      c="Pronoun"/>
     <sdef n="cnjcoo"   c="Co-ordinating conjunction"/>
+
+    <sdef n="pers"     c="Personal"/>
   </sdefs>
   <section id="main" type="standard">
+
+    <!-- Раздел: Союзы -->
     <e><p><l>вә<s n="n"/></l><r>үә<s n="n"/></r></p></e>
     <e><p><l>һәм<s n="n"/></l><r>һәм<s n="n"/></r></p></e>
     <e><p><l>ә<s n="n"/></l><r>ә<s n="n"/></r></p></e>
 
+
+    <!-- Раздел: Местоимения -->
+    <e><p><l>мин<s n="prn"/><s n="pers"/></l><r>мин<s n="prn"/><s n="pers"/></r></p></e>
+    <e><p><l>син<s n="prn"/><s n="pers"/></l><r>һин<s n="prn"/><s n="pers"/></r></p></e>
+    <e><p><l>ул<s n="prn"/><s n="pers"/></l><r>ул<s n="prn"/><s n="pers"/></r></p></e>
+    <e><p><l>без<s n="prn"/><s n="pers"/></l><r>беҙ<s n="prn"/><s n="pers"/></r></p></e>
+    <e><p><l>сез<s n="prn"/><s n="pers"/></l><r>һеҙ<s n="prn"/><s n="pers"/></r></p></e>
+    <e><p><l>алар<s n="prn"/><s n="pers"/></l><r>улар<s n="prn"/><s n="pers"/></r></p></e>
+
+    <!-- Раздел: Существительные -->
     <e><p><l>кеше<s n="n"/></l><r>кеше<s n="n"/></r></p></e>
     <e><p><l>ел<s n="n"/></l><r>йыл<s n="n"/></r></p></e>
     <e><p><l>вакыт<s n="n"/></l><r>ваҡыт<s n="n"/></r></p></e>
