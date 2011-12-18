@@ -2,6 +2,7 @@
   <alphabet/>
   <sdefs>
     <sdef n="n"        c="Существительное"/>
+    <sdef n="v"        c="Глагол"/>
     <sdef n="np"       c="Имя собственное"/>
     <sdef n="prn"      c="Местоимение"/>
     <sdef n="post"     c="Послелог"/>
@@ -10,6 +11,8 @@
 
     <sdef n="pers"     c="Personal"/>
     <sdef n="top"      c="Toponym"/>
+
+    <sdef n="iv"       c="Intransitive"/>
   </sdefs>
   <section id="main" type="standard">
 
@@ -555,6 +558,10 @@
     <e><p><l>гадәти<s n="adj"/></l><r>ғәҙәти<s n="adj"/></r></p></e>
     <e><p><l>мөһим<s n="adj"/></l><r>мөһим<s n="adj"/></r></p></e>
     <e><p><l>тимер<s n="adj"/></l><r>тимер<s n="adj"/></r></p></e>
+
+    <!-- Раздел: Глаголы -->
+    <e><p><l>бул<s n="v"/><s n="iv"/></l><r>бул<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>яшә<s n="v"/><s n="iv"/></l><r>йәшә<s n="v"/><s n="iv"/></r></p></e>
 
   </section>
 </dictionary>
