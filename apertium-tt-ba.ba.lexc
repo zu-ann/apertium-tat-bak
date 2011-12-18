@@ -17,6 +17,13 @@ Multichar_Symbols
 %<p2%>             !
 %<p3%>             !
 
+%<px1sg%>          !
+%<px2sg%>          !
+%<px3sp%>          !
+%<px1pl%>          !
+%<px2pl%>          !
+
+
 %<sg%>             ! Единственное число
 %<pl%>             ! Множественное число
 
@@ -32,8 +39,10 @@ Multichar_Symbols
 %{G%}              ! 
 %{D%}              ! 
 %{K%}              ! 
-%{E%}              ! 
+%{I%}              ! 
 %{A%}              ! 
+
+%{h%}              ! 
 
 %>                 !
 
@@ -53,16 +62,26 @@ Adjectives ;
 LEXICON CASE
 
 %<nom%>: # ;
-%<gen%>:%>н%{E%}ң # ;
+%<gen%>:%>н%{I%}ң # ;
 %<dat%>:%>%{G%}%{A%} # ;
-%<acc%>:%>н%{E%} # ;
+%<acc%>:%>н%{I%} # ;
 %<loc%>:%>%{D%}%{A%} # ;
 %<abl%>:%>%{D%}%{A%}н # ;
 
+LEXICON POSS
+
+%<px1sg%>:%>%{I%}м CASE ;
+%<px2sg%>:%>%{I%}ң CASE ;
+%<px3sp%>:%>%{h%}%{I%} CASE ;
+%<px1pl%>:%>%{I%}б%{I%}ҙ CASE ;
+%<px2pl%>:%>%{I%}%{G%}%{I%}ҙ CASE ;
+
+CASE ; 
+
 LEXICON NLEX
 
-%<n%>: CASE ; 
-%<n%>%<pl%>:%>%{L%}%{A%}р CASE ; 
+%<n%>: POSS ; 
+%<n%>%<pl%>:%>%{L%}%{A%}р POSS ; 
 
 LEXICON NPTOPLEX
 
@@ -513,6 +532,7 @@ LEXICON Nouns
 LEXICON ProperNouns
 
 Татарстан:Татарстан NPTOPLEX ; ! ""
+Башҡортостан:Башҡортостан NPTOPLEX ; ! ""
 Ҡаҙан:Ҡаҙан NPTOPLEX ; ! ""
 
 LEXICON Adjectives

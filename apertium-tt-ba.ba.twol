@@ -4,9 +4,11 @@ Alphabet
  А Б В Г Ғ Д Ҙ Е Ё Ж З И Й К Ҡ Л М Н Ң О Ө П Р С Ҫ Т У Ү Ф Х Һ Ц Ч Ш Щ Ъ Ы Ь Э Ә Ю Я 
  а б в г ғ д ҙ е ё ж з и й к ҡ л м н ң о ө п р с ҫ т у ү ф х һ ц ч ш щ ъ ы ь э ә ю я
 
- %{A%}:а %{E%}:ы
+ %{A%}:а %{I%}:ы
 
  %{L%}:л %{G%}:г %{D%}:д %{K%}:к
+
+ %{h%}:һ
 
  %>:0  ; 
 
@@ -38,8 +40,8 @@ Rules
 "A Vowel Harmony"
 %{A%}:ә <=> [ :SoftVow :Cns* ]/[ %>: | %  | :0 ] _ ;
 
-"E Vowel Harmony"
-%{E%}:е <=> [ :SoftVow :Cns* ]/[ %>: | %  | :0 ] _ ;
+"I Vowel Harmony"
+%{I%}:е <=> [ :SoftVow :Cns* ]/[ %>: | %  | :0 ] _ ;
 
 
 "Alternation in locative -DA"
@@ -56,3 +58,7 @@ Rules
 
 "Plural alternation after other voiced consonants"
 %{L%}:д <=> :Cns3 %>: _ %{A%}: р ;
+
+"Deletion of {h} after a consonant"
+%{h%}:0 <=> [ :Cns ]/[ %>: | :0 ] _ ;
+
