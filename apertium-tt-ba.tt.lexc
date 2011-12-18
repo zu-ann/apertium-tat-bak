@@ -3,6 +3,7 @@ Multichar_Symbols
 
 %<n%>              ! Имя существительное 
 %<prn%>            ! Местоимение
+%<v%>              ! Глагол
 %<np%>             ! 
 %<adj%>            ! Прилагательное
 %<post%>           ! Послелог
@@ -13,6 +14,9 @@ Multichar_Symbols
 %<top%>            ! 
 
 %<comp%>           ! 
+
+%<tv%>             !
+%<iv%>             !
 
 %<p1%>             !
 %<p2%>             !
@@ -33,6 +37,11 @@ Multichar_Symbols
 %<acc%>            ! Винительый
 %<loc%>            ! 
 %<abl%>            ! 
+
+%<ger1%>           ! -м{A}{K}
+%<ger2%>           ! -{I}п
+%<ger3%>           ! -{G}{A}ч
+%<ger4%>           ! -{G}{A}нч{I}
 
 
 %{L%}              ! 
@@ -58,6 +67,7 @@ Pronouns ;
 Nouns ; 
 ProperNouns ;
 Adjectives ; 
+Verbs ; 
 
 LEXICON CASE 
 
@@ -91,6 +101,17 @@ LEXICON ALEX
 
 %<adj%>: # ; 
 %<comp%>:%>р%{A%}%{K%} # ; 
+
+LEXICON V-COMMON-LEX
+
+%<ger1%>:%>м%{A%}%{K%} POSS ; 
+%<ger2%>:%>%{I%}п POSS ; 
+%<ger3%>:%>%{G%}%{A%}ч POSS ; 
+%<ger4%>:%>%{G%}%{A%}нч%{I%} POSS ; 
+
+LEXICON V-IV-LEX
+
+%<v%>%<iv%>: V-COMMON-LEX ; 
 
 LEXICON PRNLEX-PERS
 
@@ -158,6 +179,12 @@ LEXICON Postpositions
 
 белән:белән POSTLEX ; ! ""
 инде:инде POSTLEX ; ! ""
+өчен:өчен POSTLEX ; ! ""
+аркылы:аркылы POSTLEX ; ! ""
+аша:аша POSTLEX ; ! ""
+кирәк:кирәк POSTLEX ; ! ""
+каршы:каршы POSTLEX ; ! ""
+башка:башка POSTLEX ; ! ""
 
 LEXICON Pronouns
 
@@ -685,3 +712,7 @@ LEXICON Adjectives
 гадәти:гадәти ALEX ; ! ""
 мөһим:мөһим ALEX ; ! ""
 тимер:тимер ALEX ; ! ""
+
+LEXICON Verbs
+
+бул:бул V-IV-LEX ; ! ""
