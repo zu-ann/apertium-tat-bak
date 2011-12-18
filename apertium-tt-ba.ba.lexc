@@ -2,10 +2,16 @@ Multichar_Symbols
 
 %<n%>              ! Имя существительное 
 %<prn%>            ! Местоимение
+%<np%>             ! Имя собственное
 %<adj%>            ! Прилагательное
+%<post%>           ! Послелог
 %<cnjcoo%>         ! Союз
 
 %<pers%>           ! 
+
+%<comp%>           ! 
+
+%<top%>            ! 
 
 %<p1%>             !
 %<p2%>             !
@@ -25,6 +31,7 @@ Multichar_Symbols
 %{L%}              ! 
 %{G%}              ! 
 %{D%}              ! 
+%{K%}              ! 
 %{E%}              ! 
 %{A%}              ! 
 
@@ -37,8 +44,10 @@ Multichar_Symbols
 LEXICON Root
 
 Conjunctions ; 
+Postpositions ; 
 Pronouns ; 
 Nouns ; 
+ProperNouns ; 
 Adjectives ; 
 
 LEXICON CASE
@@ -55,9 +64,14 @@ LEXICON NLEX
 %<n%>: CASE ; 
 %<n%>%<pl%>:%>%{L%}%{A%}р CASE ; 
 
+LEXICON NPTOPLEX
+
+%<np%>%<top%>: CASE ; 
+
 LEXICON ALEX
 
 %<adj%>: # ; 
+%<adj%>%<comp%>:%>р%{A%}%{K%} # ; 
 
 LEXICON PRNLEX-PERS
 
@@ -103,6 +117,10 @@ LEXICON PRNLEX-PERS
 улар%<prn%>%<pers%>%<p3%>%<pl%>%<loc%>:уларҙа # ; 
 улар%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:уларҙан # ; 
 
+LEXICON POSTLEX
+
+%<post%>: # ; 
+
 LEXICON CCLEX
 
 %<cnjcoo%>: # ; 
@@ -112,6 +130,11 @@ LEXICON Conjunctions
 үә:үә CCLEX ; ! ""
 һәм:һәм CCLEX ; ! ""  
 ә:ә CCLEX ; ! ""
+
+LEXICON Postpositions 
+
+менән:менән POSTLEX ; ! ""
+инде:инде POSTLEX ; ! ""
 
 LEXICON Pronouns
 
@@ -486,6 +509,11 @@ LEXICON Nouns
 хөкүмәт:хөкүмәт NLEX ; ! ""
 төп% фекер:төп% фекер NLEX ; ! ""
 идея:идея NLEX ; ! ""
+
+LEXICON ProperNouns
+
+Татарстан:Татарстан NPTOPLEX ; ! ""
+Ҡаҙан:Ҡаҙан NPTOPLEX ; ! ""
 
 LEXICON Adjectives
 

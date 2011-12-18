@@ -6,23 +6,49 @@ Alphabet
 
  %{A%}:а %{E%}:е
 
- %{L%}:л %{G%}:г %{D%}:д
+ %{L%}:л %{G%}:г %{D%}:д %{K%}:к
 
  %>:0  ; 
 
 Sets
 
-HardVow  =  А О
-            а о ; 
+HardVow      =  А О
+                а о ; 
 
-SoftVow  =  Ә Е Э И Ө
-            ә е э и ө ; 
+SoftVow      =  Ә Е Э И Ө
+                ә е э и ө ; 
 
-Cns      =  Б В Г Ғ Д Ҙ Ж З Й К Ҡ Л М Н Ң П Р С Ҫ Т Ф Х Һ Ц Ч Ш Щ Ъ Ы Ь 
-            б в г ғ д ҙ ж з й к ҡ л м н ң п р с ҫ т ф х һ ц ч ш щ ъ ы ь ; 
+Vow          =  А О Ә Е Э И Ө У Ү Ы Ю Я
+                а о ә е э и ө у ү ы ю я ;
+
+Cns          =  Б В Г Ғ Д Ҙ Ж З Й К Ҡ Л М Н Ң П Р С Ҫ Т Ф Х Һ Ц Ч Ш Щ Ъ Ы Ь 
+                б в г ғ д ҙ ж з й к ҡ л м н ң п р с ҫ т ф х һ ц ч ш щ ъ ы ь ; 
+
+Cns2         =  В Й Ҙ Р
+                в й ҙ р ; 
+
+VoicelessCns =  П Т К Ҡ Ф Ҫ С Ш Щ Х Һ
+                п т к ҡ ф ҫ с ш щ х һ  ; 
+
+Cns3         =  Б Г Ғ Д Ж З Л М Н Ң Ц Ч 
+                б г ғ д ж з л м н ң ц ч ; 
 
 Rules 
 
 "A Vowel Harmony"
 %{A%}:ә <=> [ :SoftVow :Cns* ]/[ %>: | %  | :0 ] _ ;
 
+"Alternation in locative -DA"
+%{D%}:Cx <=> :Lx %>: _ %{A%}: ;
+        where Lx in ( а о е э и ө у ү ы ә ю я в й ҙ р ) 
+              Cx in ( л л л л л л л л л л л л ҙ ҙ ҙ ҙ ) 
+        matched ;           
+
+"Plural alternation"
+%{L%}:ҙ <=> :Cns2 %>: _ %{A%}: р ;
+
+"Plural alternation after voiceless consonant"
+%{L%}:т <=> :VoicelessCns %>: _ %{A%}: р ;
+
+"Plural alternation after other voiced consonants"
+%{L%}:д <=> :Cns3 %>: _ %{A%}: р ;
