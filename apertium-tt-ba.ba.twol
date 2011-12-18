@@ -26,8 +26,8 @@ Vow          =  А О Ә Е Э И Ө У Ү Ы Ю Я
 Cns          =  Б В Г Ғ Д Ҙ Ж З Й К Ҡ Л М Н Ң П Р С Ҫ Т Ф Х Һ Ц Ч Ш Щ Ъ Ы Ь 
                 б в г ғ д ҙ ж з й к ҡ л м н ң п р с ҫ т ф х һ ц ч ш щ ъ ы ь ; 
 
-Cns2         =  В Й Ҙ Р
-                в й ҙ р ; 
+Cns2         =  Й Ҙ Р
+                й ҙ р ; 
 
 VoicelessCns =  П Т К Ҡ Ф Ҫ С Ш Щ Х Һ
                 п т к ҡ ф ҫ с ш щ х һ  ; 
@@ -54,7 +54,7 @@ Rules
 %{L%}:ҙ <=> :Cns2 %>: _ %{A%}: р ;
 
 "Plural alternation after voiceless consonant"
-%{L%}:т <=> :VoicelessCns %>: _ %{A%}: р ;
+%{L%}:т <=> [ :VoicelessCns | :в ] %>: _ %{A%}: р ;
 
 "Plural alternation after other voiced consonants"
 %{L%}:д <=> :Cns3 %>: _ %{A%}: р ;
