@@ -53,8 +53,8 @@ Nasals           = М Н Ң
 FrontCns         = К Г Ь
                    к г ь ;
 
-BackCns          = Қ Ғ 
-                   қ ғ ;
+BackCns          = Ҡ Ғ 
+                   ҡ ғ ;
 
 
 Rules 
@@ -125,9 +125,9 @@ Rules
 
 !!!! Voicing assimilation, etc. !!!!
 
-"Intervocalic voicing of к/қ"
+"Intervocalic voicing of к/ҡ"
 Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
-          where Cx in ( п к қ )
+          where Cx in ( п к ҡ )
                 Cy in ( б г ғ )
                 matched;
 
@@ -151,7 +151,7 @@ Cx:Cy <=> :CnsVoiceless/[ %>: | %  ] _ ;
                    :Nasals %>: _ %{A%}: .#. ;
 
 "Voicing assimilation of back G"
-%{G%}:қ <=> [ :BackVow :Cns* [ :CnsVoiceless - :FrontCns ] ]/[ %>: ] _ ;
+%{G%}:ҡ <=> [ :BackVow :Cns* [ :CnsVoiceless - :FrontCns ] ]/[ %>: ] _ ;
 
 "Voicing assimilation of front G"
 %{G%}:к <=> [ :FrontVow :Cns* [ :CnsVoiceless - :BackCns ] ]/[ %>: ] _ ;
