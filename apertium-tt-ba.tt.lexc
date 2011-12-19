@@ -107,6 +107,14 @@ LEXICON POSS
 
 CASE ;
 
+LEXICON NLEX-SG
+
+%<n%>: POSS ; 
+
+LEXICON NLEX-PL
+
+%<n%>%<pl%>: POSS ; 
+
 LEXICON NLEX
 
 %<n%>: POSS ; 
@@ -238,7 +246,8 @@ LEXICON Numerals
 LEXICON Nouns 
 
 кеше:кеше NLEX ; ! "" 
-ел:ел NLEX ; ! "" 
+ел:ел NLEX-SG ; ! "" 
+ел:ел%>лар NLEX-PL ; 
 вакыт:вакыт NLEX ; ! "" 
 заман:заман NLEX ; ! "" 
 кул:кул NLEX ; ! "" 

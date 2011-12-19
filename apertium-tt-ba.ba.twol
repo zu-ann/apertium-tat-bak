@@ -14,8 +14,8 @@ Alphabet
 
 Sets
 
-HardVow      =  А О Ы У
-                а о ы у ; 
+HardVow      =  А О Ы У Ю
+                а о ы у ю ; 
 
 SoftVow      =  Ә Е Э И Ө
                 ә е э и ө ; 
@@ -26,14 +26,20 @@ Vow          =  А О Ә Е Э И Ө У Ү Ы Ю Я
 Cns          =  Б В Г Ғ Д Ҙ Ж З Й К Ҡ Л М Н Ң П Р С Ҫ Т Ф Х Һ Ц Ч Ш Щ Ъ Ы Ь 
                 б в г ғ д ҙ ж з й к ҡ л м н ң п р с ҫ т ф х һ ц ч ш щ ъ ы ь ; 
 
-Cns2         =  Й Ҙ Р
+Vow1         =  Ү У Ю
+                ү у ю ; 
+
+Cns1         =  П Т К Ҡ Ф Ҫ С Ш Щ Х Һ Б Г Ғ Д Ц Ч
+                п т к ҡ ф ҫ с ш щ х һ б г ғ д ц ч ;
+
+Cns2         =  Й Ҙ Р 
                 й ҙ р ; 
 
 VoicelessCns =  П Т К Ҡ Ф Ҫ С Ш Щ Х Һ
                 п т к ҡ ф ҫ с ш щ х һ  ; 
 
-Cns3         =  Б Г Ғ Д Ж З Л М Н Ң Ц Ч 
-                б г ғ д ж з л м н ң ц ч ; 
+Cns3         =  Ж З Л М Н Ң  
+                ж з л м н ң  ; 
 
 Rules 
 
@@ -51,10 +57,10 @@ Rules
         matched ;           
 
 "Plural alternation"
-%{L%}:ҙ <=> :Cns2 %>: _ %{A%}: р ;
+%{L%}:ҙ <=> [ :Cns2 | :Vow1 ]  %>: _ %{A%}: р ;
 
 "Plural alternation after voiceless consonant"
-%{L%}:т <=> [ :VoicelessCns | :в ] %>: _ %{A%}: р ;
+%{L%}:т <=> [ :Cns1 | :в ] %>: _ %{A%}: р ;
 
 "Plural alternation after other voiced consonants"
 %{L%}:д <=> :Cns3 %>: _ %{A%}: р ;
