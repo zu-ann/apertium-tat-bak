@@ -17,8 +17,8 @@ Sets
 Vow          =  А О Ә Е Э И Ө У Ү Ы Ю Я
                 а о ә е э и ө у ү ы ю я ;
 
-Cns          =  Б В Г Ғ Д Ҙ Ж З Й К Ҡ Л М Н Ң П Р С Ҫ Т Ф Х Һ Ц Ч Ш Щ Ъ Ы Ь 
-                б в г ғ д ҙ ж з й к ҡ л м н ң п р с ҫ т ф х һ ц ч ш щ ъ ы ь ; 
+Cns          =  Б В Г Ғ Д Ҙ Ж З Й К Ҡ Л М Н Ң П Р С Ҫ Т Ф Х Һ Ц Ч Ш Щ Ъ Ь 
+                б в г ғ д ҙ ж з й к ҡ л м н ң п р с ҫ т ф х һ ц ч ш щ ъ ь ; 
 
 Vow1         =  Ү У Ю
                 ү у ю ; 
@@ -49,7 +49,14 @@ CnsVcdNonConts   =  Л М Н Ң Ж    ! Voiced Non-Continuants
 
 Nasals           = М Н Ң 
                    м н ң ; 
-                
+
+FrontCns         = К Г Ь
+                   к г ь ;
+
+BackCns          = Қ Ғ 
+                   қ ғ ;
+
+
 Rules 
 
 
@@ -95,15 +102,6 @@ Rules
             except
                                   %{n%}: %>: _ %{I%}: .#. ;
 
-"L desonorisation after voiceless consonants"
-%{L%}:т <=> [ :CnsVoiceless ]/[ %>: | :0 ] _ ;
-
-"N desonorisation after voiceless consonants"
-%{N%}:т <=> [ :CnsVoiceless ]/[ %>: | :0 ] _ ;
-            except
-                                %{n%}: %>: _ %{I%}: .#. ;
-
-
 !!!! Special archiphonemes !!!!
 
 "Deletion of {h} after a consonant"
@@ -124,17 +122,37 @@ Rules
 "Deletion of dative {G} after px1sg, px2sg"
 %{G%}:0 <=>  %{I%}: :Nasals %>: _ %{A%}: .#. ;
 
-!!!! Voicy voice !!!!
+
+!!!! Voicing assimilation, etc. !!!!
 
 "Intervocalic voicing of к/қ"
 Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
-          where Cx in ( к қ п )
-                Cy in ( г ғ б )
+          where Cx in ( п к қ )
+                Cy in ( б г ғ )
                 matched;
 
+
+! "N desonorisation after voiceless consonants"
+! %{N%}:т <=> [ :CnsVoiceless ]/[ %>: | :0 ] _ ;
+!             except
+!                                 %{n%}: %>: _ %{I%}: .#. ;
+
+"Forward voicing assimilation"
+Cx:Cy <=> :CnsVoiceless/[ %>: | %  ] _ ;
+          where Cx in ( %{M%}  %{L%}  %{N%} )
+                Cy in (   п      т      т   )
+                matched;
+
+"Back assimilation of G"
+%{G%}:ғ <=> [ :BackVow :Cns* ]/[ %>: | :0 | :и | :у ] _ ;
+            except
+    :CnsVoiceless/[ %>: | :0 ] _ ;
+        :FrontCns/[ %>: | :0 ] _ ;
+                   :Nasals %>: _ %{A%}: .#. ;
+
 "Voicing assimilation of back G"
-%{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :CnsVoiceless - :FrontCns ] ]/[ %>: ] _ ;
+%{G%}:қ <=> [ :BackVow :Cns* [ :CnsVoiceless - :FrontCns ] ]/[ %>: ] _ ;
 
 "Voicing assimilation of front G"
-%{G%}:к <=> :FrontVow [ :Cns* [ :CnsVoiceless - :BackCns ] ]/[ %>: ] _ ;
-                               [ :CnsVoiceless & :FrontCns ]/[ %>: ] _ ;
+%{G%}:к <=> [ :FrontVow :Cns* [ :CnsVoiceless - :BackCns ] ]/[ %>: ] _ ;
+!                               [ :CnsVoiceless & :FrontCns ]/[ %>: ] _ ;
