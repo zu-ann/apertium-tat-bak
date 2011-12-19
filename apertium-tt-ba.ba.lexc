@@ -56,13 +56,14 @@ Multichar_Symbols
 
 
 %{L%}              ! 
+%{N%}              ! 
 %{G%}              ! 
-%{D%}              ! 
 %{K%}              ! 
 %{I%}              ! 
 %{A%}              ! 
 
 %{h%}              ! 
+%{n%}              ! 
 
 %>                 !
 
@@ -86,17 +87,17 @@ Punctuation ;
 LEXICON CASE
 
 %<nom%>: # ;
-%<gen%>:%>н%{I%}ң # ;
+%<gen%>:%>%{N%}%{I%}ң # ;
 %<dat%>:%>%{G%}%{A%} # ;
-%<acc%>:%>н%{I%} # ;
-%<loc%>:%>%{D%}%{A%} # ;
-%<abl%>:%>%{D%}%{A%}н # ;
+%<acc%>:%>%{N%}%{I%} # ;
+%<loc%>:%>%{L%}%{A%} # ;
+%<abl%>:%>%{N%}%{A%}н # ;
 
 LEXICON POSS
 
 %<px1sg%>:%>%{I%}м CASE ;
 %<px2sg%>:%>%{I%}ң CASE ;
-%<px3sp%>:%>%{h%}%{I%} CASE ;
+%<px3sp%>:%>%{h%}%{I%}%{n%} CASE ;
 %<px1pl%>:%>%{I%}б%{I%}ҙ CASE ;
 %<px2pl%>:%>%{I%}%{G%}%{I%}ҙ CASE ;
 

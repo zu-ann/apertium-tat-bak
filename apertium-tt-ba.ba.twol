@@ -6,9 +6,9 @@ Alphabet
 
  %{A%}:а %{I%}:ы
 
- %{L%}:л %{G%}:г %{D%}:д %{K%}:к
+ %{L%}:л %{G%}:г %{N%}:н %{K%}:к
 
- %{h%}:һ
+ %{h%}:һ %{n%}:н
 
  %>:0  ; 
 
@@ -51,7 +51,7 @@ Rules
 
 
 "Alternation in locative -DA"
-%{D%}:Cx <=> :Lx %>: _ %{A%}: ;
+%{L%}:Cx <=> :Lx %>: _ %{A%}: [ .#. | %>: ];
         where Lx in ( а о е э и ө у ү ы ә ю я в й ҙ р ) 
               Cx in ( л л л л л л л л л л л л ҙ ҙ ҙ ҙ ) 
         matched ;           
@@ -67,4 +67,16 @@ Rules
 
 "Deletion of {h} after a consonant"
 %{h%}:0 <=> [ :Cns ]/[ %>: | :0 ] _ ;
+
+"Deletion of accusative {N} after {n}"
+%{N%}:0 <=> %{n%}: %>: _ %{I%}: .#. ;
+
+"Deletion of {n} before genitive {N}s"
+%{n%}:0 <=> _ %>: %{N%}: %{I%}: \[ .#. ]  ;
+
+"Deletion of {n} before ablative {D}"
+%{n%}:0 <=> _ %>: %{N%}: %{A%}: :н ;
+
+"/n/ deletion in px3 nominative"
+%{n%}:0 <=> _ .#. ;
 
