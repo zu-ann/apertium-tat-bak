@@ -14,12 +14,6 @@ Alphabet
 
 Sets
 
-HardVow      =  А О Ы У Ю
-                а о ы у ю ; 
-
-SoftVow      =  Ә Е Э И Ө
-                ә е э и ө ; 
-
 Vow          =  А О Ә Е Э И Ө У Ү Ы Ю Я
                 а о ә е э и ө у ү ы ю я ;
 
@@ -29,41 +23,85 @@ Cns          =  Б В Г Ғ Д Ҙ Ж З Й К Ҡ Л М Н Ң П Р С Ҫ Т Ф �
 Vow1         =  Ү У Ю
                 ү у ю ; 
 
-Cns1         =  П Т К Ҡ Ф Ҫ С Ш Щ Х Һ Б Г Ғ Д Ц Ч
-                п т к ҡ ф ҫ с ш щ х һ б г ғ д ц ч ;
+! Cns1         =  П Т К Ҡ Ф Ҫ С Ш Щ Х Һ Б Г Ғ Д Ц Ч
+!                 п т к ҡ ф ҫ с ш щ х һ б г ғ д ц ч ;
+! 
+! Cns2         =  Й Ҙ Р 
+!                 й ҙ р ; 
+! 
+! Cns3         =  Ж З Л М Н Ң  
+!                 ж з л м н ң  ; 
 
-Cns2         =  Й Ҙ Р 
-                й ҙ р ; 
+BackVow      =  А О Ы У Ю Я
+                а о ы у ю я ; 
 
-VoicelessCns =  П Т К Ҡ Ф Ҫ С Ш Щ Х Һ
-                п т к ҡ ф ҫ с ш щ х һ  ; 
+FrontVow     =  Ә Е Э И Ө
+                ә е э и ө ; 
 
-Cns3         =  Ж З Л М Н Ң  
-                ж з л м н ң  ; 
+CnsVoiceless     =  П Т К Ҡ Ф Ҫ С Ш Щ Х Һ Б Г Ғ Д Ц Ч
+                    п т к ҡ ф ҫ с ш щ х һ б г ғ д ц ч ; 
 
+CnsVcdConts      =  Й В Р Ҙ      ! Voiced Continuants
+                    й в р ҙ ;
+
+CnsVcdNonConts   =  Л М Н Ң Ж    ! Voiced Non-Continuants
+                    л м н ң ж ;
+                
 Rules 
 
+
+!!!! Vowel Harmony !!!!
 "A Vowel Harmony"
-%{A%}:ә <=> [ :SoftVow :Cns* ]/[ %>: | %  | :0 ] _ ;
+%{A%}:ә <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
 
 "I Vowel Harmony"
-%{I%}:е <=> [ :SoftVow :Cns* ]/[ %>: | %  | :0 ] _ ;
+%{I%}:е <=> [ :BackVow :Cns* ]/[ %>: | %  | :0 ] _ ;
 
 
-"Alternation in locative -DA"
-%{L%}:Cx <=> :Lx %>: _ %{A%}: [ .#. | %>: ];
-        where Lx in ( а о е э и ө у ү ы ә ю я в й ҙ р ) 
-              Cx in ( л л л л л л л л л л л л ҙ ҙ ҙ ҙ ) 
-        matched ;           
+! "Alternation in locative -DA"
+! %{L%}:Cx <=> :Lx %>: _ %{A%}: [ .#. | %>: ];
+!         where Lx in ( а о е э и ө у ү ы ә ю я в й ҙ р ) 
+!               Cx in ( л л л л л л л л л л л л ҙ ҙ ҙ ҙ ) 
+!         matched ;           
+!
+! "Plural alternation"
+! %{L%}:ҙ <=> [ :Cns2 | :Vow1 ]  %>: _ %{A%}: р ;
+!
+! "Plural alternation after voiceless consonant"
+! %{L%}:т <=> [ :Cns1 | :в ] %>: _ %{A%}: р ;
+!
+! "Plural alternation after other voiced consonants"
+! %{L%}:д <=> :Cns3 %>: _ %{A%}: р ;
 
-"Plural alternation"
-%{L%}:ҙ <=> [ :Cns2 | :Vow1 ]  %>: _ %{A%}: р ;
 
-"Plural alternation after voiceless consonant"
-%{L%}:т <=> [ :Cns1 | :в ] %>: _ %{A%}: р ;
+!!!! Desonorisation !!!!
 
-"Plural alternation after other voiced consonants"
-%{L%}:д <=> :Cns3 %>: _ %{A%}: р ;
+"L desonorisation after continuants"
+%{L%}:ҙ <=> [ :CnsVcdConts ]/[ %>: | :0 ] _ ;
+
+"N desonorisation after continuants"
+%{N%}:ҙ <=> [ :CnsVcdConts ]/[ %>: | :0 ] _ ;
+            except
+                               %{n%}: %>: _ %{I%}: .#. ;
+
+"L desonorisation after non-continuants"
+%{L%}:д <=> [ :CnsVcdNonConts ]/[ %>: | :0 ] _ ;
+
+"N desonorisation after non-continuants"
+%{N%}:д <=> [ :CnsVcdNonConts ]/[ %>: | :0 ] _ ;
+            except
+                                  %{n%}: %>: _ %{I%}: .#. ;
+
+"L desonorisation after voiceless consonants"
+%{L%}:т <=> [ :CnsVoiceless ]/[ %>: | :0 ] _ ;
+
+"N desonorisation after voiceless consonants"
+%{N%}:т <=> [ :CnsVoiceless ]/[ %>: | :0 ] _ ;
+            except
+                                %{n%}: %>: _ %{I%}: .#. ;
+
+
+!!!! Special archiphonemes !!!!
 
 "Deletion of {h} after a consonant"
 %{h%}:0 <=> [ :Cns ]/[ %>: | :0 ] _ ;
