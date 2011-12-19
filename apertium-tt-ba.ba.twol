@@ -46,6 +46,9 @@ CnsVcdConts      =  Й В Р Ҙ      ! Voiced Continuants
 
 CnsVcdNonConts   =  Л М Н Ң Ж    ! Voiced Non-Continuants
                     л м н ң ж ;
+
+Nasals           = М Н Ң 
+                   м н ң ; 
                 
 Rules 
 
@@ -55,7 +58,7 @@ Rules
 %{A%}:ә <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
 
 "I Vowel Harmony"
-%{I%}:е <=> [ :BackVow :Cns* ]/[ %>: | %  | :0 ] _ ;
+%{I%}:е <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
 
 
 ! "Alternation in locative -DA"
@@ -117,4 +120,17 @@ Rules
 
 "/n/ deletion in px3 nominative"
 %{n%}:0 <=> _ .#. ;
+
+"Deletion of dative {G} after px1sg, px2sg"
+%{G%}:0 <=>  %{I%}: :Nasals %>: _ %{A%}: .#. ;
+
+!!!! Voicy voice !!!!
+
+"Intervocalic voicing of к/қ"
+Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
+          where Cx in ( к қ п )
+                Cy in ( г ғ б )
+                matched;
+
+
 
