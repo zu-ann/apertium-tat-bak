@@ -132,5 +132,9 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                 Cy in ( г ғ б )
                 matched;
 
+"Voicing assimilation of back G"
+%{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :CnsVoiceless - :FrontCns ] ]/[ %>: ] _ ;
 
-
+"Voicing assimilation of front G"
+%{G%}:к <=> :FrontVow [ :Cns* [ :CnsVoiceless - :BackCns ] ]/[ %>: ] _ ;
+                               [ :CnsVoiceless & :FrontCns ]/[ %>: ] _ ;
