@@ -14,8 +14,8 @@ Alphabet
 
 Sets
 
-HardVow   =  А О Ы У
-             а о ы у ;
+HardVow   =  А О Ы У Я Ю
+             а о ы у я ю ;
 
 
 SoftVow   =  Ә Е Э И Ө

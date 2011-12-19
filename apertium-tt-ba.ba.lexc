@@ -2,6 +2,8 @@ Multichar_Symbols
 
 %<n%>              ! Имя существительное 
 %<prn%>            ! Местоимение
+%<adv%>            ! Наречие
+%<num%>            ! Число
 %<v%>              ! Глагол
 %<np%>             ! Имя собственное
 %<adj%>            ! Прилагательное
@@ -43,6 +45,16 @@ Multichar_Symbols
 %<ger3%>           ! -{G}{A}с
 %<ger4%>           ! -{G}{A}нс{I}
 
+%<sent%>           ! Sentence marker
+%<guio%>           ! Hyphen
+%<cm%>             ! Comma
+%<apos%>           ! Apostrophe
+%<rquot%>          ! Quote marker (right hand side) 
+%<lquot%>          ! Quote marker (left hand side) 
+%<rpar%>           ! Parenthetical marker (right hand side) 
+%<lpar%>           ! Parenthetical marker (left hand side) 
+
+
 %{L%}              ! 
 %{G%}              ! 
 %{D%}              ! 
@@ -63,10 +75,13 @@ LEXICON Root
 Conjunctions ; 
 Postpositions ; 
 Pronouns ; 
+Numerals ; 
 Nouns ; 
 ProperNouns ; 
 Adjectives ; 
+Adverbs ; 
 Verbs ; 
+Punctuation ; 
 
 LEXICON CASE
 
@@ -91,6 +106,10 @@ LEXICON NLEX
 
 %<n%>: POSS ; 
 %<n%>%<pl%>:%>%{L%}%{A%}р POSS ; 
+
+LEXICON NUMLEX
+
+%<num%>: POSS ; 
 
 LEXICON NPTOPLEX
 
@@ -160,6 +179,11 @@ LEXICON POSTLEX
 
 %<post%>: # ; 
 
+LEXICON ADVLEX
+
+%<adv%>: # ; 
+
+
 LEXICON CCLEX
 
 %<cnjcoo%>: # ; 
@@ -169,6 +193,7 @@ LEXICON Conjunctions
 үә:үә CCLEX ; ! ""
 һәм:һәм CCLEX ; ! ""  
 ә:ә CCLEX ; ! ""
+әммә:әммә CCLEX ; ! ""
 
 LEXICON Postpositions 
 
@@ -185,6 +210,17 @@ LEXICON Pronouns
 
 PRNLEX-PERS ; 
 
+LEXICON Numerals
+
+бер:бер NUMLEX ; ! ""
+ике:ике NUMLEX ; ! ""
+өс:өс NUMLEX ; ! ""
+дүрт:дүрт NUMLEX ; ! ""
+биш:биш NUMLEX ; ! ""
+ун:ун NUMLEX ; ! ""
+йөҙ:йөҙ NUMLEX ; ! ""
+мең:мең NUMLEX ; ! ""
+
 LEXICON Nouns 
 
 кеше:кеше NLEX ; ! ""
@@ -200,7 +236,7 @@ LEXICON Nouns
 ғүмер:ғүмер NLEX ; ! ""
 тормош:тормош NLEX ; ! ""
 баш:баш NLEX ; ! ""
-дуҫ:дуҫ NLEX ; ! ""
+!дуҫ:дуҫ NLEX ; ! ""
 өй:өй NLEX ; ! ""
 йорт:йорт NLEX ; ! ""
 һүҙ:һүҙ NLEX ; ! ""
@@ -558,8 +594,10 @@ LEXICON Nouns
 LEXICON ProperNouns
 
 Татарстан:Татарстан NPTOPLEX ; ! ""
+Рәсәй:Рәсәй NPTOPLEX ; ! ""
 Башҡортостан:Башҡортостан NPTOPLEX ; ! ""
 Ҡаҙан:Ҡаҙан NPTOPLEX ; ! ""
+Пермь:Пермь NPTOPLEX ; ! ""
 
 LEXICON Adjectives
 
@@ -706,7 +744,40 @@ LEXICON Adjectives
 әҙер:әҙер ALEX ; ! ""
 өлкән:өлкән ALEX ; ! ""
 
+LEXICON Adverbs 
+
+хәҙер:хәҙер ADVLEX ; ! ""
+әле:әле ADVLEX ; ! ""
+иң:иң ADVLEX ; ! ""
+
+
 LEXICON Verbs 
 
 бул:бул V-IV-LEX ; ! ""
 йәшә:йәшә V-IV-LEX ; ! ""
+
+LEXICON Punctuation
+
+.%<sent%>:. # ;
+..%<sent%>:.. # ;
+...%<sent%>:... # ;
+%;%<sent%>:%; # ;
+%:%<sent%>:%: # ;
+%!%<sent%>:%! # ;
+%-%<guio%>:%- # ;
+%—%<guio%>:%— # ;
+,%<cm%>:, # ;
+%?%<sent%>:%? # ; 
+%'%<apos%>:%' # ;
+%"%<sent%>:%" # ;
+%«%<lquot%>:%« # ;
+%»%<rquot%>:%» # ;
+%”%<rquot%>:%” # ;
+%“%<lquot%>:%“ # ;
+%(%<lpar%>:%( # ;
+%]%<rpar%>:%] # ;
+%[%<lpar%>:%[ # ;
+%)%<rpar%>:%) # ;
+\%<sent%>:\ # ;
+/%<sent%>:/ # ;
+

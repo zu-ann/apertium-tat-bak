@@ -3,8 +3,10 @@
   <sdefs>
     <sdef n="n"        c="Существительное"/>
     <sdef n="v"        c="Глагол"/>
+    <sdef n="num"      c="Число"/>
     <sdef n="np"       c="Имя собственное"/>
     <sdef n="prn"      c="Местоимение"/>
+    <sdef n="adv"      c="Наречие"/>
     <sdef n="post"     c="Послелог"/>
     <sdef n="adj"      c="Прилагательное"/>
     <sdef n="cnjcoo"   c="Союз"/>
@@ -13,6 +15,14 @@
     <sdef n="top"      c="Toponym"/>
 
     <sdef n="iv"       c="Intransitive"/>
+
+    <sdef n="guio"     c=""/>
+    <sdef n="cm"       c=""/>
+    <sdef n="sent"     c=""/>
+    <sdef n="lpar"     c=""/>
+    <sdef n="rpar"     c=""/>
+    <sdef n="lquot"    c=""/>
+    <sdef n="rquot"    c=""/>
   </sdefs>
   <section id="main" type="standard">
 
@@ -20,6 +30,7 @@
     <e><p><l>вә<s n="cnjcoo"/></l><r>үә<s n="cnjcoo"/></r></p></e>
     <e><p><l>һәм<s n="cnjcoo"/></l><r>һәм<s n="cnjcoo"/></r></p></e>
     <e><p><l>ә<s n="cnjcoo"/></l><r>ә<s n="cnjcoo"/></r></p></e>
+    <e><p><l>әмма<s n="cnjcoo"/></l><r>әммә<s n="cnjcoo"/></r></p></e>
 
     <!-- Раздел: Послелоги -->
     <e><p><l>белән<s n="post"/></l><r>менән<s n="post"/></r></p></e>
@@ -31,6 +42,17 @@
     <e><p><l>каршы<s n="post"/></l><r>ҡаршы<s n="post"/></r></p></e>
     <e><p><l>башка<s n="post"/></l><r>башҡа<s n="post"/></r></p></e>
 
+    <!-- Раздел: -->
+
+    <e><p><l>бер<s n="num"/></l><r>бер<s n="num"/></r></p></e>
+    <e><p><l>ике<s n="num"/></l><r>ике<s n="num"/></r></p></e>
+    <e><p><l>өч<s n="num"/></l><r>өс<s n="num"/></r></p></e>
+    <e><p><l>дүрт<s n="num"/></l><r>дүрт<s n="num"/></r></p></e>
+    <e><p><l>биш<s n="num"/></l><r>биш<s n="num"/></r></p></e>
+
+    <e><p><l>ун<s n="num"/></l><r>ун<s n="num"/></r></p></e>
+    <e><p><l>йөз<s n="num"/></l><r>йөҙ<s n="num"/></r></p></e>
+    <e><p><l>мең<s n="num"/></l><r>мең<s n="num"/></r></p></e>
 
     <!-- Раздел: Местоимения -->
     <e><p><l>мин<s n="prn"/><s n="pers"/></l><r>мин<s n="prn"/><s n="pers"/></r></p></e>
@@ -410,9 +432,12 @@
 
     <!-- Раздел: Имена собственные -->
 
+    <e r="LR"><p><l>Русия<s n="np"/><s n="top"/></l><r>Рәсәй<s n="np"/><s n="top"/></r></p></e>
+    <e><p><l>Рәсәй<s n="np"/><s n="top"/></l><r>Рәсәй<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Татарстан<s n="np"/><s n="top"/></l><r>Татарстан<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Башкортстан<s n="np"/><s n="top"/></l><r>Башҡортостан<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Казан<s n="np"/><s n="top"/></l><r>Ҡаҙан<s n="np"/><s n="top"/></r></p></e>
+    <e><p><l>Пермь<s n="np"/><s n="top"/></l><r>Пермь<s n="np"/><s n="top"/></r></p></e>
 
     <!-- Раздел: Прилагательные -->
     <e><p><l>зур<s n="adj"/></l><r>ҙур<s n="adj"/></r></p></e>
@@ -430,7 +455,7 @@
     <e><p><l>баш<s n="adj"/></l><r>баш<s n="adj"/></r></p></e>
     <e><p><l>төп<s n="adj"/></l><r>төп<s n="adj"/></r></p></e>
     <e><p><l>ерак<s n="adj"/></l><r>йыраҡ<s n="adj"/></r></p></e>
-    <e><p><l>ерак<s n="adj"/></l><r>алыҫ<s n="adj"/></r></p></e>
+    <!--<e><p><l>ерак<s n="adj"/></l><r>алыҫ<s n="adj"/></r></p></e>-->
     <e><p><l>бәләкәй<s n="adj"/></l><r>бәләкәй<s n="adj"/></r></p></e>
     <e><p><l>кече<s n="adj"/></l><r>кесе<s n="adj"/></r></p></e>
     <e><p><l>кечкенә<s n="adj"/></l><r>кескенә<s n="adj"/></r></p></e>
@@ -559,9 +584,31 @@
     <e><p><l>мөһим<s n="adj"/></l><r>мөһим<s n="adj"/></r></p></e>
     <e><p><l>тимер<s n="adj"/></l><r>тимер<s n="adj"/></r></p></e>
 
+    <!-- Раздел: Наречия -->
+
+    <e><p><l>хәзер<s n="adv"/></l><r>хәҙер<s n="adv"/></r></p></e>
+    <e><p><l>әле<s n="adv"/></l><r>әле<s n="adv"/></r></p></e>
+    <e><p><l>иң<s n="adv"/></l><r>иң<s n="adv"/></r></p></e>
+
     <!-- Раздел: Глаголы -->
     <e><p><l>бул<s n="v"/><s n="iv"/></l><r>бул<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>яшә<s n="v"/><s n="iv"/></l><r>йәшә<s n="v"/><s n="iv"/></r></p></e>
+
+
+    <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
+    <e><p><l>(<s n="lpar"/></l><r>(<s n="lpar"/></r></p></e>
+    <e><p><l>)<s n="rpar"/></l><r>)<s n="rpar"/></r></p></e>
+    <e><p><l>[<s n="lpar"/></l><r>[<s n="lpar"/></r></p></e>
+    <e><p><l>]<s n="rpar"/></l><r>]<s n="rpar"/></r></p></e>
+    <e><p><l>«<s n="lquot"/></l><r>«<s n="lquot"/></r></p></e>
+    <e><p><l>»<s n="rquot"/></l><r>»<s n="rquot"/></r></p></e>
+    <e><p><l>“<s n="lquot"/></l><r>“<s n="lquot"/></r></p></e>
+    <e><p><l>”<s n="rquot"/></l><r>”<s n="rquot"/></r></p></e>
+    <e><p><l>-<s n="guio"/></l><r>-<s n="guio"/></r></p></e>
+    <e><p><l>—<s n="guio"/></l><r>—<s n="guio"/></r></p></e>
+
+    <e><re>[.\?;:!"]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
+
 
   </section>
 </dictionary>

@@ -8,6 +8,11 @@
 /apertium-tt-ba.tt.lexc -text
 /apertium-tt-ba.tt.twol -text
 /ba-tt.prob -text svneol=unset#unset
+dev/inconsistency-summary.sh -text
+dev/inconsistency.sh -text
 dev/ru-tt-ba.txt -text
+dev/testvoc-summary.ba-tt.txt -text
+dev/testvoc-summary.tt-ba.txt -text
+dev/testvoc.sh -text
 /modes.xml -text
 /tt-ba.prob -text svneol=unset#unset
