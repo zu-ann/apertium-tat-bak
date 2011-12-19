@@ -195,6 +195,17 @@ LEXICON Conjunctions
 ә:ә CCLEX ; ! ""
 әммә:әммә CCLEX ; ! ""
 
+да:%~да CCLEX ; ! "" Dir/RL
+да:да CCLEX ; ! "" Dir/LR
+да:та CCLEX ; ! "" Dir/LR
+да:ҙа CCLEX ; ! "" Dir/LR
+да:ла CCLEX ; ! "" Dir/LR
+да:дә CCLEX ; ! "" Dir/LR
+да:тә CCLEX ; ! "" Dir/LR
+да:ҙә CCLEX ; ! "" Dir/LR
+да:лә CCLEX ; ! "" Dir/LR
+
+
 LEXICON Postpositions 
 
 менән:менән POSTLEX ; ! ""

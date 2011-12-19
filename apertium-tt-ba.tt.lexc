@@ -83,14 +83,19 @@ Adverbs ;
 Verbs ; 
 Punctuation ; 
 
+LEXICON CLIT
+
+%+да%<cnjcoo%>:%> %{D%}%{A%} # ;
+# ;
+
 LEXICON CASE 
 
-%<nom%>: # ;
-%<gen%>:%>н%{I%}ң # ;
-%<dat%>:%>%{G%}%{A%} # ;
-%<acc%>:%>н%{I%} # ;
-%<loc%>:%>%{D%}%{A%} # ;
-%<abl%>:%>%{D%}%{A%}н # ;
+%<nom%>: CLIT ;
+%<gen%>:%>н%{I%}ң CLIT ;
+%<dat%>:%>%{G%}%{A%} CLIT ;
+%<acc%>:%>н%{I%} CLIT ;
+%<loc%>:%>%{D%}%{A%} CLIT ;
+%<abl%>:%>%{D%}%{A%}н CLIT ;
 
 LEXICON POSS
 
@@ -197,6 +202,12 @@ LEXICON Conjunctions
 һәм:һәм CCLEX ; ! ""
 ә:ә CCLEX ; ! ""
 әмма:әмма CCLEX ; ! ""
+
+да:%~да CCLEX ; ! "" Dir/RL
+да:да CCLEX ; ! "" Dir/LR
+да:та CCLEX ; ! "" Dir/LR
+да:дә CCLEX ; ! "" Dir/LR
+да:тә CCLEX ; ! "" Dir/LR
 
 LEXICON Postpositions 
 

@@ -1,17 +1,23 @@
 all:
 	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-lexc --format foma apertium-tt-ba.tt.lexc -o .deps/tt.lexc.hfst
+	cat apertium-tt-ba.tt.lexc | grep -v 'Dir/LR' > .deps/tt.RL.lexc
+	cat apertium-tt-ba.tt.lexc | grep -v 'Dir/RL' > .deps/tt.LR.lexc
+	hfst-lexc --format foma .deps/tt.RL.lexc -o .deps/tt.RL.lexc.hfst
+	hfst-lexc --format foma .deps/tt.LR.lexc -o .deps/tt.LR.lexc.hfst
 	hfst-twolc apertium-tt-ba.tt.twol -o .deps/tt.twol.hfst
-	hfst-compose-intersect -1 .deps/tt.lexc.hfst -2 .deps/tt.twol.hfst -o .deps/tt.gen.hfst
-	hfst-invert .deps/tt.gen.hfst -o .deps/tt.mor.hfst
-	hfst-fst2fst -O .deps/tt.gen.hfst -o ba-tt.autogen.hfst
-	hfst-fst2fst -O .deps/tt.mor.hfst -o tt-ba.automorf.hfst
-	hfst-lexc --format foma apertium-tt-ba.ba.lexc -o .deps/ba.lexc.hfst
+	hfst-compose-intersect -1 .deps/tt.RL.lexc.hfst -2 .deps/tt.twol.hfst -o .deps/tt.RL.hfst
+	hfst-compose-intersect -1 .deps/tt.LR.lexc.hfst -2 .deps/tt.twol.hfst -o .deps/tt.LR.hfst
+	hfst-fst2fst -O .deps/tt.RL.hfst -o ba-tt.autogen.hfst
+	hfst-invert .deps/tt.LR.hfst | hfst-fst2fst -O -o tt-ba.automorf.hfst
+	cat apertium-tt-ba.ba.lexc | grep -v 'Dir/LR' > .deps/ba.RL.lexc
+	cat apertium-tt-ba.ba.lexc | grep -v 'Dir/RL' > .deps/ba.LR.lexc
+	hfst-lexc --format foma .deps/ba.RL.lexc -o .deps/ba.RL.lexc.hfst
+	hfst-lexc --format foma .deps/ba.LR.lexc -o .deps/ba.LR.lexc.hfst
 	hfst-twolc apertium-tt-ba.ba.twol -o .deps/ba.twol.hfst
-	hfst-compose-intersect -1 .deps/ba.lexc.hfst -2 .deps/ba.twol.hfst -o .deps/ba.gen.hfst
-	hfst-invert .deps/ba.gen.hfst -o .deps/ba.mor.hfst
-	hfst-fst2fst -O .deps/ba.gen.hfst -o tt-ba.autogen.hfst
-	hfst-fst2fst -O .deps/ba.mor.hfst -o ba-tt.automorf.hfst
+	hfst-compose-intersect -1 .deps/ba.RL.lexc.hfst -2 .deps/ba.twol.hfst -o .deps/ba.RL.hfst
+	hfst-compose-intersect -1 .deps/ba.LR.lexc.hfst -2 .deps/ba.twol.hfst -o .deps/ba.LR.hfst
+	hfst-fst2fst -O .deps/ba.RL.hfst -o tt-ba.autogen.hfst
+	hfst-invert .deps/ba.LR.hfst | hfst-fst2fst -O -o ba-tt.automorf.hfst
 	apertium-validate-dictionary apertium-tt-ba.tt-ba.dix 
 	lt-comp lr apertium-tt-ba.tt-ba.dix tt-ba.autobil.bin
 	lt-comp rl apertium-tt-ba.tt-ba.dix ba-tt.autobil.bin
