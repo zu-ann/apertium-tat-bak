@@ -23,6 +23,8 @@ all:
 	lt-comp rl apertium-tt-ba.tt-ba.dix ba-tt.autobil.bin
 	apertium-validate-transfer apertium-tt-ba.tt-ba.t1x
 	apertium-preprocess-transfer apertium-tt-ba.tt-ba.t1x tt-ba.t1x.bin
+	apertium-validate-transfer apertium-tt-ba.tt-ba.t2x
+	apertium-preprocess-transfer apertium-tt-ba.tt-ba.t2x tt-ba.t2x.bin
 	apertium-validate-transfer apertium-tt-ba.ba-tt.t1x
 	apertium-preprocess-transfer apertium-tt-ba.ba-tt.t1x ba-tt.t1x.bin
 	apertium-validate-transfer apertium-tt-ba.ba-tt.t2x
