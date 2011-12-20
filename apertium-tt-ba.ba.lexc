@@ -10,14 +10,22 @@ Multichar_Symbols
 %<post%>           ! Послелог
 %<cnjcoo%>         ! Союз
 
+%<pred%>           ! 
+%<qst%>            ! 
+
 %<pers%>           ! 
+%<itg%>            ! 
 
 %<comp%>           ! 
 
 %<top%>            ! 
+%<ant%>            ! 
 
 %<iv%>             !
 %<tv%>             !
+
+%<m%>              !
+%<f%>              !
 
 %<p1%>             !
 %<p2%>             !
@@ -84,14 +92,21 @@ Adverbs ;
 Verbs ; 
 Punctuation ; 
 
+LEXICON CLIT
+
+%+да%<cnjcoo%>:% %{L%}%{I%} # ;
+%+мы%<qst%>:%>м%{I%} # ;
+
+#;
+
 LEXICON CASE
 
-%<nom%>: # ;
-%<gen%>:%>%{N%}%{I%}ң # ;
-%<dat%>:%>%{G%}%{A%} # ;
-%<acc%>:%>%{N%}%{I%} # ;
-%<loc%>:%>%{L%}%{A%} # ;
-%<abl%>:%>%{N%}%{A%}н # ;
+%<nom%>: CLIT ;
+%<gen%>:%>%{N%}%{I%}ң CLIT ;
+%<dat%>:%>%{G%}%{A%} CLIT ;
+%<acc%>:%>%{N%}%{I%} CLIT ;
+%<loc%>:%>%{L%}%{A%} CLIT ;
+%<abl%>:%>%{N%}%{A%}н CLIT ;
 
 LEXICON POSS
 
@@ -112,6 +127,14 @@ LEXICON NUMLEX
 
 %<num%>: POSS ; 
 
+LEXICON NPANTMLEX
+
+%<np%>%<ant%>%<m%>: CASE ; 
+
+LEXICON NPANTFLEX
+
+%<np%>%<ant%>%<f%>: CASE ; 
+
 LEXICON NPTOPLEX
 
 %<np%>%<top%>: CASE ; 
@@ -131,6 +154,11 @@ LEXICON V-COMMON-LEX
 LEXICON V-IV-LEX
 
 %<v%>%<iv%>: V-COMMON-LEX ;
+
+LEXICON V-TV-LEX
+
+%<v%>%<tv%>: V-COMMON-LEX ;
+
 
 LEXICON PRNLEX-PERS
 
@@ -180,14 +208,27 @@ LEXICON POSTLEX
 
 %<post%>: # ; 
 
+LEXICON ADVITGLEX
+
+%<adv%>%<itg%>: # ; 
+
 LEXICON ADVLEX
 
 %<adv%>: # ; 
 
-
 LEXICON CCLEX
 
 %<cnjcoo%>: # ; 
+
+LEXICON PREDLEX
+
+%<pred%>: CLIT ; 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                          L E X I C O N                                  !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
 
 LEXICON Conjunctions
 
@@ -603,12 +644,12 @@ LEXICON Nouns
 төп% фекер:төп% фекер NLEX ; ! ""
 идея:идея NLEX ; ! ""
 
-краб:краб NLEX ; ! ""
-флаг:флаг NLEX ; ! ""
-дағ:дағ NLEX ; ! ""
-каскад:каскад NLEX ; ! ""
-барыу:барыу NLEX ; ! ""
-китеү:китеү NLEX ; ! ""
+!краб:краб NLEX ; ! ""
+!флаг:флаг NLEX ; ! ""
+!дағ:дағ NLEX ; ! ""
+!каскад:каскад NLEX ; ! ""
+!барыу:барыу NLEX ; ! ""
+!китеү:китеү NLEX ; ! ""
 
 
 LEXICON ProperNouns
@@ -618,6 +659,10 @@ LEXICON ProperNouns
 Башҡортостан:Башҡортостан NPTOPLEX ; ! ""
 Ҡаҙан:Ҡаҙан NPTOPLEX ; ! ""
 Пермь:Пермь NPTOPLEX ; ! ""
+
+Әхмәт:Әхмәт NPANTMLEX ; ! ""
+Гөлнара:Гөлнара NPANTFLEX ; ! ""
+
 
 LEXICON Adjectives
 
@@ -766,6 +811,7 @@ LEXICON Adjectives
 
 LEXICON Adverbs 
 
+ҡайҙа:ҡайҙа ADVITGLEX ; ! ""
 хәҙер:хәҙер ADVLEX ; ! ""
 әле:әле ADVLEX ; ! ""
 иң:иң ADVLEX ; ! ""
@@ -773,8 +819,12 @@ LEXICON Adverbs
 
 LEXICON Verbs 
 
+бар:бар PREDLEX ; ! ""
+юҡ:юҡ PREDLEX ; ! ""
+
 бул:бул V-IV-LEX ; ! ""
 йәшә:йәшә V-IV-LEX ; ! ""
+ит:ит V-TV-LEX ; ! ""
 
 LEXICON Punctuation
 

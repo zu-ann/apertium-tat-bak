@@ -9,16 +9,23 @@ Multichar_Symbols
 %<v%>              ! Глагол
 %<adj%>            ! Прилагательное
 %<post%>           ! Послелог
+%<pred%>           ! 
+%<qst%>            ! 
 %<cnjcoo%>         ! Союз
 
 %<pers%>           ! 
+%<itg%>            ! 
 
 %<top%>            ! 
+%<ant%>            ! 
 
 %<comp%>           ! 
 
 %<tv%>             !
 %<iv%>             !
+
+%<m%>              !
+%<f%>              !
 
 %<p1%>             !
 %<p2%>             !
@@ -85,7 +92,8 @@ Punctuation ;
 
 LEXICON CLIT
 
-%+да%<cnjcoo%>:%> %{D%}%{A%} # ;
+%+да%<cnjcoo%>:% %{D%}%{A%} # ;
+%+мы%<qst%>:%>м%{I%} # ;
 # ;
 
 LEXICON CASE 
@@ -124,6 +132,16 @@ LEXICON NUMLEX
 
 %<num%>: POSS ; 
 
+LEXICON NPANTMLEX
+
+%<np%>%<ant%>%<m%>: CASE ; 
+
+LEXICON NPANTFLEX
+
+%<np%>%<ant%>%<f%>: CASE ; 
+
+
+
 LEXICON NPTOPLEX
 
 %<np%>%<top%>: CASE ; 
@@ -143,6 +161,11 @@ LEXICON V-COMMON-LEX
 LEXICON V-IV-LEX
 
 %<v%>%<iv%>: V-COMMON-LEX ; 
+
+LEXICON V-TV-LEX
+
+%<v%>%<tv%>: V-COMMON-LEX ; 
+
 
 LEXICON PRNLEX-PERS
 
@@ -192,6 +215,10 @@ LEXICON POSTLEX
 
 %<post%>: # ; 
 
+LEXICON ADVITGLEX
+
+%<adv%>%<itg%>: # ; 
+
 LEXICON ADVLEX
 
 %<adv%>: # ; 
@@ -199,6 +226,15 @@ LEXICON ADVLEX
 LEXICON CCLEX
 
 %<cnjcoo%>: # ; 
+
+LEXICON PREDLEX
+
+%<pred%>: CLIT ; 
+
+LEXICON QSTLEX
+
+%<qst%>: # ; 
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
@@ -622,6 +658,9 @@ LEXICON ProperNouns
 Казан:Казан NPTOPLEX ; ! ""
 Пермь:Пермь NPTOPLEX ; ! ""
 
+Әхмәт:Әхмәт NPANTMLEX ; ! ""
+Гөлнара:Гөлнара NPANTFLEX ; ! ""
+
 LEXICON Adjectives 
 
 зур:зур ALEX ; ! ""
@@ -770,14 +809,22 @@ LEXICON Adjectives
 
 LEXICON Adverbs 
 
+мы:%~мы QSTLEX ; ! "" Dir/RL
+мы:мы QSTLEX ; ! "" Dir/LR
+
+кайда:кайда ADVITGLEX ; ! ""
 хәзер:хәзер ADVLEX ; ! ""
 әле:әле ADVLEX ; ! ""
 иң:иң ADVLEX ; ! ""
 
 LEXICON Verbs
 
+бар:бар PREDLEX ; ! ""
+юк:юк PREDLEX ; ! ""
+
 бул:бул V-IV-LEX ; ! ""
 яшә:яшә V-IV-LEX ; ! ""
+ит:ит V-TV-LEX ; ! ""
 
 LEXICON Punctuation
 

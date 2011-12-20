@@ -10,11 +10,18 @@
     <sdef n="post"     c="Послелог"/>
     <sdef n="adj"      c="Прилагательное"/>
     <sdef n="cnjcoo"   c="Союз"/>
+    <sdef n="pred"     c=""/>
+    <sdef n="qst"      c=""/>
 
     <sdef n="pers"     c="Personal"/>
     <sdef n="top"      c="Toponym"/>
+    <sdef n="ant"      c="Anthroponym"/>
+
+    <sdef n="m"        c="Мужской род"/>
+    <sdef n="f"        c="Женский род"/>
 
     <sdef n="iv"       c="Intransitive"/>
+    <sdef n="tv"       c="Transitive"/>
 
     <sdef n="guio"     c=""/>
     <sdef n="cm"       c=""/>
@@ -25,6 +32,9 @@
     <sdef n="rquot"    c=""/>
   </sdefs>
   <section id="main" type="standard">
+
+    <!-- Раздел: Союзы -->
+    <e><p><l>мы<s n="qst"/></l><r>мы<s n="qst"/></r></p></e>
 
     <!-- Раздел: Союзы -->
     <e><p><l>вә<s n="cnjcoo"/></l><r>үә<s n="cnjcoo"/></r></p></e>
@@ -440,6 +450,9 @@
     <e><p><l>Казан<s n="np"/><s n="top"/></l><r>Ҡаҙан<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Пермь<s n="np"/><s n="top"/></l><r>Пермь<s n="np"/><s n="top"/></r></p></e>
 
+    <e><p><l>Әхмәт<s n="np"/><s n="ant"/><s n="m"/></l><r>Әхмәт<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Гөлнара<s n="np"/><s n="ant"/><s n="f"/></l><r>Гөлнара<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+
     <!-- Раздел: Прилагательные -->
     <e><p><l>зур<s n="adj"/></l><r>ҙур<s n="adj"/></r></p></e>
     <e><p><l>күп<s n="adj"/></l><r>күп<s n="adj"/></r></p></e>
@@ -587,13 +600,19 @@
 
     <!-- Раздел: Наречия -->
 
+    <e><p><l>кайда<s n="adv"/></l><r>ҡайҙа<s n="adv"/></r></p></e>
     <e><p><l>хәзер<s n="adv"/></l><r>хәҙер<s n="adv"/></r></p></e>
     <e><p><l>әле<s n="adv"/></l><r>әле<s n="adv"/></r></p></e>
     <e><p><l>иң<s n="adv"/></l><r>иң<s n="adv"/></r></p></e>
 
     <!-- Раздел: Глаголы -->
+
+    <e><p><l>бар<s n="pred"/></l><r>бар<s n="pred"/></r></p></e>
+    <e><p><l>юк<s n="pred"/></l><r>юҡ<s n="pred"/></r></p></e>
+
     <e><p><l>бул<s n="v"/><s n="iv"/></l><r>бул<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>яшә<s n="v"/><s n="iv"/></l><r>йәшә<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>ит<s n="v"/><s n="tv"/></l><r>ит<s n="v"/><s n="tv"/></r></p></e>
 
 
     <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>

@@ -87,18 +87,18 @@ Rules
 !!!! Desonorisation !!!!
 
 "L desonorisation after continuants"
-%{L%}:ҙ <=> [ :CnsVcdConts ]/[ %>: | :0 ] _ ;
+%{L%}:ҙ <=> [ :CnsVcdConts ]/[ %>: | :0 | %  ] _ ;
 
 "N desonorisation after continuants"
-%{N%}:ҙ <=> [ :CnsVcdConts ]/[ %>: | :0 ] _ ;
+%{N%}:ҙ <=> [ :CnsVcdConts ]/[ %>: | :0 | %  ] _ ;
             except
                                %{n%}: %>: _ %{I%}: .#. ;
 
 "L desonorisation after non-continuants"
-%{L%}:д <=> [ :CnsVcdNonConts ]/[ %>: | :0 ] _ ;
+%{L%}:д <=> [ :CnsVcdNonConts ]/[ %>: | :0 | %  ] _ ;
 
 "N desonorisation after non-continuants"
-%{N%}:д <=> [ :CnsVcdNonConts ]/[ %>: | :0 ] _ ;
+%{N%}:д <=> [ :CnsVcdNonConts ]/[ %>: | :0 | %  ] _ ;
             except
                                   %{n%}: %>: _ %{I%}: .#. ;
 
