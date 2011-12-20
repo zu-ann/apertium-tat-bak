@@ -21,6 +21,9 @@
       <program name="hfst-proc $1">
         <file name="tt-ba.autogen.hfst"/>
       </program>
+      <program name="lt-proc -p">
+        <file name="tt-ba.autopgen.bin"/>
+      </program>
     </pipeline>
   </mode>
   
@@ -98,6 +101,9 @@
       </program>
       <program name="hfst-proc $1">
         <file name="ba-tt.autogen.hfst"/>
+      </program>
+      <program name="lt-proc -p">
+        <file name="ba-tt.autopgen.bin"/>
       </program>
     </pipeline>
   </mode>

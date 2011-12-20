@@ -22,11 +22,24 @@
   </section-def-attrs>
  
   <section-def-vars>
-    <def-var n="number"/>
+    <def-var n="a" v="~"/>
   </section-def-vars>  
 
   <section-rules>
     
+    <rule>
+      <pattern>
+        <pattern-item n="vse"/>
+      </pattern>
+      <action>
+        <out>
+          <var n="a"/>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
     <rule>
       <pattern>
         <pattern-item n="vse"/>

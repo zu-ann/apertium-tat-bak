@@ -247,7 +247,7 @@ LEXICON Conjunctions
 ә:ә CCLEX ; ! ""
 әмма:әмма CCLEX ; ! ""
 
-да:%~да CCLEX ; ! "" Dir/RL
+да:да CCLEX ; ! "" Dir/RL
 да:да CCLEX ; ! "" Dir/LR
 да:та CCLEX ; ! "" Dir/LR
 да:дә CCLEX ; ! "" Dir/LR
@@ -850,8 +850,7 @@ LEXICON Adjectives
 
 LEXICON Adverbs 
 
-мы:%~мы QSTLEX ; ! "" Dir/RL
-мы:мы QSTLEX ; ! "" Dir/LR
+мы:мы QSTLEX ; ! ""
 
 кайда:кайда ADVITGLEX ; ! ""
 хәзер:хәзер ADVLEX ; ! ""

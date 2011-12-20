@@ -4,6 +4,8 @@
 /apertium-tt-ba.ba-tt.t2x -text
 /apertium-tt-ba.ba.lexc -text
 /apertium-tt-ba.ba.twol -text
+/apertium-tt-ba.post-ba.dix -text
+/apertium-tt-ba.post-tt.dix -text
 /apertium-tt-ba.tt-ba.dix -text
 /apertium-tt-ba.tt-ba.t1x -text
 /apertium-tt-ba.tt-ba.t2x -text

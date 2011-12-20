@@ -21,6 +21,8 @@ all:
 	apertium-validate-dictionary apertium-tt-ba.tt-ba.dix 
 	lt-comp lr apertium-tt-ba.tt-ba.dix tt-ba.autobil.bin
 	lt-comp rl apertium-tt-ba.tt-ba.dix ba-tt.autobil.bin
+	lt-comp lr apertium-tt-ba.post-tt.dix ba-tt.autopgen.bin
+	lt-comp lr apertium-tt-ba.post-ba.dix tt-ba.autopgen.bin
 	apertium-validate-transfer apertium-tt-ba.tt-ba.t1x
 	apertium-preprocess-transfer apertium-tt-ba.tt-ba.t1x tt-ba.t1x.bin
 	apertium-validate-transfer apertium-tt-ba.tt-ba.t2x
