@@ -26,6 +26,31 @@
       </program>
     </pipeline>
   </mode>
+
+  <mode name="tt-ba-debug" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="tt-ba.automorf.hfst"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="tt-ba.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer">
+        <file name="apertium-tt-ba.tt-ba.t1x"/>
+        <file name="tt-ba.t1x.bin"/>
+        <file name="tt-ba.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -n">
+        <file name="apertium-tt-ba.tt-ba.t2x"/>
+        <file name="tt-ba.t2x.bin"/>
+      </program>
+      <program name="hfst-proc -d">
+        <file name="tt-ba.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+ 
   
   <mode name="tt-ba-morph" install="no">
     <pipeline>
@@ -104,6 +129,31 @@
       </program>
       <program name="lt-proc -p">
         <file name="ba-tt.autopgen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+  
+
+  <mode name="ba-tt-debug" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="ba-tt.automorf.hfst"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ba-tt.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="apertium-transfer">
+        <file name="apertium-tt-ba.ba-tt.t1x"/>
+        <file name="ba-tt.t1x.bin"/>
+        <file name="ba-tt.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -n">
+        <file name="apertium-tt-ba.ba-tt.t2x"/>
+        <file name="ba-tt.t2x.bin"/>
+      </program>
+      <program name="hfst-proc -d">
+        <file name="ba-tt.autogen.hfst"/>
       </program>
     </pipeline>
   </mode>

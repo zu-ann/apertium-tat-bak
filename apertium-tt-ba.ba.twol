@@ -4,7 +4,7 @@ Alphabet
  А Б В Г Ғ Д Ҙ Е Ё Ж З И Й К Ҡ Л М Н Ң О Ө П Р С Ҫ Т У Ү Ф Х Һ Ц Ч Ш Щ Ъ Ы Ь Э Ә Ю Я 
  а б в г ғ д ҙ е ё ж з и й к ҡ л м н ң о ө п р с ҫ т у ү ф х һ ц ч ш щ ъ ы ь э ә ю я
 
- %{A%}:а %{I%}:ы
+ %{A%}:а %{I%}:ы %{E%}:а
 
  %{L%}:л %{G%}:г %{N%}:н %{K%}:к
 
@@ -14,8 +14,13 @@ Alphabet
 
 Sets
 
+SurVow          =  А О Ә Е Э И Ө У Ү Ы Ю Я
+                а о ә е э и ө у ү ы ю я  ; 
+
+
 Vow          =  А О Ә Е Э И Ө У Ү Ы Ю Я
-                а о ә е э и ө у ү ы ю я ;
+                а о ә е э и ө у ү ы ю я 
+               %{E%} %{A%} %{I%} ;
 
 Cns          =  Б В Г Ғ Д Ҙ Ж З Й К Ҡ Л М Н Ң П Р С Ҫ Т Ф Х Һ Ц Ч Ш Щ Ъ Ь 
                 б в г ғ д ҙ ж з й к ҡ л м н ң п р с ҫ т ф х һ ц ч ш щ ъ ь ; 
@@ -60,12 +65,25 @@ BackCns          = Ҡ Ғ
 Rules 
 
 
+"{E} turns to й after a vowel"
+%{E%}:й <=> :SurVow %>: _ ;
+
 !!!! Vowel Harmony !!!!
 "A Vowel Harmony"
 %{A%}:ә <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
 
 "I Vowel Harmony"
 %{I%}:е <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
+    except
+         :SurVow %>: _ ;
+
+"E Vowel Harmony"
+%{E%}:ә <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
+    except
+         :SurVow %>: _ ;
+
+"Deletion of {I} after vowels"
+%{I%}:0 <=> [ :SurVow ]/[ :0 | %>: ] _ ;
 
 
 ! "Alternation in locative -DA"
@@ -156,3 +174,4 @@ Cx:Cy <=> :CnsVoiceless/[ %>: | %  ] _ ;
 "Voicing assimilation of front G"
 %{G%}:к <=> [ :FrontVow :Cns* [ :CnsVoiceless - :BackCns ] ]/[ %>: ] _ ;
 !                               [ :CnsVoiceless & :FrontCns ]/[ %>: ] _ ;
+

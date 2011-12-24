@@ -8,6 +8,7 @@ Multichar_Symbols
 %<np%>             ! Имя собственное
 %<adj%>            ! Прилагательное
 %<post%>           ! Послелог
+%<postadv%>        ! Посленаречие
 %<cnjcoo%>         ! Союз
 %<cnjadv%>         ! Союз
 
@@ -16,6 +17,7 @@ Multichar_Symbols
 
 %<pers%>           ! 
 %<itg%>            ! 
+%<neg%>            ! 
 
 %<comp%>           ! 
 
@@ -49,6 +51,9 @@ Multichar_Symbols
 %<loc%>            ! 
 %<abl%>            ! 
 
+%<pres%>           ! -{A}
+%<past%>           ! -{L}{A}
+
 %<ger1%>           ! -м{A}{K}
 %<ger2%>           ! -{I}п
 %<ger3%>           ! -{G}{A}с
@@ -70,6 +75,7 @@ Multichar_Symbols
 %{K%}              ! 
 %{I%}              ! 
 %{A%}              ! 
+%{E%}              ! 
 
 %{h%}              ! 
 %{n%}              ! 
@@ -84,6 +90,7 @@ LEXICON Root
 
 Conjunctions ; 
 Postpositions ; 
+Postadverbs ; 
 Pronouns ; 
 Numerals ; 
 Nouns ; 
@@ -149,7 +156,32 @@ LEXICON ALEX
 %<adj%>: # ; 
 %<adj%>%<comp%>:%>р%{A%}%{K%} # ; 
 
+LEXICON V-PERS-S1 
+
+%<p1%>%<sg%>:%>%{A%}м CLIT ;
+%<p2%>%<sg%>:%>%{h%}%{A%}м CLIT ;
+%<p3%>%<sg%>:%> CLIT ;
+%<p1%>%<pl%>:%>б%{A%}ҙ CLIT ;
+%<p2%>%<pl%>:%>%{h%}%{A%}г%{A%}ҙ CLIT ;
+%<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
+
+LEXICON V-PERS-S2
+
+%<p1%>%<sg%>:%>м CLIT ;
+%<p2%>%<sg%>:%>ң CLIT ;
+%<p3%>%<sg%>:%> CLIT ;
+%<p1%>%<pl%>:%>ҡ CLIT ;
+%<p2%>%<pl%>:%>г%{I%}ҙ CLIT ;
+%<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
+
+LEXICON V-FINITE-FORMS
+
+%<pres%>:%>%{E%} V-PERS-S1 ; 
+%<past%>:%>%{L%}%{I%} V-PERS-S2 ; 
+
 LEXICON V-COMMON-LEX
+
+V-FINITE-FORMS ; 
 
 %<ger1%>:%>м%{A%}%{K%} POSS ;
 %<ger2%>:%>%{I%}п POSS ;
@@ -159,10 +191,12 @@ LEXICON V-COMMON-LEX
 LEXICON V-IV-LEX
 
 %<v%>%<iv%>: V-COMMON-LEX ;
+%<v%>%<iv%>%<neg%>:%>м%{A%} V-COMMON-LEX ;
 
 LEXICON V-TV-LEX
 
 %<v%>%<tv%>: V-COMMON-LEX ;
+%<v%>%<tv%>%<neg%>:%>м%{A%} V-COMMON-LEX ;
 
 
 LEXICON PRNLEX-PERS
@@ -212,6 +246,11 @@ LEXICON PRNLEX-PERS
 LEXICON POSTLEX
 
 %<post%>: # ; 
+
+LEXICON POSTADVLEX
+
+%<postadv%>: # ; 
+
 
 LEXICON ADVITGLEX
 
@@ -271,6 +310,14 @@ LEXICON Postpositions
 ҡаршы:ҡаршы POSTLEX ; ! ""
 башҡа:башҡа POSTLEX ; ! ""
 аҫтында:аҫтында POSTLEX ; ! ""
+
+LEXICON Postadverbs
+
+ғына:%~ғына POSTADVLEX ; ! "" Dir/RL
+ғына:ғына POSTADVLEX ; ! "" Dir/LR
+ғына:генә POSTADVLEX ; ! "" Dir/LR
+ғына:ҡына POSTADVLEX ; ! "" Dir/LR
+ғына:кенә POSTADVLEX ; ! "" Dir/LR
 
 LEXICON Pronouns
 
@@ -766,6 +813,7 @@ LEXICON ProperNouns
 Башҡортостан:Башҡортостан NPTOPLEX ; ! ""
 Ҡаҙан:Ҡаҙан NPTOPLEX ; ! ""
 Пермь:Пермь NPTOPLEX ; ! ""
+Өфө:Өфө NPTOPLEX ; ! ""
 
 Әхмәт:Әхмәт NPANTMLEX ; ! ""
 Гөлнара:Гөлнара NPANTFLEX ; ! ""
@@ -964,10 +1012,18 @@ LEXICON Verbs
 юҡ:юҡ PREDLEX ; ! ""
 
 бул:бул V-IV-LEX ; ! ""
+тор:тор V-IV-LEX ; ! ""
 йәшә:йәшә V-IV-LEX ; ! ""
 ит:ит V-TV-LEX ; ! ""
 эс:эс V-TV-LEX ; ! ""
 күр:күр V-TV-LEX ; ! ""
+эҙлә:эҙлә V-TV-LEX ; ! ""
+йөрө:йөрө V-IV-LEX ; ! ""
+кит:кит V-IV-LEX ; ! ""
+кил:кил V-IV-LEX ; ! ""
+көл:көл V-IV-LEX ; ! ""
+һана:һана V-TV-LEX ; ! ""
+тап:тап V-TV-LEX ; ! ""
 
 LEXICON Punctuation
 

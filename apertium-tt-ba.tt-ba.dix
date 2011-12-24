@@ -8,6 +8,7 @@
     <sdef n="prn"      c="Местоимение"/>
     <sdef n="adv"      c="Наречие"/>
     <sdef n="post"     c="Послелог"/>
+    <sdef n="postadv"  c="Посленаречие"/>
     <sdef n="adj"      c="Прилагательное"/>
     <sdef n="cnjcoo"   c="Союз"/>
     <sdef n="cnjadv"   c="Союз"/>
@@ -58,6 +59,9 @@
     <e><p><l>каршы<s n="post"/></l><r>ҡаршы<s n="post"/></r></p></e>
     <e><p><l>башка<s n="post"/></l><r>башҡа<s n="post"/></r></p></e>
     <e><p><l>астында<s n="post"/></l><r>аҫтында<s n="post"/></r></p></e>
+
+    <!-- Раздел: -->
+    <e><p><l>гына<s n="postadv"/></l><r>ғына<s n="postadv"/></r></p></e>
 
     <!-- Раздел: -->
 
@@ -561,6 +565,7 @@
     <e><p><l>Башкортстан<s n="np"/><s n="top"/></l><r>Башҡортостан<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Казан<s n="np"/><s n="top"/></l><r>Ҡаҙан<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Пермь<s n="np"/><s n="top"/></l><r>Пермь<s n="np"/><s n="top"/></r></p></e>
+    <e><p><l>Уфа<s n="np"/><s n="top"/></l><r>Өфө<s n="np"/><s n="top"/></r></p></e>
 
     <e><p><l>Әхмәт<s n="np"/><s n="ant"/><s n="m"/></l><r>Әхмәт<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
     <e><p><l>Гөлнара<s n="np"/><s n="ant"/><s n="f"/></l><r>Гөлнара<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
@@ -759,11 +764,19 @@
     <e><p><l>юк<s n="pred"/></l><r>юҡ<s n="pred"/></r></p></e>
 
     <e><p><l>бул<s n="v"/><s n="iv"/></l><r>бул<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>тор<s n="v"/><s n="iv"/></l><r>тор<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>яшә<s n="v"/><s n="iv"/></l><r>йәшә<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>ит<s n="v"/><s n="tv"/></l><r>ит<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>ярат<s n="v"/><s n="tv"/></l><r>ярат<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>эч<s n="v"/><s n="tv"/></l><r>эс<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>күр<s n="v"/><s n="tv"/></l><r>күр<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>эзлә<s n="v"/><s n="tv"/></l><r>эҙлә<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>тап<s n="v"/><s n="tv"/></l><r>тап<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>йөр<s n="v"/><s n="iv"/></l><r>йөрө<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>кит<s n="v"/><s n="iv"/></l><r>кит<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>кил<s n="v"/><s n="iv"/></l><r>кил<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>көл<s n="v"/><s n="iv"/></l><r>көл<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>сана<s n="v"/><s n="tv"/></l><r>һана<s n="v"/><s n="tv"/></r></p></e>
 
 
     <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
