@@ -3,6 +3,7 @@
   <sdefs>
     <sdef n="n"        c="Существительное"/>
     <sdef n="v"        c="Глагол"/>
+    <sdef n="vaux"     c=""/>
     <sdef n="num"      c="Число"/>
     <sdef n="det"      c=""/>
     <sdef n="np"       c="Имя собственное"/>
@@ -753,6 +754,8 @@
     <e><p><l>ничек<s n="adv"/><s n="itg"/></l><r>нисек<s n="adv"/><s n="itg"/></r></p></e>
     <e><p><l>ни<b/>өчен<s n="adv"/></l><r>ни<b/>өсөн<s n="adv"/></r></p></e>
 
+    <e><p><l>түгел<s n="adv"/></l><r>түгел<s n="adv"/></r></p></e>
+
     <e><p><l>хәзер<s n="adv"/></l><r>хәҙер<s n="adv"/></r></p></e>
     <e><p><l>әле<s n="adv"/></l><r>әле<s n="adv"/></r></p></e>
     <e><p><l>иң<s n="adv"/></l><r>иң<s n="adv"/></r></p></e>
@@ -772,6 +775,8 @@
     <e><p><l>бар<s n="pred"/></l><r>бар<s n="pred"/></r></p></e>
     <e><p><l>юк<s n="pred"/></l><r>юҡ<s n="pred"/></r></p></e>
 
+    <e><p><l>иде<s n="vaux"/></l><r>ине<s n="vaux"/></r></p></e>
+
     <e><p><l>бул<s n="v"/><s n="iv"/></l><r>бул<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>тор<s n="v"/><s n="iv"/></l><r>тор<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>яшә<s n="v"/><s n="iv"/></l><r>йәшә<s n="v"/><s n="iv"/></r></p></e>
@@ -786,11 +791,17 @@
     <e><p><l>кил<s n="v"/><s n="iv"/></l><r>кил<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>көл<s n="v"/><s n="iv"/></l><r>көл<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>утыр<s n="v"/><s n="iv"/></l><r>ултыр<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>йокла<s n="v"/><s n="iv"/></l><r>йоҡла<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>кайт<s n="v"/><s n="iv"/></l><r>ҡайт<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>сана<s n="v"/><s n="tv"/></l><r>һана<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>кара<s n="v"/><s n="tv"/></l><r>ҡара<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>уйна<s n="v"/><s n="tv"/></l><r>уйна<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>бел<s n="v"/><s n="tv"/></l><r>бел<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>сора<s n="v"/><s n="tv"/></l><r>һора<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>бәс<s n="v"/><s n="tv"/></l><r>бәс<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>әйт<s n="v"/><s n="tv"/></l><r>әйт<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>тыңла<s n="v"/><s n="tv"/></l><r>тыңла<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>эшлә<s n="v"/><s n="tv"/></l><r>эшлә<s n="v"/><s n="tv"/></r></p></e>
 
 
     <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>

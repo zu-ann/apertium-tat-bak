@@ -8,6 +8,7 @@ Multichar_Symbols
 %<det%>            ! 
 %<np%>             ! Имя обственное
 %<v%>              ! Глагол
+%<vaux%>           ! 
 %<adj%>            ! Прилагательное
 %<post%>           ! Послелог
 %<postadv%>        ! Посленаречие
@@ -53,12 +54,16 @@ Multichar_Symbols
 %<abl%>            ! 
 
 %<pres%>           ! -{A}
-%<past%>           ! -{D}{I} 
+%<past%>           ! -{G}{A}н 
+%<fut%>            ! -{I}р
+%<ifi%>            ! -{D}{I} 
+%<imp%>            ! 
 
 %<ger1%>           ! -м{A}{K}
 %<ger2%>           ! -{I}п
 %<ger3%>           ! -{G}{A}ч
 %<ger4%>           ! -{G}{A}нч{I}
+%<ger5%>           ! -{G}{A}н
 
 %<sent%>           ! Sentence marker
 %<guio%>           ! Hyphen
@@ -171,8 +176,8 @@ LEXICON V-PERS-S1
 %<p1%>%<sg%>:%>%{A%}м CLIT ;
 %<p2%>%<sg%>:%>%{s%}%{A%}м CLIT ;
 %<p3%>%<sg%>:%> CLIT ;
-%<p1%>%<pl%>:%>б%{A%}з CLIT ;
-%<p2%>%<pl%>:%>%{s%}%{A%}г%{A%}з CLIT ;
+%<p1%>%<pl%>:%>б%{И%}з CLIT ;
+%<p2%>%<pl%>:%>%{s%}%{I%}г%{I%}з CLIT ;
 %<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
 
 LEXICON V-PERS-S2
@@ -184,10 +189,21 @@ LEXICON V-PERS-S2
 %<p2%>%<pl%>:%>г%{I%}з CLIT ;
 %<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
 
+LEXICON V-PERS-S3
+
+%<p1%>%<sg%>:%>м%{I%}н CLIT ;
+%<p2%>%<sg%>:%>%{s%}%{I%}ң CLIT ;
+%<p3%>%<sg%>:%> CLIT ;
+%<p1%>%<pl%>:%>б%{I%}з CLIT ;
+%<p2%>%<pl%>:%>%{h%}%{I%}г%{I%}ҙ CLIT ;
+%<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
+
 LEXICON V-FINITE-FORMS
 
 %<pres%>:%>%{A%} V-PERS-S1 ; 
-%<past%>:%>%{D%}%{I%} V-PERS-S2 ; 
+%<ifi%>:%>%{D%}%{I%} V-PERS-S2 ; 
+%<fut%>:%>%{I%}р V-PERS-S3 ; 
+%<past%>:%>%{G%}%{A%}н V-PERS-S3 ; 
 
 LEXICON V-COMMON-LEX
 
@@ -197,6 +213,10 @@ V-FINITE-FORMS ;
 %<ger2%>:%>%{I%}п POSS ; 
 %<ger3%>:%>%{G%}%{A%}ч POSS ; 
 %<ger4%>:%>%{G%}%{A%}нч%{I%} POSS ; 
+%<ger5%>:%>%{G%}%{A%}н POSS ;
+
+%<imp%>%<p2%>%<sg%>: # ;
+%<imp%>%<p2%>%<pl%>:%{I%}г%{I%}з # ;
 
 LEXICON V-IV-LEX
 
@@ -208,6 +228,9 @@ LEXICON V-TV-LEX
 %<v%>%<tv%>: V-COMMON-LEX ; 
 %<v%>%<tv%>%<neg%>:%>м%{A%} V-COMMON-LEX ; 
 
+LEXICON VAUX
+
+%<vaux%>: V-PERS-S2 ;
 
 LEXICON PRNLEX-PERS
 
@@ -272,7 +295,7 @@ LEXICON ADVITGLEX
 
 LEXICON ADVLEX
 
-%<adv%>: # ; 
+%<adv%>: CLIT ; 
 
 LEXICON CCLEX
 
@@ -1010,6 +1033,8 @@ LEXICON Adverbs
 ничек:ничек ADVITGLEX ; ! ""
 ни% өчен:ни% өчен ADVITGLEX ; ! ""
 
+түгел:түгел ADVLEX ; ! ""
+
 хәзер:хәзер ADVLEX ; ! ""
 әле:әле ADVLEX ; ! ""
 иң:иң ADVLEX ; ! ""
@@ -1028,6 +1053,8 @@ LEXICON Verbs
 бар:бар PREDLEX ; ! ""
 юк:юк PREDLEX ; ! ""
 
+иде:иде VAUX ; ! ""
+
 бул:бул V-IV-LEX ; ! ""
 тор:тор V-IV-LEX ; ! ""
 яшә:яшә V-IV-LEX ; ! ""
@@ -1041,11 +1068,17 @@ LEXICON Verbs
 кил:кил V-IV-LEX ; ! ""
 көл:көл V-IV-LEX ; ! ""
 утыр:утыр V-IV-LEX ; ! ""
+йокла:йокла V-IV-LEX ; ! ""
+кайт:кайт V-IV-LEX ; ! ""
 сана:сана V-TV-LEX ; ! ""
 кара:кара V-TV-LEX ; ! ""
 бел:бел V-TV-LEX ; ! ""
 уйна:уйна V-TV-LEX ; ! ""
 сора:сора V-TV-LEX ; ! ""
+бәс:бәс V-TV-LEX ; ! ""
+әйт:әйт V-TV-LEX ; ! ""
+тыңла:тыңла V-TV-LEX ; ! ""
+эшлә:эшлә V-TV-LEX ; ! ""
 
 LEXICON Punctuation
 
