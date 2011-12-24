@@ -4,6 +4,7 @@
     <sdef n="n"        c="Существительное"/>
     <sdef n="v"        c="Глагол"/>
     <sdef n="num"      c="Число"/>
+    <sdef n="det"      c=""/>
     <sdef n="np"       c="Имя собственное"/>
     <sdef n="prn"      c="Местоимение"/>
     <sdef n="adv"      c="Наречие"/>
@@ -17,6 +18,7 @@
 
     <sdef n="pers"     c="Personal"/>
     <sdef n="itg"      c="Interrogative"/>
+    <sdef n="dem"      c=""/>
 
     <sdef n="top"      c="Toponym"/>
     <sdef n="ant"      c="Anthroponym"/>
@@ -37,7 +39,7 @@
   </sdefs>
   <section id="main" type="standard">
 
-    <!-- Раздел: Союзы -->
+    <!-- Раздел: -->
     <e><p><l>мы<s n="qst"/></l><r>мы<s n="qst"/></r></p></e>
 
     <!-- Раздел: Союзы -->
@@ -83,6 +85,13 @@
     <e><p><l>без<s n="prn"/><s n="pers"/></l><r>беҙ<s n="prn"/><s n="pers"/></r></p></e>
     <e><p><l>сез<s n="prn"/><s n="pers"/></l><r>һеҙ<s n="prn"/><s n="pers"/></r></p></e>
     <e><p><l>алар<s n="prn"/><s n="pers"/></l><r>улар<s n="prn"/><s n="pers"/></r></p></e>
+
+    <!-- Раздел: -->
+    <e><p><l>бу<s n="det"/><s n="dem"/></l><r>был<s n="det"/><s n="dem"/></r></p></e>
+    <e r="RL"><p><l>бу<s n="det"/><s n="dem"/></l><r>ошо<s n="det"/><s n="dem"/></r></p></e>
+    <e><p><l>шул<s n="det"/><s n="dem"/></l><r>шул<s n="det"/><s n="dem"/></r></p></e>
+    <e r="RL"><p><l>шул<s n="det"/><s n="dem"/></l><r>теге<s n="det"/><s n="dem"/></r></p></e>
+
 
     <!-- Раздел: Существительные -->
     <e><p><l>кеше<s n="n"/></l><r>кеше<s n="n"/></r></p></e>
@@ -776,7 +785,12 @@
     <e><p><l>кит<s n="v"/><s n="iv"/></l><r>кит<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>кил<s n="v"/><s n="iv"/></l><r>кил<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>көл<s n="v"/><s n="iv"/></l><r>көл<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>утыр<s n="v"/><s n="iv"/></l><r>ултыр<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>сана<s n="v"/><s n="tv"/></l><r>һана<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>кара<s n="v"/><s n="tv"/></l><r>ҡара<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>уйна<s n="v"/><s n="tv"/></l><r>уйна<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>бел<s n="v"/><s n="tv"/></l><r>бел<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>сора<s n="v"/><s n="tv"/></l><r>һора<s n="v"/><s n="tv"/></r></p></e>
 
 
     <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>

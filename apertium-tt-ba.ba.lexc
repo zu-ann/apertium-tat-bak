@@ -3,6 +3,7 @@ Multichar_Symbols
 %<n%>              ! Имя существительное 
 %<prn%>            ! Местоимение
 %<adv%>            ! Наречие
+%<det%>            ! 
 %<num%>            ! Число
 %<v%>              ! Глагол
 %<np%>             ! Имя собственное
@@ -17,6 +18,7 @@ Multichar_Symbols
 
 %<pers%>           ! 
 %<itg%>            ! 
+%<dem%>            ! 
 %<neg%>            ! 
 
 %<comp%>           ! 
@@ -92,6 +94,7 @@ Conjunctions ;
 Postpositions ; 
 Postadverbs ; 
 Pronouns ; 
+Determiners ; 
 Numerals ; 
 Nouns ; 
 ProperNouns ; 
@@ -162,7 +165,7 @@ LEXICON V-PERS-S1
 %<p2%>%<sg%>:%>%{h%}%{A%}м CLIT ;
 %<p3%>%<sg%>:%> CLIT ;
 %<p1%>%<pl%>:%>б%{A%}ҙ CLIT ;
-%<p2%>%<pl%>:%>%{h%}%{A%}г%{A%}ҙ CLIT ;
+%<p2%>%<pl%>:%>%{h%}%{I%}г%{I%}ҙ CLIT ;
 %<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
 
 LEXICON V-PERS-S2
@@ -243,6 +246,10 @@ LEXICON PRNLEX-PERS
 улар%<prn%>%<pers%>%<p3%>%<pl%>%<loc%>:уларҙа # ; 
 улар%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:уларҙан # ; 
 
+LEXICON DETDEMLEX
+
+%<det%>%<dem%>: # ; 
+
 LEXICON POSTLEX
 
 %<post%>: # ; 
@@ -250,7 +257,6 @@ LEXICON POSTLEX
 LEXICON POSTADVLEX
 
 %<postadv%>: # ; 
-
 
 LEXICON ADVITGLEX
 
@@ -267,7 +273,6 @@ LEXICON CCLEX
 LEXICON CALEX
 
 %<cnjadv%>: # ; 
-
 
 LEXICON PREDLEX
 
@@ -322,6 +327,13 @@ LEXICON Postadverbs
 LEXICON Pronouns
 
 PRNLEX-PERS ; 
+
+LEXICON Determiners 
+
+был:был DETDEMLEX ; ! ""
+ошо:ошо DETDEMLEX ; ! ""
+шул:шул DETDEMLEX ; ! ""
+теге:теге DETDEMLEX ; ! ""
 
 LEXICON Numerals
 
@@ -1024,6 +1036,11 @@ LEXICON Verbs
 көл:көл V-IV-LEX ; ! ""
 һана:һана V-TV-LEX ; ! ""
 тап:тап V-TV-LEX ; ! ""
+ҡара:ҡара V-TV-LEX ; ! ""
+бел:бел V-TV-LEX ; ! ""
+уйна:уйна V-TV-LEX ; ! ""
+ултыр:ултыр V-IV-LEX ; ! ""
+һора:һора V-TV-LEX ; ! ""
 
 LEXICON Punctuation
 
