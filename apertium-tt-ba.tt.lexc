@@ -942,7 +942,6 @@ LEXICON Adjectives
 кирәкле:кирәкле ALEX ; ! ""
 шәфкатьле:шәфкатьле ALEX ; ! ""
 рәхимле:рәхимле ALEX ; ! ""
-яхшы:яхшы ALEX ; ! ""
 караңгы:караңгы ALEX ; ! ""
 соры:соры ALEX ; ! ""
 төп:төп ALEX ; ! ""
@@ -1022,6 +1021,7 @@ LEXICON Adjectives
 шәп:шәп ALEX ; ! ""
 
 шат:шат ALEX ; ! ""
+әйбәт:әйбәт ALEX ; ! ""
 
 
 
@@ -1082,6 +1082,7 @@ LEXICON Verbs
 тыңла:тыңла V-TV-LEX ; ! ""
 эшлә:эшлә V-TV-LEX ; ! ""
 ишет:ишет V-TV-LEX ; ! ""
+ал:ал V-TV-LEX ; ! ""
 
 LEXICON Punctuation
 

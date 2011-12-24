@@ -1024,6 +1024,9 @@ LEXICON Adjectives
 шәп:шәп ALEX ; ! ""
 шат:шат ALEX ; ! ""
 
+әйбәт:әйбәт ALEX ; ! ""
+
+
 
 LEXICON Adverbs 
 
@@ -1081,6 +1084,7 @@ LEXICON Verbs
 тыңла:тыңла V-TV-LEX ; ! ""
 эшлә:эшлә V-TV-LEX ; ! ""
 ишет:ишет V-TV-LEX ; ! ""
+ал:ал V-TV-LEX ; ! ""
 
 LEXICON Punctuation
 
