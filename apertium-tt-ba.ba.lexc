@@ -9,6 +9,7 @@ Multichar_Symbols
 %<adj%>            ! Прилагательное
 %<post%>           ! Послелог
 %<cnjcoo%>         ! Союз
+%<cnjadv%>         ! Союз
 
 %<pred%>           ! 
 %<qst%>            ! 
@@ -123,6 +124,10 @@ LEXICON NLEX
 %<n%>: POSS ; 
 %<n%>%<pl%>:%>%{L%}%{A%}р POSS ; 
 
+LEXICON DIGITLEX
+
+%<num%>: # ; 
+
 LEXICON NUMLEX
 
 %<num%>: POSS ; 
@@ -220,6 +225,11 @@ LEXICON CCLEX
 
 %<cnjcoo%>: # ; 
 
+LEXICON CALEX
+
+%<cnjadv%>: # ; 
+
+
 LEXICON PREDLEX
 
 %<pred%>: CLIT ; 
@@ -248,6 +258,8 @@ LEXICON Conjunctions
 да:лә CCLEX ; ! "" Dir/LR
 
 
+шуға% күрә:шуға% күрә CALEX ; ! ""
+
 LEXICON Postpositions 
 
 менән:менән POSTLEX ; ! ""
@@ -258,6 +270,7 @@ LEXICON Postpositions
 кәрәк:кәрәк POSTLEX ; ! ""
 ҡаршы:ҡаршы POSTLEX ; ! ""
 башҡа:башҡа POSTLEX ; ! ""
+аҫтында:аҫтында POSTLEX ; ! ""
 
 LEXICON Pronouns
 
@@ -270,6 +283,7 @@ LEXICON Numerals
 өс:өс NUMLEX ; ! ""
 дүрт:дүрт NUMLEX ; ! ""
 биш:биш NUMLEX ; ! ""
+алты:алты NUMLEX ; ! ""
 ун:ун NUMLEX ; ! ""
 йөҙ:йөҙ NUMLEX ; ! ""
 мең:мең NUMLEX ; ! ""
@@ -681,7 +695,61 @@ LEXICON Nouns
 көрәш:көрәш NLEX ; ! ""
 муйын:муйын NLEX ; ! ""
 тиҫтә:тиҫтә NLEX ; ! ""
+халыҡ% төркөмө:халыҡ% төркөмө NLEX ; ! ""
 
+ата-әсә:ата-әсә NLEX ; ! ""
+ҡағиҙә:ҡағиҙә NLEX ; ! ""
+секунд:секунд NLEX ; ! ""
+програм:програм NLEX ; ! ""
+программа:программа NLEX ; ! ""
+фамилия:фамилия NLEX ; ! ""
+тауыш:тауыш NLEX ; ! ""
+роман:роман NLEX ; ! ""
+сәй:сәй NLEX ; ! ""
+роль:роль NLEX ; ! ""
+аң:аң NLEX ; ! ""
+иҫ:иҫ NLEX ; ! ""
+һуш:һуш NLEX ; ! ""
+команда:команда NLEX ; ! ""
+рәхмәт:рәхмәт NLEX ; ! ""
+кибет:кибет NLEX ; ! ""
+магазин:магазин NLEX ; ! ""
+яға:яға NLEX ; ! ""
+полковник:полковник NLEX ; ! ""
+полк башлығы:полк башлығы NLEX ; ! ""
+табиғәт:табиғәт NLEX ; ! ""
+еҫ:еҫ NLEX ; ! ""
+шағир:шағир NLEX ; ! ""
+район:район NLEX ; ! ""
+бит:бит NLEX ; ! ""
+япраҡ:япраҡ NLEX ; ! ""
+быяла:быяла NLEX ; ! ""
+һан:һан NLEX ; ! ""
+ҡат:ҡат NLEX ; ! ""
+тип:тип NLEX ; ! ""
+азатлыҡ:азатлыҡ NLEX ; ! ""
+ирек:ирек NLEX ; ! ""
+иреклек:иреклек NLEX ; ! ""
+хөрриәт:хөрриәт NLEX ; ! ""
+итек:итек NLEX ; ! ""
+суд:суд NLEX ; ! ""
+мәхкәмә:мәхкәмә NLEX ; ! ""
+сығыу:сығыу NLEX ; ! ""
+бабай:бабай NLEX ; ! ""
+ҡартатай:ҡартатай NLEX ; ! ""
+олатай:олатай NLEX ; ! ""
+маңлай:маңлай NLEX ; ! ""
+кресло:кресло NLEX ; ! ""
+ҡыҙ:ҡыҙ NLEX ; ! ""
+холоҡ:холоҡ NLEX ; ! ""
+характер:характер NLEX ; ! ""
+ҡылыҡ:ҡылыҡ NLEX ; ! ""
+тәжрибә:тәжрибә NLEX ; ! ""
+майҙан:майҙан NLEX ; ! ""
+баҡса:баҡса NLEX ; ! ""
+күҙ% йәше:күҙ% йәше NLEX ; ! ""
+
+өҫтәл:өҫтәл NLEX ; ! ""
 
 !краб:краб NLEX ; ! ""
 !флаг:флаг NLEX ; ! ""
@@ -848,14 +916,46 @@ LEXICON Adjectives
 әҙер:әҙер ALEX ; ! ""
 өлкән:өлкән ALEX ; ! ""
 
+ышаныслы:ышаныслы ALEX ; ! ""
+билдәһеҙ:билдәһеҙ ALEX ; ! ""
+йоҡа:йоҡа ALEX ; ! ""
+нәҙек:нәҙек ALEX ; ! ""
+нәфис:нәфис ALEX ; ! ""
+нескә:нескә ALEX ; ! ""
+эске:эске ALEX ; ! ""
+тоғро:тоғро ALEX ; ! ""
+дөрөҫ:дөрөҫ ALEX ; ! ""
+бик% яҡшы:бик% яҡшы ALEX ; ! ""
+гүзәл:гүзәл ALEX ; ! ""
+американ:американ ALEX ; ! ""
+кемдеке:кемдеке ALEX ; ! ""
+кемдең:кемдең ALEX ; ! ""
+етди:етди ALEX ; ! ""
+тиҙ:тиҙ ALEX ; ! ""
+шәп:шәп ALEX ; ! ""
+шат:шат ALEX ; ! ""
+
+
 LEXICON Adverbs 
 
 ҡайҙа:ҡайҙа ADVITGLEX ; ! ""
+ҡая:ҡая ADVITGLEX ; ! ""
+ҡасан:ҡасан ADVITGLEX ; ! ""
+нисек:нисек ADVITGLEX ; ! ""
+ни% өсөн:ни% өсөн ADVITGLEX ; ! ""
+
 хәҙер:хәҙер ADVLEX ; ! ""
+кисә:кисә ADVLEX ; ! ""
+әлегә:әлегә ADVLEX ; ! ""
+әкрен:әкрен ADVLEX ; ! ""
+тағын:тағын ADVLEX ; ! ""
+бөгөн:бөгөн ADVLEX ; ! ""
 әле:әле ADVLEX ; ! ""
 иң:иң ADVLEX ; ! ""
 бик:бик ADVLEX ; ! ""
 тик:тик ADVLEX ; ! ""
+аҫҡа:аҫҡа ADVLEX ; ! ""
+һәр% ваҡыт:һәр% ваҡыт ADVLEX ; ! ""
 
 
 LEXICON Verbs 
@@ -867,6 +967,7 @@ LEXICON Verbs
 йәшә:йәшә V-IV-LEX ; ! ""
 ит:ит V-TV-LEX ; ! ""
 эс:эс V-TV-LEX ; ! ""
+күр:күр V-TV-LEX ; ! ""
 
 LEXICON Punctuation
 
@@ -892,4 +993,4 @@ LEXICON Punctuation
 %)%<rpar%>:%) # ;
 \%<sent%>:\ # ;
 /%<sent%>:/ # ;
-
+<(%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9)+>  DIGITLEX ; ! Use/Circ

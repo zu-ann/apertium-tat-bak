@@ -29,7 +29,7 @@
   
   <mode name="tt-ba-morph" install="no">
     <pipeline>
-      <program name="hfst-proc">
+      <program name="hfst-proc -w">
         <file name="tt-ba.automorf.hfst"/>
       </program>
     </pipeline>
@@ -110,7 +110,7 @@
   
   <mode name="ba-tt-morph" install="no">
     <pipeline>
-      <program name="hfst-proc">
+      <program name="hfst-proc -w">
         <file name="ba-tt.automorf.hfst"/>
       </program>
     </pipeline>

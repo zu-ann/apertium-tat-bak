@@ -12,6 +12,7 @@ Multichar_Symbols
 %<pred%>           ! 
 %<qst%>            ! 
 %<cnjcoo%>         ! Союз
+%<cnjadv%>         ! Союз
 
 %<pers%>           ! 
 %<itg%>            ! 
@@ -128,6 +129,11 @@ LEXICON NLEX
 %<n%>: POSS ; 
 %<n%>%<pl%>:%>%{L%}%{A%}р POSS ; 
 
+LEXICON DIGITLEX
+
+%<num%>: # ; 
+
+
 LEXICON NUMLEX
 
 %<num%>: POSS ; 
@@ -227,6 +233,11 @@ LEXICON CCLEX
 
 %<cnjcoo%>: # ; 
 
+LEXICON CALEX
+
+%<cnjadv%>: # ; 
+
+
 LEXICON PREDLEX
 
 %<pred%>: CLIT ; 
@@ -253,6 +264,8 @@ LEXICON Conjunctions
 да:дә CCLEX ; ! "" Dir/LR
 да:тә CCLEX ; ! "" Dir/LR
 
+шуңа% күрә:шуңа% күрә CALEX ; ! ""
+
 LEXICON Postpositions 
 
 белән:белән POSTLEX ; ! ""
@@ -263,6 +276,7 @@ LEXICON Postpositions
 кирәк:кирәк POSTLEX ; ! ""
 каршы:каршы POSTLEX ; ! ""
 башка:башка POSTLEX ; ! ""
+астында:астында POSTLEX ; ! "" FIXME: Check
 
 LEXICON Pronouns
 
@@ -275,6 +289,7 @@ LEXICON Numerals
 өч:өч NUMLEX ; ! ""
 дүрт:дүрт NUMLEX ; ! ""
 биш:биш NUMLEX ; ! ""
+алты:алты NUMLEX ; ! ""
 ун:ун NUMLEX ; ! ""
 йөз:йөз NUMLEX ; ! ""
 мең:мең NUMLEX ; ! ""
@@ -291,6 +306,7 @@ LEXICON Nouns
 гамәл:гамәл NLEX ; ! "" 
 бар:бар NLEX ; ! "" 
 күз:күз NLEX ; ! "" 
+күз% яше:күз% яше NLEX ; ! "" 
 көн:көн NLEX ; ! "" 
 гомер:гомер NLEX ; ! "" 
 тормыш:тормыш NLEX ; ! "" 
@@ -688,6 +704,61 @@ LEXICON Nouns
 муен:муен NLEX ; ! ""
 дистә:дистә NLEX ; ! ""
 
+халык% төркеме:халык% төркеме NLEX ; ! ""
+ата-ана:ата-ана NLEX ; ! ""
+кагыйдә:кагыйдә NLEX ; ! ""
+секунд:секунд NLEX ; ! ""
+програм:програм NLEX ; ! ""
+программа:программа NLEX ; ! ""
+фамилия:фамилия NLEX ; ! ""
+тавыш:тавыш NLEX ; ! ""
+роман:роман NLEX ; ! ""
+чәй:чәй NLEX ; ! ""
+роль:роль NLEX ; ! ""
+аң:аң NLEX ; ! ""
+ис:ис NLEX ; ! ""
+һуш:һуш NLEX ; ! ""
+команда:команда NLEX ; ! ""
+рәхмәт:рәхмәт NLEX ; ! ""
+кибет:кибет NLEX ; ! ""
+магазин:магазин NLEX ; ! ""
+яка:яка NLEX ; ! ""
+полковник:полковник NLEX ; ! ""
+полк% башлыгы:полк% башлыгы NLEX ; ! ""
+табигать:табигать NLEX ; ! ""
+ис:ис NLEX ; ! ""
+шагыйрь:шагыйрь NLEX ; ! ""
+район:район NLEX ; ! ""
+бит:бит NLEX ; ! ""
+яфрак:яфрак NLEX ; ! ""
+пыяла:пыяла NLEX ; ! ""
+сан:сан NLEX ; ! ""
+кат:кат NLEX ; ! ""
+тип:тип NLEX ; ! ""
+азатлык:азатлык NLEX ; ! ""
+ирек:ирек NLEX ; ! ""
+иреклек:иреклек NLEX ; ! ""
+хөррият:хөррият NLEX ; ! ""
+итек:итек NLEX ; ! ""
+суд:суд NLEX ; ! ""
+мәхкәмә:мәхкәмә NLEX ; ! ""
+чыгу:чыгу NLEX ; ! ""
+бабай:бабай NLEX ; ! ""
+карт% әти:карт% әти NLEX ; ! ""
+дәү% әти:дәү% әти NLEX ; ! ""
+маңгай:маңгай NLEX ; ! ""
+кәнәфи:кәнәфи NLEX ; ! ""
+кресло:кресло NLEX ; ! ""
+кыз:кыз NLEX ; ! ""
+холык:холык NLEX ; ! ""
+характер:характер NLEX ; ! ""
+кылык:кылык NLEX ; ! ""
+тәҗрибә:тәҗрибә NLEX ; ! ""
+мәйдан:мәйдан NLEX ; ! ""
+бакча:бакча NLEX ; ! ""
+өстәл:өстәл NLEX ; ! ""
+
+
 
 LEXICON ProperNouns
 
@@ -847,17 +918,50 @@ LEXICON Adjectives
 мөһим:мөһим ALEX ; ! ""
 тимер:тимер ALEX ; ! ""
 
+ышанычлы:ышанычлы ALEX ; ! ""
+билгесез:билгесез ALEX ; ! ""
+юка:юка ALEX ; ! ""
+нәзек:нәзек ALEX ; ! ""
+нәфис:нәфис ALEX ; ! ""
+нечкә:нечкә ALEX ; ! ""
+эчке:эчке ALEX ; ! ""
+тогры:тогры ALEX ; ! ""
+дөрес:дөрес ALEX ; ! ""
+бик% яхшы:бик% яхшы ALEX ; ! ""
+гүзәл:гүзәл ALEX ; ! ""
+американ:американ ALEX ; ! ""
+кемнеке:кемнеке ALEX ; ! ""
+кемнең:кемнең ALEX ; ! ""
+җитди:җитди ALEX ; ! ""
+тиз:тиз ALEX ; ! ""
+шәп:шәп ALEX ; ! ""
+
+шат:шат ALEX ; ! ""
+
+
 
 LEXICON Adverbs 
 
 мы:мы QSTLEX ; ! ""
 
 кайда:кайда ADVITGLEX ; ! ""
+кая:кая ADVITGLEX ; ! ""
+кайчан:кайчан ADVITGLEX ; ! ""
+ничек:ничек ADVITGLEX ; ! ""
+ни% өчен:ни% өчен ADVITGLEX ; ! ""
+
 хәзер:хәзер ADVLEX ; ! ""
 әле:әле ADVLEX ; ! ""
 иң:иң ADVLEX ; ! ""
 бик:бик ADVLEX ; ! ""
 тик:тик ADVLEX ; ! ""
+аска:аска ADVLEX ; ! ""
+бүген:бүген ADVLEX ; ! ""
+әкрен:әкрен ADVLEX ; ! ""
+әлегә:әлегә ADVLEX ; ! ""
+кичә:кичә ADVLEX ; ! ""
+тагын:тагын ADVLEX ; ! ""
+һәрвакыт:һәрвакыт ADVLEX ; ! ""
 
 LEXICON Verbs
 
@@ -868,6 +972,7 @@ LEXICON Verbs
 яшә:яшә V-IV-LEX ; ! ""
 ит:ит V-TV-LEX ; ! ""
 эч:эч V-TV-LEX ; ! ""
+күр:күр V-TV-LEX ; ! ""
 
 LEXICON Punctuation
 
@@ -893,4 +998,6 @@ LEXICON Punctuation
 %)%<rpar%>:%) # ;
 \%<sent%>:\ # ;
 /%<sent%>:/ # ;
+
+<(%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9)+>  DIGITLEX ; ! Use/Circ
 

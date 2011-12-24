@@ -1224,3 +1224,100 @@
 749	надеяться	verb	өметлән-, өметләнергә			өмөтлән-, өмөтләнергә		
 749	надеяться	verb	ышан-, ышанырга			ышан-, ышанырға		
 750	толпа	noun	халык төркеме			халыҡ төркөмө		
+751	московский	adj	Мәскәү		Mäskäw		Мәскәү	Mäskäw	
+752	родитель	noun	ата-ана		ata-ana		ата-әсә	ata-äsä	
+753	правило	noun	кагыйдә		qağidä		ҡағиҙә	qağiđä	
+754	слать	verb	җибәр-, җибәрергә		cibär-, cibärergä		ебәр-, ебәрергә	yebär-, yebärergä	äđṡ
+755	секунда	noun	секунд		sekund		секунд	sekund	
+756	придтись	verb	туры кил-, туры килергә		turı kil-, turı kilergä		тура кил-, тура килергә	tura kil-, tura kilergä	
+756	придтись	verb	бул-, булырга		bul-, bulırğa		бул-, булырға	bul-, bulırğa	
+756	придтись	verb	яр-, ярарга		yar-, yararğa		яр-, ярарға	yar-, yararğa	
+757	вздохнуть	verb	тын ал-, тын алырга		tın al-, tın alırğa		тын ал-, тын алырға	tın al-, tın alırğa	
+758	уверенный	adj	ышанычлы		ışanıçlı		ышаныслы	ışanıslı	
+759	неизвестный	adj	билгесез		bilgesez		билдәһеҙ	bildäheđ	
+760	программа	noun	програм		program		програм	program	
+760	программа	noun	программа		programma		программа	programma	
+761	фамилия	noun	фамилия		familiä		фамилия	familia	
+762	звук	noun	тавыш		tawış		тауыш	tawış	
+763	роман	noun	роман		roman		роман	roman	
+764	много	card	күп		küp		күп	küp	
+765	неожиданно	нареч.	көтмәгәндә		kötmägändä		көтмәгәндә	kötmägändä	
+765	неожиданно	нареч.	капыл		qapıl		ҡапыл	qapıl	
+766	вон	нареч.	тышка		tışqa		тышҡа	tışqa	
+766	вон	нареч.	читкә		çitkä		ситкә	sitkä	
+767	тонкий	adj	юка		yuqa		йоҡа	yoqa	
+767	тонкий	adj	нәзек		näzek		нәҙек	näđek	
+767	тонкий	adj	нәфис		näfis		нәфис	näfis	
+767	тонкий	adj	нечкә		neçkä		нескә	neskä	
+768	чай	noun	чәй		çäy 		сәй	säy 	
+769	внутренний	adj	эчке		eçke		эске	eske	
+770	роль	noun	роль		rol'		роль	rol'	
+771	сознание	noun	аң		añ 		аң	añ 	
+771	сознание	noun	ис		is		иҫ	iṡ	
+771	сознание	noun	һуш		huş		һуш	huş	
+772	верный	adj	тогры		toğrı		тоғро	toğro	
+772	верный	adj	дөрес		döres		дөрөҫ	döröṡ	
+773	команда	noun	команда		komanda		команда	komanda	
+774	спасибо	noun	рәхмәт		räxmät		рәхмәт	räxmät	
+775	прекрасный	adj	бик яхшы		bik yaxşı		бик яҡшы	bik yaqşı	
+775	прекрасный	adj	гүзәл		güzäl		гүзәл	güzäl	
+776	петь	verb	җырла-, җырларга		cırla-, cırlarğa		йырла-, йырларға	yırla-, yırlarğa	
+777	магазин	noun	кибет		kibet		кибет	kibet	
+777	магазин	noun	магазин		mağazin		магазин	mağazin	
+778	впервые	нареч.	тәү башлап		täw başlap		тәү башлап	täw başlap	
+778	впервые	нареч.	беренче тапкыр		berençe tapqır		беренсе тапҡыр	berense tapqır	
+778	впервые	нареч.	беренче мәртәбә		berençe märtäbä		беренсе мәртәбә	berense märtäbä	
+779	американский	adj	американ		amerikan		американ	amerikan	
+780	ворот	noun	яка		yaqa		яға	yağa	
+781	простить	verb	гафу ит-, гафу итәргә		ğafu it-, ğafu itärgä		ғәфү ит-, ғәфү итергә	ğäfü it-, ğäfü itergä	
+781	простить	verb	кичер-, кичерергә		kiçer-, kiçerergä		кисер-, кисерергә	kiser-, kiserergä	
+782	полковник	noun	полковник		polkovnik		полковник	polkovnik	
+782	полковник	noun	полк башлыгы		polk başlığı		полк башлығы	polk başlığı	
+783	природа	noun	табигать		tabiğät		табиғәт	tabiğät	
+784	сильно	нареч.	көчле		köçle		көслө	köslö	
+784	сильно	нареч.	куәтле		quätle		ҡеүәтле	qewätle	
+785	запах	noun	ис		is		еҫ	yeṡ	
+786	поэт	noun	шагыйрь		şağir		шағир	şağir	
+787	район	noun	район		rayon		район	rayon	
+788	лист	noun	бит		bit 		бит	bit 	
+788	лист	noun	яфрак		yafraq		япраҡ	yapraq	
+789	перестать	verb	тукта-, туктарга		tuqta-, tuqtarğa		туҡта-, туҡтарға	tuqta-, tuqtarğa	
+789	перестать	verb	ташла-, ташларга		taşla-, taşlarğa		ташла-, ташларға	taşla-, taşlarğa	
+790	стекло	noun	пыяла		pıyala		быяла	bıyala	
+791	выше	нареч.	биегрәк		biegräk		бейегерәк	beyegeräk	
+791	выше	нареч.	югарырак		yuğarıraq		юғарыраҡ	yuğarıraq	
+792	количество	noun	сан		san		һан	han	
+793	этаж	noun	кат		qat		ҡат	qat	
+794	тип	noun	тип		tip		тип	tip	
+795	пожаловать	verb	бүләк ит-, бүләк итәргә		büläk it-, büläk itärgä		бүләк ит-, бүләк итергә	büläk it-, büläk itergä	
+795	пожаловать	verb	кил-, килергә		kil-, kilergä		кил-, килергә	kil-, kilergä	
+796	свобода	noun	азатлык		azatlıq		азатлыҡ	azatlıq	
+796	свобода	noun	ирек		irek		ирек	irek	
+796	свобода	noun	иреклек		ireklek		иреклек	ireklek	
+796	свобода	noun	хөррият		xörriät		хөрриәт	xörriät	
+797	сапог	noun	итек		itek		итек	itek	
+798	суд	noun	суд		sud		суд	sud	
+798	суд	noun	мәхкәмә		mäxkämä		мәхкәмә	mäxkämä	
+799	чей	adjpron	кемнеке		kemneke		кемдеке	kemdeke	
+799	чей	adjpron	кемнең		kemneñ 		кемдең	kemdeñ 	
+800	выход	noun	чыгу		çığu		сығыу	sığıw	
+801	дед	noun	бабай		babay		бабай	babay	
+801	дед	noun	карт әти		qart äti		ҡартатай	qartatay	
+801	дед	noun	дәү әти		däw äti		олатай	olatay	
+802	лоб	noun	маңгай		mañğay		маңлай	mañlay	
+803	кресло	noun	кәнәфи		känäfi		кресло	kreslo	
+803	кресло	noun	кресло		kreslo		кресло	kreslo	
+804	дочь	noun	кыз		qız		ҡыҙ	qıđ	
+805	серьезный	adj	җитди		citdi		етди	yetdi	
+806	ожидать	verb	өмет ит-, өмет итәргә		ömet it-, ömet itärgä		өмөт ит-, өмөт итергә	ömöt it-, ömöt itergä	
+806	ожидать	verb	өметлән-, өметләнергә		ömetlän-, ömetlänergä		өмөтлән-, өмөтләнергә	ömötlän-, ömötlänergä	
+806	ожидать	verb	ышан-, ышанырга		ışan-, ışanırğa		ышан-, ышанырға	ışan-, ışanırğa	
+807	характер	noun	холык		xolıq		холоҡ	xoloq	
+807	характер	noun	характер		xarakter		характер	xarakter	
+807	характер	noun	кылык		qılıq		ҡылыҡ	qılıq	
+808	опыт	noun	тәҗрибә		täcribä		тәжрибә	täjribä	
+809	площадь	noun	мәйдан		mäydan		майҙан	mayđan	
+810	вновь	нареч.	яңадан		yañadan		яңынан	yañınan	
+811	быстрый	adj	тиз		tiz		тиҙ	tiđ	
+811	быстрый	adj	шәп		şäp		шәп	şäp	ҡҙҫға
+812	появляться	verb				äñ			äđṡ
