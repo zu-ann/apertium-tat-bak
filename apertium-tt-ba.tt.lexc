@@ -83,6 +83,8 @@ Multichar_Symbols
 %{A%}              ! 
 
 %{s%}              ! 
+%{n%}              ! 
+%{j%}              ! 
 
 %>                 !
 
@@ -124,7 +126,7 @@ LEXICON POSS
 
 %<px1sg%>:%>%{I%}м CASE ;
 %<px2sg%>:%>%{I%}ң CASE ;
-%<px3sp%>:%>%{s%}%{I%} CASE ;
+%<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;
 %<px1pl%>:%>%{I%}б%{I%}з CASE ;
 %<px2pl%>:%>%{I%}%{G%}%{I%}з CASE ;
 
@@ -840,7 +842,7 @@ LEXICON Nouns
 бакча:бакча NLEX ; ! ""
 өстәл:өстәл NLEX ; ! ""
 концерт:концерт NLEX ; ! ""
-песи:песи NLEX ; ! ""
+песи:песи%{j%} NLEX ; ! ""
 
 
 
