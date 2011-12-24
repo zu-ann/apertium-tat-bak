@@ -42,6 +42,7 @@ Rules
 %{A%}:ә <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
            except
 !                 :FrontVow :л %>: :л _ р ;   ! WTF is this for?
+                                      _ %>: %{E%}:и ;
 
 "I Vowel Harmony"
 %{I%}:е <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
@@ -60,18 +61,29 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                 matched;
 
 "E Vowel Harmony"
-%{E%}:е <=> [ :FrontVow :Cns* ]/[ %>: | :0 ] _ ;
+%{E%}:ә <=> [ :FrontVow :Cns* :Cns ]/[ %>: | :0 ] _ ;
+            except
+                       [ :Vow ]/[ %>: | :0 ] _ ;
+                                      ә: %>: _ ;
+                                  %{A%}: %>: _ ;
+
 
 "Turn {E} into й after a vowel"
 %{E%}:й <=> [ :Vow ]/[ %>: | :0 ] _ ;
             except
-                           е: %>: _ ;
+                           ә: %>: _ ;
+                       %{A%}: %>: _ ;
 
-"Turn {E} into и to combine with е"
-%{E%}:и <=> е: %>: _ ;
+"Turn {E} into и to combine with ә"
+%{E%}:и <=> ә: %>: _ ;
+!            е: %>: _ ;
+        %{A%}: %>: _ ;
 
-"Delete е before E:и"
-е:0 <=> _ %>: %{E%}:и ;
+"Delete ә before E:и"
+ә:0 <=> _ %>: %{E%}:и ;
+
+"Delete {A} before E:и"
+%{A%}:0 <=> _ %>: %{E%}:и ;
 
 "Turn а to ы before E:й"
 а:ы <=> _ %>: %{E%}:й ;
