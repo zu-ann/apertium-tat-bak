@@ -839,6 +839,7 @@ LEXICON Nouns
 мәйдан:мәйдан NLEX ; ! ""
 бакча:бакча NLEX ; ! ""
 өстәл:өстәл NLEX ; ! ""
+концерт:концерт NLEX ; ! ""
 
 
 
@@ -1079,6 +1080,7 @@ LEXICON Verbs
 әйт:әйт V-TV-LEX ; ! ""
 тыңла:тыңла V-TV-LEX ; ! ""
 эшлә:эшлә V-TV-LEX ; ! ""
+ишет:ишет V-TV-LEX ; ! ""
 
 LEXICON Punctuation
 
