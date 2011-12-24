@@ -4,24 +4,25 @@ Alphabet
  А Ә Б В Г Д Е Ё Ж Җ З И Й К Л М Н Ң О Ө П Р С Т У Ү Ф Х Һ Ц Ч Ш Щ Ъ Ы Ь Э Ю Я  
  а ә б в г д е ё ж җ з и й к л м н ң о ө п р с т у ү ф х һ ц ч ш щ ъ ы ь э ю я 
 
- %{A%}:а %{I%}:ы
+ %{A%}:а %{I%}:ы %{E%}:а
 
  %{L%}:л %{G%}:г %{D%}:д %{K%}:к
 
  %{s%}:с 
  %{j%}:0 
+ %{w%}:0 
  %{n%}:0
 
  %>:0 %  ; 
 
 Sets
 
-HardVow   =  А О Ы У Я Ю
-             а о ы у я ю ;
+BackVow    =  А О Ы У Я Ю
+              а о ы у я ю ;
 
 
-SoftVow   =  Ә Е Э И Ө Ү
-             ә е э и ө ү; 
+FrontVow   =  Ә Е Э И Ө Ү
+              ә е э и ө ү; 
 
 Vow       = А О Ы У Я Ю Ә Е Э И Ө Ү
             а о ы у я ю ә е э и ө ү;
@@ -38,18 +39,18 @@ VoicedCns =  Б Д Г В З Ж С
 Rules 
 
 "A Vowel Harmony"
-%{A%}:ә <=> [ :SoftVow :Cns* ]/[ %>: | %  | :0 ] _ ;
+%{A%}:ә <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
            except
-                 :SoftVow :л %>: :л _ р ;
+!                 :FrontVow :л %>: :л _ р ;   ! WTF is this for?
 
 "I Vowel Harmony"
-%{I%}:е <=> [ :SoftVow :Cns* ]/[ %>: | %  | :0 ] _ ;
+%{I%}:е <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
 
 "Plural alternation after nasal"
 %{L%}:н <=> :NasalCns %>: _ %{A%}: р ; 
 
 "Deletion of {s} after a consonant"
-%{s%}:0 <=> [ :Cns | %{j%}:0 ]/[ %>: | :0 ] _ ;
+%{s%}:0 <=> [ :Cns | %{j%}:0 | %{w%}:0 ]/[ %>: | :0 ] _ ;
 
 
 "Intervocalic voicing of к/ҡ"
@@ -58,3 +59,19 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                 Cy in ( б г )
                 matched;
 
+"E Vowel Harmony"
+%{E%}:е <=> [ :FrontVow :Cns* ]/[ %>: | :0 ] _ ;
+
+"Turn {E} into й after a vowel"
+%{E%}:й <=> [ :Vow ]/[ %>: | :0 ] _ ;
+            except
+                           е: %>: _ ;
+
+"Turn {E} into и to combine with е"
+%{E%}:и <=> е: %>: _ ;
+
+"Delete е before E:и"
+е:0 <=> _ %>: %{E%}:и ;
+
+"Turn а to ы before E:й"
+а:ы <=> _ %>: %{E%}:й ;

@@ -81,10 +81,12 @@ Multichar_Symbols
 %{K%}              ! 
 %{I%}              ! 
 %{A%}              ! 
+%{E%}              ! 
 
 %{s%}              ! 
 %{n%}              ! 
 %{j%}              ! 
+%{w%}              ! 
 
 %>                 !
 
@@ -175,11 +177,11 @@ LEXICON ALEX
 
 LEXICON V-PERS-S1 
 
-%<p1%>%<sg%>:%>%{A%}м CLIT ;
-%<p2%>%<sg%>:%>%{s%}%{A%}м CLIT ;
+%<p1%>%<sg%>:%>м CLIT ;
+%<p2%>%<sg%>:%>с%{I%}ң CLIT ;
 %<p3%>%<sg%>:%> CLIT ;
-%<p1%>%<pl%>:%>б%{И%}з CLIT ;
-%<p2%>%<pl%>:%>%{s%}%{I%}г%{I%}з CLIT ;
+%<p1%>%<pl%>:%>б%{I%}з CLIT ;
+%<p2%>%<pl%>:%>г%{I%}з CLIT ;
 %<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
 
 LEXICON V-PERS-S2
@@ -194,15 +196,15 @@ LEXICON V-PERS-S2
 LEXICON V-PERS-S3
 
 %<p1%>%<sg%>:%>м%{I%}н CLIT ;
-%<p2%>%<sg%>:%>%{s%}%{I%}ң CLIT ;
+%<p2%>%<sg%>:%>с%{I%}ң CLIT ;
 %<p3%>%<sg%>:%> CLIT ;
 %<p1%>%<pl%>:%>б%{I%}з CLIT ;
-%<p2%>%<pl%>:%>%{h%}%{I%}г%{I%}ҙ CLIT ;
+%<p2%>%<pl%>:%>с%{I%}г%{I%}з CLIT ;
 %<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
 
 LEXICON V-FINITE-FORMS
 
-%<pres%>:%>%{A%} V-PERS-S1 ; 
+%<pres%>:%>%{E%} V-PERS-S1 ; 
 %<ifi%>:%>%{D%}%{I%} V-PERS-S2 ; 
 %<fut%>:%>%{I%}р V-PERS-S3 ; 
 %<past%>:%>%{G%}%{A%}н V-PERS-S3 ; 
@@ -841,8 +843,9 @@ LEXICON Nouns
 мәйдан:мәйдан NLEX ; ! ""
 бакча:бакча NLEX ; ! ""
 өстәл:өстәл NLEX ; ! ""
-концерт:концерт NLEX ; ! ""
-песи:песи%{j%} NLEX ; ! ""
+концерт:концерт NLEX ; ! "concert"
+песи:песи%{j%} NLEX ; ! "cat"
+елмаю:елмаю%{w%} NLEX ; ! "smile"
 
 
 
