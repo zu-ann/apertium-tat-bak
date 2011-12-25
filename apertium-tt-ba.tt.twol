@@ -56,7 +56,7 @@ Rules
 %{s%}:0 <=> [ :Cns | %{j%}:0 | %{w%}:0 ]/[ %>: | :0 ] _ ;
 
 
-"Intervocalic voicing of к/ҡ"
+"Intervocalic voicing of к/п"
 Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
           where Cx in ( п к )
                 Cy in ( б г )

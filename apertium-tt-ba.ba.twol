@@ -74,6 +74,8 @@ Rules
 
 "I Vowel Harmony"
 %{I%}:е <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
+            except
+                                  %{n%}:н/[ :0 | %>: ] _ ;
 
 "E Vowel Harmony"
 %{E%}:ә <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
@@ -82,6 +84,9 @@ Rules
 
 "Deletion of {I} after vowels"
 %{I%}:0 <=> [ :SurVow ]/[ :0 | %>: ] _ ;
+            except
+         [ :SurVow :у ]/[ %>: | :0 ] _ ;
+
 
 "Deletion of {A} after vowels"
 %{A%}:0 <=> [ :SurVow ]/[ :0 | %>: ] _ ;
@@ -131,11 +136,19 @@ Rules
 "Deletion of accusative {N} after {n}"
 %{N%}:0 <=> %{n%}: %>: _ %{I%}: .#. ;
 
-"Deletion of {n} before genitive {N}s"
-%{n%}:0 <=> _ %>: %{N%}: %{I%}: \[ .#. ]  ;
+!"Deletion of {n} before genitive {N}s"
+!%{n%}:0 <=> _ %>: %{N%}: %{I%}: \[ .#. ]  ;
+!
+!"Deletion of {n} before ablative {N}"
+!%{n%}:0 <=> _ %>: %{N%}: %{A%}: :н ;
 
-"Deletion of {n} before ablative {D}"
-%{n%}:0 <=> _ %>: %{N%}: %{A%}: :н ;
+"Deletion of {n} before any {N} except accusative"
+%{n%}:0 <=> _ %>: %{N%}: ;
+            except
+            _ %>: %{N%}: %{I%}: .#. ;
+
+"Deletion of {I} after {n}"
+%{I%}:0 <=> %{n%}:н/[ :0 | %>: ] _ ;
 
 "/n/ deletion in px3 nominative"
 %{n%}:0 <=> _ .#. ;
