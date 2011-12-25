@@ -276,6 +276,7 @@ LEXICON PRNLEX-PERS
 LEXICON PRNITGLEX
 
 %<prn%>%<itg%>: POSS ; 
+%<prn%>%<itg%>%<pl%>:%>%{L%}%{A%}р POSS ; 
 
 LEXICON PRNDEMLEX
 
@@ -365,6 +366,8 @@ LEXICON Pronouns
 PRNLEX-PERS ; 
 
 ни:ни PRNITGLEX ; ! ""
+нимә:нимә PRNITGLEX ; ! ""
+кем:кем PRNITGLEX ; ! ""
 
 был:был PRNDEMLEX ; ! ""
 ошо:ошо PRNDEMLEX ; ! ""
