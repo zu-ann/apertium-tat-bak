@@ -450,6 +450,7 @@ LEXICON Numerals
 LEXICON Nouns 
 
 эч:эч NLEX ; ! "" 
+арт:арт NLEX ; ! "" 
 
 кеше:кеше NLEX ; ! "" 
 ел:ел NLEX-SG ; ! "" 
@@ -1126,6 +1127,7 @@ LEXICON Adverbs
 кичә:кичә ADVLEX ; ! ""
 тагын:тагын ADVLEX ; ! ""
 һәрвакыт:һәрвакыт ADVLEX ; ! ""
+тышта:тышта ADVLEX ; ! ""
 
 LEXICON Verbs
 

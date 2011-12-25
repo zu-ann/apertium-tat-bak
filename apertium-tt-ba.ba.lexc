@@ -415,6 +415,7 @@ LEXICON Numerals
 LEXICON Nouns 
 
 эс:эс NLEX ; ! "inside"
+арт:арт NLEX ; ! ""
 
 кеше:кеше NLEX ; ! ""
 йыл:йыл NLEX ; ! ""
@@ -1093,6 +1094,7 @@ LEXICON Adverbs
 тик:тик ADVLEX ; ! ""
 аҫҡа:аҫҡа ADVLEX ; ! ""
 һәр% ваҡыт:һәр% ваҡыт ADVLEX ; ! ""
+тышта:тышта ADVLEX ; ! ""
 
 
 LEXICON Verbs 
