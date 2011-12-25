@@ -64,6 +64,7 @@ Multichar_Symbols
 %<ger3%>           ! -{G}{A}ч
 %<ger4%>           ! -{G}{A}нч{I}
 %<ger5%>           ! -{G}{A}н
+%<ger6%>           ! -{I}р / -{A}р
 
 %<sent%>           ! Sentence marker
 %<guio%>           ! Hyphen
@@ -1143,6 +1144,7 @@ LEXICON Verbs
 эшлә:эшлә V-TV-IR-LEX ; ! ""
 ишет:ишет V-TV-IR-LEX ; ! ""
 ал:ал V-TV-IR-LEX ; ! ""
+ярат:ярат V-TV-IR-LEX ; ! ""
 
 LEXICON Punctuation
 
