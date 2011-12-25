@@ -19,8 +19,12 @@ Multichar_Symbols
 
 %<pers%>           ! 
 %<itg%>            ! 
-%<neg%>            ! 
 %<dem%>            ! 
+%<qnt%>            ! 
+
+%<caus%>           ! 
+%<pass%>           ! 
+%<neg%>            ! 
 
 %<top%>            ! 
 %<ant%>            ! 
@@ -88,6 +92,7 @@ Multichar_Symbols
 %{n%}              ! 
 %{j%}              ! 
 %{w%}              ! 
+%{l%}              ! 
 
 %>                 !
 
@@ -243,6 +248,7 @@ LEXICON V-TV-IR-LEX
 %<v%>%<tv%>: V-COMMON-LEX ; 
 %<v%>%<tv%>: V-FUT-IR; 
 %<v%>%<tv%>%<neg%>:%>м%{A%} V-COMMON-LEX ; 
+%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON-LEX ; 
 
 LEXICON V-IV-AR-LEX
 
@@ -255,6 +261,7 @@ LEXICON V-TV-AR-LEX
 %<v%>%<tv%>: V-COMMON-LEX ; 
 %<v%>%<tv%>: V-FUT-AR ;
 %<v%>%<tv%>%<neg%>:%>м%{A%} V-COMMON-LEX ; 
+%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON-LEX ; 
 
 LEXICON VAUX
 
@@ -331,6 +338,10 @@ LEXICON PRNITGLEX
 LEXICON DETDEMLEX
 
 %<det%>%<dem%>: # ; 
+
+LEXICON DETQNTLEX 
+
+%<det%>%<qnt%>: # ; 
 
 LEXICON POSTLEX
 
@@ -422,6 +433,8 @@ LEXICON Determiners
 бу:бу DETDEMLEX ; ! ""
 шул:шул DETDEMLEX ; ! ""
 
+бөтен:бөтен DETQNTLEX ; ! ""
+
 LEXICON Numerals 
 
 бер:бер NUMLEX ; ! ""
@@ -435,6 +448,8 @@ LEXICON Numerals
 мең:мең NUMLEX ; ! ""
 
 LEXICON Nouns 
+
+эч:эч NLEX ; ! "" 
 
 кеше:кеше NLEX ; ! "" 
 ел:ел NLEX-SG ; ! "" 
@@ -900,6 +915,7 @@ LEXICON Nouns
 концерт:концерт NLEX ; ! "concert"
 песи:песи%{j%} NLEX ; ! "cat"
 елмаю:елмаю%{w%} NLEX ; ! "smile"
+утыргыч:утыргыч NLEX ; ! "concert"
 
 
 
@@ -1145,6 +1161,7 @@ LEXICON Verbs
 ишет:ишет V-TV-IR-LEX ; ! ""
 ал:ал V-TV-IR-LEX ; ! ""
 ярат:ярат V-TV-IR-LEX ; ! ""
+тырыш:тырыш V-TV-IR-LEX ; ! ""
 
 LEXICON Punctuation
 

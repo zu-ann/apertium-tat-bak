@@ -19,6 +19,7 @@
 
     <sdef n="pers"     c="Personal"/>
     <sdef n="itg"      c="Interrogative"/>
+    <sdef n="qnt"      c="Quantifier"/>
     <sdef n="dem"      c=""/>
 
     <sdef n="top"      c="Toponym"/>
@@ -101,6 +102,8 @@
     <e r="RL"><p><l>бу<s n="det"/><s n="dem"/></l><r>ошо<s n="det"/><s n="dem"/></r></p></e>
     <e><p><l>шул<s n="det"/><s n="dem"/></l><r>шул<s n="det"/><s n="dem"/></r></p></e>
     <e r="RL"><p><l>шул<s n="det"/><s n="dem"/></l><r>теге<s n="det"/><s n="dem"/></r></p></e>
+
+    <e><p><l>бөтен<s n="det"/><s n="qnt"/></l><r>бөтә<s n="det"/><s n="qnt"/></r></p></e>
 
 
     <!-- Раздел: Существительные -->
@@ -576,6 +579,8 @@
     <e><p><l>өстәл<s n="n"/></l><r>өҫтәл<s n="n"/></r></p></e>
     <e><p><l>концерт<s n="n"/></l><r>концерт<s n="n"/></r></p></e>
     <e><p><l>песи<s n="n"/></l><r>бесәй<s n="n"/></r></p></e>
+    <e><p><l>утыргыч<s n="n"/></l><r>ултырғыс<s n="n"/></r></p></e>
+    <e><p><l>эч<s n="n"/></l><r>эс<s n="n"/></r></p></e>
 
 
     <!-- Раздел: Имена собственные -->
@@ -818,6 +823,7 @@
     <e><p><l>эшлә<s n="v"/><s n="tv"/></l><r>эшлә<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>ишет<s n="v"/><s n="tv"/></l><r>ишет<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>ал<s n="v"/><s n="tv"/></l><r>ал<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>тырыш<s n="v"/><s n="tv"/></l><r>тырыш<s n="v"/><s n="tv"/></r></p></e>
 
 
     <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>

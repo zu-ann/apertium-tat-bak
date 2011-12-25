@@ -8,7 +8,7 @@ Alphabet
 
  %{L%}:л %{G%}:г %{N%}:н %{K%}:к
 
- %{h%}:һ %{n%}:н
+ %{h%}:һ %{n%}:н %{l%}:л
 
  %>:0  ; 
 
@@ -175,3 +175,6 @@ Cx:Cy <=> :CnsVoiceless/[ %>: | %  ] _ ;
 %{G%}:к <=> [ :FrontVow :Cns* [ :CnsVoiceless - :BackCns ] ]/[ %>: ] _ ;
 !                               [ :CnsVoiceless & :FrontCns ]/[ %>: ] _ ;
 
+"Passive {l} becomes n after verb stem ending in /l/ or /r/"
+%{l%}:н <=> [ л :SurVow ]/[ :0 | %>: ] _ ;
+            [ р :SurVow ]/[ :0 | %>: ] _ ;
