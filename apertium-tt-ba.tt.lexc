@@ -199,24 +199,37 @@ LEXICON V-PERS-S2
 %<p2%>%<pl%>:%>г%{I%}з CLIT ;
 %<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
 
-LEXICON V-PERS-S3
+LEXICON V-PERS-S3-NO1SG
 
-%<p1%>%<sg%>:%>м%{I%}н CLIT ;
 %<p2%>%<sg%>:%>с%{I%}ң CLIT ;
 %<p3%>%<sg%>:%> CLIT ;
 %<p1%>%<pl%>:%>б%{I%}з CLIT ;
 %<p2%>%<pl%>:%>с%{I%}г%{I%}з CLIT ;
 %<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
 
+LEXICON V-PERS-S3
+
+%<p1%>%<sg%>:%>м%{I%}н CLIT ;
+
+V-PERS-S3-NO1SG ; 
+
 LEXICON V-FUT-IR
 
 %<fut%>:%>%{I%}р V-PERS-S3 ; 
+%<neg%>%<fut%>:%>м%{A%}с V-PERS-S3-NO1SG ; 
+%<neg%>%<fut%>%<p1%>%<sg%>:%>м%{A%}%>м CLIT ; 
+%<neg%>%<fut%>%<p1%>%<sg%>:%>м%{A%}с%>м%{I%}н CLIT ; ! Dir/LR 
 %<ger6%>:%>%{I%}р POSS ;
+%<neg%>%<ger6%>:%>м%{A%}%>%{I%}р POSS ;
 
 LEXICON V-FUT-AR
 
 %<fut%>:%>%{A%}р V-PERS-S3 ; 
+%<neg%>%<fut%>:%>м%{A%}с V-PERS-S3 ; 
+%<neg%>%<fut%>%<p1%>%<sg%>:%>м%{A%}%>м CLIT ; 
+%<neg%>%<fut%>%<p1%>%<sg%>:%>м%{A%}с%>м%{I%}н CLIT ; ! Dir/LR 
 %<ger6%>:%>%{A%}р POSS ;
+%<neg%>%<ger6%>:%>м%{A%}%>%{A%}р POSS ;
 
 LEXICON V-FINITE-FORMS
 

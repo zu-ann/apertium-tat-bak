@@ -191,20 +191,25 @@ LEXICON V-PERS-S2
 %<p2%>%<pl%>:%>г%{I%}ҙ CLIT ;
 %<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
 
-LEXICON V-PERS-S3
+LEXICON V-PERS-S3-NO1SG
 
-%<p1%>%<sg%>:%>м%{I%}н CLIT ;
 %<p2%>%<sg%>:%>%{h%}%{I%}ң CLIT ;
 %<p3%>%<sg%>:%> CLIT ;
 %<p1%>%<pl%>:%>б%{I%}ҙ CLIT ;
 %<p2%>%<pl%>:%>%{h%}%{I%}г%{I%}ҙ CLIT ;
 %<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
 
+LEXICON V-PERS-S3
+
+%<p1%>%<sg%>:%>м%{I%}н CLIT ;
+
+V-PERS-S3-NO1SG ; 
+
+
 LEXICON V-FINITE-FORMS
 
 %<pres%>:%>%{E%} V-PERS-S1 ; 
 %<ifi%>:%>%{L%}%{I%} V-PERS-S2 ; 
-%<fut%>:%>%{I%}р V-PERS-S3 ; 
 %<past%>:%>%{G%}%{A%}н V-PERS-S3 ; 
 
 LEXICON V-COMMON-LEX
@@ -218,19 +223,27 @@ V-FINITE-FORMS ;
 %<ger5%>:%>%{G%}%{A%}н POSS ;
 %<ger6%>:%>%{I%}р POSS ;
 
-%<imp%>%<p1%>%<sg%>:%>%{I%}йм # ; ! jussive ^____^
+%<imp%>%<p1%>%<sg%>:%>%{A%}й%{I%}м # ; ! jussive ^____^
 %<imp%>%<p2%>%<sg%>: # ;
 %<imp%>%<p2%>%<pl%>:%>%{I%}г%{I%}ҙ # ;
 
+LEXICON V-FUTURES-LEX
+
+%<fut%>:%>%{I%}р V-PERS-S3 ; 
+%<neg%>%<fut%>:%>м%{A%}ҫ V-PERS-S3-NO1SG ; 
+%<neg%>%<fut%>%<p1%>%<sg%>:%>м%{A%}%>м CLIT ;
+%<neg%>%<fut%>%<p1%>%<sg%>:%>м%{A%}ҫ%>м%{I%}н CLIT ; ! Dir/LR
 
 LEXICON V-IV-LEX
 
 %<v%>%<iv%>: V-COMMON-LEX ;
+%<v%>%<iv%>: V-FUTURES-LEX ;
 %<v%>%<iv%>%<neg%>:%>м%{A%} V-COMMON-LEX ;
 
 LEXICON V-TV-LEX
 
 %<v%>%<tv%>: V-COMMON-LEX ;
+%<v%>%<tv%>: V-FUTURES-LEX ;
 %<v%>%<tv%>%<neg%>:%>м%{A%} V-COMMON-LEX ;
 %<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON-LEX ;
 

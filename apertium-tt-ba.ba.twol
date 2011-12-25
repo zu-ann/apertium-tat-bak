@@ -85,6 +85,10 @@ Rules
 "Deletion of {I} after vowels"
 %{I%}:0 <=> [ :SurVow ]/[ :0 | %>: ] _ ;
 
+"Deletion of {A} after vowels"
+%{A%}:0 <=> [ :SurVow ]/[ :0 | %>: ] _ ;
+
+
 
 ! "Alternation in locative -DA"
 ! %{L%}:Cx <=> :Lx %>: _ %{A%}: [ .#. | %>: ];
