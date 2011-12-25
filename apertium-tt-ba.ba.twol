@@ -70,12 +70,10 @@ Rules
 
 !!!! Vowel Harmony !!!!
 "A Vowel Harmony"
-%{A%}:ә <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
+%{A%}:ә <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
 
 "I Vowel Harmony"
-%{I%}:е <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
-    except
-         :SurVow/[ :0 | %>: ] _ ;
+%{I%}:е <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
 
 "E Vowel Harmony"
 %{E%}:ә <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
