@@ -238,47 +238,71 @@ LEXICON VAUX
 
 LEXICON PRNLEX-PERS
 
-мин%<prn%>%<pers%>%<p1%>%<sg%>:мин # ; 
+мин%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мин # ; 
 мин%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:минем # ; 
 мин%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:миңа # ; 
 мин%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:мине # ; 
 мин%<prn%>%<pers%>%<p1%>%<sg%>%<loc%>:миндә # ; 
 мин%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:миннән # ; 
 
-син%<prn%>%<pers%>%<p2%>%<sg%>:син # ; 
+син%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:син # ; 
 син%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:синең # ; 
 син%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:сиңа # ; 
 син%<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:сине # ; 
 син%<prn%>%<pers%>%<p2%>%<sg%>%<loc%>:синдә # ; 
 син%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:синнән # ; 
 
-ул%<prn%>%<pers%>%<p3%>%<sg%>:ул # ; 
+ул%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ул # ; 
 ул%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:аның # ; 
 ул%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:аңа # ; 
 ул%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:аны # ; 
 ул%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:анда # ; 
 ул%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:аннан # ; 
 
-без%<prn%>%<pers%>%<p1%>%<pl%>:без # ; 
+без%<prn%>%<pers%>%<p1%>%<pl%>%<nom%>:без # ; 
 без%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:безнең # ; 
 без%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:безгә # ; 
 без%<prn%>%<pers%>%<p1%>%<pl%>%<acc%>:безне # ; 
 без%<prn%>%<pers%>%<p1%>%<pl%>%<loc%>:бездә # ; 
 без%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:бездән # ; 
 
-сез%<prn%>%<pers%>%<p2%>%<pl%>:сез # ; 
+сез%<prn%>%<pers%>%<p2%>%<pl%>%<nom%>:сез # ; 
 сез%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:сездең # ; 
 сез%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:сезгә # ; 
 сез%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:сезне # ; 
 сез%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:сездә # ; 
 сез%<prn%>%<pers%>%<p2%>%<pl%>%<abl%>:сездән # ; 
 
-алар%<prn%>%<pers%>%<p3%>%<pl%>:алар # ; 
+алар%<prn%>%<pers%>%<p3%>%<pl%>%<nom%>:алар # ; 
 алар%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:аларның # ; 
 алар%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:аларга # ; 
 алар%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:аларны # ; 
 алар%<prn%>%<pers%>%<p3%>%<pl%>%<loc%>:аларда # ; 
 алар%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:алардан # ; 
+
+LEXICON PRNDEM-BU
+
+%<prn%>%<dem%>%<nom%>:бу # ;
+%<prn%>%<dem%>%<gen%>:моның # ;
+%<prn%>%<dem%>%<dat%>:моңа # ;
+%<prn%>%<dem%>%<acc%>:моны # ;
+%<prn%>%<dem%>%<loc%>:монда # ;
+%<prn%>%<dem%>%<abl%>:моннан # ;
+%<prn%>%<dem%>%<pl%>:бу%>%{L%}%{A%}р CASE ;
+
+LEXICON PRNDEM-ŠUL
+
+%<prn%>%<dem%>%<nom%>:шул # ;
+%<prn%>%<dem%>%<gen%>:шуның # ;
+%<prn%>%<dem%>%<dat%>:шуңа # ;
+%<prn%>%<dem%>%<acc%>:шуны # ;
+%<prn%>%<dem%>%<loc%>:шунда # ;
+%<prn%>%<dem%>%<abl%>:шуннан # ;
+%<prn%>%<dem%>%<pl%>:шул%>%{L%}%{A%}р CASE ;
+
+LEXICON PRNITGLEX
+
+%<prn%>%<itg%>: POSS ; 
 
 LEXICON DETDEMLEX
 
@@ -362,6 +386,10 @@ LEXICON Postadverbs
 LEXICON Pronouns
 
 PRNLEX-PERS ; 
+
+ни:ни PRNITGLEX ; ! ""
+бу: PRNDEM-BU ; ! ""
+шул: PRNDEM-ŠUL ; ! ""
 
 LEXICON Determiners
 

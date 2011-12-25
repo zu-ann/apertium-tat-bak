@@ -87,6 +87,14 @@
     <e><p><l>сез<s n="prn"/><s n="pers"/></l><r>һеҙ<s n="prn"/><s n="pers"/></r></p></e>
     <e><p><l>алар<s n="prn"/><s n="pers"/></l><r>улар<s n="prn"/><s n="pers"/></r></p></e>
 
+    <e><p><l>ни<s n="prn"/><s n="itg"/></l><r>ни<s n="prn"/><s n="itg"/></r></p></e>
+
+    <e><p><l>бу<s n="prn"/><s n="dem"/></l><r>был<s n="prn"/><s n="dem"/></r></p></e>
+    <e r="RL"><p><l>бу<s n="prn"/><s n="dem"/></l><r>ошо<s n="prn"/><s n="dem"/></r></p></e>
+    <e><p><l>шул<s n="prn"/><s n="dem"/></l><r>шул<s n="prn"/><s n="dem"/></r></p></e>
+    <e r="RL"><p><l>шул<s n="prn"/><s n="dem"/></l><r>теге<s n="prn"/><s n="dem"/></r></p></e>
+
+
     <!-- Раздел: -->
     <e><p><l>бу<s n="det"/><s n="dem"/></l><r>был<s n="det"/><s n="dem"/></r></p></e>
     <e r="RL"><p><l>бу<s n="det"/><s n="dem"/></l><r>ошо<s n="det"/><s n="dem"/></r></p></e>
