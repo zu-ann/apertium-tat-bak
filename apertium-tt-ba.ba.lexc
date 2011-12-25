@@ -218,8 +218,9 @@ V-FINITE-FORMS ;
 %<ger5%>:%>%{G%}%{A%}н POSS ;
 %<ger6%>:%>%{I%}р POSS ;
 
+%<imp%>%<p1%>%<sg%>:%>%{I%}йм # ; ! jussive ^____^
 %<imp%>%<p2%>%<sg%>: # ;
-%<imp%>%<p2%>%<pl%>:%{I%}г%{I%}ҙ # ;
+%<imp%>%<p2%>%<pl%>:%>%{I%}г%{I%}ҙ # ;
 
 
 LEXICON V-IV-LEX
@@ -281,6 +282,16 @@ LEXICON PRNLEX-PERS
 улар%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:уларҙы # ; 
 улар%<prn%>%<pers%>%<p3%>%<pl%>%<loc%>:уларҙа # ; 
 улар%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:уларҙан # ; 
+
+LEXICON PRNDEM-ŠUL
+
+%<prn%>%<dem%>%<nom%>:л # ;
+%<prn%>%<dem%>%<gen%>:ның # ;
+%<prn%>%<dem%>%<dat%>:ға # ;
+%<prn%>%<dem%>%<acc%>:ны # ;
+%<prn%>%<dem%>%<loc%>:нда # ;
+%<prn%>%<dem%>%<abl%>:нан # ;
+%<prn%>%<dem%>%<pl%>:шул%>%{L%}%{A%}р CASE ;
 
 LEXICON PRNITGLEX
 
@@ -384,7 +395,7 @@ PRNLEX-PERS ;
 
 был:был PRNDEMLEX ; ! ""
 ошо:ошо PRNDEMLEX ; ! ""
-шул:шул PRNDEMLEX ; ! ""
+шул:шу PRNDEM-ŠUL ; ! ""
 теге:теге PRNDEMLEX ; ! ""
 
 
@@ -1095,6 +1106,7 @@ LEXICON Adverbs
 аҫҡа:аҫҡа ADVLEX ; ! ""
 һәр% ваҡыт:һәр% ваҡыт ADVLEX ; ! ""
 тышта:тышта ADVLEX ; ! ""
+һуң:һуң ADVLEX ; ! ""
 
 
 LEXICON Verbs 
@@ -1132,6 +1144,7 @@ LEXICON Verbs
 ал:ал V-TV-LEX ; ! ""
 ярат:ярат V-TV-LEX ; ! ""
 тырыш:тырыш V-TV-LEX ; ! ""
+күҙәт:күҙәт V-TV-LEX ; ! ""
 
 LEXICON Punctuation
 

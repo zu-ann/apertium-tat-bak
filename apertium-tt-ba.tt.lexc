@@ -1128,6 +1128,7 @@ LEXICON Adverbs
 тагын:тагын ADVLEX ; ! ""
 һәрвакыт:һәрвакыт ADVLEX ; ! ""
 тышта:тышта ADVLEX ; ! ""
+соң:соң ADVLEX ; ! ""
 
 LEXICON Verbs
 
@@ -1164,6 +1165,7 @@ LEXICON Verbs
 ал:ал V-TV-IR-LEX ; ! ""
 ярат:ярат V-TV-IR-LEX ; ! ""
 тырыш:тырыш V-TV-IR-LEX ; ! ""
+күзәт:күзәт V-TV-IR-LEX ; ! ""
 
 LEXICON Punctuation
 
