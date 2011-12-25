@@ -386,6 +386,12 @@ LEXICON PREDLEX
 
 %<pred%>: CLIT ; 
 
+LEXICON PREDLEX-I
+
+%<pred%>%<ger5%>:%>кән POSS ;
+%<pred%>%<ifi%>:%>де V-PERS-S2 ;        
+
+
 LEXICON QSTLEX
 
 %<qst%>: # ; 
@@ -420,6 +426,7 @@ LEXICON Postpositions
 кирәк:кирәк POSTLEX ; ! ""
 каршы:каршы POSTLEX ; ! ""
 башка:башка POSTLEX ; ! ""
+карамастан:карамастан POSTLEX ; ! ""
 астында:астында POSTLEX ; ! "" FIXME: Check
 
 LEXICON Postadverbs
@@ -1148,7 +1155,7 @@ LEXICON Verbs
 бар:бар PREDLEX ; ! ""
 юк:юк PREDLEX ; ! ""
 
-иде:иде VAUX ; ! ""
+и:и PREDLEX-I ; ! ""
 
 бул:бул V-IV-IR-LEX ; ! ""
 тор:тор V-IV-IR-LEX ; ! ""
