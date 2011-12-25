@@ -36,6 +36,9 @@ NasalCns  =  М Н Ң
 VoicedCns =  Б Д Г В З Ж С 
              б д г в з ж с ;             
 
+CnsVoiceless = В Җ Й К Л М Н Ң П Р Т Ф Х Һ Ц Ч Ш Щ Ъ Ы Ь
+               в җ й к л м н ң п р т ф х һ ц ч ш щ ъ ы ь  ;
+
 Rules 
 
 "A Vowel Harmony"
@@ -104,3 +107,14 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 
 "Turn A to ы before E:й"
 %{A%}:ы <=> [ :BackVow :Cns* :Cns ]/[ %>: | :0 ] _ %>: %{E%}: ;
+
+"Deletion of {I} after vowels"
+%{I%}:0 <=> [ :Vow ]/[ :0 | %>: ] _ ;
+
+"Back assimilation of G"
+%{G%}:ғ <=> [ :BackVow :Cns* ]/[ %>: | :0 | :и | :у ] _ ;
+            except
+    :CnsVoiceless/[ %>: | :0 ] _ ;
+!        :FrontCns/[ %>: | :0 ] _ ;
+                   :NasalCns %>: _ %{A%}: .#. ;
+

@@ -65,6 +65,7 @@ Multichar_Symbols
 %<ger3%>           ! -{G}{A}с
 %<ger4%>           ! -{G}{A}нс{I}
 %<ger5%>           ! -{G}{A}н
+%<ger6%>           ! -{I}р
 
 %<sent%>           ! Sentence marker
 %<guio%>           ! Hyphen
@@ -140,6 +141,7 @@ LEXICON NLEX
 
 %<n%>: POSS ; 
 %<n%>%<pl%>:%>%{L%}%{A%}р POSS ; 
+!л%{I%}:%>л%{I%} ALEX ;  FIXME: Doesn't work
 
 LEXICON DIGITLEX
 
@@ -209,6 +211,7 @@ V-FINITE-FORMS ;
 %<ger3%>:%>%{G%}%{A%}с POSS ;
 %<ger4%>:%>%{G%}%{A%}нс%{I%} POSS ;
 %<ger5%>:%>%{G%}%{A%}н POSS ;
+%<ger6%>:%>%{I%}р POSS ;
 
 %<imp%>%<p2%>%<sg%>: # ;
 %<imp%>%<p2%>%<pl%>:%{I%}г%{I%}ҙ # ;
@@ -884,6 +887,8 @@ LEXICON ProperNouns
 
 
 LEXICON Adjectives
+
+сәбәпле:сәбәпле ALEX ; ! ""
 
 айырым:айырым ALEX ; ! ""
 алдағы:алдағы ALEX ; ! ""
