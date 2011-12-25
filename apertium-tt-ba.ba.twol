@@ -128,6 +128,7 @@ Rules
 
 "Deletion of {h} after a consonant"
 %{h%}:0 <=> [ :Cns ]/[ %>: | :0 ] _ ;
+      [ :SurVow :у ]/[ %>: | :0 ] _ ;
 
 "Deletion of accusative {N} after {n}"
 %{N%}:0 <=> %{n%}: %>: _ %{I%}: .#. ;
