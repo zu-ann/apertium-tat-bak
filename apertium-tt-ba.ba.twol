@@ -75,7 +75,7 @@ Rules
 "I Vowel Harmony"
 %{I%}:е <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
     except
-         :SurVow %>: _ ;
+         :SurVow/[ :0 | %>: ] _ ;
 
 "E Vowel Harmony"
 %{E%}:ә <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
