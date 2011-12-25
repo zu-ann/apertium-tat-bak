@@ -24,8 +24,8 @@ FrontVow   =  Ә Е Э И Ө Ү
 Vow       = А О Ы У Я Ю Ә Е Э И Ө Ү
             а о ы у я ю ә е э и ө ү;
 
-Cns       =  Б В Г Д Ж Җ З Й К Л М Н Ң П Р С Т Ф Х Һ Ц Ч Ш Щ Ъ Ы Ь
-             б в г д ж җ з й к л м н ң п р с т ф х һ ц ч ш щ ъ ы ь % ; 
+Cns       =  Б В Г Д Ж Җ З Й К Л М Н Ң П Р С Т Ф Х Һ Ц Ч Ш Щ Ъ Ь
+             б в г д ж җ з й к л м н ң п р с т ф х һ ц ч ш щ ъ ь % ; 
 
 NasalCns  =  М Н Ң
              м н ң ; 
@@ -33,13 +33,13 @@ NasalCns  =  М Н Ң
 VoicedCns =  Б Д Г В З Ж С 
              б д г в з ж с ;             
 
-CnsVoiceless = В Җ Й К Л М Н Ң П Р Т Ф Х Һ Ц Ч Ш Щ Ъ Ы Ь
-               в җ й к л м н ң п р т ф х һ ц ч ш щ ъ ы ь  ;
+CnsVoiceless = В Җ Й К Л М Н Ң П Р Т Ф Х Һ Ц Ч Ш Щ Ъ Ь
+               в җ й к л м н ң п р т ф х һ ц ч ш щ ъ ь  ;
 
 Rules 
 
 "A Vowel Harmony"
-%{A%}:ә <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
+%{A%}:ә <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
            except
 !                 :FrontVow :л %>: :л _ р ;   ! WTF is this for?
 !                                      _ %>: %{E%}:и ;
@@ -47,7 +47,7 @@ Rules
 												  _ %>: %{E%}: ;
 
 "I Vowel Harmony"
-%{I%}:е <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
+%{I%}:е <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
 
 "Plural alternation after nasal"
 %{L%}:н <=> :NasalCns %>: _ %{A%}: р ; 
