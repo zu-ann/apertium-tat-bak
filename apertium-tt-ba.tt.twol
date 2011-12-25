@@ -69,6 +69,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 !                                      ә: %>: _ ;
 !                               :FrontVow %>: _ ;
                          %{A%}:/[ %>: | :0 ] _ ;
+                              FrontVow:0 %>: _ ;
 
 
 "Turn {E} into й after a vowel"
@@ -79,6 +80,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 !             %{A%}:0/[ %>: | :0 ] _ ;
      [ :FrontVow :Cns* :Cns %{A%}: ]/[ %>: | :0 ] _ ;  
                     :FrontVow %>: _ ;
+                    FrontVow:0 %>: _ ;
 
 "Turn {E} into и to combine with ә"
 !%{E%}:и <=> ә: %>: _ ;
@@ -87,6 +89,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 %{E%}:и <=> :FrontVow %>: _ ;
 !               %{A%}: %>: _ ;
             [ :FrontVow :Cns* :Cns %{A%}: ]/[ %>: | :0 ] _ ;  
+            FrontVow:0 %>: _ ;
 
 "Delete ә before E:и"
 ә:0 <=> _ %>: %{E%}:и ;
