@@ -4,7 +4,7 @@ Alphabet
  А Б В Г Ғ Д Ҙ Е Ё Ж З И Й К Ҡ Л М Н Ң О Ө П Р С Ҫ Т У Ү Ф Х Һ Ц Ч Ш Щ Ъ Ы Ь Э Ә Ю Я 
  а б в г ғ д ҙ е ё ж з и й к ҡ л м н ң о ө п р с ҫ т у ү ф х һ ц ч ш щ ъ ы ь э ә ю я
 
- %{A%}:а %{I%}:ы %{E%}:а
+ %{A%}:а %{I%}:ы %{E%}:а %{U%}:у
 
  %{L%}:л %{G%}:г %{N%}:н %{K%}:к
 
@@ -26,6 +26,12 @@ BackVow          =  А О Ы У Ю Я
 
 FrontVow         =  Ә Е Э И Ө Ү
                     ә е э и ө ү ; 
+
+FrontRoundVow    =  Ө
+                    ө ; 
+
+BackRoundVow     =  О 
+                    о ; 
 
 Cns              =  Б В Г Ғ Д Ҙ Ж З Й К Ҡ Л М Н Ң П Р С Ҫ Т Ф Х Һ Ц Ч Ш Щ Ъ Ь 
                     б в г ғ д ҙ ж з й к ҡ л м н ң п р с ҫ т ф х һ ц ч ш щ ъ ь ; 
@@ -62,11 +68,25 @@ Rules
 %{I%}:е <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
             except
                                   %{n%}:н/[ :0 | %>: ] _ ;
+                                  [ :FrontRoundVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
+
+ "I Vowel Harmony (о)"
+%{I%}:о <=> [ :BackRoundVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
+ 
+ "I Vowel Harmony (ө)"
+%{I%}:ө <=> [ :FrontRoundVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
+                        
+                       
 
 "E Vowel Harmony"
 %{E%}:ә <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
     except
          :SurVow %>: _ ;
+
+"U Vowel Harmony"
+%{U%}:ү <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
+
+
 
 "Deletion of {I} after vowels"
 %{I%}:0 <=> [ :SurVow ]/[ :0 | %>: ] _ ;

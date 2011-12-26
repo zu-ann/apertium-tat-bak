@@ -1,5 +1,6 @@
 
-all: ba-tt tt-ba debug
+all: .deps/tt.twol.hfst .deps/ba.twol.hfst ba-tt tt-ba debug
+	if [ ! -d .deps ]; then mkdir .deps; fi
 	apertium-validate-dictionary apertium-tt-ba.tt-ba.dix 
 	lt-comp lr apertium-tt-ba.tt-ba.dix tt-ba.autobil.bin
 	lt-comp rl apertium-tt-ba.tt-ba.dix ba-tt.autobil.bin
@@ -18,12 +19,15 @@ all: ba-tt tt-ba debug
 	cp *.mode modes/
 
 .deps/tt.twol.hfst: apertium-tt-ba.tt.twol
+	if [ ! -d .deps ]; then mkdir .deps; fi
 	hfst-twolc apertium-tt-ba.tt.twol -o .deps/tt.twol.hfst
 
 .deps/ba.twol.hfst:
+	if [ ! -d .deps ]; then mkdir .deps; fi
 	hfst-twolc apertium-tt-ba.ba.twol -o .deps/ba.twol.hfst
 
 debug: .deps/tt.twol.hfst .deps/ba.twol.hfst
+	if [ ! -d .deps ]; then mkdir .deps; fi
 	cat apertium-tt-ba.tt.lexc | grep -v 'Dir/RL' | grep -v 'Use/Circ' > .deps/tt.LR-debug.lexc
 	hfst-lexc --format foma .deps/tt.LR-debug.lexc -o .deps/tt.LR-debug.lexc.hfst
 	hfst-compose-intersect -1 .deps/tt.LR-debug.lexc.hfst -2 .deps/tt.twol.hfst -o .deps/tt.LR-debug.hfst

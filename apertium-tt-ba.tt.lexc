@@ -125,6 +125,7 @@ LEXICON CLIT
 %+да%<cnjcoo%>:% %{D%}%{A%} # ;
 %+мы%<qst%>:%>м%{I%} # ;
 %+дыр%<part%>:%>%{D%}%{I%}р # ;
+%+сы%<part%>:%>с%{I%} # ; ! FIXME: check
 # ;
 
 LEXICON CASE 
@@ -260,8 +261,8 @@ V-FINITE-FORMS ;
 %<ger5%>:%>%{G%}%{A%}н POSS ;
 %<cond%>:%>с%{A%} V-PERS-S2 ;
 
-%<imp%>%<p2%>%<sg%>: # ;
-%<imp%>%<p2%>%<pl%>:%{I%}г%{I%}з # ;
+%<imp%>%<p2%>%<sg%>: CLIT ;
+%<imp%>%<p2%>%<pl%>:%{I%}г%{I%}з CLIT ;
 
 LEXICON V-DER
 
@@ -1226,6 +1227,7 @@ LEXICON Verbs
 аңла:аңла V-TV-IR-LEX ; ! ""
 бир:бир V-TV-IR-LEX ; ! ""
 ди:ди V-TV-IR-LEX ; ! ""
+сөйлә:сөйлә V-TV-IR-LEX ; ! ""
 
 LEXICON Punctuation
 
