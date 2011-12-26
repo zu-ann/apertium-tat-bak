@@ -76,6 +76,7 @@ Multichar_Symbols
 %<ger4%>           ! -{G}{A}нс{I}
 %<ger5%>           ! -{G}{A}н
 %<ger6%>           ! -{I}р
+%<ger7%>           ! -{A}с{A}{K}
 %<cond%>           ! -h{A}
 
 %<sent%>           ! Sentence marker
@@ -241,6 +242,7 @@ V-FINITE-FORMS ;
 %<ger4%>:%>%{G%}%{A%}нс%{I%} POSS ;
 %<ger5%>:%>%{G%}%{A%}н POSS ;
 %<ger6%>:%>%{I%}р POSS ;
+%<ger7%>:%>%{A%}с%{A%}%{K%} POSS ;
 %<cond%>:%>һ%{A%} V-PERS-S2 ;
 
 !%<imp%>%<p1%>%<sg%>:%>%{A%}й%{I%}м CLIT ; ! jussive ^____^
