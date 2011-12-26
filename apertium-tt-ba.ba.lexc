@@ -31,6 +31,8 @@ Multichar_Symbols
 %<neg%>            ! 
 
 %<comp%>           ! 
+%<ord%>            ! 
+%<sim%>            ! 
 
 %<top%>            ! 
 %<ant%>            ! 
@@ -170,6 +172,8 @@ LEXICON DIGITLEX
 LEXICON NUMLEX
 
 %<num%>: POSS ; 
+%<num%>%<ord%>:%>%{I%}нс%{I%} POSS ; 
+%<num%>%<sim%>:%>{A%}р POSS ; 
 
 LEXICON NPANTMLEX
 
@@ -947,6 +951,7 @@ LEXICON Nouns
 ҡош:ҡош NLEX ; ! ""
 хайуан:хайуан NLEX ; ! ""
 һөйләш:һөйләш NLEX ; ! ""
+һеңле:һеңле NLEX ; ! ""
 
 !краб:краб NLEX ; ! ""
 !флаг:флаг NLEX ; ! ""
@@ -1207,6 +1212,7 @@ LEXICON Verbs
 бир:бир V-TV-LEX ; ! ""
 һөйлә:һөйлә V-TV-LEX ; ! ""
 ти:ти V-TV-LEX ; ! ""
+әйлән:әйлән V-IV-LEX ; ! ""
 
 LEXICON Punctuation
 
