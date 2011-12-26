@@ -30,6 +30,8 @@ Multichar_Symbols
 %<neg%>            ! 
 %<pron%>           ! 
 %<attr%>           ! 
+%<locattr%>        ! 
+%<coop%>           ! 
 
 %<top%>            ! 
 %<ant%>            ! 
@@ -159,6 +161,7 @@ POSS-REAL ;
 LEXICON NLEX-SG
 
 %<n%>: POSS ; 
+%<n%>%<locattr%>:%>%{L%}%{A%}%{G%}%{I%} POSS ;
 
 LEXICON NLEX-PL
 
@@ -168,6 +171,7 @@ LEXICON NLEX
 
 %<n%>: POSS ; 
 %<n%>%<pl%>:%>%{L%}%{A%}р POSS ; 
+%<n%>%<locattr%>:%>%{L%}%{A%}%{G%}%{I%} POSS ;
 
 LEXICON DIGITLEX
 
@@ -271,10 +275,18 @@ V-FINITE-FORMS ;
 %<imp%>%<p2%>%<sg%>: CLIT ;
 %<imp%>%<p2%>%<pl%>:%{I%}г%{I%}з CLIT ;
 
-LEXICON V-DER
+LEXICON V-NEG
 
 %<neg%>:%>м%{A%} V-COMMON-LEX ; 
-%<caus%>:%>%{I%}т V-COMMON-LEX ;
+
+V-COMMON-LEX ; 
+
+LEXICON V-DER
+
+%<caus%>:%>%{I%}т V-NEG ;
+%<coop%>:%>%{I%}ш V-NEG ;
+
+V-NEG ;
 
 LEXICON V-IV-IR-LEX
 
@@ -980,6 +992,8 @@ LEXICON Nouns
 елмаю:елмаю%{w%} NLEX ; ! "smile"
 утыргыч:утыргыч NLEX ; ! ""
 сеңел:сеңел NLEX ; ! ""
+алд:алд NLEX ; ! ""
+
 
 
 
@@ -1194,6 +1208,7 @@ LEXICON Adverbs
 тышта:тышта ADVLEX ; ! ""
 соң:соң ADVLEX ; ! ""
 һаман:һаман ADVLEX ; ! "" FIXME: Check
+әлбәттә:әлбәттә ADVLEX ; ! ""
 
 
 LEXICON Verbs
@@ -1235,8 +1250,12 @@ LEXICON Verbs
 аңла:аңла V-TV-IR-LEX ; ! ""
 бир:бир V-TV-IR-LEX ; ! ""
 ди:ди V-TV-IR-LEX ; ! ""
+йөгер:йөгер V-IV-IR-LEX ; ! ""
+бет:бет V-IV-IR-LEX ; ! ""
+яшерен:яшерен V-IV-IR-LEX ; ! ""
 сөйлә:сөйлә V-TV-IR-LEX ; ! ""
-әйлән:әйлән V-TV-AR-LEX ; ! ""
+әйлән:әйлән V-IV-AR-LEX ; ! ""
+капла:капла V-TV-IR-LEX ; ! ""
 
 LEXICON Punctuation
 
