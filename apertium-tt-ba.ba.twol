@@ -27,11 +27,11 @@ BackVow          =  А О Ы У Ю Я
 FrontVow         =  Ә Е Э И Ө Ү
                     ә е э и ө ү ; 
 
-FrontRoundVow    =  Ө
-                    ө ; 
-
-BackRoundVow     =  О 
-                    о ; 
+! FrontRoundVow    =  Ө   ! These names are ridiculous, but I redid it anyway
+!                     ө ; 
+! 
+! BackRoundVow     =  О 
+!                     о ; 
 
 Cns              =  Б В Г Ғ Д Ҙ Ж З Й К Ҡ Л М Н Ң П Р С Ҫ Т Ф Х Һ Ц Ч Ш Щ Ъ Ь 
                     б в г ғ д ҙ ж з й к ҡ л м н ң п р с ҫ т ф х һ ц ч ш щ ъ ь ; 
@@ -65,18 +65,18 @@ Rules
 %{A%}:ә <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
 
 "I Vowel Harmony"
-%{I%}:е <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
-            except
-                                  %{n%}:н/[ :0 | %>: ] _ ;
-                                  [ :FrontRoundVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
+%{I%}:Vy <=> [ :PreviousVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
+             except
+                                      %{n%}:н/[ :0 | %>: ] _ ;
+             where          Vy in ( о е е е е ө е )
+                   PreviousVow in ( о ә е э и ө ү )
+             matched;
 
- "I Vowel Harmony (о)"
-%{I%}:о <=> [ :BackRoundVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
- 
- "I Vowel Harmony (ө)"
-%{I%}:ө <=> [ :FrontRoundVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
-                        
-                       
+! "I Vowel Harmony (о)"
+! %{I%}:о <=> [ :BackRoundVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
+! 
+! "I Vowel Harmony (ө)"
+! %{I%}:ө <=> [ :FrontRoundVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
 
 "E Vowel Harmony"
 %{E%}:ә <=> [ :FrontVow :Cns* ]/[ %>: | %  | :0 ] _ ;
@@ -174,10 +174,10 @@ Cx:Cy <=> :CnsVoiceless/[ %>: | %  ] _ ;
                    :Nasals %>: _ %{A%}: .#. ;
 
 "Voicing assimilation of back G"
-%{G%}:ҡ <=> [ :BackVow :Cns* [ :CnsVoiceless - :FrontCns ] ]/[ %>: ] _ ;
+%{G%}:ҡ <=> [ :BackVow :Cns* [ :CnsVoiceless - :FrontCns ] ]/[ %>: | :0 ] _ ;
 
 "Voicing assimilation of front G"
-%{G%}:к <=> [ :FrontVow :Cns* [ :CnsVoiceless - :BackCns ] ]/[ %>: ] _ ;
+%{G%}:к <=> [ :FrontVow :Cns* [ :CnsVoiceless - :BackCns ] ]/[ %>: | :0 ] _ ;
 !                               [ :CnsVoiceless & :FrontCns ]/[ %>: ] _ ;
 
 "Passive {l} becomes n after verb stem ending in /l/ or /r/"
