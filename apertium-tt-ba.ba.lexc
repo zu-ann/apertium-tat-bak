@@ -240,7 +240,6 @@ LEXICON V-COMMON-LEX
 V-FINITE-FORMS ; 
 
 %<ger1%>:%>м%{A%}%{K%} POSS ;
-%<ger2%>:%>%{I%}п POSS ;
 %<ger3%>:%>%{G%}%{A%}с POSS ;
 %<ger4%>:%>%{G%}%{A%}нс%{I%} POSS ;
 %<ger5%>:%>%{G%}%{A%}н POSS ;
@@ -252,8 +251,9 @@ V-FINITE-FORMS ;
 %<imp%>%<p2%>%<sg%>: CLIT  ;
 %<imp%>%<p2%>%<pl%>:%>%{I%}г%{I%}ҙ CLIT ;
 
-LEXICON V-FUTURES-LEX
+LEXICON V-IRREG-LEX
 
+%<ger2%>:%>%{I%}п POSS ;
 %<fut%>:%>%{I%}р V-PERS-S3 ; 
 %<neg%>%<fut%>:%>м%{A%}ҫ V-PERS-S3-NO1SG ; 
 %<neg%>%<fut%>%<p1%>%<sg%>:%>м%{A%}%>м CLIT ;
@@ -262,31 +262,32 @@ LEXICON V-FUTURES-LEX
 LEXICON V-NEG-LEX 
 
 %<neg%>:%>м%{A%} V-COMMON-LEX ;
+%<neg%>%<ger2%>:%>м%{A%}%>%{E%}%>с%{A%} POSS ;
 V-COMMON-LEX ; 
 
 LEXICON V-IV-LEX
 
 %<v%>%<iv%>: V-COMMON-LEX ;
-%<v%>%<iv%>: V-FUTURES-LEX ;
+%<v%>%<iv%>: V-IRREG-LEX ;
+%<v%>%<iv%>: V-NEG-LEX ;
 %<v%>%<iv%>%<neg%>:%>м%{A%} V-COMMON-LEX ;
-%<v%>%<iv%>%<neg%>:%>м%{A%} V-FUTURES-LEX ;
 %<v%>%<iv%>%<caus%>:%>%{I%}т V-NEG-LEX ;
-%<v%>%<iv%>%<caus%>:%>%{I%}т V-FUTURES-LEX ;
+%<v%>%<iv%>%<caus%>:%>%{I%}т V-IRREG-LEX ;
 %<v%>%<iv%>%<coop%>:%>%{I%}ш V-NEG-LEX ; 
-%<v%>%<iv%>%<coop%>:%>%{I%}ш V-FUTURES-LEX ;
+%<v%>%<iv%>%<coop%>:%>%{I%}ш V-IRREG-LEX ;
 
 LEXICON V-TV-LEX
 
 %<v%>%<tv%>: V-COMMON-LEX ;
-%<v%>%<tv%>: V-FUTURES-LEX ;
+%<v%>%<tv%>: V-IRREG-LEX ;
+%<v%>%<tv%>: V-NEG-LEX ;
 %<v%>%<tv%>%<neg%>:%>м%{A%} V-COMMON-LEX ;
-%<v%>%<tv%>%<neg%>:%>м%{A%} V-FUTURES-LEX ;
 %<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-NEG-LEX ;
-%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-FUTURES-LEX ;
+%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-IRREG-LEX ;
 %<v%>%<tv%>%<caus%>:%>%{I%}т V-NEG-LEX ; 
-%<v%>%<tv%>%<caus%>:%>%{I%}т V-FUTURES-LEX ;
+%<v%>%<tv%>%<caus%>:%>%{I%}т V-IRREG-LEX ;
 %<v%>%<tv%>%<coop%>:%>%{I%}ш V-NEG-LEX ; 
-%<v%>%<tv%>%<coop%>:%>%{I%}ш V-FUTURES-LEX ;
+%<v%>%<tv%>%<coop%>:%>%{I%}ш V-IRREG-LEX ;
 
 LEXICON VAUX
 
@@ -1182,6 +1183,7 @@ LEXICON Adverbs
 тышта:тышта ADVLEX ; ! ""
 һуң:һуң ADVLEX ; ! ""
 әлбиттә:әлбиттә ADVLEX ; ! ""
+алдындағы:алдындағы ADVLEX ; ! ""
 һаман:һаман ADVLEX ; ! "" FIXME: Check
 
 
