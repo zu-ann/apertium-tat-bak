@@ -7,8 +7,10 @@
       <cat-item tags="*"/>
     </def-cat>
    
-    <def-cat n="qst">
+    <def-cat n="čast">
       <cat-item tags="qst"/>
+      <cat-item lemma="дыр" tags="part"/>
+      <cat-item lemma="сы" tags="part"/>
     </def-cat>
  
   </section-def-cats>
@@ -22,7 +24,7 @@
   </section-def-attrs>
  
   <section-def-vars>
-    <def-var n="number"/>
+    <def-var n="a" v="~"/>
   </section-def-vars>  
 
   <section-rules>
@@ -30,7 +32,21 @@
     <rule>
       <pattern>
         <pattern-item n="vse"/>
-        <pattern-item n="qst"/>
+      </pattern>
+      <action>
+        <out>
+          <var n="a"/>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+    <rule>
+      <pattern>
+        <pattern-item n="vse"/>
+        <pattern-item n="čast"/>
       </pattern>
       <action>
         <out>
