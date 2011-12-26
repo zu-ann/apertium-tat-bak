@@ -10,6 +10,7 @@
     <sdef n="prn"      c="Местоимение"/>
     <sdef n="adv"      c="Наречие"/>
     <sdef n="post"     c="Послелог"/>
+    <sdef n="part"     c="Частица"/>
     <sdef n="postadv"  c="Посленаречие"/>
     <sdef n="adj"      c="Прилагательное"/>
     <sdef n="cnjcoo"   c="Союз"/>
@@ -19,8 +20,9 @@
 
     <sdef n="pers"     c="Personal"/>
     <sdef n="itg"      c="Interrogative"/>
+    <sdef n="ref"      c="Reflexive"/>
     <sdef n="qnt"      c="Quantifier"/>
-    <sdef n="dem"      c=""/>
+    <sdef n="dem"      c="Demonstrative"/>
 
     <sdef n="top"      c="Toponym"/>
     <sdef n="ant"      c="Anthroponym"/>
@@ -41,8 +43,9 @@
   </sdefs>
   <section id="main" type="standard">
 
-    <!-- Раздел: -->
+    <!-- Раздел: Частицы -->
     <e><p><l>мы<s n="qst"/></l><r>мы<s n="qst"/></r></p></e>
+    <e><p><l>дыр<s n="part"/></l><r>лыр<s n="part"/></r></p></e>
 
     <!-- Раздел: Союзы -->
     <e><p><l>вә<s n="cnjcoo"/></l><r>үә<s n="cnjcoo"/></r></p></e>
@@ -76,6 +79,9 @@
     <e><p><l>дүрт<s n="num"/></l><r>дүрт<s n="num"/></r></p></e>
     <e><p><l>биш<s n="num"/></l><r>биш<s n="num"/></r></p></e>
     <e><p><l>алты<s n="num"/></l><r>алты<s n="num"/></r></p></e>
+    <e><p><l>җиде<s n="num"/></l><r>ете<s n="num"/></r></p></e>
+    <e><p><l>сигез<s n="num"/></l><r>һигеҙ<s n="num"/></r></p></e>
+    <e><p><l>тугыз<s n="num"/></l><r>туғыҙ<s n="num"/></r></p></e>
 
     <e><p><l>ун<s n="num"/></l><r>ун<s n="num"/></r></p></e>
     <e><p><l>йөз<s n="num"/></l><r>йөҙ<s n="num"/></r></p></e>
@@ -90,6 +96,7 @@
     <e><p><l>алар<s n="prn"/><s n="pers"/></l><r>улар<s n="prn"/><s n="pers"/></r></p></e>
 
     <e><p><l>ни<s n="prn"/><s n="itg"/></l><r>ни<s n="prn"/><s n="itg"/></r></p></e>
+    <e><p><l>нимә<s n="prn"/><s n="itg"/></l><r>нимә<s n="prn"/><s n="itg"/></r></p></e>
     <e><p><l>кем<s n="prn"/><s n="itg"/></l><r>кем<s n="prn"/><s n="itg"/></r></p></e>
 
     <e><p><l>бу<s n="prn"/><s n="dem"/></l><r>был<s n="prn"/><s n="dem"/></r></p></e>
@@ -97,6 +104,7 @@
     <e><p><l>шул<s n="prn"/><s n="dem"/></l><r>шул<s n="prn"/><s n="dem"/></r></p></e>
     <e r="RL"><p><l>шул<s n="prn"/><s n="dem"/></l><r>теге<s n="prn"/><s n="dem"/></r></p></e>
 
+    <e><p><l>үз<s n="prn"/><s n="ref"/></l><r>үҙ<s n="prn"/><s n="ref"/></r></p></e>
 
     <!-- Раздел: -->
     <e><p><l>бу<s n="det"/><s n="dem"/></l><r>был<s n="det"/><s n="dem"/></r></p></e>
@@ -796,6 +804,7 @@
     <e><p><l>һәрвакыт<s n="adv"/></l><r>һәр<b/>ваҡыт<s n="adv"/></r></p></e>
     <e><p><l>тышта<s n="adv"/></l><r>тышта<s n="adv"/></r></p></e>
     <e><p><l>соң<s n="adv"/></l><r>һуң<s n="adv"/></r></p></e>
+    <e><p><l>һаман<s n="adv"/></l><r>һаман<s n="adv"/></r></p></e>
 
 
     <!-- Раздел: Глаголы -->

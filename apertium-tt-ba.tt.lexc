@@ -17,10 +17,12 @@ Multichar_Symbols
 %<cnjcoo%>         ! Союз
 %<cnjadv%>         ! Союз
 
+%<part%>           ! Частица
 %<pers%>           ! 
 %<itg%>            ! 
 %<dem%>            ! 
 %<qnt%>            ! 
+%<ref%>            ! 
 
 %<caus%>           ! 
 %<pass%>           ! 
@@ -71,6 +73,7 @@ Multichar_Symbols
 %<ger4%>           ! -{G}{A}нч{I}
 %<ger5%>           ! -{G}{A}н
 %<ger6%>           ! -{I}р / -{A}р
+%<cond%>           ! -с{A}
 
 %<sent%>           ! Sentence marker
 %<guio%>           ! Hyphen
@@ -121,6 +124,7 @@ LEXICON CLIT
 
 %+да%<cnjcoo%>:% %{D%}%{A%} # ;
 %+мы%<qst%>:%>м%{I%} # ;
+%+дыр%<part%>:%>%{D%}%{I%}р # ;
 # ;
 
 LEXICON CASE 
@@ -254,35 +258,43 @@ V-FINITE-FORMS ;
 %<ger3%>:%>%{G%}%{A%}ч POSS ; 
 %<ger4%>:%>%{G%}%{A%}нч%{I%} POSS ; 
 %<ger5%>:%>%{G%}%{A%}н POSS ;
+%<cond%>:%>с%{A%} V-PERS-S2 ;
 
 %<imp%>%<p2%>%<sg%>: # ;
 %<imp%>%<p2%>%<pl%>:%{I%}г%{I%}з # ;
+
+LEXICON V-DER
+
+%<neg%>:%>м%{A%} V-COMMON-LEX ; 
+%<caus%>:%>%{I%}т V-COMMON-LEX ;
 
 LEXICON V-IV-IR-LEX
 
 %<v%>%<iv%>: V-COMMON-LEX ; 
 %<v%>%<iv%>: V-FUT-IR; 
-%<v%>%<iv%>%<neg%>:%>м%{A%} V-COMMON-LEX ; 
+%<v%>%<iv%>: V-DER; 
 
 LEXICON V-TV-IR-LEX
 
 %<v%>%<tv%>: V-COMMON-LEX ; 
 %<v%>%<tv%>: V-FUT-IR; 
-%<v%>%<tv%>%<neg%>:%>м%{A%} V-COMMON-LEX ; 
+%<v%>%<tv%>: V-DER; 
 %<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON-LEX ; 
+%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-FUT-IR ; 
 
 LEXICON V-IV-AR-LEX
 
 %<v%>%<iv%>: V-COMMON-LEX ; 
 %<v%>%<iv%>: V-FUT-AR ;
-%<v%>%<iv%>%<neg%>:%>м%{A%} V-COMMON-LEX ; 
+%<v%>%<iv%>: V-DER; 
 
 LEXICON V-TV-AR-LEX
 
 %<v%>%<tv%>: V-COMMON-LEX ; 
 %<v%>%<tv%>: V-FUT-AR ;
-%<v%>%<tv%>%<neg%>:%>м%{A%} V-COMMON-LEX ; 
+%<v%>%<tv%>: V-DER; 
 %<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON-LEX ; 
+%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-FUT-AR ; 
 
 LEXICON VAUX
 
@@ -355,6 +367,11 @@ LEXICON PRNDEM-ŠUL
 LEXICON PRNITGLEX
 
 %<prn%>%<itg%>: POSS ; 
+
+LEXICON PRNREFLEX
+
+%<prn%>%<ref%>: POSS ; 
+
 
 LEXICON DETDEMLEX
 
@@ -451,10 +468,13 @@ LEXICON Pronouns
 PRNLEX-PERS ; 
 
 ни:ни PRNITGLEX ; ! ""
+нимә:нимә PRNITGLEX ; ! ""
 кем:кем PRNITGLEX ; ! ""
 
 бу: PRNDEM-BU ; ! ""
 шул: PRNDEM-ŠUL ; ! ""
+
+үз:үз PRNREFLEX ; ! ""
 
 LEXICON Determiners
 
@@ -471,6 +491,10 @@ LEXICON Numerals
 дүрт:дүрт NUMLEX ; ! ""
 биш:биш NUMLEX ; ! ""
 алты:алты NUMLEX ; ! ""
+җиде:җиде NUMLEX ; ! ""
+сигез:сигез NUMLEX ; ! ""
+тугыз:тугыз NUMLEX ; ! ""
+
 ун:ун NUMLEX ; ! ""
 йөз:йөз NUMLEX ; ! ""
 мең:мең NUMLEX ; ! ""
@@ -739,7 +763,6 @@ LEXICON Nouns
 тел:тел NLEX ; ! "" 
 сүз:сүз NLEX ; ! "" 
 әңгәмә:әңгәмә NLEX ; ! "" 
-сөйләшү:сөйләшү NLEX ; ! "" 
 телмәр:телмәр NLEX ; ! "" 
 сәбәп:сәбәп NLEX ; ! "" 
 сылтау:сылтау NLEX ; ! "" 
@@ -943,7 +966,7 @@ LEXICON Nouns
 өстәл:өстәл NLEX ; ! ""
 кош:кош NLEX ; ! ""
 хайван:хайван NLEX ; ! ""
-сөйләш:сөйләшNLEX ; ! ""
+сөйләш:сөйләш NLEX ; ! ""
 концерт:концерт NLEX ; ! "concert"
 песи:песи%{j%} NLEX ; ! "cat"
 елмаю:елмаю%{w%} NLEX ; ! "smile"
@@ -1161,6 +1184,8 @@ LEXICON Adverbs
 һәрвакыт:һәрвакыт ADVLEX ; ! ""
 тышта:тышта ADVLEX ; ! ""
 соң:соң ADVLEX ; ! ""
+һаман:һаман ADVLEX ; ! "" FIXME: Check
+
 
 LEXICON Verbs
 
@@ -1228,4 +1253,3 @@ LEXICON Punctuation
 /%<sent%>:/ # ;
 
 <(%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9)+>  DIGITLEX ; ! Use/Circ
-

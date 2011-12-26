@@ -14,34 +14,21 @@ Alphabet
 
 Sets
 
-SurVow          =  А О Ә Е Э И Ө У Ү Ы Ю Я
-                а о ә е э и ө у ү ы ю я  ; 
+SurVow           =  А О Ә Е Э И Ө У Ү Ы Ю Я
+                    а о ә е э и ө у ү ы ю я  ; 
 
+Vow              =  А О Ә Е Э И Ө У Ү Ы Ю Я
+                    а о ә е э и ө у ү ы ю я 
+                  %{E%} %{A%} %{I%} ;
 
-Vow          =  А О Ә Е Э И Ө У Ү Ы Ю Я
-                а о ә е э и ө у ү ы ю я 
-               %{E%} %{A%} %{I%} ;
+BackVow          =  А О Ы У Ю Я
+                    а о ы у ю я ; 
 
-Cns          =  Б В Г Ғ Д Ҙ Ж З Й К Ҡ Л М Н Ң П Р С Ҫ Т Ф Х Һ Ц Ч Ш Щ Ъ Ь 
-                б в г ғ д ҙ ж з й к ҡ л м н ң п р с ҫ т ф х һ ц ч ш щ ъ ь ; 
+FrontVow         =  Ә Е Э И Ө Ү
+                    ә е э и ө ү ; 
 
-Vow1         =  Ү У Ю
-                ү у ю ; 
-
-! Cns1         =  П Т К Ҡ Ф Ҫ С Ш Щ Х Һ Б Г Ғ Д Ц Ч
-!                 п т к ҡ ф ҫ с ш щ х һ б г ғ д ц ч ;
-! 
-! Cns2         =  Й Ҙ Р 
-!                 й ҙ р ; 
-! 
-! Cns3         =  Ж З Л М Н Ң  
-!                 ж з л м н ң  ; 
-
-BackVow      =  А О Ы У Ю Я
-                а о ы у ю я ; 
-
-FrontVow     =  Ә Е Э И Ө Ү
-                ә е э и ө ү ; 
+Cns              =  Б В Г Ғ Д Ҙ Ж З Й К Ҡ Л М Н Ң П Р С Ҫ Т Ф Х Һ Ц Ч Ш Щ Ъ Ь 
+                    б в г ғ д ҙ ж з й к ҡ л м н ң п р с ҫ т ф х һ ц ч ш щ ъ ь ; 
 
 CnsVoiceless     =  П Т К Ҡ Ф Ҫ С Ш Щ Х Һ Б Г Ғ Д Ц Ч
                     п т к ҡ ф ҫ с ш щ х һ б г ғ д ц ч ; 
@@ -52,15 +39,14 @@ CnsVcdConts      =  Й В Р Ҙ      ! Voiced Continuants
 CnsVcdNonConts   =  Л М Н Ң Ж    ! Voiced Non-Continuants
                     л м н ң ж ;
 
-Nasals           = М Н Ң 
-                   м н ң ; 
+Nasals           =  М Н Ң 
+                    м н ң ; 
 
-FrontCns         = К Г Ь
-                   к г ь ;
+FrontCns         =  К Г Ь
+                    к г ь ;
 
-BackCns          = Ҡ Ғ 
-                   ҡ ғ ;
-
+BackCns          =  Ҡ Ғ  
+                    ҡ ғ ; 
 
 Rules 
 
@@ -90,23 +76,6 @@ Rules
 
 "Deletion of {A} after vowels"
 %{A%}:0 <=> [ :SurVow ]/[ :0 | %>: ] _ ;
-
-
-
-! "Alternation in locative -DA"
-! %{L%}:Cx <=> :Lx %>: _ %{A%}: [ .#. | %>: ];
-!         where Lx in ( а о е э и ө у ү ы ә ю я в й ҙ р ) 
-!               Cx in ( л л л л л л л л л л л л ҙ ҙ ҙ ҙ ) 
-!         matched ;           
-!
-! "Plural alternation"
-! %{L%}:ҙ <=> [ :Cns2 | :Vow1 ]  %>: _ %{A%}: р ;
-!
-! "Plural alternation after voiceless consonant"
-! %{L%}:т <=> [ :Cns1 | :в ] %>: _ %{A%}: р ;
-!
-! "Plural alternation after other voiced consonants"
-! %{L%}:д <=> :Cns3 %>: _ %{A%}: р ;
 
 
 !!!! Desonorisation !!!!

@@ -7,8 +7,9 @@
       <cat-item tags="*"/>
     </def-cat>
    
-    <def-cat n="qst">
+    <def-cat n="čast">
       <cat-item tags="qst"/>
+      <cat-item lemma="дыр" tags="part"/>
     </def-cat>
  
   </section-def-cats>
@@ -40,10 +41,11 @@
         </out>
       </action>
     </rule>
+
     <rule>
       <pattern>
         <pattern-item n="vse"/>
-        <pattern-item n="qst"/>
+        <pattern-item n="čast"/>
       </pattern>
       <action>
         <out>
