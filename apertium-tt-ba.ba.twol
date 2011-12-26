@@ -194,3 +194,8 @@ Cx:Cy <=> :CnsVoiceless/[ %>: | %  ] _ ;
 "Passive {l} becomes n after verb stem ending in /l/ or /r/"
 %{l%}:н <=> [ л :SurVow ]/[ :0 | %>: ] _ ;
             [ р :SurVow ]/[ :0 | %>: ] _ ;
+
+"Voicing assimilation of back K"
+%{K%}:ҡ <=> [ :BackVow ]/[ %>: | :0 ] _ ; 
+
+

@@ -25,6 +25,8 @@ Multichar_Symbols
 %<caus%>           ! 
 %<pass%>           ! 
 %<neg%>            ! 
+%<pron%>           ! 
+%<attr%>           ! 
 
 %<top%>            ! 
 %<ant%>            ! 
@@ -130,7 +132,7 @@ LEXICON CASE
 %<loc%>:%>%{D%}%{A%} CLIT ;
 %<abl%>:%>%{D%}%{A%}н CLIT ;
 
-LEXICON POSS
+LEXICON POSS-REAL
 
 %<px1sg%>:%>%{I%}м CASE ;
 %<px2sg%>:%>%{I%}ң CASE ;
@@ -139,6 +141,12 @@ LEXICON POSS
 %<px2pl%>:%>%{I%}%{G%}%{I%}з CASE ;
 
 CASE ;
+
+LEXICON POSS
+
+%<pron%>:%>%{L%}%{I%}%{K%}%{I%} CASE ;
+
+POSS-REAL ;
 
 LEXICON NLEX-SG
 
@@ -933,10 +941,13 @@ LEXICON Nouns
 мәйдан:мәйдан NLEX ; ! ""
 бакча:бакча NLEX ; ! ""
 өстәл:өстәл NLEX ; ! ""
+кош:кош NLEX ; ! ""
+хайван:хайван NLEX ; ! ""
+сөйләш:сөйләшNLEX ; ! ""
 концерт:концерт NLEX ; ! "concert"
 песи:песи%{j%} NLEX ; ! "cat"
 елмаю:елмаю%{w%} NLEX ; ! "smile"
-утыргыч:утыргыч NLEX ; ! "concert"
+утыргыч:утыргыч NLEX ; ! ""
 
 
 
@@ -1120,6 +1131,7 @@ LEXICON Adjectives
 
 шат:шат ALEX ; ! ""
 әйбәт:әйбәт ALEX ; ! ""
+соң:соң ALEX ; ! ""
 
 
 

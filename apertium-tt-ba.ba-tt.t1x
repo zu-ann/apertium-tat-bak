@@ -37,6 +37,8 @@
        
     <def-attr n="a_nom">
       <attr-item tags="n"/>
+      <attr-item tags="n.pron"/>
+      <attr-item tags="n.attr"/>
     </def-attr>
     
   </section-def-attrs>

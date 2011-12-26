@@ -21,6 +21,8 @@ Multichar_Symbols
 %<itg%>            ! 
 %<dem%>            ! 
 %<qnt%>            ! 
+%<pron%>           ! 
+%<attr%>           ! 
 
 %<pass%>           ! 
 %<caus%>           ! 
@@ -132,7 +134,8 @@ LEXICON CASE
 %<loc%>:%>%{L%}%{A%} CLIT ;
 %<abl%>:%>%{N%}%{A%}н CLIT ;
 
-LEXICON POSS
+
+LEXICON POSS-REAL
 
 %<px1sg%>:%>%{I%}м CASE ;
 %<px2sg%>:%>%{I%}ң CASE ;
@@ -141,6 +144,12 @@ LEXICON POSS
 %<px2pl%>:%>%{I%}%{G%}%{I%}ҙ CASE ;
 
 CASE ; 
+
+LEXICON POSS
+
+%<pron%>:%>%{L%}%{I%}%{K%}%{I%} CASE ;
+
+POSS-REAL ; 
 
 LEXICON NLEX
 
@@ -171,7 +180,7 @@ LEXICON NPTOPLEX
 LEXICON ALEX
 
 %<adj%>: # ; 
-%<adj%>%<comp%>:%>р%{A%}%{K%} # ; 
+%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} # ; 
 
 LEXICON V-PERS-S1 
 
@@ -911,6 +920,9 @@ LEXICON Nouns
 бесәй:бесәй NLEX ; ! ""
 ултырғыс:ултырғыс NLEX ; ! ""
 йылмайыу:йылмайыу NLEX ; ! ""
+ҡош:ҡош NLEX ; ! ""
+хайуан:хайуан NLEX ; ! ""
+һөйләш:һөйләш NLEX ; ! ""
 
 !краб:краб NLEX ; ! ""
 !флаг:флаг NLEX ; ! ""
@@ -936,6 +948,8 @@ LEXICON ProperNouns
 LEXICON Adjectives
 
 сәбәпле:сәбәпле ALEX ; ! ""
+һуң:һуң ALEX ; ! ""
+яҡын:яҡын ALEX ; ! ""
 
 айырым:айырым ALEX ; ! ""
 алдағы:алдағы ALEX ; ! ""
