@@ -79,6 +79,7 @@ Multichar_Symbols
 %<ger5%>           ! -{G}{A}н
 %<ger6%>           ! -{I}р
 %<ger7%>           ! -{A}с{A}{K}
+%<ger8%>           ! -{E}h
 %<cond%>           ! -h{A}
 
 %<sent%>           ! Sentence marker
@@ -228,6 +229,14 @@ LEXICON V-PERS-S3
 
 V-PERS-S3-NO1SG ; 
 
+LEXICON V-PERS-S4 ! Volition endings
+
+%<p1%>%<sg%>:%>%{I%}м CLIT ;
+%<p2%>%<sg%>:%>%{h%}%{I%}ң CLIT ;
+%<p3%>%<sg%>:%>%{h%}%{I%}%{n%} CLIT ;
+%<p1%>%<pl%>:%>б%{I%}ҙ CLIT ;
+%<p2%>%<pl%>:%>%{h%}%{I%}г%{I%}ҙ CLIT ;
+%<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
 
 LEXICON V-FINITE-FORMS
 
@@ -245,6 +254,7 @@ V-FINITE-FORMS ;
 %<ger5%>:%>%{G%}%{A%}н POSS ;
 %<ger6%>:%>%{I%}р POSS ;
 %<ger7%>:%>%{A%}с%{A%}%{K%} POSS ;
+%<ger8%>:%>%{E%}һ V-PERS-S4 ;
 %<cond%>:%>һ%{A%} V-PERS-S2 ;
 
 !%<imp%>%<p1%>%<sg%>:%>%{A%}й%{I%}м CLIT ; ! jussive ^____^
