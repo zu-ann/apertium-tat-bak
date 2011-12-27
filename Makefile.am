@@ -83,6 +83,21 @@ $(PREFIX1).autogen.hfst: .deps/$(LANG2).RL.hfst
 $(PREFIX2).automorf.hfst: .deps/$(LANG2).LR.hfst
 	hfst-invert $< | hfst-fst2fst -O -o $@
 
+###############################################################################
+## Debugging transducers (for testvoc)
+###############################################################################
+
+.deps/tt.LR-debug.hfst: $(BASENAME).$(LANG1).lexc
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	cat $< | grep -v 'Dir/RL' | grep -v 'Use/Circ' > .deps/$(LANG1).LR-debug.lexc
+	hfst-lexc --format foma .deps/$(LANG1).LR-debug.lexc -o .deps/$(LANG1).LR-debug.lexc.hfst
+	hfst-compose-intersect -1 .deps/$(LANG1).LR-debug.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
+
+.deps/ba.LR-debug.hfst: $(BASENAME).$(LANG2).lexc
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	cat $< | grep -v 'Dir/RL' | grep -v 'Use/Circ' > .deps/$(LANG2).LR-debug.lexc
+	hfst-lexc --format foma .deps/$(LANG2).LR-debug.lexc -o .deps/$(LANG2).LR-debug.lexc.hfst
+	hfst-compose-intersect -1 .deps/$(LANG2).LR-debug.lexc.hfst -2 .deps/$(LANG2).twol.hfst -o $@
 
 ###############################################################################
 ## Bilingual dictionaries
@@ -142,6 +157,12 @@ modes/$(PREFIX2).mode: modes.xml
 	apertium-gen-modes modes.xml
 	cp *.mode modes/
 
+###############################################################################
+## Installation stuff
+###############################################################################
+
+debug: .deps/$(LANG1).LR-debug.hfst .deps/$(LANG2).LR-debug.hfst
+
 EXTRA_DIST=$(PREFIX1).prob $(PREFIX2).prob \
            $(BASENAME).$(PREFIX1).t1x \
            $(BASENAME).$(PREFIX1).t2x \
@@ -164,6 +185,7 @@ apertium_tt_ba_DATA=$(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
 		    modes.xml
 
 noinst_DATA=modes/$(PREFIX1).mode modes/$(PREFIX2).mode
+
 
 install-data-local:
 	mv modes modes~
