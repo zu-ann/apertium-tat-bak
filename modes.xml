@@ -87,6 +87,24 @@
     </pipeline>
   </mode>
 
+  <mode name="tt-ba-lex" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="tt-ba.automorf.hfst"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="tt-ba.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="tt-ba.autobil.bin"/>
+      </program>
+      <program name="apertium-lrx-proc">
+        <file name="tt-ba.lrx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
 
   <mode name="tt-ba-transfer" install="no">
     <pipeline>
@@ -193,6 +211,23 @@
     </pipeline>
   </mode>
 
+  <mode name="tt-ba-lex" install="no">
+    <pipeline>
+      <program name="hfst-proc">
+        <file name="ba-tt.automorf.hfst"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ba-tt.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="ba-tt.autobil.bin"/>
+      </program>
+      <program name="apertium-lrx-proc">
+        <file name="ba-tt.lrx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
 
   <mode name="ba-tt-transfer" install="no">
     <pipeline>
