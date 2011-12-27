@@ -108,14 +108,19 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 "Deletion of {I} after vowels"
 %{I%}:0 <=> [ :Vow ]/[ :0 | %>: ] _ ;
 
-"Back assimilation of G"
-%{G%}:ғ <=> [ :BackVow :Cns* ]/[ %>: | :0 | :и | :у ] _ ;
-            except
-    :CnsVoiceless/[ %>: | :0 ] _ ;
-!        :FrontCns/[ %>: | :0 ] _ ;
-                   :NasalCns %>: _ %{A%}: .#. ;
+!"Back assimilation of G"
+!%{G%}:ғ <=> [ :BackVow :Cns* ]/[ %>: | :0 | :и | :у ] _ ;
+!            except
+!    :CnsVoiceless/[ %>: | :0 ] _ ;
+!!        :FrontCns/[ %>: | :0 ] _ ;
+!                   :NasalCns %>: _ %{A%}: .#. ;
 
 "Passive {l} becomes n after verb stem ending in /l/ or /r/"
 %{l%}:н <=> [ л :Vow ]/[ :0 | %>: ] _ ;
             [ р :Vow ]/[ :0 | %>: ] _ ;
 
+"Forward voicing assimilation"
+Cx:Cy <=> :CnsVoiceless/[ %>: | %  ] _ ;
+          where Cx in ( %{G%} %{D%} )
+                Cy in (   к     т   )
+                matched;
