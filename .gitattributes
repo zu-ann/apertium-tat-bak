@@ -17,6 +17,7 @@
 /apertium-tt-ba.tt-ba.t2x -text
 /apertium-tt-ba.tt.lexc -text
 /apertium-tt-ba.tt.twol -text
+/autogen.sh -text
 /ba-tt.prob -text svneol=unset#unset
 /configure.ac -text
 dev/inconsistency-summary.sh -text
