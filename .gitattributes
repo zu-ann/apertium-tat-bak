@@ -1,5 +1,11 @@
 * text=auto !eol
-/Makefile -text
+/AUTHORS -text
+/COPYING -text
+/ChangeLog -text
+/Makefile.am -text
+/Makefile~ -text
+/NEWS -text
+/README -text
 /apertium-tt-ba.ba-tt.t1x -text
 /apertium-tt-ba.ba-tt.t2x -text
 /apertium-tt-ba.ba.lexc -text
@@ -12,6 +18,7 @@
 /apertium-tt-ba.tt.lexc -text
 /apertium-tt-ba.tt.twol -text
 /ba-tt.prob -text svneol=unset#unset
+/configure.ac -text
 dev/inconsistency-summary.sh -text
 dev/inconsistency.sh -text
 dev/ru-tt-ba.txt -text
