@@ -68,5 +68,26 @@ then
   AC_MSG_ERROR([You don't have cg-proc installed.])
 fi
 
+AC_PATH_PROG(LRXCOMP, apertium-lrx-comp, no)
+if test x$ac_cv_path_LRXCOMP = x
+then
+  AC_MSG_ERROR([You don't have apertium-lrx-comp installed.])
+fi
+if test x$ac_cv_path_LRXCOMP = xno
+then
+  AC_MSG_ERROR([You don't have apertium-lrx-comp installed.])
+fi
+
+AC_PATH_PROG(LRXPROC, apertium-lrx-proc, no)
+if test x$ac_cv_path_LRXPROC = x
+then
+  AC_MSG_ERROR([You don't have apertium-lrx-proc installed.])
+fi
+if test x$ac_cv_path_LRXPROC = xno
+then
+  AC_MSG_ERROR([You don't have apertium-lrx-proc installed.])
+fi
+
+
 AC_OUTPUT([Makefile])
 
