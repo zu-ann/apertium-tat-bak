@@ -33,8 +33,8 @@ NasalCns  =  М Н Ң
 VoicedCns =  Б Д Г В З Ж С 
              б д г в з ж с ;             
 
-CnsVoiceless = В Җ Й К Л М Н Ң П Т Ф Х Һ Ц Ч Ш Щ Ъ Ь
-               в җ й к л м н ң п т ф х һ ц ч ш щ ъ ь  ;
+CnsVoiceless = К П Т Ф Х Һ Ц Ч Ш Щ Ъ Ь
+               к п т ф х һ ц ч ш щ ъ ь  ;
 
 Rules 
 
