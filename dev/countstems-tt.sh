@@ -1,4 +1,4 @@
-lexc="apertium-tt-ba.tt.lexc"
+lexc="../apertium-tt-ba.tt.lexc"
 allcounts=`hfst-lexc --format foma $lexc -o /dev/null | grep Root | sed 's/,/\n/g'`
 
 for line in $allcounts; do
