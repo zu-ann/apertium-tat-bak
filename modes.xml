@@ -115,10 +115,16 @@
         <file name="tt-ba.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
-      <program name="apertium-transfer">
+      <program name="lt-proc -b">
+        <file name="tt-ba.autobil.bin"/>
+      </program>
+      <program name="apertium-lrx-proc">
+        <file name="tt-ba.lrx.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
         <file name="apertium-tt-ba.tt-ba.t1x"/>
         <file name="tt-ba.t1x.bin"/>
-        <file name="tt-ba.autobil.bin"/>
+      <!--  <file name="tt-ba.autobil.bin"/>-->
       </program>
     </pipeline>
   </mode>
@@ -211,7 +217,7 @@
     </pipeline>
   </mode>
 
-  <mode name="tt-ba-lex" install="no">
+  <mode name="ba-tt-lex" install="no">
     <pipeline>
       <program name="hfst-proc">
         <file name="ba-tt.automorf.hfst"/>
