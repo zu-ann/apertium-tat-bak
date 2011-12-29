@@ -81,6 +81,7 @@ Multichar_Symbols
 %<ger7%>           ! -{A}с{A}{K}
 %<ger8%>           ! -{E}h
 %<cond%>           ! -h{A}
+%<vol%>            ! -{G}{I}
 
 %<sent%>           ! Sentence marker
 %<guio%>           ! Hyphen
@@ -244,9 +245,7 @@ LEXICON V-FINITE-FORMS
 %<ifi%>:%>%{N%}%{I%} V-PERS-S2 ; 
 %<past%>:%>%{G%}%{A%}н V-PERS-S3 ; 
 
-LEXICON V-COMMON-LEX
-
-V-FINITE-FORMS ; 
+LEXICON V-NONFINITE-FORMS
 
 %<ger1%>:%>м%{A%}%{K%} POSS ;
 %<ger3%>:%>%{G%}%{A%}с POSS ;
@@ -256,10 +255,16 @@ V-FINITE-FORMS ;
 %<ger7%>:%>%{A%}с%{A%}%{K%} POSS ;
 %<ger8%>:%>%{E%}һ V-PERS-S4 ;
 %<cond%>:%>һ%{A%} V-PERS-S2 ;
+%<vol%>:%>%{G%}%{I%} V-PERS-S2 ;
 
 !%<imp%>%<p1%>%<sg%>:%>%{A%}й%{I%}м CLIT ; ! jussive ^____^
 %<imp%>%<p2%>%<sg%>: CLIT  ;
 %<imp%>%<p2%>%<pl%>:%>%{I%}г%{I%}ҙ CLIT ;
+
+LEXICON V-COMMON-LEX
+
+V-FINITE-FORMS ; 
+V-NONFINITE-FORMS ;
 
 LEXICON V-IRREG-LEX
 
@@ -407,6 +412,7 @@ LEXICON CALEX
 LEXICON PREDLEX
 
 %<pred%>: CLIT ; 
+!%<pred%>: V-NONFINITE-FORMS ; 
 
 LEXICON PREDLEX-I
 
@@ -966,7 +972,7 @@ LEXICON Nouns
 
 өҫтәл:өҫтәл NLEX ; ! ""
 концерт:концерт NLEX ; ! ""
-салбар:салбар NLEX ; ! ""
+!салбар:салбар NLEX ; ! ""
 бесәй:бесәй NLEX ; ! ""
 ултырғыс:ултырғыс NLEX ; ! ""
 йылмайыу:йылмайыу NLEX ; ! ""
