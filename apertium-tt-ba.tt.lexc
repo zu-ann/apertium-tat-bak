@@ -48,9 +48,10 @@ Multichar_Symbols
 %<loc%>            ! Урын-вакыт килеше ! Предложный
 
 ! Levels of comparison of adjectives ! Сыйфат дәрәҗәләре
-%<pst%>            ! Positive level of comparison     ! Төп дәрәҗә
-%<comp%>           ! Comparative level of comparison  ! Чагыштыру дәрәҗәсе
-%<sup%>	           ! Superlative level of comparison  ! Артыклык дәрәҗәсе
+%<pst%>            ! Positive ! Төп дәрәҗә
+%<comp%>           ! Comparative ! Чагыштыру дәрәҗәсе
+%<sup%>	           ! Superlative ! Артыклык дәрәҗәсе
+
 !! Кимлек дәрәҗәсе регуляр форма түгел. Андый формадагыларны төп дәрәҗәдәге сыйфатлар дип аерым кертергә булыр
 
 %<det%>            ! 
