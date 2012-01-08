@@ -1,23 +1,71 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!   M O R P H O L O G I C A L · T R A N S D U C E R · F O R · T A T A R     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-Multichar_Symbols 
+Multichar_Symbols
 
-%<n%>              ! Имя существительное 
-%<prn%>            ! Местоимение
-%<adv%>            ! Наречие
-%<num%>            ! Число
+! Part of speech categories
+%<n%>              ! Исем              ! Noun                      ! Существительное
+%<adj%>            ! Сыйфат            ! Adjective                 ! Прилагательное
+%<num%>            ! Сан               ! Number	                   ! Числительное   
+%<prn%>            ! Алмашлык          ! Pronoun                   ! Местоимение
+%<v%>              ! Фигыль            ! Verb                      ! Глагол
+%<adv%>            ! Рәвеш             ! Adverb                    ! Наречие
+
+%<post%>           ! Бәйлек            ! Postposition              ! Послелог
+%<cnjcoo%>         ! Тезүче теркәгеч   ! Co-ordinating conjunction ! Сочинительный союз
+%<cnjsub%>         ! Ияртүче теркәгеч  ! Subordinating conjunction ! Подчинительный союз
+%<part%>           ! Кисәкчә           ! Particle                  ! Частица
+
+%<ij%>             ! Ымлык             ! Interjection              ! Междометие
+! аваз ияртеме
+! модаль сүз
+
+%<abbr%>           ! Abbreviation
+
+! Arbitrary subcategories
+!! for nouns
+%<np%>             ! Ялгызлык исем     ! Proper noun               ! Имя обственное
+!! for pronouns
+
+! Сан
+%<sg%>             ! Берлек сан        ! Единственное число
+%<pl%>             ! Күплек сан        ! Множественное число
+
+! Тартым
+%<px1sg%>          !
+%<px2sg%>          !
+%<px3sp%>          ! Өченче затта берлек санда да, күплек санда да бер үк форма
+%<px1pl%>          !
+%<px2pl%>          !
+
+! Килешләр
+%<nom%>            ! Баш килеш         ! Именительный
+%<gen%>            ! Иялек килеше      ! Родительный
+%<dat%>            ! Юнәлеш килеше     ! Дательный
+%<acc%>            ! Төшем килеше      ! Винительый
+%<abl%>            ! Чыгыш килеше      ! Творительный
+%<loc%>            ! Урын-вакыт килеше ! Предложный
+
+! Levels of comparison of adjectives ! Сыйфат дәрәҗәләре
+%<pst%>            ! Positive level of comparison     ! Төп дәрәҗә
+%<comp%>           ! Comparative level of comparison  ! Чагыштыру дәрәҗәсе
+%<sup%>	           ! Superlative level of comparison  ! Артыклык дәрәҗәсе
+!! Кимлек дәрәҗәсе регуляр форма түгел. Андый формадагыларны төп дәрәҗәдәге сыйфатлар дип аерым кертергә булыр ("әчкелтем")
+
 %<det%>            ! 
-%<np%>             ! Имя обственное
-%<v%>              ! Глагол
-%<vaux%>           ! 
-%<adj%>            ! Прилагательное
-%<post%>           ! Послелог
-%<postadv%>        ! Посленаречие
 %<pred%>           ! 
 %<qst%>            ! 
-%<cnjcoo%>         ! Союз
-%<cnjadv%>         ! Союз
 
-%<part%>           ! Частица
+! Seems that these (the next 7) are not really needed for Tatar (and Bashkir), but was afraid to remove them :)
+%<m%>              !
+%<f%>              !
+%<postadv%>        ! Посленаречие ! Is there such a thing in Tatar?
+%<vaux%>           ! 
+%<cnjadv%>         ! Союз
+%<tv%>             !
+%<iv%>             !
+
 %<pers%>           ! 
 %<itg%>            ! 
 %<dem%>            ! 
@@ -39,31 +87,9 @@ Multichar_Symbols
 %<sim%>            ! 
 %<comp%>           ! 
 
-%<tv%>             !
-%<iv%>             !
-
-%<m%>              !
-%<f%>              !
-
 %<p1%>             !
 %<p2%>             !
 %<p3%>             !
-
-%<px1sg%>          !
-%<px2sg%>          !
-%<px3sp%>          !
-%<px1pl%>          !
-%<px2pl%>          !
-
-%<sg%>             ! Единственное число
-%<pl%>             ! Множественное число
-
-%<nom%>            ! Именительный
-%<gen%>            ! Родительный
-%<dat%>            ! Дательный
-%<acc%>            ! Винительый
-%<loc%>            ! 
-%<abl%>            ! 
 
 %<pres%>           ! -{A}
 %<past%>           ! -{G}{A}н 
@@ -81,6 +107,7 @@ Multichar_Symbols
 %<ger8%>           ! -{E}с
 %<cond%>           ! -с{A}
 
+! Орфография
 %<sent%>           ! Sentence marker
 %<guio%>           ! Hyphen
 %<cm%>             ! Comma
@@ -90,13 +117,12 @@ Multichar_Symbols
 %<rpar%>           ! Parenthetical marker (right hand side) 
 %<lpar%>           ! Parenthetical marker (left hand side) 
 
-
 %{L%}              ! 
 %{G%}              ! 
 %{D%}              ! 
 %{K%}              ! 
 %{I%}              ! 
-%{A%}              ! 
+%{A%}              ! Realised as 'a', 'ә' 
 %{E%}              ! 
 
 %{s%}              ! 
