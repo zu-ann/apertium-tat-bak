@@ -7,7 +7,7 @@ Multichar_Symbols
 ! Part of speech categories
 %<n%>              ! Исем              ! Noun                      ! Существительное
 %<adj%>            ! Сыйфат            ! Adjective                 ! Прилагательное
-%<num%>            ! Сан               ! Number	                   ! Числительное   
+%<num%>            ! Сан               ! Number                    ! Числительное   
 %<prn%>            ! Алмашлык          ! Pronoun                   ! Местоимение
 %<v%>              ! Фигыль            ! Verb                      ! Глагол
 %<adv%>            ! Рәвеш             ! Adverb                    ! Наречие
@@ -51,16 +51,15 @@ Multichar_Symbols
 %<pst%>            ! Positive level of comparison     ! Төп дәрәҗә
 %<comp%>           ! Comparative level of comparison  ! Чагыштыру дәрәҗәсе
 %<sup%>	           ! Superlative level of comparison  ! Артыклык дәрәҗәсе
-!! Кимлек дәрәҗәсе регуляр форма түгел. Андый формадагыларны төп дәрәҗәдәге сыйфатлар дип аерым кертергә булыр ("әчкелтем")
+!! Кимлек дәрәҗәсе регуляр форма түгел. Андый формадагыларны төп дәрәҗәдәге сыйфатлар дип аерым кертергә булыр
 
 %<det%>            ! 
 %<pred%>           ! 
 %<qst%>            ! 
 
-! Seems that these (the next 7) are not really needed for Tatar (and Bashkir), but was afraid to remove them :)
 %<m%>              !
 %<f%>              !
-%<postadv%>        ! Посленаречие ! Is there such a thing in Tatar?
+%<postadv%>        ! гына
 %<vaux%>           ! 
 %<cnjadv%>         ! Союз
 %<tv%>             !
@@ -87,6 +86,7 @@ Multichar_Symbols
 %<sim%>            ! 
 %<comp%>           ! 
 
+! Зат
 %<p1%>             !
 %<p2%>             !
 %<p3%>             !
@@ -162,22 +162,39 @@ LEXICON CLIT
 
 LEXICON CASE 
 
-%<nom%>: CLIT ;
-%<gen%>:%>н%{I%}ң CLIT ;
-%<dat%>:%>%{G%}%{A%} CLIT ;
-%<acc%>:%>н%{I%} CLIT ;
-%<loc%>:%>%{D%}%{A%} CLIT ;
-%<abl%>:%>%{D%}%{A%}н CLIT ;
+%<nom%>: CLIT ;               ! - - -
+%<gen%>:%>н%{I%}ң CLIT ;      ! -ның/-нең
+%<dat%>:%>%{G%}%{A%} CLIT ;   ! -га/-гә, -ка/-кә           ! -а/-ә in nouns with possessives in singular (see below)
+%<acc%>:%>н%{I%} CLIT ;	      ! -ны/-не
+%<abl%>:%>%{D%}%{A%}н CLIT ;  ! -дан/-дән, -тан/-тән, -нан/нән 
+%<loc%>:%>%{D%}%{A%} CLIT ;   ! -да/-дә, -та/-тә
+
+!! китап
+!! китапның
+!! китапка
+!! китапны
+!! китаптан
+!! китапта
 
 LEXICON POSS-REAL
 
-%<px1sg%>:%>%{I%}м CASE ;
-%<px2sg%>:%>%{I%}ң CASE ;
-%<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;
-%<px1pl%>:%>%{I%}б%{I%}з CASE ;
-%<px2pl%>:%>%{I%}%{G%}%{I%}з CASE ;
+%<px1sg%>:%>%{I%}м CASE ;                 ! -ым/-ем, -м
+%<px2sg%>:%>%{I%}ң CASE ;                 ! -ың/-ең, -ң
+%<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;        ! -ы/е, -сы/-се
+%<px1pl%>:%>%{I%}б%{I%}з CASE ;           ! -ыбыз/-ебез, -быз/-без
+%<px2pl%>:%>%{I%}%{G%}%{I%}з CASE ;       ! -ыгыз/-егез, -гыз/-гез
 
 CASE ;
+
+!LEXICON CASE-POSSESSIVE
+! In dative nouns with <px1sg> <px2sg> and <px3sp> gets an "-a" ending instead of "-га/-гә, -ка/-кә". Like it is in Turkish
+! In nouns with <px3sp> there is an enclitic "н" in most cases  
+!! китабым      китабың	        китабы
+!! китабымның   китабыңның      китабының
+!! китабыма!    китабыңа!       китабы-н-а!     
+!! китабымны    китабыңны       китабы-н           ! китабы-н-ы is an old form. Only in poetry :)
+!! китабымнан   китабыңнан      китабы-н-нан
+!! китабымда    китабыңда       китабы-н-да
 
 LEXICON POSS
 
