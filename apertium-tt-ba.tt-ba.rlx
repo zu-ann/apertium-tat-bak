@@ -20,10 +20,19 @@ LIST Post = post ;
 LIST Postadv = postadv ; 
 LIST Cm = cm ; 
 
+LIST Interr = itg ;
+
+# Semantic lists 
+
+LIST MOVEMENT-V = "йөгер" ; 
+
+LIST MOVEMENT-ADV = "тиз" "җай" ; 
+
 # All possible word categories
+
 SET WORD = N | V | A | Post | Postadv | Pron | Det | Adv | CC | CS | Interj | Num | ("\?") ;
 
-SET PRE-N =  A | Det | Num | (n gen) | (prn gen) | CC ; 
+SET PRE-N =  A | Det | Postadv | Num | (n gen) | (prn gen) | CC ; 
 
 SET MARK =  Cm | ("\\") | ("\;") ;
 
@@ -35,8 +44,14 @@ SET NPNH = WORDMARK - PRE-N ;
 SET NPNHA = WORDMARK - PRE-N - Adv ;
 SET NOT-ADV = WORDMARK - Adv ;
 
+# Barriers 
+
+SET S-BOUNDARY = CS | Interr | EOS; 
 
 SECTION
 
-SELECT A IF (0C A OR Adv) (1* N BARRIER NPNHA); 
+SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
+SELECT A IF (0 A OR Adv) (1* N BARRIER NPNHA); 
+    ## Әхмәт тиз генә иске зур бер агачка йөгерә.
+    ## Әхмәт җай генә иске зур бер агачка йөгерә.
 
