@@ -1700,3 +1700,319 @@
 1032	пространство	noun	аралык			арауык		
 1032	пространство	noun	ара			ара		
 1033	тема	noun	тема			тема		
+1034	начинаться	verb	башлан-, башланырга	başlan-, başlanırğa	äñ	башлан-, башланырға	başlan-, başlanırğa	äđṡ
+1035	мировой	adj	дөнья	dönya		донъя	donya	ҡҙҫға
+1035	мировой	adj	җәмәгать	cämäğät		йәмәғәт	yämäğät	
+1036	ударить	verb	сук-, сугарга	suq-, suğarğa		һуҡ-, һуғырға	huq-, huğırğa	
+1036	ударить	verb	бәр-, бәрергә	bär-, bärergä		бәр-, бәрергә	bär-, bärergä	
+1036	ударить	verb	тондыр-, тондырырга	tondır-, tondırırğa		тондор-, тондорорға	tondor-, tondororğa	
+1037	напоминать	verb	исенә төшер-, исенә төшерергә	isenä töşer-, isenä töşerergä		иҫенә төшөр-, иҫенә төшөрөргә	iṡenä töşör-, iṡenä töşörörgä	
+1038	заставить	verb	мәҗбүр ит-, мәҗбүр итәргә	mäcbür it-, mäcbür itärgä		мәжбүр ит-, мәжбүр итергә	mäjbür it-, mäjbür itergä	
+1039	линия	noun	сызык	sızıq		һыҙыҡ	hıđıq	
+1040	поговорить	verb	сөйләш-, сөйләшергә	söyläş-, söyläşergä		һөйләш-, һөйләшергә	höyläş-, höyläşergä	
+1040	поговорить	verb	сөйләшеп ал-, сөйләшеп алырга	söyläşep al-, söyläşep alırğa		һөйләшеп ал-, һөйләшеп алырға	höyläşep al-, höyläşep alırğa	
+1041	мешок	noun	капчык	qapçıq		ҡапсыҡ	qapsıq	
+1041	мешок	noun	капчык	qapçıq		тоҡ	toq	
+1042	наверно	нареч.	мөгаен	möğayın		моғайын	moğayın	
+1042	наверно	нареч.	бәлки	bälki		бәлки	bälki	
+1043	бабушка	noun	карт әни	qart äni		ҡартәсәй	qartäsäy	
+1043	бабушка	noun	дәү әни	däw äni		өләсәй	öläsäy	
+1043	бабушка	noun	карчык	qarçıq		ҡарсыҡ	qarsıq	
+1,043	бабушка	noun	әби	äbi		әбей	äbey	
+1044	крик	noun	тавыш	tawış		тауыш	tawış	
+1045	рот	noun	авыз	awız		ауыҙ	awıđ	
+1046	сутки	noun	тәүлек	täwlek		тәүлек	täwlek	
+1047	малый	adj	бәләкәй	bäläkäy 		бәләкәй	bäläkäy 	
+1047	малый	adj	кече	keçe		кесе	kese	
+1048	ключ	noun	ачкыч	açqıç		асҡыс	asqıs	
+1048	ключ	noun	чишмә	çişmä		шишмә	şişmä	
+1049	звонить	verb	шалтырат-, шалтыратырга	şaltırat-, şaltıratırğa		шылтырат-, шылтыратырға	şıltırat-, şıltıratırğa	
+1050	процент	noun	процент	protsent		процент	protsent	
+1051	ощущение	noun	сизү	sizü		һиҙеү	hiđew	
+1051	ощущение	noun	тою	toyu		тойоу	toyow	
+1051	ощущение	noun	хис итү	xis itü		хис итеү	xis itew	
+1051	ощущение	noun	тойгы	toyğı		тойғо	toyğo	
+1051	ощущение	noun	сизем	sizem		һиҙем	hiđem	
+1051	ощущение	noun	тоем	toyım		тойом	toyom	
+1051	ощущение	noun	хис  	xis  		хис  	xis  	
+1052	немедленно	нареч.	ашыгыч	aşığıç		ашығыс	aşığıs	
+1052	немедленно	нареч.	кичекмәстән	kiçekmästän		кисекмәҫтән	kisekmäṡtän	
+1052	немедленно	нареч.	кичектермичә	kiçektermiçä		кисектермәйсә	kisektermäysä	
+1052	немедленно	нареч.	бик тиз	bik tiz		бик тиҙ	bik tiđ	
+1052	немедленно	нареч.	тиз арада	tiz arada		тиҙ арала	tiđ arala	
+1052	немедленно	нареч.	тиз генә	tiz genä		тиҙ генә	tiđ genä	
+1053	остров	noun	утрау	utraw		утрау	utraw	
+1054	конь	noun	ат	at		ат	at	
+1055	объявить	verb	игълан ит-, игълан итәргә	iğlan it-, iğlan itärgä		иғлан ит-, иғлан итергә	iğlan it-, iğlan itergä	
+1055	объявить	verb	белдер-, белдерергә	belder-, belderergä		белдер-, белдерергә	belder-, belderergä	
+1056	узкий	adj	тар	tar 		тар	tar 	
+1057	театр	noun	театр	teatr		театр	teatr	
+1058	живот	noun	корсак	qorsaq		ҡорһаҡ	qorhaq	
+1058	живот	noun	эч	eç		эс	es	
+1059	производство	noun	җитештерү	citeşterü		етештереү	yeteşterew	
+1060	штаб	noun	штаб	ştab		штаб	ştab	
+1061	детство	noun	балалык	balalıq		балалыҡ	balalıq	
+1062	резко	нареч.	кискен	kisken		киҫкен	kiṡken	
+1063	придумать	verb	уйлап тап-, уйлап табарга	uylap tap-, uylap tabarğa		уйлап тап-, уйлап табырға	uylap tap-, uylap tabırğa	
+1064	броситься	verb	ташлан-, ташланырга	taşlan-, taşlanırğa		ташлан-, ташланырға	taşlan-, taşlanırğa	
+1065	сотня	noun	йөз	yöz		йөҙ	yöđ	
+1065	сотня	noun	йөзлек	yözlek		йөҙлөк	yöđlök	
+1066	попытаться	verb	тырышып кара-, тырышып карарга	tırışıp qara-, tırışıp qararğa		тырышып ҡара-, тырышып ҡарарға	tırışıp qara-, tırışıp qararğa	
+1066	попытаться	verb	омтылып кара-, омтылып карарга	omtılıp qara-, omtılıp qararğa		ынтылып ҡара-, ынтылып ҡарарға	ıntılıp qara-, ıntılıp qararğa	
+1067	пора	misc	вакыт	waqıt		ваҡыт	waqıt	
+1068	стакан	noun	стакан	stakan		стакан	stakan	
+1069	всякий	adjpron	һәр	här		һәр	här	
+1069	всякий	adjpron	һәртөрле	härtörle		һәр төрлө	här törle	
+1070	умный	adj	акыллы	aqıllı		аҡыллы	aqıllı	
+1070	умный	adj	башлы	başlı		башлы	başlı	
+1071	трое	card	өчәү	öçäw		өсәү	ösäw	
+1072	материал	noun	материал	material		материал	material	
+1073	ужас	noun	коточкыч	qotoçqıç		ҡот осҡос	qot osqos	
+1074	схватить	verb	тотып ал-, тотып алырга	totıp al-, totıp alırğa		тотоп ал-, тотоп алырға	totop al-, totop alırğa	
+1074	схватить	verb	эләктереп ал-, эләктереп алырга	eläkterep al-, eläkterep alırğa		эләктереп ал-, эләктереп алырға	eläkterep al-, eläkterep alırğa	
+1075	приняться	verb	тотын-, тотынырга	totın-, totınırğa		тотон-, тотонорға	toton-, totonorğa	
+1075	приняться	verb	кереш-, керешергә	kereş-, kereşergä		кереш-, керешергә	kereş-, kereşergä	
+1076	значение	noun	мәгънә	mäğnä		мәғәнә	mäğänä	
+1077	труба	noun	торба	torba		торба	torba	
+1077	труба	noun	морҗа	morca		мөрйә	möryä	
+1078	отказаться	verb	баш тарт-, баш тартырга	baş tart-, baş tartırğa		баш тарт-, баш тартырға	baş tart-, baş tartırğa	
+1078	отказаться	verb	тан-, танарга	tan-, tanarğa		тан-, танырға	tan-, tanırğa	
+1079	виноватый	adj	гаепле	ğäyeple		ғәйепле	ğäyeple	
+1080	стихи	noun	шигырьләр	şiğerlär		шиғырҙар	şiğırđar	
+1081	способ	noun	ысул	ısul		ысул	ısul	
+1081	способ	noun	әмәл	ämäl		әмәл	ämäl	
+1081	способ	noun	алым	alım		алым	alım	
+1081	способ	noun	юл	yul		юл	yul	
+1082	обстоятельство	noun	хәл	xäl		хәл	xäl	
+1082	обстоятельство	noun	вакыйга	waqiğa		ваҡиға	waqiğa	
+1082	обстоятельство	noun	шарт	şart		шарт	şart	
+1083	четвертый	ord	дүртенче	dürtençe		дүртенсе	dürtense	
+1084	степень	noun	дәрәҗә	däräcä		дәрәжә	däräjä	
+1085	Германия	noun	Алмания	Almaniä		Алмания	Almania	
+1085	Германия	noun	Германия	Germaniä		Германия	Germania	
+1086	ссср	noun	СССР	SSSR		СССР	SSSR	
+1087	отправиться	verb	кит-, китәргә	kit-, kitärgä		кит-, китергә	kit-, kitergä	
+1087	отправиться	verb	кузгалып кит-, кузгалып китәргә	quzğalıp kit-, quzğalıp kitärgä		ҡуҙғалып кит-, ҡуҙғалып китергә	quđğalıp kit-, quđğalıp kitergä	
+1088	вставать	verb	тор-, торырга	tor-, torırğa		тор-, торорға	tor-, tororğa	
+1088	вставать	verb	аякка бас-, аякка басарга	ayaqqa bas-, ayaqqa basarğa		аяҡҡа баҫ-, аяҡҡа баҫырға	ayaqqa baṡ-, ayaqqa baṡırğa	
+1089	волна	noun	дулкын	dulqın		тулҡын	tulqın	
+1090	обратиться	verb	мөрәҗәгать ит-, мөрәҗәгать итәргә	möräcäğät it-, möräcäğät itärgä		мөрәжәғәт ит-, мөрәжәғәт итергә	möräjäğät it-, möräjäğät itergä	
+1091	плохой	adj	начар	naçar		насар	nasar	
+1091	плохой	adj	яман	yaman		яман	yaman	
+1092	мертвый	adj	үлек	ülek		үлек	ülek	
+1092	мертвый	adj	үлгән	ülgän		үлгән	ülgän	
+1093	предлагать	verb	тәкъдим ит-, тәкъдим итәргә	täqdim it-, täqdim itärgä		тәҡдим ит-, тәҡдим итергә	täqdim it-, täqdim itergä	
+1094	глубина	noun	тирәнлек	tiränlek		тәрәнлек	täränlek	
+1094	глубина	noun	төпкел	töpkel		төпкөл	töpköl	
+1095	специальный	adj	махсус	maxsus		махсус	maxsus	
+1096	представитель	noun	вәкил	wäkil 		вәкил	wäkil 	
+1097	нож	noun	пычак	pıçaq		бысаҡ	bısaq	
+1098	точный	adj	төгәл	tögäl		теүәл	tewäl	
+1098	точный	adj	дөрес	döres		дөрөҫ	döröṡ	
+1098	точный	adj	тәңгәл	täñgäl		тәңгәл	täñgäl	
+1099	рынок	noun	базар	bazar		баҙар	bađar	
+1100	шум	noun	тавыш	tawış		тауыш	tawış	
+1100	шум	noun	шау-шу	şaw-şu		шау-шыу	şaw-şıw	
+1101	студент	noun	талиб	talib		талип	talip	
+1101	студент	noun	студент	student		студент	student	
+1102	впечатление	noun	тәэсир	tä'sir		тәьҫир	tä'ṡir	
+1102	впечатление	noun	тәэсорат	tä'sorat		тәьҫорат	tä'ṡorat	
+1103	засмеяться	verb	көлеп җибәр-, көлеп җибәрергә	kölep cibär-, kölep cibärergä		көлөп ебәр-, көлөп ебәрергә	kölöp yebär-, kölöp yebärergä	
+1104	отдел	noun	бүлек	bülek		бүлек	bülek	
+1105	запад	noun	көнбатыш	könbatış		көнбайыш	könbayış	
+1106	очко	noun	күз	küz		күҙ	küđ	
+1106	очко	noun	мәрәй	märäy		мәрәй	märäy	
+1106	очко	noun	очко	oçko		очко	oçko	
+1107	падать	verb	егыл-, егылырга	yığıl-, yığılırğa		йығыл-, йығылырға	yığıl-, yığılırğa	
+1107	падать	verb	тәгәр-, тәгәрергә	tägär-, tägärergä		тәгәр-, тәгәрергә	tägär-, tägärergä	
+1107	падать	verb	түбәнәй-, түбәнәергә	tübänäy-, tübänäyergä		түбәнәй-, түбәнәйергә	tübänäy-, tübänäyergä	
+1108	закончить	verb	тәмамла-, тәмамларга	tämamla-, tämamlarğa		тамамла-, тамамларға	tamamla-, tamamlarğa	
+1108	закончить	verb	бетер-, бетерергә	beter-, beterergä		бөтөр-, бөтөрөргә	bötör-, bötörörgä	
+1109	снимать	verb	чиш-, чишәргә	çiş-, çişärgä		сис-, сисергә	sis-, sisergä	
+1109	снимать	verb	ал-, алырга	al-, alırğa		ал-, алырға	al-, alırğa	
+1109	снимать	verb	алып ташла-, алып ташларга	alıp taşla-, alıp taşlarğa		алып ташла-, алып ташларға	alıp taşla-, alıp taşlarğa	
+1110	успех	noun	уңыш	uñış		уңыш	uñış	
+1111	инженер	noun	инженер	injener		инженер	injener	
+1111	инженер	noun	мөһәндис	möhändis		мөһәндис	möhändis	
+1112	население	noun	халык	xalıq		халыҡ	xalıq	
+1113	животный	adj	хайван	xaywan		хайуан	xaywan	
+1113	животный	adj	хайвани	xaywani		хайуани	xaywani	
+1113	животный	adj	хайваннарча	xaywannarça		хайуандарса	xaywandarsa	
+1114	встречаться	verb	очраш-, очрашырга	oçraş-, oçraşırğa		осраш-, осрашырға	osraş-, osraşırğa	
+1115	некий	adjpron	ниндидер	nindider		ниндәйҙер	nindäyđer	
+1115	некий	adjpron	кайсыдыр	qaysıdır		ҡайһылыр	qayhılır	
+1115	некий	adjpron	билгесез	bilgesez		билдәһеҙ	bildäheđ	
+1116	вдоль	prep	буйга	buyğa		буйға	buyğa	
+1116	вдоль	prep	буена	buyına		буйына	buyına	
+1116	вдоль	prep	буйлап	buylap		буйлап	buylap	
+1116	вдоль	prep	буенча	buyınça		буйынса	buyınsa	
+1117	пыль	noun	тузан	tuzan		туҙан	tuđan	
+1118	следить	verb	күзәт-, күзәтергә	küzät-, küzätergä		күҙәт-, күҙәтергә	küđät-, küđätergä	
+1118	следить	verb	күзәтеп тор-, күзәтеп торырга	küzätep tor-, küzätep torırğa		күҙәтеп тор-, күҙәтеп торорға	küđätep tor-, küđätep tororğa	
+1119	зайти	verb	кер-, керергә	ker-, kerergä		ин-, инергә	in-, inergä	
+1119	зайти	verb	кереп чык-, кереп чыгарга	kerep çıq-, kerep çığarğa		инеп сыҡ-, инеп сығырға	inep sıq-, inep sığırğa	
+1120	спасти	verb	коткар-, коткарырга	qotqar-, qotqarırğa		ҡотҡар-, ҡотҡарырға	qotqar-, qotqarırğa	
+1120	спасти	verb	коткарып алып кал-, коткарып алып калырга	qotqarıp alıp qal-, qotqarıp alıp qalırğa		ҡотҡарып алып ҡал-, ҡотҡарып алып ҡалырға	qotqarıp alıp qal-, qotqarıp alıp qalırğa	
+1121	знание	noun	белем	belem		белем	belem	
+1121	знание	noun	гыйлем	ğilem		ғилем	ğilem	
+1122	различный	adj	төрле	törle		төрлө	törlö	
+1122	различный	adj	төрле-төрле	törle-törle		төрлө-төрлө	törlö-törlö	
+1123	секретарь	noun	сәркатип	särqätip		сәркәтип	särkätip	
+1123	секретарь	noun	секретарь	sekretar'		секретарь	sekretar'	
+1124	побежать	verb	йөгер-, йөрегергә	yöger-, yögerergä		йүгер-, йүгерергә	yüger-, yügerergä	
+1124	побежать	verb	йөгереп кит-, йөгереп китәргә	yögerep kit-, yögerep kitärgä		йүгереп кит-, йүгереп китергә	yügerep kit-, yügerep kitergä	
+1125	ошибка	noun	хата	xata		хата	xata	
+1125	ошибка	noun	ялгыш	yalğış		яңылыш	yañılış	
+1126	боец	noun	сугышчы	suğışçı		һуғышсы	huğışsı	
+1126	боец	noun	көрәшче	köräşçe		көрәшсе	köräşse	
+1126	боец	noun	ярышчы	yarışçı		ярышсы	yarışsı	
+1126	боец	noun	яугир	yawgir		яугир	yawgir	
+1127	женский	adj	хатын-кыз	xatın-qız		ҡатын-ҡыҙ	qatın-qıđ	
+1128	масса	noun	масса	massa		масса	massa	
+1129	черт	noun	шайтан	şaytan		шайтан	şaytan	
+1129	черт	noun	җен	cen		ен	yen	
+1130	одновременно	нареч.	бер үк вакытта	ber ük waqıtta		бер үк ваҡытта	ber ük waqıtta	
+1130	одновременно	нареч.	беравыздан	berawızdan		бер ауыҙҙан	ber awıđđan	
+1130	одновременно	нареч.	беррәттән	berrättän		бер рәттән	ber rättän	
+1130	одновременно	нареч.	берьюлы	beryulı		бер юлы	ber yulı	
+1131	царь	noun	патша	patşa		батша	batşa	
+1132	естественно	нареч.	табигый	tabiği		табиғи	tabiği	
+1133	позволять	verb	рөхсәт ит-, рөхсәт итәргә	röxsät it-, röxsät itärgä		рөхсәт ит-, рөхсәт итергә	röxsät it-, röxsät itergä	
+1134	закрыть	verb	яп-, ябарга	yap-, yabarğa		яп-, ябырға	yap-, yabırğa	
+1134	закрыть	verb	биклә-, бикләргә	biklä-, biklärgä		биклә-, бикләргә	biklä-, biklärgä	
+1135	фигура	noun	сын	sın	äñ	һын	hın	äđṡ
+1135	фигура	noun	фигура	figura		фигура	figura	
+1135	фигура	noun	гәүдә	gäwdä		кәүҙә	käwđä	
+1135	фигура	noun	буй-сын	buy-sın		буй-һын	buy-hın	
+1135	фигура	noun	кеше	keşe		кеше	keşe	
+1136	велеть	verb	куш-, кушарга	quş-, quşarğa		ҡуш-, ҡушырға	quş-, quşırğa	ҡҙҫға
+1137	противник	noun	дошман	doşman		дошман	doşman	
+1137	противник	noun	каршы кеше	qarşı keşe		ҡаршы кеше	qarşı keşe	
+1138	даль	noun	офык	ofıq		офоҡ	ofoq	
+1138	даль	noun	ераклык	yıraqlıq		алыҫлыҡ	alıṡlıq	
+1138	даль	noun	ераклык	yıraqlıq		йыраҡлыҡ	yıraqlıq	
+1139	знаменитый	adj	атаклы	ataqlı		атаҡлы	ataqlı	
+1140	нормальный	adj	гадәти	ğädäti		ғәҙәти	ğäđäti	
+1140	нормальный	adj	нормаль	normal'		нормаль	normal'	
+1141	журнал	noun	журнал	jurnal		журнал	jurnal	
+1141	журнал	noun	мәҗмуга	mäcmuğa 		мәжмуға	mäjmuğa 	
+1142	направление	noun	юнәлеш	yünäleş		йүнәлеш	yünäleş	
+1142	направление	noun	як	yaq		яҡ	yaq	
+1142	направление	noun	уңай	uñay		ыңғай	ıñğay	
+1143	замок	noun	йозак	yozaq		йоҙаҡ	yođaq	
+1143	замок	noun	бик	bik  		бик	bik  	
+1143	замок	noun	сарай	saray		һарай	haray	
+1144	иметься	verb	бул-, булырга	bul-, bulırğa		бул-, булырға	bul-, bulırğa	
+1145	победа	noun	җиңү	ciñü		еңеү	yeñew	
+1146	суметь	verb	эшли ал-, эшли алырга	eşli al-, eşli alırğa		эшләй ал-, эшләй алырға	eşläy al-, eşläy alırğa	
+1146	суметь	verb	булдыра ал-, булдыра алырга	buldıra al-, buldıra alırğa		булдыра ал-, булдыра алырға	buldıra al-, buldıra alırğa	
+1146	суметь	verb	кулдан кил-, кулдан килергә	quldan kil-, quldan kilergä		ҡулдан кил-, ҡулдан килергә	quldan kil-, quldan kilergä	
+1146	суметь	verb	булдыр-, булдырырга	buldır-, buldırırğa		булдыр-, булдырырға	buldır-, buldırırğa	
+1147	сотрудник	noun	хезмәткәр	xezmätkär		хеҙмәткәр	xeđmätkär	
+1148	заговорить	verb	сөйли башла-, сөйли башларга	söyli başla-, söyli başlarğa		һөйләй башла-, һөйләй башларға	höyläy başla-, höyläy başlarğa	
+1148	заговорить	verb	сүзгә кушыл-, сүзгә кушылырга	süzgä quşıl-, süzgä quşılırğa		һүҙгә ҡушыл-, һүҙгә ҡушылырға	hüđgä quşıl-, hüđgä quşılırğa	
+1149	несколько	card	берничә	berniçä		бер нисә	ber nisä	
+1150	крепкий	adj	каты	qatı		ҡаты	qatı	
+1150	крепкий	adj	нык	nıq		ныҡ	nıq	
+1150	крепкий	adj	таза	taza		таҙа	tađa	
+1151	подниматься	verb	мен-, менәргә	men-, menärgä		мен-, менергә	men-, menergä	
+1151	подниматься	verb	күтәрел-, күтәрелергә	kütärel-, kütärelergä		күтәрел-, күтәрелергә	kütärel-, kütärelergä	
+1152	вытащить	verb	тартып ал-, тартып алырга	tartıp al-, tartıp alırğa		тартып ал-, тартып алырға	tartıp al-, tartıp alırğa	
+1153	редкий	adj	сирәк	siräk		һирәк	hiräk	
+1154	мягкий	adj	йомшак	yomşaq		йомшаҡ	yomşaq	
+1155	всякий	pron	һәр	här		һәр	här	
+1156	городской	adj	шәһәр	şähär		ҡала	qala	
+1156	городской	adj	шәһәр	şähär		шәһәр	şähär	
+1156	городской	adj	кала	qala		ҡала	qala	
+1156	городской	adj	шәһри	şähri		шәһри	şähri	
+1156	городской	adj	шәһәрдәге	şähärdäge		ҡалалағы	qalalağı	
+1156	городской	adj	каладагы	qaladağı		ҡалалағы	qalalağı	
+1157	социальный	adj	иҗтимагый	ictimaği		ижтимағи	ijtimaği	
+1157	социальный	adj	социаль	sotsial'		социаль	sotsial'	
+1158	адрес	noun	адрес	adres		адрес	adres	
+1159	обращаться	verb	мөрәҗәгать ит-, мөрәҗәгать итәргә	möräcäğät it-, möräcäğät itärgä		мөрәжәғәт ит-, мөрәжәғәт итергә	möräjäğät it-, möräjäğät itergä	
+1159	обращаться	verb	мөгамәлә ит-, мөгамәлә итәргә	möğämälä it-, möğämälä itärgä		мөғәмәлә ит-, мөғәмәлә итергә	möğämälä it-, möğämälä itergä	
+1159	обращаться	verb	эш ит-, эш итәргә	eş it-, eş itärgä		эш ит-, эш итергә	eş it-, eş itergä	
+1160	период	noun	чор	çor		осор	osor	
+1160	период	noun	дәвер	däwer		дәүер	däwer	
+1160	период	noun	вакыт	waqıt		ваҡыт	waqıt	
+1161	еврей	noun	яһүд	yähüd 		йәһүд	yähüd 	
+1162	слух	noun	ишетү	işetü		ишетеү	işetew	
+1162	слух	noun	хәбәр	xäbär		хәбәр	xäbär	
+1163	пользоваться	verb	файдалан-, файдаланырга	faydalan-, faydalanırğa		файҙалан-, файҙаланырға	fayđalan-, fayđalanırğa	
+1164	клуб	noun	клуб	klub		клуб	klub	
+1165	верно	нареч.	дөрес	döres		дөрөҫ	döröṡ	
+1166	хвост	noun	койрык	qoyrıq		ҡойроҡ	qoyroq	
+1167	восемь	card	сигез	sigez		һигеҙ	higeđ	
+1168	пошлый	adj	әшәке	äşäke		әшәке	äşäke	
+1168	пошлый	adj	бозык	bozıq		боҙоҡ	bođoq	
+1168	пошлый	adj	әдәпсез	ädäpsez		әҙәпһеҙ	äđäpheđ	
+1169	предмет	noun	нәрсә	närsä		нәмә	nämä	
+1169	предмет	noun	әйбер	äyber		әйбер	äyber	
+1170	честь	noun	намус	namus		намыҫ	namıṡ	
+1171	общественный	adj	җәмгыять	cämğiät		йәмғиәт	yämğiät	
+1171	общественный	adj	җәмәгать	cämäğät		йәмәғәт	yämäğät	
+1171	общественный	adj	иҗтимагый	ictimaği		ижтимағи	ijtimaği	
+1172	открывать	verb	ач-, ачарга	aç-, açarğa		ас-, асырга	as-, asırğa	
+1173	отдельный	adj	аерым 	ayırım		айырым 	ayırım	
+1174	лечение	noun	дәвалау	däwalaw		дауалау	dawalaw	
+1175	экономический	adj	икътисадый	iqtisadıy		иҡтисади	iqtisadi	
+1175	экономический	adj	икътисади	iqtisadi		иҡтисади	iqtisadi	
+1176	взяться	verb	тотын-, тотынырга	totın-, totınırğa		тотон-, тотонорға	toton-, totonorğa	
+1176	взяться	verb	башла-, башларга	başla-, başlarğa		башла-, башларға	başla-, başlarğa	
+1177	встретиться	verb	очраш-, очрашырга	oçraş-, oçraşırğa		осраш-, осрашырға	osraş-, osraşırğa	
+1178	зрение	noun	күрү	kürü		күреү	kürew	
+1179	замечать	verb	күреп кал-, күреп калырга	kürep qal-, kürep qalırğa		күреп ҡал-, күреп ҡалырға	kürep qal-, kürep qalırğa	
+1179	замечать	verb	күреп ал-, күреп алырга	kürep al-, kürep alırğa		күреп ал-, күреп алырға	kürep al-, kürep alırğa	
+1180	наблюдать	verb	күзәт-, күзәтергә	küzät-, küzätergä		күҙәт-, күҙәтергә	küđät-, küđätergä	
+1181	наоборот	нареч.	киресенчә	kiresençä		киреһенсә	kirehensä	
+1182	голый	adj	ялангач	yalanğaç		яланғас	yalanğaç	
+1182	голый	adj	шәрә	şärä		шәрә	şärä	
+1183	круглый	adj	түгәрәк	tügäräk		түңәрәк	tüñäräk	
+1183	круглый	adj	йомры	yomrı		йомро	yomro	
+1183	круглый	adj	тулы	tulı		тулы	tulı	
+1184	беда	noun	бәла	bälä		бәлә	bälä	
+1184	беда	noun	каза	qaza		ҡаза	qaza	
+1184	беда	noun	бәла-каза	bälä-qaza		бәлә-ҡаза	bälä-qaza	
+1185	столица	noun	башкала	başqala		баш ҡала	baş qala	
+1186	обед	noun	төшке аш	töşke aş		төшкө аш	töşkö aş	
+1186	обед	noun	төшкелек	töşkelek		төшкөлөк	töşkölök	
+1187	грязный	adj	пычрак	pıçraq		бысраҡ	bısraq	
+1188	опустить	verb	төшер-, төшерергә	töşer-, töşerergä		төшөр-, төшөрөргә	töşör-, töşörörgä	
+1189	культура	noun	мәдәният	mädäniät		мәҙәниәт	mäđäniät	
+1190	спешить	verb	кабалан-, кабаланырга	qabalan-, qabalanırğa		ҡабалан-, ҡабаланырға	qabalan-, qabalanırğa	
+1190	спешить	verb	ашык-, ашыгырга	aşıq-, aşığırğa		ашыҡ-, ашығырға	aşıq-, aşığırğa	
+1191	высота	noun	биеклек	bieklek		бейеклек	beyeklek	
+1191	высота	noun	калкулык	qalqulıq		ҡалҡыулыҡ	qalqıwlıq	
+1191	высота	noun	түбә	tübä		түбә	tübä	
+1192	территория	noun	җирлек	cirlek		ерлек	yerlek	
+1192	территория	noun	территория	territoriä		территория	territoria	
+1193	костюм	noun	кием	kiem		кейем	keyem	
+1193	костюм	noun	костюм	kostüm		костюм	kostüm	
+1194	светлый	adj	якты	yaqtı		яҡты	yaqtı	
+1194	светлый	adj	ачык төсле	açıq tösle		асыҡ төҫлө	asıq töslö	
+1195	деревянный	adj	агач	ağaç		ағас	ağas	
+1196	гораздо	нареч.	шактый	şaqtıy		шаҡтай	şaqtay	
+1196	гораздо	нареч.	байтак	baytaq		байтаҡ	baytaq	
+1197	громко	нареч.	кычкырып	qıçqırıp		ҡысҡырып	qısqırıp	
+1198	поздно	нареч.	соң	soñ		һуң	huñ	
+1199	обернуться	verb	борылып кара-, борылып карарга	borılıp qara-, borılıp qararğa		боролоп ҡара-, боролоп ҡарарға	borolop qara-, borolop qararğa	
+1200	попытка	noun	омтылыш	omtılış		ынтылыш	ıntılış	
+1200	попытка	noun	тырышу	tırışu		тырышыу	tırışıw	
+1200	попытка	noun	маташу	mataşu		маташыу	mataşıw	
+1201	дно	noun	төп	töp		төп	töp	
+1202	пятьдесят	card	илле	ille		илле	ille	
+1203	остановить	verb	туктат-, туктатырга	tuqtat-, tuqtatırğa	äñ	туҡтат-, туҡтатырға	tuqtat-, tuqtatırğa	äđṡ
+1204	полностью	нареч.	тулысынча	tulısınça		тулыһынса	tulıhınsa	
+1205	страница	noun	бит	bit		бит	bit	
+1205	страница	noun	сәхифә	säxifä		сәхифә	säxifä	
+1206	лишний	adj	артык	artıq		артыҡ	artıq	
+1207	многое	pron	күп	küp		күп	küp	
+1207	многое	pron	күп нәрсәләр	küp närsälär		күп нәмәләр	küp nämälär	
+1208	еда	noun	аш	aş		аш	aş	ҡҙҫға
+1208	еда	noun	ашамлык	aşamlıq		ашамлыҡ	aşamlıq	
+1209	размер	noun	үлчәм	ülçäm		үлсәм	ülsäm	
+1209	размер	noun	зурлык	zurlıq		ҙурлыҡ	đurlıq	
+1209	размер	noun	күләм	küläm		күләм	küläm	
+1210	курить	verb	тәмәке тарт-, тәмәке тартырга	tämäke tart-, tämäke tartırğa		тәмәке тарт-, тәмәке тартырға	tämäke tart-, tämäke tartırğa	
+1210	курить	verb	тарт-, тартырга	tart-, tartırğa		тарт-, тартырға	tart-, tartırğa	
