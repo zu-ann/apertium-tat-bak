@@ -1,0 +1,42 @@
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" ;
+SOFT-DELIMITERS = "<,>" ;
+
+SETS
+
+LIST BOS = (>>>) ;
+LIST EOS = (<<<) ;
+
+LIST A = adj ;
+LIST Adv = adv ;
+LIST Pron = prn ; 
+LIST N = n ; 
+LIST V = v ;
+LIST Det = det ; 
+LIST CC = cnjcoo ;
+LIST CS = cnjsub ;
+LIST Interj = ij ;
+LIST Num = num ; 
+LIST Post = post ; 
+LIST Postadv = postadv ; 
+LIST Cm = cm ; 
+
+# All possible word categories
+SET WORD = N | V | A | Post | Postadv | Pron | Det | Adv | CC | CS | Interj | Num | ("\?") ;
+
+SET PRE-N =  A | Det | Num | (n gen) | (prn gen) | CC ; 
+
+SET MARK =  Cm | ("\\") | ("\;") ;
+
+SET WORDMARK = WORD | MARK ;
+
+# Categories which cannot be part of a noun phrase 
+
+SET NPNH = WORDMARK - PRE-N ;
+SET NPNHA = WORDMARK - PRE-N - Adv ;
+SET NOT-ADV = WORDMARK - Adv ;
+
+
+SECTION
+
+SELECT A IF (0C A OR Adv) (1* N BARRIER NPNHA); 
+

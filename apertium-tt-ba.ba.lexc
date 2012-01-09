@@ -198,6 +198,8 @@ LEXICON ALEX
 %<adj%>: # ; 
 %<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} # ; 
 
+ADVLEX ; ! Allow all adjectives to derive as adverbs
+
 LEXICON V-PERS-S1 
 
 %<p1%>%<sg%>:%>%{I%}м CLIT ;
