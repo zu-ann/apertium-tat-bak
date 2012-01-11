@@ -410,7 +410,7 @@ LEXICON PRNLEX-PERS
 без%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:бездән # ; 
 
 сез%<prn%>%<pers%>%<p2%>%<pl%>%<nom%>:сез # ; 
-сез%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:сездең # ; 
+сез%<prn%>%<pers%>%<p2%>%<pl%>%<gen%>:сезнең # ; 
 сез%<prn%>%<pers%>%<p2%>%<pl%>%<dat%>:сезгә # ; 
 сез%<prn%>%<pers%>%<p2%>%<pl%>%<acc%>:сезне # ; 
 сез%<prn%>%<pers%>%<p2%>%<pl%>%<loc%>:сездә # ; 
@@ -431,7 +431,7 @@ LEXICON PRNDEM-BU
 %<prn%>%<dem%>%<acc%>:моны # ;
 %<prn%>%<dem%>%<loc%>:монда # ;
 %<prn%>%<dem%>%<abl%>:моннан # ;
-%<prn%>%<dem%>%<pl%>:бу%>%{L%}%{A%}р CASE ;
+%<prn%>%<dem%>%<pl%>:бо%>%{L%}%{A%}р CASE ;
 
 LEXICON PRNDEM-ŠUL
 
