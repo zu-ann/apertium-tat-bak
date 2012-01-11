@@ -1815,6 +1815,7 @@ LEXICON Verbs
 эш% ит:эш% ит V-IV-AR-LEX ; ! ""
 ян:ян V-IV-AR-LEX ; ! ""
 ярдәм% ит:ярдәм% ит V-IV-AR-LEX ; ! ""
+өлгер:өлгер V-IV-IR-LEX ; ! ""
 
 сөйлә:сөйлә V-TV-AR-LEX ; ! ""
 телә:телә V-TV-AR-LEX ; ! ""
@@ -1919,7 +1920,7 @@ LEXICON Verbs
 сиз:сиз V-TV-IR-LEX ; ! ""
 алып% бар:алып% бар V-TV-IR-LEX ; ! ""
 дәвам% ит:дәвам% ит V-TV-IR-LEX ; ! ""
-өлгер:өлгер V-TV-IR-LEX ; ! ""
+өлгерт:өлгерт V-TV-IR-LEX ; ! ""
 ал:ал V-TV-IR-LEX ; ! ""
 үт:үт V-TV-IR-LEX ; ! ""
 оныт:оныт V-TV-IR-LEX ; ! ""
