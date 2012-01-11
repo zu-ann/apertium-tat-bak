@@ -52,6 +52,8 @@ SECTION
 
 SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 SELECT A IF (0 A OR Adv) (1* N BARRIER NPNHA); 
+SELECT Det IF (-1C A) (1 N); 
     ## Әхмәт тиз генә иске зур бер агачка йөгерә.
     ## Әхмәт җай генә иске зур бер агачка йөгерә.
+
 
