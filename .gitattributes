@@ -32,6 +32,7 @@ dev/testvoc-summary.tt-ba.txt -text
 dev/testvoc.sh -text
 /modes.xml -text
 texts/Tekst_bash.txt -text
+texts/Tekst_tatar.txt -text
 texts/story.ba.txt -text svneol=unset#application/octet-stream
 texts/story.tt.txt -text svneol=unset#application/octet-stream
 /tt-ba.prob -text svneol=unset#unset
