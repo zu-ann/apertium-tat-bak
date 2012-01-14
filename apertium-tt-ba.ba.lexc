@@ -13,6 +13,7 @@ Multichar_Symbols
 %<postadv%>        ! Посленаречие
 %<cnjcoo%>         ! Союз
 %<cnjadv%>         ! Союз
+%<abbr%>           ! Аббревиатура
 
 %<part%>           ! Частица
 %<pred%>           ! 
@@ -126,6 +127,7 @@ ProperNouns ;
 Adjectives ; 
 Adverbs ; 
 Verbs ; 
+Abbreviations ; 
 Punctuation ; 
 
 LEXICON CLIT
@@ -425,6 +427,10 @@ LEXICON PREDLEX-I
 
 %<pred%>%<ger5%>:%>кән POSS ;
 %<pred%>%<ifi%>:%>не V-PERS-S2 ; 
+
+LEXICON ABBR 
+
+%<abbr%>: # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
@@ -2046,6 +2052,12 @@ LEXICON Verbs
 өлгөр:өлгөр V-IV-LEX ; ! ""
 
 яһа:яһа V-TV-LEX ; ! ""
+
+LEXICON Abbreviations 
+
+км²:км² ABBR ; 
+км³:км³ ABBR ; 
+км:км ABBR ; 
 
 LEXICON Punctuation
 

@@ -153,6 +153,7 @@ ProperNouns ;
 Adjectives ; 
 Adverbs ; 
 Verbs ; 
+Abbreviations ; 
 Punctuation ; 
 
 LEXICON CLIT
@@ -505,6 +506,9 @@ LEXICON QSTLEX
 
 %<qst%>: # ; 
 
+LEXICON ABBR 
+
+%<abbr%>: # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
@@ -2013,6 +2017,11 @@ LEXICON Verbs
 озат:озат V-TV-IR-LEX ; ! ""
 озата% бар:озата% бар V-TV-IR-LEX ; ! ""
 
+LEXICON Abbreviations
+
+км:км ABBR ; 
+км²:км² ABBR ; 
+км³:км³ ABBR ; 
 
 LEXICON Punctuation
 
