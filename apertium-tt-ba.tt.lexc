@@ -566,9 +566,12 @@ PRNLEX-PERS ;
 
 LEXICON Determiners
 
+
 бу:бу DETDEMLEX ; ! ""
 шул:шул DETDEMLEX ; ! ""
 
+бар:бар DETQNTLEX ; ! ""
+барлык:барлык DETQNTLEX ; ! ""
 бөтен:бөтен DETQNTLEX ; ! ""
 
 бер:бер DETINDLEX ; ! ""
@@ -1740,6 +1743,7 @@ LEXICON Verbs
 
 и:и PREDLEX-I ; ! ""
 
+бар:бар V-IV-IR-LEX ; ! ""
 бул:бул V-IV-IR-LEX ; ! ""
 тор:тор V-IV-IR-LEX ; ! ""
 яшә:яшә V-IV-AR-LEX ; ! ""
