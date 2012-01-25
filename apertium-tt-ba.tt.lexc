@@ -264,11 +264,11 @@ LEXICON V-PERS-S1
 %<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
 
 LEXICON V-PERS-S2
-
+!! кыска төрләнеш
 %<p1%>%<sg%>:%>м CLIT ;
 %<p2%>%<sg%>:%>ң CLIT ;
 %<p3%>%<sg%>:%> CLIT ;
-%<p1%>%<pl%>:%>ҡ CLIT ;
+%<p1%>%<pl%>:%>к CLIT ;
 %<p2%>%<pl%>:%>г%{I%}з CLIT ;
 %<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
 
