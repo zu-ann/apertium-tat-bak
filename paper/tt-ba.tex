@@ -120,34 +120,79 @@ include some instances where the translation is ambiguous (see e.g. Fig.~\ref{fi
 
 \subsection{Disambiguation rules}
 
+The system is equipped with a morphological disambiguation module in the form of a 
+Constraint Grammar (CG) \cite{karlsson95}. The version of the formalism used is 
+vislcg3.\footnote{\url{http://beta.visl.sdu.dk/constraint_grammar.html}}
 
+The grammar currently has only four rules, but given the closeness of the language, the 
+majority of ambiguity may be passed through from one language to the other.
 
 \subsection{Lexical selection rules}
 
-
+Likewise, lexical selection is not a large problem between Tatar and Bashkir, but a 
+number of rules can be written for ambiguous words, for example the Tatar 
+word \emph{борын} `nose (person), nose (ship)' can be translated into Bashkir 
+as either \emph{танау} `nose (person)' or \emph{морон} `nose (ship)'. A lexical selection
+rule chooses the translation \emph{танау} if the immediate context includes a proper 
+name.
 
 \subsection{Transfer rules}
+
 
 \section{Evaluation}
 \label{sec:eval}
 
+Lexical coverage of the system is calculated over a freely available corpus of Bashkir, the Bashkir
+Wikipedia\footnote{\url{http://ba.wikipedia.org/}; {\tt bawiki-20111210-pages-articles.xml.bz2}}, and over two freely available corpora of 
+Tatar, the Tatar Wikipedia\footnote{\url{http://tt.wikipedia.org}; {\tt ttwiki-20111215-pages-articles.xml.bz2}} and the New Testament in Tatar.
+
+\begin{table}
+  \begin{center}
+  \begin{tabular}{c|r|r}
+   Corpus                  & Tokens    & Coverage\\
+   \hline
+   Tatar Wikipedia         & 37,123    & 55.38\% \\
+   Tatar New Test.         & 163,603   & 62.57\% \\
+   \hline
+   Bashkir Wikipedia       & 12,267    & 56.99\% \\
+   \hline
+  \end{tabular}
+    \caption{Na\"ive vocabulary coverage over three available corpora of Tatar and Bashkir.}
+    \label{table:coverage}
+  \end{center}
+\end{table}
+
+As shown in Table~\ref{table:coverage}, the coverage is still far to low to be of use as a 
+general broad-domain machine translation
+system, but we hope that it shows that a good proportion of the morphology of both languages
+is in place.
+
+To get an idea of the kind of performance that could be expected from the system, we 
+translated a simple story from Tatar to Bashkir and vice versa. The story may be found 
+online,\footnote{\url{https://apertium.svn.sourceforge.net/svnroot/apertium/branches/xupaixkar/rasskaz}}
+and was used for pedagogical purposes in a recently workshop on machine translation
+for the languages of Russia.
+
+Table~\ref{table:wer} presents the Word Error Rate, an edit metric based on the Levenshtein 
+distance \cite{levenshtein/1966}. This measure was calculated once all the stems in the 
+text had been added to the system, thus presents an upper bound on the current performance
+of the transfer lexicon, and the disambiguation and transfer rules.
+
 \begin{table*}
   \begin{center}
-  \begin{tabular}{c|c|r|r|r}
-   Corpus                 & Direction         & Tokens  & WER    & PER    \\
+  \begin{tabular}{c|c|r|r}
+   Corpus                 & Direction         & Tokens  & WER  \\
   \hline
-   \multirow{2}{*}{story} & tt$\rightarrow$ba & 311 & 21.09  & 21.09 \\
-                          & ba$\rightarrow$tt & 312 & 19.75  & 19.75 \\
+   \multirow{2}{*}{story} & tt$\rightarrow$ba & 311     & 15.92\% \\
+                          & ba$\rightarrow$tt & 312     & 15.34\%  \\
   \hline
   \end{tabular}
-    \caption{Word error rate and position-independent word error rate over the small test corpus.}
+    \caption{Word error rate and over the small test corpus.}
     \label{table:wer}
   \end{center}
 \end{table*}
 
-
-
-\cite{TyersAlperen2010}
+%\cite{TyersAlperen2010}
 
 \section{Concluding remarks}
 \label{sec:conc}
