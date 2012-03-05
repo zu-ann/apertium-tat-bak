@@ -45,7 +45,8 @@ languages, on a par with similar systems.
 \section{Introduction}
 
 This paper presents a prototype shallow-transfer rule-based machine translation
-system between Tatar and Bashkir, two closely-related minority languages of Russia.
+system between Tatar and Bashkir, two closely-related minority Turkic 
+languages of Russia. 
 
 The paper will be laid out as follows: Section~\ref{sec:lang} gives a brief description
 of the two languages; Section~\ref{sec:prev} gives a short review of some previous
@@ -57,9 +58,17 @@ describes our aims for future work and some concluding remarks.
 \section{Languages}
 \label{sec:lang}
 
-Tatar is a Turkic language spoken in and around Tatarstan by approximately 6 million people.  Bashkir is a Turkic language spoken by about 1.5 million people in and around Bashqortostan.  Tatarstan and Bashqortostan are both republics within Russia.  The two languages belong to the same branch of the Kypchak group of Turkic langauges.  As they are very close relatives, they share many innovations, but Bashkir has quite a few phonological innovations beyond those of Tatar, and the languages have a number of morphological differences.  The spoken languages share a high level of mutual intelligibility, but many of the inherent similarities are obscured by their fairly different orthographical systems along with the phonological and morphological differences between the languages.
+Tatar is a Turkic language spoken in and around Tatarstan by approximately 6 million people.  Bashkir is
+a Turkic language spoken by about 1.5 million people in and around Bashqortostan.  Tatarstan 
+and Bashqortostan are both republics within Russia.  Both languages are co-official with Russian 
+in their respective republics. The two languages belong to the same branch of the Kypchak group 
+of Turkic langauges.  As they are very close relatives, they share many innovations, but Bashkir 
+has quite a few phonological innovations beyond those of Tatar, and the languages have a number 
+of morphological differences.  The spoken languages share a high level of mutual intelligibility, 
+but many of the inherent similarities are obscured by their fairly different orthographical 
+systems along with the phonological and morphological differences between the languages.
 
-Aside from native speaker intuition, we also consulted the Bashkir Grammar of M. G. Usmanova \cite{usmanova06}
+Aside from native speaker intuition, we also consulted the Bashkir Grammar of M. G. Usmanova \cite{usmanova06}.
 
 \section{Previous work}
 \label{sec:prev}
@@ -68,7 +77,7 @@ There have been several previous works on making machine translation systems bet
 Turkic languages, although to our knowledge none are publically available. 
 
 For systems between Turkish and the other Turkic languages, there have been, 
-for example, systems reported for Turkish-Crimean Tatar \cite{altintas01}, Turkish-Azerbaijani \cite{hamzaoglu93}, Turkish-Tatar \cite{suleymanov08} and Turkish-Turkmen \cite{tantug07}.
+for example, systems reported for Turkish-Crimean Tatar \cite{altintas01}, Turkish-Azerbaijani \cite{hamzaoglu93}, Turkish-Tatar \cite{suleymanov08} and Turkish-Turkmen \cite{tantug07}. 
 
 \section{System}
 \label{sec:sys}
@@ -82,7 +91,8 @@ for example, systems reported for Turkish-Crimean Tatar \cite{altintas01}, Turki
 \caption{The pipeline architecture of the Apertium system.}
 \end{figure*}
 
-The system is based on the Apertium machine translation platform \cite{apertium/2011}.\footnote{\url{http://www.apertium.org}} The 
+The system is based on the Apertium machine translation 
+platform \cite{apertium/2011}.\footnote{\url{http://www.apertium.org}} The 
 platform was originally aimed at the Romance languages of the Iberian peninsula, but has also been adapted for 
 other, more distantly related, language pairs.
 The whole platform, both programs and data, are licensed under the Free Software Foundation's General Public 
