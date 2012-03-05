@@ -31,6 +31,11 @@ dev/testvoc-summary.ba-tt.txt -text
 dev/testvoc-summary.tt-ba.txt -text
 dev/testvoc.sh -text
 /modes.xml -text
+paper/Makefile -text
+paper/lrec2006.bst -text
+paper/lrec2006.sty -text
+paper/tt-ba.bib -text
+paper/tt-ba.tex -text
 texts/Tekst_ba.txt -text svneol=unset#application/octet-stream
 texts/Tekst_tt.txt -text svneol=unset#application/octet-stream
 texts/story.ba.txt -text svneol=unset#application/octet-stream

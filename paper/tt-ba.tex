@@ -1,0 +1,174 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{lrec2006}
+\usepackage{url}
+\usepackage{times}
+\usepackage{multirow}
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=australian]{english}
+\usepackage{latexsym}
+\usepackage[small,bf]{caption}
+\usepackage{xltxtra}
+\usepackage{fontspec}
+\defaultfontfeatures{PunctuationSpace=3,Scale=MatchLowercase,Mapping=tex-text}
+\newfontfeature{IPA}{+mgrk}
+\setromanfont[IPA]{FreeSerif}
+
+%\setlength\titlebox{6.5cm}    % You can expand the title box if you
+% really have to
+
+\title{A prototype machine translation system for Tatar and Bashkir based on 
+   free/open-source components}
+
+%\author{Tommi A Pirinen, Francis M. Tyers}
+%\address{University of Helsinki,
+% Universitat d'Alacant\\
+% FI-00014 University of Helsinki Finland,
+% E-03071 Alacant Spain \\
+%  \url{tommi.pirinen@helsinki.fi}, \url{ftyers@dlsi.ua.es}\\}
+
+\date{\today}
+
+\abstract{
+This paper presents a prototype bidirectional machine translation system between 
+Tatar and Bashkir, two minority Turkic languages of Russia. While the 
+system has low practical coverage, results are presented that suggest
+that high accuracy may be obtained between these two closely-related
+languages, on a par with similar systems.
+ \\
+\Keywords{tatar, bashkir, mt, open-source}
+}
+
+\begin{document}
+
+\maketitleabstract
+
+\section{Introduction}
+
+This paper presents a prototype shallow-transfer rule-based machine translation
+system between Tatar and Bashkir, two closely-related minority languages of Russia.
+
+The paper will be laid out as follows: Section~\ref{sec:lang} gives a brief description
+of the two languages; Section~\ref{sec:prev} gives a short review of some previous
+work in the area of Turkic--Turkic language translation; Section~\ref{sec:sys} 
+describes the system and the tools used to construct it; Section~\ref{sec:eval}
+gives a very preliminary evaluation of the system; and finally Section~\ref{sec:conc}
+describes our aims for future work and some concluding remarks.
+
+\section{Languages}
+\label{sec:lang}
+
+Tatar is a Turkic language spoken in and around Tatarstan by approximately 6 million people.  
+Bashkir is spoken by about 1.5 million people in and around Bashqortostan.  The two languages 
+are very close relatives and share many innovations, but Bashkir has a handful of additional 
+phonological innovations.  The spoken languages share a high level of mutual intelligibility, 
+but their orthographical systems are fairly different and fairly different and the phonological 
+nuances obscure some of the inherent similarities.
+
+
+\cite{usmanova06}
+
+\section{Previous work}
+\label{sec:prev}
+
+
+
+\section{System}
+\label{sec:sys}
+
+The system is based on the Apertium machine translation platform \cite{apertium/2011}.\footnote{\url{http://www.apertium.org}} The 
+platform was originally aimed at the Romance languages of the Iberian peninsula, but has also been adapted for 
+other, more distantly related, language pairs.
+The whole platform, both programs and data, are licensed under the Free Software Foundation's General Public 
+Licence\footnote{\url{http://www.fsf.org/licensing/licenses/gpl.html}} (GPL) and all the software and data for the 
+30 supported language pairs (and the other pairs being worked on) is available for download from the project 
+website.
+
+\subsection{Morphological transducers}
+
+The morphological transducers are based on the Helsinki Finite State Toolkit \cite{hfst/2011}, a 
+free/open-source reimplementation of the Xerox finite-state toolchain, popular in the field of 
+morphological analysis. It implements both the \textbf{lexc} formalism for defining lexicons, 
+and the \textbf{twol} and \textbf{xfst} formalisms for modeling morphophonological rules. It 
+also supports other finite state transducer formalisms such as \textbf{sfst}. This toolkit has 
+been chosen as it -- or the equivalent XFST -- has been widely used for 
+other Turkic languages \cite{coltekin2010,altintas2001,tantug2006}, 
+and is available under a free/open-source licence.
+
+\subsection{Bilingual lexicon}
+
+The bilingual lexicon currently contains 1,530 stem to stem correspondences and was build by hand by a bilingual 
+speaker of Tatar and Bashkir, translating a frequency list of the Russian National Corpus \cite{rnc} 
+into both languages in a spreadsheet. This spreadsheet was then converted into the Apertium
+XML dictionary format. These 1,530 stems present around half of the current translations.
+
+The entries consist largely of one-to-one stem-to-stem correspondences with part of speech, but also
+include some instances where the translation is ambiguous (see e.g. Fig.~\ref{fig:bidix}).
+
+\begin{figure*}
+\begin{center}
+\begin{texttt}
+    <e><p><l>юнәлеш<s n="n"/></l><r>йүнәлеш<s n="n"/></r></p></e> \\
+~\\
+    <e><p><l>борын<s n="n"/></l><r>танау<s n="n"/></r></p></e> \\
+    <e><p><l>борын<s n="n"/></l><r>морон<s n="n"/></r></p></e> \\
+~\\
+    <e><p><l>ераклык<s n="n"/></l><r>алыҫлыҡ<s n="n"/></r></p></e> \\
+    <e><p><l>ераклык<s n="n"/></l><r>йыраҡлыҡ<s n="n"/></r></p></e>
+
+\end{texttt}
+\end{center}
+\caption{Example entries from the bilingual transfer lexicon}
+\label{fig:bidix}
+\end{figure*}
+
+\subsection{Disambiguation rules}
+
+
+
+\subsection{Lexical selection rules}
+
+
+
+\subsection{Transfer rules}
+
+\section{Evaluation}
+\label{sec:eval}
+
+\begin{table*}
+  \begin{center}
+  \begin{tabular}{c|c|r|r|r}
+   Corpus                 & Direction         & Tokens  & WER    & PER    \\
+  \hline
+   \multirow{2}{*}{story} & tt$\rightarrow$ba & 311 & 21.09  & 21.09 \\
+                          & ba$\rightarrow$tt & 312 & 19.75  & 19.75 \\
+  \hline
+  \end{tabular}
+    \caption{Word error rate and position-independent word error rate over the small test corpus.}
+    \label{table:wer}
+  \end{center}
+\end{table*}
+
+
+
+\cite{TyersAlperen2010}
+
+\section{Concluding remarks}
+\label{sec:conc}
+
+To our knowledge we have presented the first ever MT system between
+Tatar and Bashkir, and the first ever machine translation system
+for Bashkir.
+
+We plan to continue development on the pair, the main work will be 
+expanding the dictionaries with new lists of stems, and providing 
+bilingual correspondences.
+
+
+\section*{Acknowledgements}
+
+{\em Removed for review}
+
+\bibliographystyle{lrec2006}
+\bibliography{tt-ba}
+
+\end{document}
