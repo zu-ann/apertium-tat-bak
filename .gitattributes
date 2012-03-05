@@ -32,6 +32,7 @@ dev/testvoc-summary.tt-ba.txt -text
 dev/testvoc.sh -text
 /modes.xml -text
 paper/Makefile -text
+paper/architecture.obj -text
 paper/lrec2006.bst -text
 paper/lrec2006.sty -text
 paper/tt-ba.bib -text
