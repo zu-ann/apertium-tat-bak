@@ -64,12 +64,15 @@ phonological innovations.  The spoken languages share a high level of mutual int
 but their orthographical systems are fairly different and fairly different and the phonological 
 nuances obscure some of the inherent similarities.
 
-
-\cite{usmanova06}
+Aside from native speaker intuition, we also consulted the Bashkir Grammar of M. G. Usmanova \cite{usmanova06}
 
 \section{Previous work}
 \label{sec:prev}
 
+There have been several previous works on making machine translation systems between 
+Turkic languages, although to our knowledge none are publically available. 
+
+...
 
 
 \section{System}
@@ -107,17 +110,17 @@ include some instances where the translation is ambiguous (see e.g. Fig.~\ref{fi
 \begin{figure*}
 \begin{center}
 \begin{texttt}
-    <e><p><l>юнәлеш<s n="n"/></l><r>йүнәлеш<s n="n"/></r></p></e> \\
+    <e><p><l>\textbf{юнәлеш}<s n="n"/></l><r>\textbf{йүнәлеш}<s n="n"/></r></p></e> \\
 ~\\
-    <e><p><l>борын<s n="n"/></l><r>танау<s n="n"/></r></p></e> \\
-    <e><p><l>борын<s n="n"/></l><r>морон<s n="n"/></r></p></e> \\
+    <e><p><l>\textbf{борын}<s n="n"/></l><r>\textbf{танау}<s n="n"/></r></p></e> \\
+    <e><p><l>\textbf{борын}<s n="n"/></l><r>\textbf{морон}<s n="n"/></r></p></e> \\
 ~\\
-    <e><p><l>ераклык<s n="n"/></l><r>алыҫлыҡ<s n="n"/></r></p></e> \\
-    <e><p><l>ераклык<s n="n"/></l><r>йыраҡлыҡ<s n="n"/></r></p></e>
+    <e><p><l>\textbf{ераклык}<s n="n"/></l><r>\textbf{алыҫлыҡ}<s n="n"/></r></p></e> \\
+    <e><p><l>\textbf{ераклык}<s n="n"/></l><r>\textbf{йыраҡлыҡ}<s n="n"/></r></p></e>
 
 \end{texttt}
 \end{center}
-\caption{Example entries from the bilingual transfer lexicon}
+\caption{Example entries from the bilingual transfer lexicon. Tatar is on the left, and Bashkir on the right}
 \label{fig:bidix}
 \end{figure*}
 
@@ -161,7 +164,12 @@ for Bashkir.
 
 We plan to continue development on the pair, the main work will be 
 expanding the dictionaries with new lists of stems, and providing 
-bilingual correspondences.
+bilingual correspondences. The long-term plan is to integrate the 
+data created with other open-source data for Turkic languages in order
+to make transfer systems between all the Turkic language pairs. 
+
+Related work is currently ongoing with Chuvash--Turkish 
+and Turkish--Kyrgyz.
 
 
 \section*{Acknowledgements}
