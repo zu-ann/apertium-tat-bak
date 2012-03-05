@@ -76,6 +76,15 @@ for example, systems reported for Turkish-Crimean Tatar \cite{altintas01}, Turki
 \section{System}
 \label{sec:sys}
 
+\begin{figure*}
+\begin{center}
+ \includegraphics[width=0.8\textwidth]{architecture.pdf}
+\end{center}
+
+\label{fig:modules}
+\caption{The pipeline architecture of the Apertium system.}
+\end{figure*}
+
 The system is based on the Apertium machine translation platform \cite{apertium/2011}.\footnote{\url{http://www.apertium.org}} The 
 platform was originally aimed at the Romance languages of the Iberian peninsula, but has also been adapted for 
 other, more distantly related, language pairs.
@@ -97,7 +106,7 @@ Use of twol allows for phonological processes present in the languages, like vow
 \subsection{Bilingual lexicon}
 
 The bilingual lexicon currently contains 1,530 stem to stem correspondences and was build by hand by a bilingual 
-speaker of Tatar and Bashkir, translating a frequency list of the Russian National Corpus \cite{rnc} 
+speaker of Tatar and Bashkir, translating a frequency list of the Russian National Corpus.\footnote{\url{http://ruscorpora.ru/en/}}
 into both languages in a spreadsheet. This spreadsheet was then converted into the Apertium
 XML dictionary format. These 1,530 stems present around half of the current translations.
 
@@ -177,12 +186,7 @@ online,\footnote{\url{https://apertium.svn.sourceforge.net/svnroot/apertium/bran
 and was used for pedagogical purposes in a recently workshop on machine translation
 for the languages of Russia.
 
-Table~\ref{table:wer} presents the Word Error Rate, an edit metric based on the Levenshtein 
-distance \cite{levenshtein/1966}. This measure was calculated once all the stems in the 
-text had been added to the system, thus presents an upper bound on the current performance
-of the transfer lexicon, and the disambiguation and transfer rules.
-
-\begin{table*}
+\begin{table}
   \begin{center}
   \begin{tabular}{c|c|r|r}
    Corpus                 & Direction         & Tokens  & WER  \\
@@ -194,17 +198,22 @@ of the transfer lexicon, and the disambiguation and transfer rules.
     \caption{Word error rate and over the small test corpus.}
     \label{table:wer}
   \end{center}
-\end{table*}
+\end{table}
 
+
+Table~\ref{table:wer} presents the Word Error Rate, an edit metric based on the Levenshtein 
+distance \cite{levenshtein/1966}. This measure was calculated once all the stems in the 
+text had been added to the system, thus presents an upper bound on the current performance
+of the transfer lexicon, and the disambiguation and transfer rules.
 %\cite{TyersAlperen2010}
 
 \section{Concluding remarks}
 \label{sec:conc}
 
-To our knowledge we have presented the first ever MT system between Tatar and Bashkir, and the first ever machine translation system involving Bashkir.
+To our knowledge we have presented the first ever MT system between Tatar and Bashkir, and the first ever machine translation system involving Bashkir. The system is available as free/open-source software under the GNU GPL and the 
+whole system may be downloaded from SVN.\footnote{\url{https://apertium.svn.sourceforge.net/svnroot/apertium/nursery/apertium-tt-ba}}
 
 We plan to continue development on the pair; the main work will be expanding the dictionaries with new lists of stems, and providing bilingual correspondences. The long-term plan is to integrate the data created with other open-source data for Turkic languages in order to make transfer systems between all the Turkic language pairs.  Related work is currently ongoing with Chuvash--Turkish and Turkish--Kyrgyz.
-
 
 \section*{Acknowledgements}
 
