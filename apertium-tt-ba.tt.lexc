@@ -54,13 +54,13 @@ Multichar_Symbols
 %<sim%>            ! Similative            !-дай/-дәй, -тай, -тәй
 !лишительный       ! -сыз/-сез !! not used after posessives
 !обладательный     ! -лы/-ле   !! not used after posessives
-!-ныкы/-неке       ! "predicativ genitive"="genitiv 2"
+!-ныкы/-неке       ! "predicativ genitive"="genitiv 2" also called "general possessive"
 
 ! Levels of comparison of adjectives ! Сыйфат дәрәҗәләре ! Степени сравнения прилагательных
 %<pst%>            ! Positive     ! Төп дәрәҗә
 %<comp%>           ! Comparative  ! Чагыштыру дәрәҗәсе
 %<sup%>            ! Superlative  ! Артыклык дәрәҗәсе
-!! Кимлек дәрәҗәсе регуляр форма түгел. Андый формадагыларны төп дәрәҗәдәге сыйфатлар дип аерым кертергә булыр
+!! Кимлек дәрәҗәсе регуляр форма түгел. Андый формадагыларны төп дәрәҗәдәге сыйфатлар дип аерым кертергә булыр (talking about "weakening")
 
 ! Pronoun types ! Алмашлык төрләре ! Виды местоимений
 %<pers%>           ! Personal
@@ -727,7 +727,6 @@ LEXICON Nouns
 тоташма:тоташма NLEX ; ! "" 
 һава:һава NLEX ; ! "" 
 бала-чага:бала-чага NLEX ; ! "" 
-балалар:балалар NLEX ; ! "" 
 бертуган:бертуган NLEX ; ! "" 
 ир% туган:ир% туган NLEX ; ! "" 
 абый:абый NLEX ; ! "" 
