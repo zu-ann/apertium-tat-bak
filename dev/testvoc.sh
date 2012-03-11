@@ -1,2 +1,2 @@
-bash inconsistency.sh tt-ba > /tmp/testvoc.tt-ba; sh inconsistency-summary.sh /tmp/testvoc.tt-ba tt-ba
-bash inconsistency.sh ba-tt > /tmp/testvoc.ba-tt; sh inconsistency-summary.sh /tmp/testvoc.ba-tt ba-tt
+bash inconsistency.sh tt-ba > $TMPDIR/testvoc.tt-ba; bash inconsistency-summary.sh $TMPDIR/testvoc.tt-ba tt-ba
+bash inconsistency.sh ba-tt > $TMPDIR/testvoc.ba-tt; bash inconsistency-summary.sh $TMPDIR/testvoc.ba-tt ba-tt
