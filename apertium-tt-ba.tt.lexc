@@ -28,6 +28,7 @@ Multichar_Symbols
 %<ant%>            ! Anthroponym  ! Кеше исеме
 !! for adjectives ?
 %<attr%>           ! Attributive
+%<subst%>          ! Substantive
 %<pred%>           ! Predicative
 
 ! Сан ! Число
@@ -216,12 +217,16 @@ LEXICON NLEX-PL
 
 %<n%>%<pl%>: POSS ; 
 
+LEXICON SUBST
+
+%<pl%>:%>%{L%}%{A%}р POSS ;
+%<locattr%>:%>%{L%}%{A%}%{G%}%{I%} POSS ;
+POSS ; 
+
 LEXICON NLEX
 
 %<n%>%<attr%>: # ; 
-%<n%>: POSS ; 
-%<n%>%<pl%>:%>%{L%}%{A%}р POSS ; 
-%<n%>%<locattr%>:%>%{L%}%{A%}%{G%}%{I%} POSS ;
+%<n%>: SUBST ;
 
 LEXICON DIGITLEX
 
@@ -251,6 +256,7 @@ LEXICON NPTOPLEX
 LEXICON ALEX
 
 %<adj%>: # ; 
+%<adj%>%<subst%>: SUBST ; 
 %<adj%>%<comp%>:%>р%{A%}%{K%} # ; 
 
 ADVLEX ; ! Allow all adjectives to derive as adverbs
