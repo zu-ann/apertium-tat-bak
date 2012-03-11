@@ -30,6 +30,7 @@ Multichar_Symbols
 %<attr%>           ! Attributive
 %<subst%>          ! Substantive
 %<pred%>           ! Predicative
+%<advl%>           ! Adverbial
 
 ! Сан ! Число
 %<sg%>             ! Singular  ! Берлек сан  ! Единственное число
@@ -256,10 +257,10 @@ LEXICON NPTOPLEX
 LEXICON ALEX
 
 %<adj%>: # ; 
-%<adj%>%<subst%>: SUBST ; 
 %<adj%>%<comp%>:%>р%{A%}%{K%} # ; 
 
-ADVLEX ; ! Allow all adjectives to derive as adverbs
+%<adj%>%<subst%>: SUBST ; 
+%<adj%>%<advl%>: CLIT ; 
 
 LEXICON V-PERS-S1 
 

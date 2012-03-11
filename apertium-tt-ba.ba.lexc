@@ -28,6 +28,7 @@ Multichar_Symbols
 %<pron%>           ! 
 %<attr%>           ! 
 %<subst%>          ! 
+%<advl%>          ! 
 %<locattr%>        ! 
 
 %<pass%>           ! 
@@ -207,8 +208,7 @@ LEXICON ALEX
 %<adj%>: # ; 
 %<adj%>%<subst%>: SUBST ; 
 %<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} # ; 
-
-ADVLEX ; ! Allow all adjectives to derive as adverbs
+%<adj%>%<advl%>: CLIT ; 
 
 LEXICON V-PERS-S1 
 
