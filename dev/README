@@ -1,0 +1,9 @@
+Caution:
+
+* Using the testvoc script is likely to take over 4 hours, and generate
+  over 2G of output.
+
+* Remember to do 'make debug' before running the testvoc script. The 
+  script uses the debug transducers (e.g. without Use/Circ)
+
+
