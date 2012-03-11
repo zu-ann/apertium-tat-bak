@@ -90,6 +90,7 @@ Multichar_Symbols
 %<ger6%>           ! -{I}р / -{A}р
 %<ger7%>           ! -{A}ч{A}к
 %<ger8%>           ! -{E}с
+%<inf%>            ! Infinitive !  ! Инфинитив ! -{A/I}рг{A}
 
 ! Transitivity ! Переходность
 %<tv%>             ! Transitive
@@ -302,6 +303,7 @@ LEXICON V-FUT-IR
 %<neg%>%<fut%>%<p1%>%<sg%>:%>м%{A%}%>м CLIT ; 
 %<neg%>%<fut%>%<p1%>%<sg%>:%>м%{A%}с%>м%{I%}н CLIT ; ! Dir/LR 
 %<ger6%>:%>%{I%}р POSS ;
+%<inf%>:%>%{I%}рг%{A%} # ;
 %<neg%>%<ger6%>:%>м%{A%}%>%{I%}р POSS ;
 
 LEXICON V-FUT-AR
@@ -311,6 +313,7 @@ LEXICON V-FUT-AR
 %<neg%>%<fut%>%<p1%>%<sg%>:%>м%{A%}%>м CLIT ; 
 %<neg%>%<fut%>%<p1%>%<sg%>:%>м%{A%}с%>м%{I%}н CLIT ; ! Dir/LR 
 %<ger6%>:%>%{A%}р POSS ;
+%<inf%>:%>%{A%}рг%{A%} # ;
 %<neg%>%<ger6%>:%>м%{A%}%>%{A%}р POSS ;
 
 LEXICON V-FINITE-FORMS

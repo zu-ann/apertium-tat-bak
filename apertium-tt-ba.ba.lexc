@@ -84,6 +84,7 @@ Multichar_Symbols
 %<ger8%>           ! -{E}h
 %<cond%>           ! -h{A}
 %<vol%>            ! -{G}{I}
+%<inf%>            ! Infinitive !  ! Инфинитив ! -{I}рг{A}
 
 %<sent%>           ! Sentence marker
 %<guio%>           ! Hyphen
@@ -257,6 +258,7 @@ LEXICON V-NONFINITE-FORMS
 %<ger4%>:%>%{G%}%{A%}нс%{I%} POSS ;
 %<ger5%>:%>%{G%}%{A%}н POSS ;
 %<ger6%>:%>%{I%}р POSS ;
+%<inf%>:%>%{I%}рг%{A%} POSS ;
 %<ger7%>:%>%{A%}с%{A%}%{K%} POSS ;
 %<ger8%>:%>%{E%}һ V-PERS-S4 ;
 %<cond%>:%>һ%{A%} V-PERS-S2 ;
