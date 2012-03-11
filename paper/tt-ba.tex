@@ -19,12 +19,12 @@
 \title{A prototype machine translation system for Tatar and Bashkir based on 
    free/open-source components}
 
-\name{Francis M. Tyers, Jonathan North Washington, Ilnar Salimzyan}
+\name{Francis M. Tyers, Jonathan North Washington, Ilnar Salimzyan, Rustam Batalov}
 
-\address{Universitat d'Alacant, Indiana University, Kazan Federal University \\
- Alacant, Bloomington, Kazan \\
- E-03071 Spain, IN 47405-7000 (USA), Russia \\
-  \url{ftyers@dlsi.ua.es}, \url{jonwashi@indiana.edu}, \url{ilnar.salimzyan@gmail.com}\\}
+\address{Universitat d'Alacant, Indiana University, Kazan Federal University, Bashkir State University, \\
+ Alacant, Bloomington, Kazan, Ufa, \\
+ E-03071 Spain, IN 47405-7000 (USA), Russia, Russia \\
+  \url{ftyers@dlsi.ua.es}, \url{jonwashi@indiana.edu}, \url{ilnar.salimzyan@gmail.com}, \url{taqmaq@mail.ru}\\}
 
 \date{\today}
 
@@ -189,11 +189,11 @@ for the languages of Russia.
 
 \begin{table}
   \begin{center}
-  \begin{tabular}{c|c|r|r}
-   Corpus                 & Direction         & Tokens  & WER  \\
+  \begin{tabular}{c|c|r|r|r}
+   Corpus                 & Direction         & Tokens  & Unknown & WER  \\
   \hline
-   \multirow{2}{*}{story} & tt$\rightarrow$ba & 311     & 15.92\% \\
-                          & ba$\rightarrow$tt & 312     & 15.34\%  \\
+   \multirow{2}{*}{story} & tt$\rightarrow$ba & 311     & 25 & 14.42\% \\
+                          & ba$\rightarrow$tt & 312     & 1  & 13.83\%  \\
   \hline
   \end{tabular}
     \caption{Word error rate and over the small test corpus.}
@@ -201,11 +201,13 @@ for the languages of Russia.
   \end{center}
 \end{table}
 
-
 Table~\ref{table:wer} presents the Word Error Rate, an edit metric based on the Levenshtein 
 distance \cite{levenshtein/1966}. This measure was calculated once all the stems in the 
 text had been added to the system, thus presents an upper bound on the current performance
-of the transfer lexicon, and the disambiguation and transfer rules.
+of the transfer lexicon, and the disambiguation and transfer rules. The difference in 
+the number of unknown words between translating Tatar$\rightarrow$Bashkir and vice versa
+is because certain forms were not found due to lack of morphophonologica rules in the
+Tatar transducer.
 %\cite{TyersAlperen2010}
 
 \section{Concluding remarks}
