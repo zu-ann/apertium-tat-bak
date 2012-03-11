@@ -135,12 +135,11 @@ LEXICON CLIT
 
 %+да%<cnjcoo%>:% %{L%}%{I%} # ;
 %+мы%<qst%>:%>м%{I%} # ;
-!%+мы% ни%<qst%>:%>м%{I%}% ни # ;
 %+лыр%<part%>:%>%{L%}%{I%}р # ;
 %+сы%<part%>:%>с%{I%} # ;
+!%+мы% ни%<qst%>:%>м%{I%}% ни # ;
 !%+уҡ%<part%>:% %{U%}%{K%} # ;
-
-#;
+# ;
 
 LEXICON CASE
 
@@ -505,6 +504,7 @@ LEXICON Determiners
 теге:теге DETDEMLEX ; ! ""
 
 бөтә:бөтә DETQNTLEX ; ! ""
+бар:бар DETQNTLEX ; ! ""
 
 бер:бер DETINDLEX ; ! ""
 
@@ -1707,7 +1707,7 @@ LEXICON Verbs
 бир:бир V-TV-LEX ; ! ""
 һөйлә:һөйлә V-TV-LEX ; ! ""
 ти:ти V-TV-LEX ; ! ""
-ҡапла:ҡапла V-TV-LEX ; ! ""
+!ҡапла:ҡапла V-TV-LEX ; ! ""
 аша:аша V-TV-LEX ; ! ""
 әйлән:әйлән V-IV-LEX ; ! ""
 йөгөр:йөгөр V-IV-LEX ; ! ""
@@ -1997,7 +1997,7 @@ LEXICON Verbs
 мен:мен V-IV-LEX ; ! ""
 күтәрел:күтәрел V-IV-LEX ; ! ""
 бул:бул V-IV-LEX ; ! ""
-тырыш:тырыш V-IV-LEX ; ! ""
+!тырыш:тырыш V-IV-LEX ; ! ""
 бар:бар V-IV-LEX ; ! ""
 кит:кит V-IV-LEX ; ! ""
 шөғөллән:шөғөллән V-IV-LEX ; ! ""

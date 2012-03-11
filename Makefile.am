@@ -13,8 +13,8 @@ BASENAME=apertium-$(PREFIX1)
 TARGETS_COMMON = $(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
 	$(PREFIX1).automorf.hfst $(PREFIX1).autopgen.bin $(PREFIX1).autogen.hfst $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin \
 	$(PREFIX2).automorf.hfst $(PREFIX2).autopgen.bin $(PREFIX2).autogen.hfst $(PREFIX2).t1x.bin $(PREFIX2).t2x.bin \
-        $(PREFIX1).rlx.bin \
-        $(PREFIX1).lrx.bin \
+        $(PREFIX1).rlx.bin $(PREFIX2).rlx.bin \
+        $(PREFIX1).lrx.bin $(PREFIX2).lrx.bin \
 	$(PREFIX1).mode $(PREFIX2).mode modes 
 
 ###############################################################################
@@ -120,8 +120,8 @@ $(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
 $(PREFIX1).rlx.bin: $(BASENAME).$(PREFIX1).rlx
 	cg-comp $< $@
 
-#$(PREFIX2).rlx.bin: $(BASENAME).$(PREFIX2).rlx
-#	cg-comp $< $@
+$(PREFIX2).rlx.bin: $(BASENAME).$(PREFIX2).rlx
+	cg-comp $< $@
 
 
 ###############################################################################
@@ -129,12 +129,10 @@ $(PREFIX1).rlx.bin: $(BASENAME).$(PREFIX1).rlx
 ###############################################################################
 
 $(PREFIX1).lrx.bin: $(BASENAME).$(PREFIX1).lrx
-	apertium-lrx-comp lr $< $@
+	apertium-lrx-comp $< $@
 
-#$(PREFIX2).lrx.bin: $(BASENAME).$(PREFIX2).lrx
-#	apertium-validate-dictionary $< 
-#	lt-comp rl $< $@
-
+$(PREFIX2).lrx.bin: $(BASENAME).$(PREFIX2).lrx
+	apertium-lrx-comp $< $@
 
 ###############################################################################
 ## Structural transfer rules
@@ -205,8 +203,8 @@ apertium_tt_ba_DATA=$(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
 		    $(PREFIX1).autopgen.bin $(PREFIX2).autopgen.bin \
 		    $(PREFIX1).t1x.bin $(PREFIX2).t1x.bin \
 		    $(PREFIX1).t2x.bin $(PREFIX2).t2x.bin \
-		    $(PREFIX1).rlx.bin  \
-		    $(PREFIX1).lrx.bin  \
+		    $(PREFIX1).rlx.bin $(PREFIX2).rlx.bin \
+		    $(PREFIX1).lrx.bin $(PREFIX2).lrx.bin \
 		    $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX2).t1x \
 		    $(BASENAME).$(PREFIX1).t2x $(BASENAME).$(PREFIX2).t2x \
 		    modes.xml

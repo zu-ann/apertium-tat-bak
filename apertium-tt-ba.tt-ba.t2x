@@ -10,6 +10,7 @@
     <def-cat n="čast">
       <cat-item tags="qst"/>
       <cat-item lemma="дыр" tags="part"/>
+      <cat-item lemma="лыр" tags="part"/>
       <cat-item lemma="сы" tags="part"/>
     </def-cat>
  
