@@ -124,3 +124,8 @@ Cx:Cy <=> :CnsVoiceless/[ %>: | %  ] _ ;
           where Cx in ( %{G%} %{D%} )
                 Cy in (   к     т   )
                 matched;
+
+!!!! Special archiphonemes !!!!
+
+"Deletion of dative {G} after px1sg, px2sg"
+%{G%}:0 <=>  %{I%}: :NasalCns %>: _ %{A%}: .#. ;
