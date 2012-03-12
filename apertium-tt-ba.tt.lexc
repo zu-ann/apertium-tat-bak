@@ -172,8 +172,8 @@ LEXICON CASE
 %<nom%>: CLIT ;               ! - - -
 %<gen%>:%>н%{I%}ң CLIT ;      ! -ның/-нең
 %<dat%>:%>%{G%}%{A%} CLIT ;   ! -га/-гә, -ка/-кә           ! -а/-ә in nouns with possessives in singular (see below)
-%<acc%>:%>н%{I%} CLIT ;	! -ны/-не
-%<abl%>:%>%{D%}%{A%}н CLIT ;  ! -дан/-дән, -тан/-тән 
+%<acc%>:%>н%{I%} CLIT ;	      ! -ны/-не
+%<abl%>:%>%{D%}%{A%}н CLIT ;  ! -дан/-дән, -тан/-тән, -нан/нән 
 %<loc%>:%>%{D%}%{A%} CLIT ;   ! -да/-дә, -та/-тә
 
 !! китап
@@ -183,7 +183,17 @@ LEXICON CASE
 !! китаптан
 !! китапта
 
-LEXICON CASE-AFTER-POSS
+LEXICON POSS-REAL
+
+%<px1sg%>:%>%{I%}м CASE ;                 ! -ым/-ем, -м
+%<px2sg%>:%>%{I%}ң CASE ;                 ! -ың/-ең, -ң
+%<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;        ! -ы/е, -сы/-се
+%<px1pl%>:%>%{I%}б%{I%}з CASE ;           ! -ыбыз/-ебез, -быз/-без
+%<px2pl%>:%>%{I%}%{G%}%{I%}з CASE ;       ! -ыгыз/-егез, -гыз/-гез
+
+CASE ;
+
+!LEXICON CASE-POSSESSIVE
 ! In dative nouns with <px1sg> <px2sg> and <px3sp> gets an "-a" ending instead of "-га/-гә, -ка/-кә". Like it is in Turkish
 ! In nouns with <px3sp> there is an enclitic "н" in most cases  
 !! китабым      китабың	        китабы
@@ -193,26 +203,9 @@ LEXICON CASE-AFTER-POSS
 !! китабымнан   китабыңнан      китабы-н-нан
 !! китабымда    китабыңда       китабы-н-да
 
-%<nom%>: CLIT ;               ! - - -
-%<gen%>:%>н%{I%}ң CLIT ;      ! -ның/-нең
-%<dat%>:%>%{A%} CLIT ;        ! -а/-ә
-%<acc%>:%>н%{I%} CLIT ;	! -ны/-не
-%<abl%>:%>н%{A%}н CLIT ;      ! -нан/нән 
-%<loc%>:%>%{D%}%{A%} CLIT ;   ! -да/-дә, -та/-тә
-
-LEXICON POSS-REAL
-
-%<px1sg%>:%>%{I%}м CASE-AFTER-POSS ;                 ! -ым/-ем, -м
-%<px2sg%>:%>%{I%}ң CASE-AFTER-POSS ;                 ! -ың/-ең, -ң
-%<px3sp%>:%>%{s%}%{I%}%{n%} CASE-AFTER-POSS ;        ! -ы/е, -сы/-се
-%<px1pl%>:%>%{I%}б%{I%}з CASE-AFTER-POSS ;           ! -ыбыз/-ебез, -быз/-без
-%<px2pl%>:%>%{I%}%{G%}%{I%}з CASE-AFTER-POSS ;       ! -ыгыз/-егез, -гыз/-гез
-
-CASE ;
-
 LEXICON POSS
 
-%<pron%>:%>%{L%}%{I%}%{K%}%{I%} CASE-AFTER-POSS ;
+%<pron%>:%>%{L%}%{I%}%{K%}%{I%} CASE ;
 
 POSS-REAL ;
 
