@@ -193,7 +193,6 @@ LEXICON POSS-REAL
 
 CASE ;
 
-!LEXICON CASE-POSSESSIVE
 ! In dative nouns with <px1sg> <px2sg> and <px3sp> gets an "-a" ending instead of "-га/-гә, -ка/-кә". Like it is in Turkish
 ! In nouns with <px3sp> there is an enclitic "н" in most cases  
 !! китабым      китабың	        китабы
@@ -205,8 +204,8 @@ CASE ;
 
 LEXICON POSS
 
-%<pron%>:%>%{L%}%{I%}%{K%}%{I%} CASE ;
-
+%<pron%>:%>н%{I%}к%{I%} CASE ;       !! -ныкы/-неке in Tatar   !! FIXME: this can appear after possessives too
+                                                               !! e.g. бала-лар-ым-ныкы "of my children"
 POSS-REAL ;
 
 LEXICON NLEX-SG
@@ -2219,9 +2218,8 @@ LEXICON Adjectives
 төгәл:төгәл ALEX ; ! ""
 дөрес:дөрес ALEX ; ! ""
 тәңгәл:тәңгәл ALEX ; ! ""
-хайван:хайван ALEX ; ! ""
 хайвани:хайвани ALEX ; ! ""
-хайваннарча:хайваннарча ALEX ; ! ""
+хайваннарча:хайваннарча ALEX ; ! ""       !! should be an adjective
 ниндидер:ниндидер ALEX ; ! ""
 кайсыдыр:кайсыдыр ALEX ; ! ""
 билгесез:билгесез ALEX ; ! ""
