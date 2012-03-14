@@ -557,7 +557,7 @@ LEXICON Postpositions
 каршы:каршы POSTLEX ; ! ""
 башка:башка POSTLEX ; ! ""
 карамастан:карамастан POSTLEX ; ! ""
-астында:астында POSTLEX ; ! ""
+астында:астында POSTLEX ; ! ""         !! this is actually a noun
 
 LEXICON Postadverbs
 
