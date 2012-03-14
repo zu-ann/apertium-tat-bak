@@ -410,10 +410,10 @@ LEXICON PRNLEX-PERS
 
 ул%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ул # ; 
 ул%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:аның # ; 
-ул%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:аңа # ; 
+ул%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:аңа # ;    !! FIXME: also synonymic variants "аңар" and "аңарга"
 ул%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:аны # ; 
-ул%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:анда # ; 
-ул%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:аннан # ; 
+ул%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:анда # ;   !! also: "аңарда";           !!"анда" "аннан" usually instead of inanimate nouns 
+ул%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:аннан # ;  !! also: "аңардан";          !!"аңарда" "аңардан" -- instead of person
 
 без%<prn%>%<pers%>%<p1%>%<pl%>%<nom%>:без # ; 
 без%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:безнең # ; 
@@ -459,6 +459,11 @@ LEXICON PRNDEM-ŠUL
 LEXICON PRNITGLEX
 
 %<prn%>%<itg%>: POSS ; 
+
+LEXICON PRNDEMLEX
+
+%<prn%>%<dem%>: CASE ; 
+%<prn%>%<dem%>%<pl%>:%>%{L%}%{A%}р CASE ; 
 
 LEXICON PRNREFLEX
 
@@ -552,7 +557,7 @@ LEXICON Postpositions
 каршы:каршы POSTLEX ; ! ""
 башка:башка POSTLEX ; ! ""
 карамастан:карамастан POSTLEX ; ! ""
-астында:астында POSTLEX ; ! "" FIXME: Check
+астында:астында POSTLEX ; ! ""
 
 LEXICON Postadverbs
 
@@ -573,6 +578,9 @@ PRNLEX-PERS ;
 
 бу: PRNDEM-BU ; ! ""
 шул: PRNDEM-ŠUL ; ! ""
+!шушы:шушы PRNDEMLEX ; ! ""     !FIXME: these share the same endings with "бу", see мо-ңа <> шушы-ңа
+!теге:теге PRNDEMLEX ; ! ""     !теге-ңә (exceptional case endings in singular)
+                                !TODO:maybe it is possible to link all PRNDEMs to one Continuation class?
 
 үз:үз PRNREFLEX ; ! ""
 
@@ -580,11 +588,13 @@ LEXICON Determiners
 
 
 бу:бу DETDEMLEX ; ! ""
+шушы:шушы DETDEMLEX ; ! ""
 шул:шул DETDEMLEX ; ! ""
+теге:теге DETDEMLEX ; ! ""
 
+бөтен:бөтен DETQNTLEX ; ! ""
 бар:бар DETQNTLEX ; ! ""
 барлык:барлык DETQNTLEX ; ! ""
-бөтен:бөтен DETQNTLEX ; ! ""
 
 бер:бер DETINDLEX ; ! ""
 
@@ -599,10 +609,33 @@ LEXICON Numerals
 җиде:җиде NUMLEX ; ! ""
 сигез:сигез NUMLEX ; ! ""
 тугыз:тугыз NUMLEX ; ! ""
-
 ун:ун NUMLEX ; ! ""
+
+унбер:унбер NUMLEX ; ! ""
+унике:унике NUMLEX ; ! ""
+унөч:унөч NUMLEX ; ! ""
+ундүрт:ундүрт NUMLEX ; ! ""
+унбиш:унбиш NUMLEX ; ! ""
+уналты:уналты NUMLEX ; ! ""
+унҗиде:унҗиде NUMLEX ; ! ""
+унсигез:унсигез NUMLEX ; ! ""
+унтугыз:унтугыз NUMLEX ; ! ""
+
+егерме:егерме NUMLEX ; ! ""
+утыз:утыз NUMLEX ; ! ""
+кырык:кырык NUMLEX ; ! ""
+илле:илле NUMLEX ; ! ""
+алтмыш:алтмыш NUMLEX ; ! ""
+җитмеш:җитмеш NUMLEX ; ! ""
+сиксән:сиксән NUMLEX ; ! ""
+туксан:туксан NUMLEX ; ! ""
 йөз:йөз NUMLEX ; ! ""
+
 мең:мең NUMLEX ; ! ""
+төмән:төмән NUMLEX ; ! "archaic for 10 000"
+түмән:түмән NUMLEX ; ! "archaic for 10 000"
+миллион:миллион NUMLEX ; ! ""
+миллиард:миллиард NUMLEX ; ! ""
 
 LEXICON Nouns 
 
@@ -619,7 +652,9 @@ LEXICON Nouns
 гамәл:гамәл NLEX ; ! "" 
 бар:бар NLEX ; ! "" 
 күз:күз NLEX ; ! "" 
-күз% яше:күз% яше NLEX ; ! "" 
+күз% яше:күз% яше NLEX ; ! ""   !!TODO: this kind of compound words already have a px3sp ending
+                                !!(no matter are they written separately or not). Maybe we should
+                                !! make -e- an archivowel here, so that [с]{I} of px3sp could be deleted after it
 көн:көн NLEX ; ! "" 
 гомер:гомер NLEX ; ! "" 
 тормыш:тормыш NLEX ; ! "" 
