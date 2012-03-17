@@ -1954,8 +1954,8 @@ LEXICON Nouns
 сагыш:сагыш NLEX ; ! ""
 поселок:поселок NLEX ; ! ""
 бистә:бистә NLEX ; ! ""
-
-
+социализм:социализм NLEX ; ! ""
+дөя:дөя NLEX ; ! ""
 
 
 LEXICON ProperNouns
@@ -2816,6 +2816,7 @@ LEXICON Verbs
 үткәр:үткәр V-TV-IR-LEX ; ! ""
 озат:озат V-TV-IR-LEX ; ! ""
 озата% бар:озата% бар V-TV-IR-LEX ; ! ""
+төя:төя V-TV-IR-LEX ; ! "'
 
 LEXICON Abbreviations
 
