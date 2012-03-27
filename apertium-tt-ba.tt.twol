@@ -40,9 +40,9 @@ CnsVoiceless = К П Т Ф Х Һ Ц Ч С Ш Щ
 Rules 
 
 "A Vowel Harmony"
-%{A%}:ә <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
+%{A%}:ә <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | [ :0 - %{ъ%}: ] ] _ ;
            except
-                          [ %{ъ%}: ]/[ %>: | %  | :0 ] _ ;
+!                                    [ %{ъ%}: ]/[ %>: ] _ ;
 !                 :FrontVow :л %>: :л _ р ;   ! WTF is this for?
 !                                      _ %>: %{E%}:и ;
 !                                      _ %>: %{E%}:й ;
