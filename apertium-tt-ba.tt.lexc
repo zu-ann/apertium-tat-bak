@@ -347,6 +347,11 @@ V-FINITE-FORMS ;
 %<imp%>%<p2%>%<sg%>: CLIT ;
 %<imp%>%<p2%>%<pl%>:%{I%}г%{I%}з CLIT ;
 
+LEXICON V-COMMON-PASSIVE
+
+%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON-LEX ; 
+%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-FUT-IR ; 
+
 LEXICON V-NEG
 
 %<neg%>:%>м%{A%} V-COMMON-LEX ; 
@@ -371,8 +376,7 @@ LEXICON V-TV-IR-LEX
 %<v%>%<tv%>: V-COMMON-LEX ; 
 %<v%>%<tv%>: V-FUT-IR; 
 %<v%>%<tv%>: V-DER; 
-%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON-LEX ; 
-%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-FUT-IR ; 
+V-COMMON-PASSIVE ;
 
 LEXICON V-IV-AR-LEX
 
@@ -385,8 +389,7 @@ LEXICON V-TV-AR-LEX
 %<v%>%<tv%>: V-COMMON-LEX ; 
 %<v%>%<tv%>: V-FUT-AR ;
 %<v%>%<tv%>: V-DER; 
-%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON-LEX ; 
-%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-FUT-AR ; 
+V-COMMON-PASSIVE ;
 
 LEXICON VAUX
 
