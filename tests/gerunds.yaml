@@ -1,0 +1,20 @@
+Config:
+  hfst:
+    App: hfst-optimised-lookup
+    Gen: ../ba-tt.autogen.hfst
+    Morph: ../tt-ba.automorf.hfst
+
+Tests:
+
+  "[twol] general gerund phonology":
+    бар<v><iv><ger><nom> : бару
+    бир<v><tv><ger><nom> : бирү
+    сөйлә<v><tv><ger><nom> : сөйләү
+    кара<v><tv><ger><nom> : карау
+
+  "[twol] general gerund phonology and orthography with px3":
+    бар<v><iv><ger><px3sp><nom> : баруы
+    бир<v><tv><ger><px3sp><nom> : бирүе
+    сөйлә<v><tv><ger><px3sp><nom> : сөйләве
+    кара<v><tv><ger><px3sp><nom> : карауы
+

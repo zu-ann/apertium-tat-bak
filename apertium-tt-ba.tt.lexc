@@ -84,6 +84,7 @@ Multichar_Symbols
 %<past%>           ! -{G}{A}н 
 %<fut%>            ! -{I}р
 %<ifi%>            ! -{D}{I} 
+%<ger%>            ! -{U}
 %<ger1%>           ! -м{A}{K}
 %<ger2%>           ! -{I}п
 %<ger3%>           ! -{G}{A}ч
@@ -136,6 +137,7 @@ Multichar_Symbols
 %{j%}              ! Realised as
 %{w%}              ! Realised as
 %{l%}              ! Realised as
+%{U%}              ! Realised as у, ү, в
 
 %>                 !
 
@@ -335,6 +337,7 @@ LEXICON V-COMMON-LEX
 
 V-FINITE-FORMS ; 
 
+%<ger%>:%{U%} POSS ;
 %<ger1%>:%>м%{A%}%{K%} POSS ; 
 %<ger2%>:%>%{I%}п POSS ; 
 %<ger3%>:%>%{G%}%{A%}ч POSS ; 

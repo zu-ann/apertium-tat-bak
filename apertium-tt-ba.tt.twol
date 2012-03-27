@@ -4,7 +4,7 @@ Alphabet
  А Ә Б В Г Д Е Ё Ж Җ З И Й К Л М Н Ң О Ө П Р С Т У Ү Ф Х Һ Ц Ч Ш Щ Ъ Ы Ь Э Ю Я  
  а ә б в г д е ё ж җ з и й к л м н ң о ө п р с т у ү ф х һ ц ч ш щ ъ ы ь э ю я 
 
- %{A%}:а %{I%}:ы %{E%}:а
+ %{A%}:а %{I%}:ы %{E%}:а %{U%}:у
 
  %{L%}:л %{G%}:г %{D%}:д %{K%}:к
 
@@ -25,7 +25,8 @@ Vow       = А О Ы У Я Ю Ә Е Э И Ө Ү
             а о ы у я ю ә е э и ө ү;
 
 Cns       =  Б В Г Д Ж Җ З Й К Л М Н Ң П Р С Т Ф Х Һ Ц Ч Ш Щ Ъ Ь
-             б в г д ж җ з й к л м н ң п р с т ф х һ ц ч ш щ ъ ь % ; 
+             б в г д ж җ з й к л м н ң п р с т ф х һ ц ч ш щ ъ ь % 
+				 ү Ү у У ю Ю ;
 
 NasalCns  =  М Н Ң
              м н ң ; 
@@ -54,6 +55,7 @@ Rules
 
 "Deletion of {s} after a consonant"
 %{s%}:0 <=> [ :Cns | %{j%}:0 | %{w%}:0 ]/[ %>: | :0 ] _ ;
+!               [ ю: | у: | ү: | %{U%}: ]/[ %>: | :0 ] _ ;
 
 
 "Intervocalic voicing of к/п"
@@ -106,7 +108,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 %{A%}:ы <=> [ :BackVow :Cns* :Cns ]/[ %>: | :0 ] _ %>: %{E%}: ;
 
 "Deletion of {I} after vowels"
-%{I%}:0 <=> [ :Vow ]/[ :0 | %>: ] _ ;
+%{I%}:0 <=> [ :Vow - :Cns ]/[ :0 | %>: ] _ ;
 
 !"Back assimilation of G"
 !%{G%}:ғ <=> [ :BackVow :Cns* ]/[ %>: | :0 | :и | :у ] _ ;
@@ -115,6 +117,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 !!        :FrontCns/[ %>: | :0 ] _ ;
 !                   :NasalCns %>: _ %{A%}: .#. ;
 
+! I don't think this happens after /r/?  -JNW
 "Passive {l} becomes n after verb stem ending in /l/ or /r/"
 %{l%}:н <=> [ л :Vow ]/[ :0 | %>: ] _ ;
             [ р :Vow ]/[ :0 | %>: ] _ ;
@@ -124,6 +127,19 @@ Cx:Cy <=> :CnsVoiceless/[ %>: | %  ] _ ;
           where Cx in ( %{G%} %{D%} )
                 Cy in (   к     т   )
                 matched;
+
+!!!! {U} stuff !!!!
+
+"Fronting of U"
+%{U%}:ү <=> [ :FrontVow :Cns* :Cns ]/[ %>: | :0 ] _ ;  ! кайт>{U}:кайту
+                       [ :FrontVow ]/[ %>: | :0 ] _ ;  ! сөйлә>{U}:сөйләү
+            except
+                       [ :FrontVow ]/[ %>: | :0 ] _ [ :FrontVow ]/[ %>: | :0 ] ;
+
+"U > в between front vowels"
+%{U%}:в <=> [ :FrontVow ]/[ %>: | :0 ] _ [ :FrontVow ]/[ %>: | :0 ] ;
+! сөйлә>{U}>{s}{I}н:сөйләвен
+
 
 !!!! Special archiphonemes !!!!
 
