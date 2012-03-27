@@ -41,6 +41,7 @@ Rules
 
 "A Vowel Harmony"
 %{A%}:ә <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | [ :0 - %{ъ%}: ] ] _ ;
+                                          [ ь: :Cns* ]/[ %>: | :0 ] _ ;
            except
 !                                    [ %{ъ%}: ]/[ %>: ] _ ;
 !                 :FrontVow :л %>: :л _ р ;   ! WTF is this for?
@@ -50,6 +51,7 @@ Rules
 
 "I Vowel Harmony"
 %{I%}:е <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | [ :0 - %{ъ%}: ] ] _ ;
+                                          [ ь: :Cns* ]/[ %>: | :0 ] _ ;
 
 "Plural alternation after nasal"
 %{L%}:н <=> :NasalCns %>: _ %{A%}: р ; 
@@ -124,7 +126,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
             [ р :Vow ]/[ :0 | %>: ] _ ;
 
 "Forward voicing assimilation"
-Cx:Cy <=> :CnsVoiceless/[ %>: | %  | :0 ] _ ;
+Cx:Cy <=> :CnsVoiceless/[ %>: | %  | :0 | :ь | :ъ ] _ ;
           where Cx in ( %{G%} %{D%} )
                 Cy in (   к     т   )
                 matched;
