@@ -138,6 +138,8 @@ Multichar_Symbols
 %{w%}              ! Realised as
 %{l%}              ! Realised as
 %{U%}              ! Realised as у, ү, в
+%{ъ%}              ! disappears and makes back harmony
+%{т%}              ! Realised as т before vowels, 0 otherwise
 
 %>                 !
 
@@ -649,25 +651,21 @@ LEXICON Nouns
 абруй:абруй NLEX ; ! ""
 абый:абый NLEX ; ! "" 
 август:август NLEX ; ! ""
-август:август NLEX ; ! ""
 автобус:автобус NLEX ; ! ""
 автомат:автомат NLEX ; ! ""
 автомат% мылтык:автомат% мылтык NLEX ; ! ""
 автомобиль:автомобиль NLEX ; ! ""
 автор:автор NLEX ; ! "" 
 авыз:авыз NLEX ; ! ""
-авыз:авыз NLEX ; ! ""
 авыл:авыл NLEX ; ! "" 
 авырлык:авырлык NLEX ; ! ""
 авырту:авырту NLEX ; ! "" 
 авыру:авыру NLEX ; ! ""
-авыру:авыру NLEX ; ! ""
 ага:ага NLEX ; ! "" 
 агач:агач NLEX ; ! "" 
 агым:агым NLEX ; ! ""
-агым:агым NLEX ; ! ""
 агыш:агыш NLEX ; ! "" 
-адрес:адрес NLEX ; ! ""
+адрес:адрес%{ъ%} NLEX ; ! ""
 адым:адым NLEX ; ! "" 
 аерма:аерма NLEX ; ! ""
 аермалык:аермалык NLEX ; ! ""
@@ -900,7 +898,7 @@ LEXICON Nouns
 дошман:дошман NLEX ; ! "" 
 дөя:дөя NLEX ; ! ""
 дулкын:дулкын NLEX ; ! ""
-дус:дус NLEX ; ! ""
+дус:дус%{т%} NLEX ; ! ""
 !дус:дус NLEX ; ! "" ! FIXME: gets an epenthetic 'т' in some forms: 'дустым'
 әби:әби NLEX ; ! ""
 әби:әби NLEX ; ! ""
