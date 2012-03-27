@@ -42,11 +42,11 @@ Rules
 "A Vowel Harmony"
 %{A%}:ә <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
            except
+                         [ %{ъ%}:0 ]/[ %>: | %  | :0 ] _ ;
 !                 :FrontVow :л %>: :л _ р ;   ! WTF is this for?
 !                                      _ %>: %{E%}:и ;
 !                                      _ %>: %{E%}:й ;
 												  _ %>: %{E%}: ;
-                             %{ъ%}:0/[ %>: | %  | :0 ] _ ;
 
 "I Vowel Harmony"
 %{I%}:е <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
