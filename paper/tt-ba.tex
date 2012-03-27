@@ -59,7 +59,7 @@ describes our aims for future work and some concluding remarks.
 \section{Languages}
 \label{sec:lang}
 
-Tatar is a Turkic language spoken in and around Tatarstan by approximately 6 million people.  Bashkir is a Turkic language spoken by about 1.5 million people in and around Bashqortostan.  Tatarstan and Bashqortostan are both republics within Russia.  Both languages are co-official with Russian in their respective republics.  The two languages belong to the same branch of the Kypchak group of Turkic langauges.  As they are very close relatives, they share many innovations, but Bashkir has quite a few phonological innovations beyond those of Tatar (such as rounding harmony and desonorisation of high-sonority suffix-initial consonants; cf.\ \cite{washington10}) and the languages have a number of morphological differences (including different volutional participles).  The spoken languages share a high level of mutual intelligibility, but many of the inherent similarities are obscured by their fairly different orthographical systems along with the phonological and morphological differences between the languages.
+Tatar is a Turkic language spoken in and around Tatarstan by approximately 6 million people.  Bashkir is a Turkic language spoken by about 1.5 million people in and around Bashkirostan.  Tatarstan and Bashkirostan are both republics within Russia.  Both languages are co-official with Russian in their respective republics.  The two languages belong to the same branch of the Kypchak group of Turkic langauges.  As they are very close relatives, they share many innovations, but Bashkir has quite a few phonological innovations beyond those of Tatar (such as rounding harmony and desonorisation of high-sonority suffix-initial consonants; cf.\ \cite{washington10}) and the languages have a number of morphological differences (including different volutional participles).  The spoken languages share a high level of mutual intelligibility, but many of the inherent similarities are obscured by their fairly different orthographical systems along with the phonological and morphological differences between the languages.
 
 Aside from native speaker intuition, we also consulted the Bashkir Grammar of M. G. Usmanova \cite{usmanova06}.
 
@@ -99,7 +99,7 @@ The morphological transducers are based on the Helsinki Finite State Toolkit \ci
 
 The morphologies of both languages are implemented in lexc, and the morphophonologies of both languages are implemented in twol.
 
-Use of lexc allows for straightforward definition of different word classes and subclasses.  For example, Tatar (but not Bashqort) has two classes of verbs: ones which take a harmonised high vowel in the infinitive (the default), and ones which take a harmonised low vowel in the infinitive.  This was implemented in lexc with two similar continuation lexica for verbs---one which points at a continuation lexicon with an A-initial infinitive ending, and one which points at a continuation lexicon with an I-initial infinitive ending.
+Use of lexc allows for straightforward definition of different word classes and subclasses.  For example, Tatar (but not Bashkir) has two classes of verbs: ones which take a harmonised high vowel in the infinitive (the default), and ones which take a harmonised low vowel in the infinitive.  This was implemented in lexc with two similar continuation lexica for verbs---one which points at a continuation lexicon with an A-initial infinitive ending, and one which points at a continuation lexicon with an I-initial infinitive ending.
 
 Use of twol allows for phonological processes present in the languages, like vowel harmony and desonorisation, to be implemented in a straightforward manner.  For example, in Tatar, the A and I archiphonemes present in the infinitive are harmonised to one of two vowels each depending on the value of the preceding vowel; the basic form of this process can be implemented in one twol rule.
 
@@ -207,7 +207,7 @@ distance \cite{levenshtein/1966}. This measure was calculated once all the stems
 text had been added to the system, thus presents an upper bound on the current performance
 of the transfer lexicon, and the disambiguation and transfer rules. The difference in 
 the number of unknown words between translating Tatar$\rightarrow$Bashkir and vice versa
-is because certain forms were not found due to lack of morphophonologica rules in the
+is because certain forms were not found due to lack of morphophonological rules in the
 Tatar transducer.
 %\cite{TyersAlperen2010}
 
@@ -221,8 +221,7 @@ We plan to continue development on the pair; the main work will be expanding the
 
 \section*{Acknowledgements}
 
-{\em Removed for review}
-% We could put them in comments; they won't see that
+We would like to thank the anonymous reviewers for their helpful comments in improving the paper. This work has been partially funded by Spanish Ministerio de Ciencia e Innovación through project TIN2009-14009-C02-01.
 
 \bibliographystyle{lrec2006}
 \bibliography{tt-ba}
