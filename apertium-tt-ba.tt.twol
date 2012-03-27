@@ -49,7 +49,7 @@ Rules
 												  _ %>: %{E%}: ;
 
 "I Vowel Harmony"
-%{I%}:е <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
+%{I%}:е <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | [ :0 - %{ъ%}: ] ] _ ;
 
 "Plural alternation after nasal"
 %{L%}:н <=> :NasalCns %>: _ %{A%}: р ; 
