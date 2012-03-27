@@ -42,16 +42,18 @@ Rules
 "A Vowel Harmony"
 %{A%}:ә <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | [ :0 - %{ъ%}: ] ] _ ;
                                           [ ь: :Cns* ]/[ %>: | :0 ] _ ;
+                             [ :и :я :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
            except
 !                                    [ %{ъ%}: ]/[ %>: ] _ ;
 !                 :FrontVow :л %>: :л _ р ;   ! WTF is this for?
 !                                      _ %>: %{E%}:и ;
 !                                      _ %>: %{E%}:й ;
-												  _ %>: %{E%}: ;
+                                                                    _ %>: %{E%}: ;
 
 "I Vowel Harmony"
 %{I%}:е <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | [ :0 - %{ъ%}: ] ] _ ;
                                           [ ь: :Cns* ]/[ %>: | :0 ] _ ;
+                             [ :и :я :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
 
 "Plural alternation after nasal"
 %{L%}:н <=> :NasalCns %>: _ %{A%}: р ; 
