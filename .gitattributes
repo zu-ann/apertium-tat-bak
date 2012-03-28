@@ -49,6 +49,5 @@ texts/story.tt.txt -text svneol=unset#application/octet-stream
 words/README -text
 words/miscategorized.todo -text
 words/notrecognized -text
-words/nouns.tatar.todo -text
 words/tatcorpus_hitparade.txt.tar.gz -text
 words/top5000_analyses -text
