@@ -1,4 +1,4 @@
-<dictionary>	ҡҙҫғ
+<dictionary>
 <alphabet/>
 <sdefs>
     <sdef n="n"        c="Существительное"/>
@@ -2274,8 +2274,8 @@
     <e><p><l>км²<s n="abbr"/></l><r>км²<s n="abbr"/></r></p></e>
     <e><p><l>км³<s n="abbr"/></l><r>км³<s n="abbr"/></r></p></e>
     <e><p><l>км³<s n="abbr"/></l><r>км³<s n="abbr"/></r></p></e>
-    <e><p><l>БР<s n="abbr"/></l><r>км³<s n="БР"/></r></p></e>
-    <e><p><l>РФ<s n="abbr"/></l><r>км³<s n="РФ"/></r></p></e>
+    <e><p><l>БР<s n="abbr"/></l><r>БР<s n="abbr"/></r></p></e>
+    <e><p><l>РФ<s n="abbr"/></l><r>РФ<s n="abbr"/></r></p></e>
     <e><p><l>ТР<s n="abbr"/></l><r>ТР<s n="abbr"/></r></p></e>
 
     <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
