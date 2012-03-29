@@ -450,7 +450,7 @@ LEXICON PRNLEX-PERS
 
 LEXICON PRNDEM-BU
 
-%<prn%>%<dem%>%<nom%>:бу # ;
+%<prn%>%<dem%>%<nom%>:бу # ;           !! FIXME: these can get possessives too, e.g. монысының, монысына
 %<prn%>%<dem%>%<gen%>:моның # ;
 %<prn%>%<dem%>%<dat%>:моңа # ;
 %<prn%>%<dem%>%<acc%>:моны # ;
