@@ -135,7 +135,7 @@ Punctuation ;
 
 LEXICON CLIT
 
-%+да%<cnjcoo%>:% %{L%}%{I%} # ;
+%+да%<cnjcoo%>:% %{D%}%{A%} # ;
 %+мы%<qst%>:%>м%{I%} # ;
 %+лыр%<part%>:%>%{L%}%{I%}р # ;
 %+сы%<part%>:%>с%{I%} # ;
