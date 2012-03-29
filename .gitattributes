@@ -47,7 +47,10 @@ texts/story.ba.txt -text svneol=unset#application/octet-stream
 texts/story.tt.txt -text svneol=unset#application/octet-stream
 /tt-ba.prob -text svneol=unset#unset
 words/README -text
+words/bak_notrecognized -text
+words/bak_top5000 -text
+words/bakcorpus_hitparade.txt.tar.gz -text
 words/miscategorized.todo -text
-words/notrecognized -text
+words/tat_notrecognized -text
+words/tat_top5000 -text
 words/tatcorpus_hitparade.txt.tar.gz -text
-words/top5000_analyses -text
