@@ -56,7 +56,7 @@ Rules
                              [ :и :я :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
 
 "Plural alternation after nasal"
-%{L%}:н <=> :NasalCns %>: _ %{A%}: р ; 
+%{L%}:н <=> :NasalCns/[ %>: | :0 ] _ %{A%}: р ; 
 
 "Deletion of {s} after a consonant"
 %{s%}:0 <=> [ :Cns | %{j%}:0 | %{w%}:0 ]/[ %>: | :0 ] _ ;
@@ -68,6 +68,19 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
           where Cx in ( п к )
                 Cy in ( б г )
                 matched;
+
+!!!! possessive+case phonology !!!!
+
+"extra n appears before locative, dative, ablative"
+%{n%}:н <=> _ [ [ %{D%}: | %{G%}: ] %{A%}: ]/[ %>: | :0 ] ;
+
+"ablative D to н between nasal codas"
+%{D%}:н <=> :NasalCns %>:0 _ %{A%}: :н ;
+
+!"dative G deletes after nasal-final possessive morphemes"
+!%{G%}:0 <=> [ %{I%}: :NasalCns ]/[ %>: | :0 ] _ ;
+
+
 
 "E Vowel Harmony"
 %{E%}:ә <=> [ :FrontVow :Cns* :Cns ]/[ %>: | :0 ] _ ;

@@ -917,8 +917,8 @@ LEXICON Nouns
 әйтем:әйтем NLEX ; ! ""
 әйтем:әйтем NLEX ; ! ""
 елга:елга NLEX ; ! "" 
-ел:ел NLEX-SG ; ! "" 
-ел:ел%>лар NLEX-PL ; ! FIXME: is this really needed
+ел:ел%{ъ%} NLEX ; ! "" 
+! ел:ел%>лар NLEX-PL ; ! FIXME: is this really needed
 елкы:елкы NLEX ; ! ""
 !елмаю:елмаю NLEX ; ! ""
 елмаю:елмаю%{w%} NLEX ; ! "smile"
