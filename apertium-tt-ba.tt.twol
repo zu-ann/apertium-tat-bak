@@ -54,6 +54,8 @@ Rules
 %{I%}:е <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | [ :0 - %{ъ%}: ] ] _ ;
                                           [ ь: :Cns* ]/[ %>: | :0 ] _ ;
                              [ :и :я :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
+            except
+                                                     %{n%}: %>: н:0 _ .#. ;
 
 "Plural alternation after nasal"
 %{L%}:н <=> :NasalCns/[ %>: | :0 ] _ %{A%}: р ; 
@@ -71,15 +73,23 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 
 !!!! possessive+case phonology !!!!
 
-"extra n appears before locative, dative, ablative"
+"extra n appears before locative, dative, ablative, accusative"
 %{n%}:н <=> _ [ [ %{D%}: | %{G%}: ] %{A%}: ]/[ %>: | :0 ] ;
+            _ %>: н: %{I%}: .#. ;
+!елында, елына, елыннан, елын
 
 "ablative D to н between nasal codas"
 %{D%}:н <=> :NasalCns %>:0 _ %{A%}: :н ;
+!елыннан, елымнан, елыңнан
 
 !"dative G deletes after nasal-final possessive morphemes"
 !%{G%}:0 <=> [ %{I%}: :NasalCns ]/[ %>: | :0 ] _ ;
 
+"delete accusative н after px3"
+н:0 <=> %{n%}: %>: _ %{I%}: .#. ;
+
+"delete accusative {I} after px3"
+%{I%}:0 <=> %{n%}: %>: н:0 _ .#. ;
 
 
 "E Vowel Harmony"
@@ -127,6 +137,8 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 
 "Deletion of {I} after vowels"
 %{I%}:0 <=> [ :Vow - :Cns ]/[ :0 | %>: ] _ ;
+            except
+            %{n%}:/:0 _ ;
 
 !"Back assimilation of G"
 !%{G%}:ғ <=> [ :BackVow :Cns* ]/[ %>: | :0 | :и | :у ] _ ;
