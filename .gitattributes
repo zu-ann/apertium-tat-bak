@@ -54,4 +54,4 @@ words/bakcorpus_hitparade.txt.tar.gz -text
 words/miscategorized.todo -text
 words/tat_notrecognized -text
 words/tat_top5000 -text
-words/tatcorpus_hitparade.txt.tar.gz -text
+words/tatcorpus_hitparade.txt.bz2 -text
