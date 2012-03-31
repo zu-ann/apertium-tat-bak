@@ -27,6 +27,8 @@
           \url{ftyers@dlsi.ua.es}, \url{jonwashi@indiana.edu}, \url{ilnar.salimzyan@gmail.com},  \url{taqmaq@mail.ru}\\
 }
 
+\newcommand{\tag}[1]{{\small{\texttt{#1}}}}
+
 \date{\today}
 
 \abstract{
@@ -59,7 +61,7 @@ describes our aims for future work and some concluding remarks.
 \section{Languages}
 \label{sec:lang}
 
-Tatar is a Turkic language spoken in and around Tatarstan by approximately 6 million people.  Bashkir is a Turkic language spoken by about 1.5 million people in and around Bashkirostan.  Tatarstan and Bashkirostan are both republics within Russia.  Both languages are co-official with Russian in their respective republics.  The two languages belong to the same branch of the Kypchak group of Turkic langauges.  As they are very close relatives, they share many innovations, but Bashkir has quite a few phonological innovations beyond those of Tatar (such as rounding harmony and desonorisation of high-sonority suffix-initial consonants; cf.\ \cite{washington10}) and the languages have a number of morphological differences (including different volutional participles).  The spoken languages share a high level of mutual intelligibility, but many of the inherent similarities are obscured by their fairly different orthographical systems along with the phonological and morphological differences between the languages.
+Tatar is a Turkic language spoken in and around Tatarstan by approximately 6 million people.  Bashkir is a Turkic language spoken by about 1.5 million people in and around Bashqortostan.  Tatarstan and Bashkirostan are both republics within Russia.  Both languages are co-official with Russian in their respective republics.  The two languages belong to the same branch of the Kypchak group of Turkic langauges.  As they are very close relatives, they share many innovations, but Bashkir has quite a few phonological innovations beyond those of Tatar (such as rounding harmony and desonorisation of high-sonority suffix-initial consonants; cf.\ \cite{washington10}) and the languages have a number of morphological differences (including different volutional participles).  The spoken languages share a high level of mutual intelligibility, but many of the inherent similarities are obscured by their fairly different orthographical systems along with the phonological and morphological differences between the languages.
 
 Aside from native speaker intuition, we also consulted the Bashkir Grammar of M. G. Usmanova \cite{usmanova06}.
 
@@ -79,9 +81,8 @@ for example, systems reported for Turkish-Crimean Tatar \cite{altintas01}, Turki
 \begin{center}
  \includegraphics[width=0.8\textwidth]{architecture.pdf}
 \end{center}
-
-\label{fig:modules}
 \caption{The pipeline architecture of the Apertium system.}
+\label{fig:modules}
 \end{figure*}
 
 The system is based on the Apertium machine translation 
@@ -93,6 +94,42 @@ Licence\footnote{\url{http://www.fsf.org/licensing/licenses/gpl.html}} (GPL) and
 30 supported language pairs (and the other pairs being worked on) is available for download from the project 
 website.
 
+\subsection{Architecture of the system}
+
+The Apertium translation engine consists of a Unix-style \emph{pipeline} or
+\emph{assembly line} with the following modules (see Fig.~\ref{fig:modules}):  
+\begin{itemize}
+\item A \emph{deformatter} which encapsulates the format information
+ in the input as \emph{superblanks} that will then be seen
+ as blanks between words by the rest of the modules.
+\item A \emph{morphological analyser} which segments the text in
+  surface forms (SF) (\emph{words}, or, where detected, multi-word lexical
+  units or MWLUs) and delivers, for each of them, one or more \emph{lexical
+    forms} (LF) consisting of \emph{lemma}, \emph{lexical category} and
+  morphological information. It reads a finite-state
+  transducer (FST) compiled from a source-language (SL) morphological
+  dictionary in XML.
+\item A \emph{morphological disambiguator} (based on constraint grammar) which chooses, using linguistic rules
+  the most adequate sequence of morphological analyses for an ambiguous sentence. 
+\item A \emph{lexical transfer} module which reads each SL LF 
+  and delivers the corresponding target-language (TL) LF
+  by looking it up in a bilingual dictionary encoded as an FST
+  compiled from the corresponding XML file. The lexical transfer module may
+  return more than one TL LF for a single SL LF.
+\item A \emph{lexical selection} module which chooses, based on context 
+  rules the most adequate translation of ambiguous source language LFs.
+\item A \emph{structural transfer} module which
+    performs local syntactic operations This module is compiled from XML files containing rules that 
+    associate an \emph{action} to each defined LF \emph{pattern}. Patterns are applied left-to-right, and the 
+    longest matching pattern is always selected.
+\item A \emph{morphological generator} which delivers a TL SF
+ for each TL LF, by suitably inflecting it. It reads
+  an FST compiled from a TL morphological dictionary in XML.
+\item A \emph{reformatter} which de-encapsulates any format
+  information.
+\end{itemize}
+
+
 \subsection{Morphological transducers}
 
 The morphological transducers are based on the Helsinki Finite State Toolkit \cite{hfst/2011}, a free/open-source reimplementation of the Xerox finite-state toolchain, popular in the field of morphological analysis. It implements both the \textbf{lexc} formalism for defining lexicons, and the \textbf{twol} and \textbf{xfst} formalisms for modeling morphophonological rules. It also supports other finite state transducer formalisms such as \textbf{sfst}. This toolkit has been chosen as it -- or the equivalent XFST -- has been widely used for other Turkic languages \cite{coltekin2010,altintas2001,tantug2006}, and is available under a free/open-source licence.
@@ -103,8 +140,25 @@ Use of lexc allows for straightforward definition of different word classes and 
 
 Use of twol allows for phonological processes present in the languages, like vowel harmony and desonorisation, to be implemented in a straightforward manner.  For example, in Tatar, the A and I archiphonemes present in the infinitive are harmonised to one of two vowels each depending on the value of the preceding vowel; the basic form of this process can be implemented in one twol rule.
 
+The same morphological description is used for both analysis and generation. To avoid overgeneration, any alternative forms are 
+marked with one of two marks, {\tt {\small LR}} (only analyser) or {\tt {\small RL}} (only generator). Instead of the usual
+compile/invert to compile the transducers, we compile twice, once the generator, without the {\tt {\small LR}} paths, and
+then again the analyser without the {\tt {\small RL}} paths. 
+
 \subsection{Bilingual lexicon}
-\
+\begin{figure*}
+\begin{texttt}
+    <e><p><l>\textbf{юнәлеш}<s n="n"/></l><r>\textbf{йүнәлеш}<s n="n"/></r></p></e> \\
+    <e><p><l>\textbf{борын}<s n="n"/></l><r>\textbf{танау}<s n="n"/></r></p></e> \\
+    <e><p><l>\textbf{борын}<s n="n"/></l><r>\textbf{морон}<s n="n"/></r></p></e> \\
+    <e><p><l>\textbf{ераклык}<s n="n"/></l><r>\textbf{алыҫлыҡ}<s n="n"/></r></p></e> \\
+    <e><p><l>\textbf{ераклык}<s n="n"/></l><r>\textbf{йыраҡлыҡ}<s n="n"/></r></p></e>
+\end{texttt}
+\caption{Example entries from the bilingual transfer lexicon. Tatar is on the left, and Bashkir on the right}
+\label{fig:bidix}
+\end{figure*}
+
+
 The bilingual lexicon currently contains 1,853 stem to stem correspondences and was build by hand by a bilingual 
 speaker of Tatar and Bashkir, translating a frequency list of the Russian National Corpus.\footnote{\url{http://ruscorpora.ru/en/}}
 into both languages in a spreadsheet. This spreadsheet was then converted into the Apertium
@@ -112,23 +166,6 @@ XML dictionary format. These 1,853 stems present around two thirds of the curren
 
 The entries consist largely of one-to-one stem-to-stem correspondences with part of speech, but also
 include some instances where the translation is ambiguous (see e.g. Fig.~\ref{fig:bidix}).
-
-\begin{figure*}
-\begin{center}
-\begin{texttt}
-    <e><p><l>\textbf{юнәлеш}<s n="n"/></l><r>\textbf{йүнәлеш}<s n="n"/></r></p></e> \\
-~\\
-    <e><p><l>\textbf{борын}<s n="n"/></l><r>\textbf{танау}<s n="n"/></r></p></e> \\
-    <e><p><l>\textbf{борын}<s n="n"/></l><r>\textbf{морон}<s n="n"/></r></p></e> \\
-~\\
-    <e><p><l>\textbf{ераклык}<s n="n"/></l><r>\textbf{алыҫлыҡ}<s n="n"/></r></p></e> \\
-    <e><p><l>\textbf{ераклык}<s n="n"/></l><r>\textbf{йыраҡлыҡ}<s n="n"/></r></p></e>
-
-\end{texttt}
-\end{center}
-\caption{Example entries from the bilingual transfer lexicon. Tatar is on the left, and Bashkir on the right}
-\label{fig:bidix}
-\end{figure*}
 
 \subsection{Disambiguation rules}
 
@@ -153,6 +190,35 @@ name.
 %\subsection{Transfer rules}
 
 
+
+\begin{table*}
+\begin{tabular}{ll}
+
+\hline
+{\bf Stage} & {\bf Representation} \\
+\hline
+{\bf Input}& Һава бүген бик әйбәт, җылы гына \\ 
+\hline
+{\bf Morph. Analysis} & \^{}Һава/һава\tag{<n>}\tag{<attr>}/һава\tag{<n>}\tag{<nom>\$} \^{}бүген/бүген\tag{<adv>\$}  \\
+ ~             & \^{}бик/бик\tag{<adv>}/бик\tag{<n>}\tag{<attr>}/бик\tag{<n>}\tag{<nom>\$} \\ 
+ ~             & \^{}әйбәт/әйбәт\tag{<adj>}/әйбәт\tag{<adj>}\tag{<advl>}/әйбәт\tag{<adj>}\tag{<subst>}\tag{<nom>\$}\^{},/,\tag{<cm>\$} \\ 
+ ~             & \^{}җылы/җылы\tag{<n>}\tag{<attr>}/җылы\tag{<n>}\tag{<nom>\$} \^{}гына/гына\tag{<postadv>\$}\^{}./.\tag{<sent>\$} \\
+\hline
+{\bf Disambiguation}& \^{}Һава\tag{<n>}\tag{<attr>\$} \^{}бүген\tag{<adv>\$} \^{}бик\tag{<adv>\$} \^{}әйбәт\tag{<adj>\$}\^{},\tag{<cm>\$} \\ 
+ ~                  & \^{}җылы\tag{<n>}\tag{<attr>\$} \^{}гына\tag{<postadv>\$}\^{}.\tag{<sent>\$}\\
+\hline
+{\bf Lexical transfer}& \^{}Һава\tag{<n>}\tag{<attr>}/Һауа\tag{<n>}\tag{<attr>\$} \^{}бүген\tag{<adv>}/бөгөн\tag{<adv>\$} \^{}бик\tag{<adv>}/бик\tag{<adv>\$} \\
+ ~                    & \^{}әйбәт\tag{<adj>}/әйбәт\tag{<adj>\$}\^{},\tag{<cm>}/,\tag{<cm>\$} \^{}җылы\tag{<n>}\tag{<attr>}/йылы\tag{<n>}\tag{<attr>\$} \\ 
+ ~                    & \^{}гына\tag{<postadv>}/ғына\tag{<postadv>\$}\^{}.\tag{<sent>}/.\tag{<sent>\$}\\
+\hline
+{\bf Struct. transfer}& \^{}Һауа\tag{<n>}\tag{<attr>\$} \^{}бөгөн\tag{<adv>\$} \^{}бик\tag{<adv>\$} \^{}әйбәт\tag{<adj>\$}\^{},\tag{<cm>\$} \\ 
+ ~                    & \^{}йылы\tag{<n>}\tag{<attr>\$} \^{}ғына\tag{<postadv>\$}\^{}.\tag{<sent>\$}\\
+\hline
+{\bf Morph. generation} & Һауа бөгөн бик әйбәт, йылы ғына. \\
+\hline
+\end{tabular}
+ \caption{Translation process from Tatar to Bashkir of the phrase `Һава бүген бик әйбәт, җылы гына' {\em Today the weather is very nice, it is just warm'.}}
+\end{table*}
 
 \section{Evaluation}
 \label{sec:eval}
@@ -210,6 +276,11 @@ the number of unknown words between translating Tatar$\rightarrow$Bashkir and vi
 is because certain forms were not found due to lack of morphophonological rules in the
 Tatar transducer.
 %\cite{TyersAlperen2010}
+
+%challenges:
+
+%% making bidirectional systems
+%% when the morphotactics does not line up
 
 \section{Concluding remarks}
 \label{sec:conc}
