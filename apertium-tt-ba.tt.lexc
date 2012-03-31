@@ -26,6 +26,7 @@ Multichar_Symbols
 %<np%>             ! Proper noun  ! Ялгызлык исем    ! Имя обственное
 %<top%>            ! Toponym      ! Географик атама
 %<ant%>            ! Anthroponym  ! Кеше исеме
+%<cog%>            ! Cognomen     ! Фамилия
 !! for adjectives ?
 %<attr%>           ! Attributive
 %<subst%>          ! Substantive
@@ -117,6 +118,7 @@ Multichar_Symbols
 ! Some additional tags
 %<m%>              ! Masculine  ! Мужской род
 %<f%>              ! Feminine   ! Женский род
+%<mf%>             ! Masculine / feminine
 %<postadv%>        ! e.g. "гына"
 %<vaux%>           ! Auxilary verb
 %<cnjadv%>         ! ~Союз 
@@ -242,6 +244,18 @@ LEXICON NUMLEX
 %<num%>%<ord%>:%>%{I%}нч%{I%} POSS ; 
 %<num%>%<sim%>:%>%{A%}р POSS ; 
 
+
+LEXICON NPCOGMLEX
+
+%<np%>%<cog%>%<m%>: CASE ; 
+
+LEXICON NPCOGFLEX
+
+%<np%>%<cog%>%<f%>: CASE ; 
+
+LEXICON NPCOGMFLEX
+
+%<np%>%<cog%>%<mf%>: CASE ; 
 
 LEXICON NPANTMLEX
 
@@ -2317,7 +2331,80 @@ LEXICON ProperNouns
 
 
 Әхмәт:Әхмәт NPANTMLEX ; ! ""
+
 Гөлнара:Гөлнара NPANTFLEX ; ! ""
+
+
+Ирина:Ирина NPANTFLEX ; ! ""
+Лилия:Лилия NPANTFLEX ; ! ""
+Айгөл:Айгөл NPANTFLEX ; ! ""
+Айзирә:Айзирә NPANTFLEX ; ! ""
+Алина:Алина NPANTFLEX ; ! ""
+Алла:Алла NPANTFLEX ; ! ""
+Альбина:Альбина NPANTFLEX ; ! ""
+Анна:Анна NPANTFLEX ; ! ""
+
+Артур:Артур NPANTMLEX ; ! ""
+Әбҗәлил:Әбҗәлил NPANTMLEX ; ! ""
+Виктор:Виктор NPANTMLEX ; ! ""
+Владимир:Владимир NPANTMLEX ; ! ""
+Гайнетдин:Гайнетдин NPANTMLEX ; ! ""
+Евгений:Евгений NPANTMLEX ; ! ""
+Илмир:Илмир NPANTMLEX ; ! ""
+Кирилл:Кирилл NPANTMLEX ; ! ""
+Константин:Константин NPANTMLEX ; ! ""
+Марат:Марат NPANTMLEX ; ! ""
+Михаил:Михаил NPANTMLEX ; ! ""
+Николай:Николай NPANTMLEX ; ! ""
+Радмир:Радмир NPANTMLEX ; ! ""
+Равил:Равил NPANTMLEX ; ! ""
+Рәҗәп:Рәҗәп NPANTMLEX ; ! ""
+Рамил:Рамил NPANTMLEX ; ! ""
+Рөстәм:Рөстәм NPANTMLEX ; ! ""
+Салават:Салават NPANTMLEX ; ! ""
+Тимерҗан:Тимерҗан NPANTMLEX ; ! ""
+Тимур:Тимур NPANTMLEX ; ! ""
+Юрий:Юрий NPANTMLEX ; ! ""
+Азамат:Азамат NPANTMLEX ; ! ""
+Азат:Азат NPANTMLEX ; ! ""
+Айнур:Айнур NPANTMLEX ; ! ""
+Айрат:Айрат NPANTMLEX ; ! ""
+Александр:Александр NPANTMLEX ; ! ""
+Алексей:Алексей NPANTMLEX ; ! ""
+Альберт:Альберт NPANTMLEX ; ! ""
+Анатолий:Анатолий NPANTMLEX ; ! ""
+Андрей:Андрей NPANTMLEX ; ! ""
+Атайсал:Атайсал NPANTMLEX ; ! ""
+Борис:Борис NPANTMLEX ; ! ""
+
+Әхмәтов:Әхмәтов NPCOGMLEX ; ! ""
+Балабанов:Балабанов NPCOGMLEX ; ! ""
+Зубков:Зубков NPCOGMLEX ; ! ""
+Исхаков:Исхаков NPCOGMLEX ; ! ""
+Маврин:Маврин NPCOGMLEX ; ! ""
+Нәбиуллин:Нәбиуллин NPCOGMLEX ; ! ""
+Путин:Путин NPCOGMLEX ; ! ""
+Рәҗәпов:Рәҗәпов NPCOGMLEX ; ! ""
+Сәфиуллин:Сәфиуллин NPCOGMLEX ; ! ""
+Таҗиев:Таҗиев NPCOGMLEX ; ! ""
+Толкачев:Толкачев NPCOGMLEX ; ! ""
+Тупиков:Тупиков NPCOGMLEX ; ! ""
+Хәмитов:Хәмитов NPCOGMLEX ; ! ""
+Хәсәнов:Хәсәнов NPCOGMLEX ; ! ""
+Афонин:Афонин NPCOGMLEX ; ! ""
+Әсадуллин:Әсадуллин NPCOGMLEX ; ! ""
+Башаров:Башаров NPCOGMLEX ; ! ""
+
+Әүбәкирова:Әүбәкирова NPCOGFLEX ; ! ""
+Байкова:Байкова NPCOGFLEX ; ! ""
+Баталова:Баталова NPCOGFLEX ; ! ""
+Башкортова:Башкортова NPCOGFLEX ; ! ""
+Биишева:Биишева NPCOGFLEX ; ! ""
+
+Бабич:Бабич NPCOGMFLEX ; ! ""
+Орджоникидзе:Орджоникидзе NPCOGMFLEX ; ! ""
+Семивеличенко:Семивеличенко NPCOGMFLEX ; ! ""
+
 
 LEXICON Adjectives 
 

@@ -42,12 +42,14 @@ Multichar_Symbols
 
 %<top%>            ! 
 %<ant%>            ! 
+%<cog%>            ! 
 
 %<iv%>             !
 %<tv%>             !
 
 %<m%>              !
 %<f%>              !
+%<mf%>              !
 
 %<p1%>             !
 %<p2%>             !
@@ -190,6 +192,18 @@ LEXICON NUMLEX
 %<num%>: POSS ; 
 %<num%>%<ord%>:%>%{I%}нс%{I%} POSS ; 
 %<num%>%<sim%>:%>{A%}р POSS ; 
+
+LEXICON NPCOGMLEX
+
+%<np%>%<cog%>%<m%>: CASE ;
+
+LEXICON NPCOGFLEX
+
+%<np%>%<cog%>%<f%>: CASE ;
+
+LEXICON NPCOGMFLEX
+
+%<np%>%<cog%>%<mf%>: CASE ;
 
 LEXICON NPANTMLEX
 
@@ -2234,6 +2248,76 @@ LEXICON ProperNouns
 
 Әхмәт:Әхмәт NPANTMLEX ; ! ""
 Гөлнара:Гөлнара NPANTFLEX ; ! ""
+
+Ирина:Ирина NPANTFLEX ; ! ""
+Лилиә:Лилиә NPANTFLEX ; ! ""
+Айгөл:Айгөл NPANTFLEX ; ! ""
+Айзирә:Айзирә NPANTFLEX ; ! ""
+Алина:Алина NPANTFLEX ; ! ""
+Алла:Алла NPANTFLEX ; ! ""
+Альбина:Альбина NPANTFLEX ; ! ""
+Анна:Анна NPANTFLEX ; ! ""
+
+Артур:Артур NPANTMLEX ; ! ""
+Әбйәлил:Әбйәлил NPANTMLEX ; ! ""
+Виктор:Виктор NPANTMLEX ; ! ""
+Владимир:Владимир NPANTMLEX ; ! ""
+Ғәйнетдин:Ғәйнетдин NPANTMLEX ; ! ""
+Евгений:Евгений NPANTMLEX ; ! ""
+Илмир:Илмир NPANTMLEX ; ! ""
+Кирилл:Кирилл NPANTMLEX ; ! ""
+Константин:Константин NPANTMLEX ; ! ""
+Марат:Марат NPANTMLEX ; ! ""
+Михаил:Михаил NPANTMLEX ; ! ""
+Николай:Николай NPANTMLEX ; ! ""
+Радмир:Радмир NPANTMLEX ; ! ""
+Рауил:Рауил NPANTMLEX ; ! ""
+Рәжәп:Рәжәп NPANTMLEX ; ! ""
+Рәмил:Рәмил NPANTMLEX ; ! ""
+Рөстәм:Рөстәм NPANTMLEX ; ! ""
+Салауат:Салауат NPANTMLEX ; ! ""
+Тимерйән:Тимерйән NPANTMLEX ; ! ""
+Тимур:Тимур NPANTMLEX ; ! ""
+Юрий:Юрий NPANTMLEX ; ! ""
+Азамат:Азамат NPANTMLEX ; ! ""
+Азат:Азат NPANTMLEX ; ! ""
+Айнур:Айнур NPANTMLEX ; ! ""
+Айрат:Айрат NPANTMLEX ; ! ""
+Александр:Александр NPANTMLEX ; ! ""
+Алексей:Алексей NPANTMLEX ; ! ""
+Альберт:Альберт NPANTMLEX ; ! ""
+Анатолий:Анатолий NPANTMLEX ; ! ""
+Андрей:Андрей NPANTMLEX ; ! ""
+Атайсал:Атайсал NPANTMLEX ; ! ""
+Борис:Борис NPANTMLEX ; ! ""
+
+Әхмәтов:Әхмәтов NPCOGMLEX ; ! ""
+Балабанов:Балабанов NPCOGMLEX ; ! ""
+Зубков:Зубков NPCOGMLEX ; ! ""
+Исхаҡов:Исхаҡов NPCOGMLEX ; ! ""
+Маврин:Маврин NPCOGMLEX ; ! ""
+Нәбиуллин:Нәбиуллин NPCOGMLEX ; ! ""
+Путин:Путин NPCOGMLEX ; ! ""
+Рәжәпов:Рәжәпов NPCOGMLEX ; ! ""
+Сәфиуллин:Сәфиуллин NPCOGMLEX ; ! ""
+Тазиев:Тазиев NPCOGMLEX ; ! ""
+Толкачев:Толкачев NPCOGMLEX ; ! ""
+Тупиков:Тупиков NPCOGMLEX ; ! ""
+Хәмитов:Хәмитов NPCOGMLEX ; ! ""
+Хәсәнов:Хәсәнов NPCOGMLEX ; ! ""
+Афонин:Афонин NPCOGMLEX ; ! ""
+Әсәҙуллин:Әсәҙуллин NPCOGMLEX ; ! ""
+Башаров:Башаров NPCOGMLEX ; ! ""
+
+Әүбәкирова:Әүбәкирова NPCOGFLEX ; ! ""
+Байкова:Байкова NPCOGFLEX ; ! ""
+Баталова:Баталова NPCOGFLEX ; ! ""
+Башкортова:Башкортова NPCOGFLEX ; ! ""
+Биишева:Биишева NPCOGFLEX ; ! ""
+
+Бабич:Бабич NPCOGMFLEX ; ! ""
+Орджоникидзе:Орджоникидзе NPCOGMFLEX ; ! ""
+Семивеличенко:Семивеличенко NPCOGMFLEX ; ! ""
 
 
 LEXICON Adjectives
