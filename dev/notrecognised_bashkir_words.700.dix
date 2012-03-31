@@ -8,7 +8,6 @@
     <sdef n="num"     c=""/>
     <sdef n="adv"     c=""/>
     <sdef n="tv"     c=""/>
-    <sdef n="top"     c=""/>
     <sdef n="pron"     c=""/>
     <sdef n="cnjcoo"     c=""/>
     <sdef n="np"     c=""/>
@@ -63,22 +62,18 @@
 
     <!-- SECTION: Proper nouns -->
     <e c=""><p><l>Артур<s n="np"/><s n="ant"/><s n="GD"/></l><r>Артур<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Әфганстан<s n="np"/><s n="top"/></l><r>Афғанстан<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Әбҗәлил<s n="np"/><s n="ant"/><s n="GD"/></l><r>Әбйәлил<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Әхмәтов<s n="np"/><s n="ant"/><s n="GD"/></l><r>Әхмәтов<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Бабич<s n="np"/><s n="ant"/><s n="GD"/></l><r>Бабич<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Балабанов<s n="np"/><s n="ant"/><s n="GD"/></l><r>Балабанов<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Виктор<s n="np"/><s n="ant"/><s n="GD"/></l><r>Виктор<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Владимир<s n="np"/><s n="ant"/><s n="GD"/></l><r>Владимир<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Идел<s n="np"/><s n="top"/></l><r>Иҙел<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Герат<s n="np"/><s n="top"/></l><r>Герат<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Гайнетдин<s n="np"/><s n="ant"/><s n="GD"/></l><r>Ғәйнетдин<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Евгений<s n="np"/><s n="ant"/><s n="GD"/></l><r>Евгений<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Зубков<s n="np"/><s n="ant"/><s n="GD"/></l><r>Зубков<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Илмир<s n="np"/><s n="ant"/><s n="GD"/></l><r>Илмир<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Ирина<s n="np"/><s n="ant"/><s n="GD"/></l><r>Ирина<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Исхаков<s n="np"/><s n="ant"/><s n="GD"/></l><r>Исхаҡов<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Ярмәкәй<s n="np"/><s n="top"/></l><r>Йәрмәкәй<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Кирилл<s n="np"/><s n="ant"/><s n="GD"/></l><r>Кирилл<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Константин<s n="np"/><s n="ant"/><s n="GD"/></l><r>Константин<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Лилия<s n="np"/><s n="ant"/><s n="GD"/></l><r>Лилиә<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
@@ -87,7 +82,6 @@
     <e c=""><p><l>Михаил<s n="np"/><s n="ant"/><s n="GD"/></l><r>Михаил<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Нәбиуллин<s n="np"/><s n="ant"/><s n="GD"/></l><r>Нәбиуллин<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Николай<s n="np"/><s n="ant"/><s n="GD"/></l><r>Николай<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Новгород<s n="np"/><s n="top"/></l><r>Новгород<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Орджоникидзе<s n="np"/><s n="ant"/><s n="GD"/></l><r>Орджоникидзе<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>процент<s n="np"/><s n="ant"/><s n="GD"/></l><r>процент<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Путин<s n="np"/><s n="ant"/><s n="GD"/></l><r>Путин<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
@@ -100,68 +94,39 @@
     <e c=""><p><l>Салават<s n="np"/><s n="ant"/><s n="GD"/></l><r>Салауат<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Сәфиуллин<s n="np"/><s n="ant"/><s n="GD"/></l><r>Сәфиуллин<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Семивеличенко<s n="np"/><s n="ant"/><s n="GD"/></l><r>Семивеличенко<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Сибай<s n="np"/><s n="top"/></l><r>Сибай<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Чиләбе<s n="np"/><s n="top"/></l><r>Силәбе<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Стәрлетамак<s n="np"/><s n="top"/></l><r>Стәрлетамаҡ<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Таҗиев<s n="np"/><s n="ant"/><s n="GD"/></l><r>Тазиев<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Тимерҗан<s n="np"/><s n="ant"/><s n="GD"/></l><r>Тимерйән<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Тимур<s n="np"/><s n="ant"/><s n="GD"/></l><r>Тимур<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Толкачев<s n="np"/><s n="ant"/><s n="GD"/></l><r>Толкачев<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Тупиков<s n="np"/><s n="ant"/><s n="GD"/></l><r>Тупиков<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Урал<s n="np"/><s n="top"/></l><r>Урал<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Учалы<s n="np"/><s n="top"/></l><r>Учалы<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Хәмитов<s n="np"/><s n="ant"/><s n="GD"/></l><r>Хәмитов<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Хәсәнов<s n="np"/><s n="ant"/><s n="GD"/></l><r>Хәсәнов<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Чечня<s n="np"/><s n="top"/></l><r>Чечня<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Юрий<s n="np"/><s n="ant"/><s n="GD"/></l><r>Юрий<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Австрия<s n="np"/><s n="top"/></l><r>Австрия<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Агыйдел<s n="np"/><s n="top"/></l><r>Ағиҙел<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Азамат<s n="np"/><s n="ant"/><s n="GD"/></l><r>Азамат<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Азат<s n="np"/><s n="ant"/><s n="GD"/></l><r>Азат<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Айгөл<s n="np"/><s n="ant"/><s n="GD"/></l><r>Айгөл<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Айзирә<s n="np"/><s n="ant"/><s n="GD"/></l><r>Айзирә<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Айнур<s n="np"/><s n="ant"/><s n="GD"/></l><r>Айнур<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Айрат<s n="np"/><s n="ant"/><s n="GD"/></l><r>Айрат<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Актүбә<s n="np"/><s n="top"/></l><r>Аҡтүбә<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Александр<s n="np"/><s n="ant"/><s n="GD"/></l><r>Александр<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Алексей<s n="np"/><s n="ant"/><s n="GD"/></l><r>Алексей<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Алжир<s n="np"/><s n="top"/></l><r>Алжир<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Алина<s n="np"/><s n="ant"/><s n="GD"/></l><r>Алина<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Алла<s n="np"/><s n="ant"/><s n="GD"/></l><r>Алла<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Алтай<s n="np"/><s n="top"/></l><r>Алтай<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Альберт<s n="np"/><s n="ant"/><s n="GD"/></l><r>Альберт<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Альбина<s n="np"/><s n="ant"/><s n="GD"/></l><r>Альбина<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Анатолий<s n="np"/><s n="ant"/><s n="GD"/></l><r>Анатолий<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Андрей<s n="np"/><s n="ant"/><s n="GD"/></l><r>Андрей<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Анна<s n="np"/><s n="ant"/><s n="GD"/></l><r>Анна<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Атайсал<s n="np"/><s n="ant"/><s n="GD"/></l><r>Атайсал<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Атайсал<s n="np"/><s n="top"/></l><r>Атайсал<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Авыргазы<s n="np"/><s n="top"/></l><r>Ауырғазы<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Афонин<s n="np"/><s n="ant"/><s n="GD"/></l><r>Афонин<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Әсадуллин<s n="np"/><s n="ant"/><s n="GD"/></l><r>Әсәҙуллин<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Әүбәкирова<s n="np"/><s n="ant"/><s n="GD"/></l><r>Әүбәкирова<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Байкова<s n="np"/><s n="ant"/><s n="GD"/></l><r>Байкова<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Байконур<s n="np"/><s n="top"/></l><r>Байконур<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Байкоңыр<s n="np"/><s n="top"/></l><r>Байҡоңор<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Баймак<s n="np"/><s n="top"/></l><r>Баймаҡ<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Байтул<s n="np"/><s n="top"/></l><r>Байтул<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Бакалы<s n="np"/><s n="top"/></l><r>Баҡалы<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Балакатай<s n="np"/><s n="top"/></l><r>Балаҡатай<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Балтач<s n="np"/><s n="top"/></l><r>Балтас<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Балтика<s n="np"/><s n="top"/></l><r>Балтика<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Баталова<s n="np"/><s n="ant"/><s n="GD"/></l><r>Баталова<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Башаров<s n="np"/><s n="ant"/><s n="GD"/></l><r>Башаров<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
     <e c=""><p><l>Башкортова<s n="np"/><s n="ant"/><s n="GD"/></l><r>Башкортова<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Башкортстан<s n="np"/><s n="top"/></l><r>Башҡортостан<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Бәләбәй<s n="np"/><s n="top"/></l><r>Бәләбәй<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Белорет<s n="np"/><s n="top"/></l><r>Белорет<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Беларусь<s n="np"/><s n="top"/></l><r>Беларусь<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Биишева<s n="np"/><s n="ant"/><s n="GD"/></l><r>Биишева<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Благовар<s n="np"/><s n="top"/></l><r>Благовар<s n="np"/><s n="top"/></r></p></e>
     <e c=""><p><l>Борис<s n="np"/><s n="ant"/><s n="GD"/></l><r>Борис<s n="np"/><s n="ant"/><s n="GD"/></r></p></e>
-    <e c=""><p><l>Бөрҗән<s n="np"/><s n="top"/></l><r>Бөрйән<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Бөре<s n="np"/><s n="top"/></l><r>Бөрө<s n="np"/><s n="top"/></r></p></e>
-    <e c=""><p><l>Бүздәк<s n="np"/><s n="top"/></l><r>Бүздәк<s n="np"/><s n="top"/></r></p></e>
 
     <!-- SECTION: Adjectives -->
 
