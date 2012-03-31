@@ -101,15 +101,13 @@ The Apertium translation engine consists of a Unix-style \emph{pipeline} or
 \begin{itemize}
 \item A \emph{deformatter} which encapsulates the format information
  in the input as \emph{superblanks} that will then be seen
- as blanks between words by the rest of the modules.
+ as blanks between words by the other modules.
 \item A \emph{morphological analyser} which segments the text in
   surface forms (SF) (\emph{words}, or, where detected, multi-word lexical
-  units or MWLUs) and delivers, for each of them, one or more \emph{lexical
+  units or MWLUs) and for each, delivers one or more \emph{lexical
     forms} (LF) consisting of \emph{lemma}, \emph{lexical category} and
-  morphological information. It reads a finite-state
-  transducer (FST) compiled from a source-language (SL) morphological
-  dictionary in XML.
-\item A \emph{morphological disambiguator} (based on constraint grammar) which chooses, using linguistic rules
+  morphological information. 
+\item A \emph{morphological disambiguator} (constraint grammar) which chooses, using linguistic rules
   the most adequate sequence of morphological analyses for an ambiguous sentence. 
 \item A \emph{lexical transfer} module which reads each SL LF 
   and delivers the corresponding target-language (TL) LF
@@ -123,8 +121,7 @@ The Apertium translation engine consists of a Unix-style \emph{pipeline} or
     associate an \emph{action} to each defined LF \emph{pattern}. Patterns are applied left-to-right, and the 
     longest matching pattern is always selected.
 \item A \emph{morphological generator} which delivers a TL SF
- for each TL LF, by suitably inflecting it. It reads
-  an FST compiled from a TL morphological dictionary in XML.
+ for each TL LF, by suitably inflecting it. 
 \item A \emph{reformatter} which de-encapsulates any format
   information.
 \end{itemize}
@@ -136,7 +133,7 @@ The morphological transducers are based on the Helsinki Finite State Toolkit \ci
 
 The morphologies of both languages are implemented in lexc, and the morphophonologies of both languages are implemented in twol.
 
-Use of lexc allows for straightforward definition of different word classes and subclasses.  For example, Tatar (but not Bashkir) has two classes of verbs: ones which take a harmonised high vowel in the infinitive (the default), and ones which take a harmonised low vowel in the infinitive.  This was implemented in lexc with two similar continuation lexica for verbs---one which points at a continuation lexicon with an A-initial infinitive ending, and one which points at a continuation lexicon with an I-initial infinitive ending.
+Use of lexc allows for straightforward definition of different word classes and subclasses.  For example, Tatar (but not Bashkir) has two classes of verbs: ones which take a harmonised high vowel in the infinitive (the default), and ones which take a harmonised low vowel in the infinitive.  This was implemented in lexc with two similar continuation lexica for verbs---one which points at a lexicon with an A-initial infinitive ending, and one which points at a lexicon with an I-initial infinitive ending.
 
 Use of twol allows for phonological processes present in the languages, like vowel harmony and desonorisation, to be implemented in a straightforward manner.  For example, in Tatar, the A and I archiphonemes present in the infinitive are harmonised to one of two vowels each depending on the value of the preceding vowel; the basic form of this process can be implemented in one twol rule.
 
@@ -159,17 +156,17 @@ then again the analyser without the {\tt {\small RL}} paths.
 \end{figure*}
 
 
-The bilingual lexicon currently contains 1,853 stem to stem correspondences and was build by hand by a bilingual 
+The bilingual lexicon currently contains 2,591 stem to stem correspondences and was build by hand by a bilingual 
 speaker of Tatar and Bashkir, translating a frequency list of the Russian National Corpus.\footnote{\url{http://ruscorpora.ru/en/}}
 into both languages in a spreadsheet. This spreadsheet was then converted into the Apertium
-XML dictionary format. These 1,853 stems present around two thirds of the current translations.
+XML dictionary format. 
 
 The entries consist largely of one-to-one stem-to-stem correspondences with part of speech, but also
-include some instances where the translation is ambiguous (see e.g. Fig.~\ref{fig:bidix}).
+include some entries with ambiguous translations (see e.g. Fig.~\ref{fig:bidix}).
 
 \subsection{Disambiguation rules}
 
-The system is equipped with a morphological disambiguation module in the form of a 
+The system has a morphological disambiguation module in the form of a 
 Constraint Grammar (CG) \cite{karlsson95}. The version of the formalism used is 
 vislcg3.\footnote{\url{http://beta.visl.sdu.dk/constraint_grammar.html}}
 
@@ -185,19 +182,18 @@ as either \emph{танау} `nose (person)' or \emph{морон} `nose (ship)'. 
 rule chooses the translation \emph{танау} if the immediate context includes a proper 
 name.
 
-%That was right. Another example was (Рөстәм, correct me) the word "катлаулы" - it is always translated into Bashkir as "ҡатмарлы", except the collocaton "катлаулы мәсьәлә" (a difficult matter/problem). Here it would be translated as (or we can say it remains) "ҡатлаулы мәсьәлә". 
+Another example is the word \emph{катлаулы} -- it is always translated into Bashkir 
+as \emph{ҡатмарлы}, except the collocaton \emph{катлаулы мәсьәлә} `a difficult matter/problem'. Here 
+it would be translated as \emph{ҡатлаулы мәсьәлә}.
 
 %\subsection{Transfer rules}
 
-
-
 \begin{table*}
 \begin{tabular}{ll}
-
+%\hline
+%{\bf Stage} & {\bf Representation} \\
 \hline
-{\bf Stage} & {\bf Representation} \\
-\hline
-{\bf Input}& Һава бүген бик әйбәт, җылы гына \\ 
+{\bf (Tatar) Input} & Һава бүген бик әйбәт, җылы гына \\ 
 \hline
 {\bf Morph. Analysis} & \^{}Һава/һава\tag{<n>}\tag{<attr>}/һава\tag{<n>}\tag{<nom>\$} \^{}бүген/бүген\tag{<adv>\$}  \\
  ~             & \^{}бик/бик\tag{<adv>}/бик\tag{<n>}\tag{<attr>}/бик\tag{<n>}\tag{<nom>\$} \\ 
@@ -208,7 +204,7 @@ name.
  ~                  & \^{}җылы\tag{<n>}\tag{<attr>\$} \^{}гына\tag{<postadv>\$}\^{}.\tag{<sent>\$}\\
 \hline
 {\bf Lexical transfer}& \^{}Һава\tag{<n>}\tag{<attr>}/Һауа\tag{<n>}\tag{<attr>\$} \^{}бүген\tag{<adv>}/бөгөн\tag{<adv>\$} \^{}бик\tag{<adv>}/бик\tag{<adv>\$} \\
- ~                    & \^{}әйбәт\tag{<adj>}/әйбәт\tag{<adj>\$}\^{},\tag{<cm>}/,\tag{<cm>\$} \^{}җылы\tag{<n>}\tag{<attr>}/йылы\tag{<n>}\tag{<attr>\$} \\ 
+ (and lex.~selection)                    & \^{}әйбәт\tag{<adj>}/әйбәт\tag{<adj>\$}\^{},\tag{<cm>}/,\tag{<cm>\$} \^{}җылы\tag{<n>}\tag{<attr>}/йылы\tag{<n>}\tag{<attr>\$} \\ 
  ~                    & \^{}гына\tag{<postadv>}/ғына\tag{<postadv>\$}\^{}.\tag{<sent>}/.\tag{<sent>\$}\\
 \hline
 {\bf Struct. transfer}& \^{}Һауа\tag{<n>}\tag{<attr>\$} \^{}бөгөн\tag{<adv>\$} \^{}бик\tag{<adv>\$} \^{}әйбәт\tag{<adj>\$}\^{},\tag{<cm>\$} \\ 
@@ -217,7 +213,7 @@ name.
 {\bf Morph. generation} & Һауа бөгөн бик әйбәт, йылы ғына. \\
 \hline
 \end{tabular}
- \caption{Translation process from Tatar to Bashkir of the phrase `Һава бүген бик әйбәт, җылы гына' {\em Today the weather is very nice, it is just warm'.}}
+ \caption{Translation process for the phrase \emph{Һава бүген бик әйбәт, җылы гына} `The weather today is very nice, it is very warm'.}
 \end{table*}
 
 \section{Evaluation}
@@ -229,29 +225,28 @@ Tatar, the Tatar Wikipedia\footnote{\url{http://tt.wikipedia.org}; {\tt ttwiki-2
 
 \begin{table}
   \begin{center}
-  \begin{tabular}{c|r|r}
+  \begin{tabular}{l|r|r}
    Corpus                  & Tokens    & Coverage\\
    \hline
-   Tatar Wikipedia         & 37,123    & 64.86\% \\
-   Tatar New Test.         & 163,603   & 69.65\% \\
+   Tatar New Test.         & 163,603   & 70.89\% \\
+   Tatar Wikipedia         & 37,123    & 68.21\% \\
    \hline
-   Bashkir Wikipedia       & 12,267    & 61.09\% \\
+   Bashkir Wikipedia       & 12,267    & 64.47\% \\
    \hline
   \end{tabular}
-    \caption{Na\"ive vocabulary coverage over three available corpora of Tatar and Bashkir.}
+    \caption{Na\"ive vocabulary coverage over the three corpora.}
     \label{table:coverage}
   \end{center}
 \end{table}
 
 As shown in Table~\ref{table:coverage}, the coverage is still far too low to be of use as a 
-general broad-domain machine translation
-system, but we hope that it shows that a good proportion of the morphology of both languages
-is in place.
+general broad-domain MT system, but we hope that it shows that a good proportion of 
+the morphology of both languages is in place.
 
 To get an idea of the kind of performance that could be expected from the system, we 
 translated a simple story from Tatar to Bashkir and vice versa. The story may be found 
 online,\footnote{\url{https://apertium.svn.sourceforge.net/svnroot/apertium/branches/xupaixkar/rasskaz}}
-and was used for pedagogical purposes in a recently workshop on machine translation
+and was used for pedagogical purposes in a recently workshop on MT
 for the languages of Russia.
 
 \begin{table}
@@ -275,6 +270,25 @@ of the transfer lexicon, and the disambiguation and transfer rules. The differen
 the number of unknown words between translating Tatar$\rightarrow$Bashkir and vice versa
 is because certain forms were not found due to lack of morphophonological rules in the
 Tatar transducer.
+
+We calculate the WER instead of other MT evaluation metrics such as BLEU as the WER is 
+geared towards a particular task, that of measuring postedition effort. The translations 
+of the story into Tatar and Bashkir were done in parallel to make them as close as possible,
+so using BLEU would give an over-optimistic view of the quality.
+
+\subsection{Error analysis}
+
+Looking at the errors, we found that the majority were due to mistakes in
+the morphophonology component, e.g.
+\begin{itemize}
+  \item Noun declination with possessives. 
+  \item Vowel harmony exceptions. Sometimes a word has back vowels in the last syllable and a `ь' at the end 
+    of the word shows that front-vowel suffixes should be used. Words like this are often loan words 
+    from Arabic, e.g. \emph{табигать} `nature'.
+  \item When the previous word is unknown to the system,
+    it is not currently able to generate the appropriate vowel harmony for clitics (e.g. \emph{да}, \emph{де} `and')
+\end{itemize}
+
 %\cite{TyersAlperen2010}
 
 %challenges:
@@ -285,7 +299,7 @@ Tatar transducer.
 \section{Concluding remarks}
 \label{sec:conc}
 
-To our knowledge we have presented the first ever MT system between Tatar and Bashkir, and the first ever machine translation system involving Bashkir. The system is available as free/open-source software under the GNU GPL and the 
+To our knowledge we have presented the first ever MT system between Tatar and Bashkir, and the first ever MT system involving Bashkir. The system is available as free/open-source software under the GNU GPL and the 
 whole system may be downloaded from SVN.\footnote{\url{https://apertium.svn.sourceforge.net/svnroot/apertium/nursery/apertium-tt-ba}}
 
 We plan to continue development on the pair; the main work will be expanding the dictionaries with new lists of stems, and providing bilingual correspondences. The long-term plan is to integrate the data created with other open-source data for Turkic languages in order to make transfer systems between all the Turkic language pairs.  Related work is currently ongoing with Chuvash--Turkish and Turkish--Kyrgyz.
