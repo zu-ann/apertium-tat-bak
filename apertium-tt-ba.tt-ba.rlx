@@ -19,7 +19,9 @@ LIST Num = num ;
 LIST Post = post ; 
 LIST Postadv = postadv ; 
 LIST Cm = cm ; 
+
 LIST Pred = pred ;
+LIST Attr = attr ;
 
 LIST Interr = itg ;
 
