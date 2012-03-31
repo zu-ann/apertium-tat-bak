@@ -29,6 +29,7 @@ dev/countstems-ba.sh -text
 dev/countstems-tt.sh -text
 dev/inconsistency-summary.sh -text
 dev/inconsistency.sh -text
+dev/notrecognised_bashkir_words.700.dix -text
 dev/ru-tt-ba.txt -text
 dev/testvoc-summary.ba-tt.txt -text
 dev/testvoc-summary.tt-ba.txt -text
