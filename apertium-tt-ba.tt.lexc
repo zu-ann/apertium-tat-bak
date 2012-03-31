@@ -240,9 +240,10 @@ LEXICON DIGITLEX
 
 LEXICON NUMLEX
 
-%<num%>: POSS ; 
-%<num%>%<ord%>:%>%{I%}нч%{I%} POSS ; 
-%<num%>%<sim%>:%>%{A%}р POSS ; 
+%<num%>: # ; 
+%<num%>%<subst%>: SUBST ; 
+%<num%>%<ord%>:%>%{I%}нч%{I%} SUBST ; 
+%<num%>%<sim%>:%>%{A%}р SUBST ; 
 
 
 LEXICON NPCOGMLEX
