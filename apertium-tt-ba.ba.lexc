@@ -167,7 +167,7 @@ CASE ;
 
 LEXICON POSS
 
-%<px%>:%>%{L%}%{I%}%{K%}%{I%} CASE ;
+%<px%>:%>%{L%}%{I%}%{K%}%{I%}{n} CASE ;
 
 POSS-REAL ; 
 
