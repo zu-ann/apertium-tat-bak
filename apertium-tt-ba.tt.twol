@@ -14,15 +14,21 @@ Alphabet
 
 Sets
 
-BackVow    =  А О Ы У Я Ю
-              а о ы у я ю ;
+BackVow    =  А О Ы У
+              а о ы у ;
 
 
 FrontVow   =  Ә Е Э И Ө Ү
               ә е э и ө ү; 
 
+AmbigVow  = Я Е Ю
+            я е ю ;
+
 Vow       = А О Ы У Я Ю Ә Е Э И Ө Ү
             а о ы у я ю ә е э и ө ү;
+
+BeginVow  = А О Ы У Ә Э И Ө Ү
+            а о ы у ә э и ө ү ;
 
 Cns       =  Б В Г Д Ж Җ З Й К Л М Н Ң П Р С Т Ф Х Һ Ц Ч Ш Щ Ъ Ь
              б в г д ж җ з й к л м н ң п р с т ф х һ ц ч ш щ ъ ь % 
@@ -43,7 +49,9 @@ Rules
 %{A%}:ә <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | [ :0 - %{ъ%}: ] ] _ ;
                                           [ ь: :Cns* ]/[ %>: | :0 ] _ ;
                              [ :и :я :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
+  [ :FrontVow [ :Cns | :AmbigVow ]* :Cns ]/[ %>: | %  | [ :0 - %{ъ%}: ] ] _ ;
            except
+                 [ :BackVow й:0 :AmbigVow :Cns* :Cns ]/[ %>: | :0 ] _ ;
 !                                    [ %{ъ%}: ]/[ %>: ] _ ;
 !                 :FrontVow :л %>: :л _ р ;   ! WTF is this for?
 !                                      _ %>: %{E%}:и ;
@@ -53,6 +61,8 @@ Rules
 
 "I Vowel Harmony"
 %{I%}:е <=> [ :FrontVow :Cns* :Cns ]/[ %>: | %  | [ :0 - %{ъ%}: ] ] _ ;
+!                                 [ :BackVow :Cns* й: ]/[ %>: | :0 ] _ ;
+                                                [ й: ]/[ %>: | :0 ] _ ;
                                           [ ь: :Cns* ]/[ %>: | :0 ] _ ;
                              [ :и :я :Cns* :Cns ]/[ %>: | %  | :0 ] _ ;
             except
@@ -142,7 +152,9 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 "Deletion of {I} after vowels"
 %{I%}:0 <=> [ :Vow - :Cns ]/[ :0 | %>: ] _ ;
             except
-            %{n%}:/:0 _ ;
+                               %{n%}:/:0 _ ;
+!      [ :BackVow :Cns* й: ]/[ %>: | :0 ] _ ;
+                     [ й: ]/[ %>: | :0 ] _ ;
 
 !"Back assimilation of G"
 !%{G%}:ғ <=> [ :BackVow :Cns* ]/[ %>: | :0 | :и | :у ] _ ;
@@ -165,11 +177,12 @@ Cx:Cy <=> :CnsVoiceless/[ %>: | %  | :0 | :ь | :ъ ] _ ;
 !!!! {U} stuff !!!!
 
 "Fronting of U"
-%{U%}:ү <=> [ :FrontVow :Cns* :Cns ]/[ %>: | :0 ] _ ;  ! кайт>{U}:кайту
+%{U%}:ү <=> [ :FrontVow :Cns* :Cns ]/[ %>: | :0 ] _ ;  ! бел>{U}:белү
                        [ :FrontVow ]/[ %>: | :0 ] _ ;  ! сөйлә>{U}:сөйләү
             except
                        [ :Vow ]/[ %>: | :0 ] _ [ :Vow ]/[ %>: | :0 ] ;
                                       й: %>: _ ;
+! кайт>{U}:кайту
 
 "U > в between vowels"
 %{U%}:в <=> [ :Vow ]/[ %>: | :0 ] _ [ :Vow ]/[ %>: | :0 ] ;
@@ -183,8 +196,10 @@ Cx:Cy <=> :CnsVoiceless/[ %>: | %  | :0 | :ь | :ъ ] _ ;
 ! сөй+у : сөю, куй+у : кую
 
 "word-final у or ү becomes в when a vowel-initial suffix follows"
-Vu:в <=> _ %>: :Vow ;
+Vu:в <=> _ [ :BeginVow ]/[ %>: | :0 ] ;
          where Vu in ( у ү ) matched;
+!у:в <=> _ :Vow/:0 ;
+! яу, яварга, яву
 
 !!!! й stuff !!!!
 
