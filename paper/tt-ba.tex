@@ -281,8 +281,8 @@ text had been added to the system, thus presents an upper bound on the current p
 of the transfer lexicon, and the disambiguation and transfer rules. The difference in 
 the number of unknown words between translating Tatar$\rightarrow$Bashkir and vice versa
 is because certain forms were not found due to lack of morphophonological rules in the
-Tatar transducer.  % FIXME: really?  what about the Bashqort transducer??
-
+Tatar transducer.  % FIXME: really?  what about the Bashqort transducer?? Just "due to lack of
+% morphophonological rules" I guess then. 
 We calculate the WER instead of other MT evaluation metrics such as BLEU as the WER is 
 geared towards a particular task, that of measuring postedition effort. The translations 
 of the story into Tatar and Bashkir were done in parallel to make them as close as possible,
@@ -297,9 +297,9 @@ the morphophonology component, e.g.
   \item Noun declination with possessives. 
   \item Vowel harmony exceptions. Sometimes a word has back vowels in the last syllable and a `ь' at the end 
     of the word shows that front-vowel suffixes should be used. Words like this are often loan words 
-    from Arabic, e.g. \emph{табигать} `nature'.  % FIXME: I fixed this already :(
+    from Arabic, e.g. \emph{табигать} `nature'.  % FIXME: I fixed this already :( J.N.W. Again - generalizing the case with just "Vowel harmony exceptions"? -I.S.
   \item When the previous word is unknown to the system,
-    it is not currently able to generate the appropriate vowel harmony for clitics (e.g. \emph{да}, \emph{де} `and')
+    it is not currently able to generate the appropriate vowel harmony for clitics (e.g. \emph{да}, \emph{дә} `and')
         \vspace{-1pt}	 
 \end{itemize}
 
