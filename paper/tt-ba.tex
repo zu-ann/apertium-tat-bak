@@ -1,6 +1,7 @@
 \documentclass[11pt,a4paper]{article}
-\usepackage{lrec2006}
-\usepackage{url}
+\usepackage{lrec2012}
+%\usepackage{url}
+\usepackage[colorlinks=true,citecolor=black,linkcolor=black,urlcolor=blue]{hyperref}
 \usepackage{times}
 \usepackage{multirow}
 \usepackage{polyglossia}
@@ -8,10 +9,17 @@
 \usepackage{latexsym}
 \usepackage[small,bf]{caption}
 \usepackage{xltxtra}
+
 \usepackage{fontspec}
 \defaultfontfeatures{PunctuationSpace=3,Scale=MatchLowercase,Mapping=tex-text}
 \newfontfeature{IPA}{+mgrk}
-\setromanfont[IPA]{FreeSerif}
+%\setromanfont[IPA]{FreeSerif}
+\setromanfont{Times New Roman}
+\newfontfamily\qipa[IPA,Scale=MatchLowercase]{FreeSerif}
+
+\newcommand{\email}[1]{\texttt{\href{mailto:#1}{#1}}}
+\usepackage{natbib}
+\usepackage{setspace}
 
 %\setlength\titlebox{6.5cm}    % You can expand the title box if you
 % really have to
@@ -23,8 +31,8 @@
 
 \address{ Universitat d'Alacant, Indiana University, Kazan Federal University, Bashkir State University\\
           Alacant, Bloomington, Kazan, Ufa\\
-          E-03071 Spain, IN 47405-7000 (USA), Russia, Russia\\
-          \url{ftyers@dlsi.ua.es}, \url{jonwashi@indiana.edu}, \url{ilnar.salimzyan@gmail.com},  \url{taqmaq@mail.ru}\\
+          E-03071 Spain, IN 47405 (USA), Russia, Russia\\
+          \email{ftyers@dlsi.ua.es}, \email{jonwashi@indiana.edu}, \email{ilnar.salimzyan@gmail.com},  \email{taqmaq@mail.ru}\\
 }
 
 \newcommand{\tag}[1]{{\small{\texttt{#1}}}}
@@ -42,7 +50,7 @@ languages, on a par with similar systems.
 }
 
 \begin{document}
-
+\spacing{0.92}
 \maketitleabstract
 
 \section{Introduction}
@@ -51,19 +59,17 @@ This paper presents a prototype shallow-transfer rule-based machine translation
 system between Tatar and Bashkir, two closely-related minority Turkic 
 languages of Russia. 
 
-The paper will be laid out as follows: Section~\ref{sec:lang} gives a brief description
-of the two languages; Section~\ref{sec:prev} gives a short review of some previous
-work in the area of Turkic--Turkic language translation; Section~\ref{sec:sys} 
-describes the system and the tools used to construct it; Section~\ref{sec:eval}
-gives a very preliminary evaluation of the system; and finally Section~\ref{sec:conc}
-describes our aims for future work and some concluding remarks.
+The paper will be laid out as follows: Section~\ref{sec:lang}\ gives a brief description
+of the two languages; Section~\ref{sec:prev}\ gives a short review of some previous
+work in the area of Turkic--Turkic language translation; Section~\ref{sec:sys}\ 
+describes the system and the tools used to construct it; Section~\ref{sec:eval}\ gives a very preliminary evaluation of the system; and finally Section~\ref{sec:conc}\ describes our aims for future work and some concluding remarks.
 
 \section{Languages}
 \label{sec:lang}
 
-Tatar is a Turkic language spoken in and around Tatarstan by approximately 6 million people.  Bashkir is a Turkic language spoken by about 1.5 million people in and around Bashqortostan.  Tatarstan and Bashkirostan are both republics within Russia.  Both languages are co-official with Russian in their respective republics.  The two languages belong to the same branch of the Kypchak group of Turkic langauges.  As they are very close relatives, they share many innovations, but Bashkir has quite a few phonological innovations beyond those of Tatar (such as rounding harmony and desonorisation of high-sonority suffix-initial consonants; cf.\ \cite{washington10}) and the languages have a number of morphological differences (including different volutional participles).  The spoken languages share a high level of mutual intelligibility, but many of the inherent similarities are obscured by their fairly different orthographical systems along with the phonological and morphological differences between the languages.
+Tatar is a Turkic language spoken in and around Tatarstan by approximately 6 million people.  Bashkir (Bashqort) is a Turkic language spoken by about 1.5 million people in and around Bashqortostan.  Tatarstan and Bashqortostan are both republics within Russia.  Both languages are co-official with Russian in their respective republics.  The two languages belong to the same branch of the Kypchak group of Turkic languages.  As they are very close relatives, they share many innovations, but Bashkir has quite a few phonological innovations beyond those of Tatar (such as rounding harmony and desonorisation of high-sonority suffix-initial consonants; cf.\ \citet{washington10}) and the languages have a number of morphological differences (including different volitional participles).  The spoken languages share a high level of mutual intelligibility, but many of the inherent similarities are obscured by their fairly different orthographical systems along with the phonological and morphological differences between the languages.
 
-Aside from native speaker intuition, we also consulted the Bashkir Grammar of M. G. Usmanova \cite{usmanova06}.
+Aside from native speaker intuition, we also consulted the Bashkir Grammar of M. G. Usmanova \citep{usmanova06}.
 
 \section{Previous work}
 \label{sec:prev}
@@ -72,7 +78,7 @@ There have been several previous works on making machine translation systems bet
 Turkic languages, although to our knowledge none are publically available. 
 
 For systems between Turkish and the other Turkic languages, there have been, 
-for example, systems reported for Turkish-Crimean Tatar \cite{altintas01}, Turkish-Azerbaijani \cite{hamzaoglu93}, Turkish-Tatar \cite{suleymanov08} and Turkish-Turkmen \cite{tantug07}. 
+for example, systems reported for Turkish-Crimean Tatar \citep{altintas01}, Turkish-Azerbaijani \citep{hamzaoglu93}, Turkish-Tatar \citep{suleymanov08} and Turkish-Turkmen \citep{tantug07}. 
 
 \section{System}
 \label{sec:sys}
@@ -86,7 +92,7 @@ for example, systems reported for Turkish-Crimean Tatar \cite{altintas01}, Turki
 \end{figure*}
 
 The system is based on the Apertium machine translation 
-platform \cite{apertium/2011}.\footnote{\url{http://www.apertium.org}} The 
+platform \citep{apertium/2011}.\footnote{\url{http://www.apertium.org}} The 
 platform was originally aimed at the Romance languages of the Iberian peninsula, but has also been adapted for 
 other, more distantly related, language pairs.
 The whole platform, both programs and data, are licensed under the Free Software Foundation's General Public 
@@ -98,7 +104,8 @@ website.
 
 The Apertium translation engine consists of a Unix-style \emph{pipeline} or
 \emph{assembly line} with the following modules (see Fig.~\ref{fig:modules}):  
-\begin{itemize}
+\begin{itemize}\setlength{\itemsep}{-0.2em}
+        \vspace{-0.5em}
 \item A \emph{deformatter} which encapsulates the format information
  in the input as \emph{superblanks} that will then be seen
  as blanks between words by the other modules.
@@ -117,25 +124,26 @@ The Apertium translation engine consists of a Unix-style \emph{pipeline} or
 \item A \emph{lexical selection} module which chooses, based on context 
   rules the most adequate translation of ambiguous source language LFs.
 \item A \emph{structural transfer} module which
-    performs local syntactic operations This module is compiled from XML files containing rules that 
+    performs local syntactic operations, is compiled from XML files containing rules that 
     associate an \emph{action} to each defined LF \emph{pattern}. Patterns are applied left-to-right, and the 
     longest matching pattern is always selected.
 \item A \emph{morphological generator} which delivers a TL SF
  for each TL LF, by suitably inflecting it. 
 \item A \emph{reformatter} which de-encapsulates any format
   information.
+        \vspace{-1pt}	 
 \end{itemize}
 
 
 \subsection{Morphological transducers}
 
-The morphological transducers are based on the Helsinki Finite State Toolkit \cite{hfst/2011}, a free/open-source reimplementation of the Xerox finite-state toolchain, popular in the field of morphological analysis. It implements both the \textbf{lexc} formalism for defining lexicons, and the \textbf{twol} and \textbf{xfst} formalisms for modeling morphophonological rules. It also supports other finite state transducer formalisms such as \textbf{sfst}. This toolkit has been chosen as it -- or the equivalent XFST -- has been widely used for other Turkic languages \cite{coltekin2010,altintas2001,tantug2006}, and is available under a free/open-source licence.
+The morphological transducers are based on the Helsinki Finite State Toolkit \citep{hfst/2011}, a free/open-source reimplementation of the Xerox finite-state toolchain, popular in the field of morphological analysis. It implements both the \textbf{lexc} formalism for defining lexicons, and the \textbf{twol} and \textbf{xfst} formalisms for modeling morphophonological rules. It also supports other finite state transducer formalisms such as \textbf{sfst}. This toolkit has been chosen as it -- or the equivalent XFST -- has been widely used for other Turkic languages \citep{coltekin2010,altintas2001,tantug2006}, and is available under a free/open-source licence.
 
 The morphologies of both languages are implemented in lexc, and the morphophonologies of both languages are implemented in twol.
 
-Use of lexc allows for straightforward definition of different word classes and subclasses.  For example, Tatar (but not Bashkir) has two classes of verbs: ones which take a harmonised high vowel in the infinitive (the default), and ones which take a harmonised low vowel in the infinitive.  This was implemented in lexc with two similar continuation lexica for verbs---one which points at a lexicon with an A-initial infinitive ending, and one which points at a lexicon with an I-initial infinitive ending.
+Use of lexc allows for straightforward definition of different word classes and subclasses.  For example, Tatar (but not Bashkir) has two classes of verbs: one which take a harmonised high vowel in the infinitive (the default), and one which take a harmonised low vowel in the infinitive.  This was implemented in lexc with two similar continuation lexica for verbs: one pointing at a lexicon with an A-initial infinitive ending, and another pointing at a lexicon with an I-initial infinitive ending.
 
-Use of twol allows for phonological processes present in the languages, like vowel harmony and desonorisation, to be implemented in a straightforward manner.  For example, in Tatar, the A and I archiphonemes present in the infinitive are harmonised to one of two vowels each depending on the value of the preceding vowel; the basic form of this process can be implemented in one twol rule.
+Use of twol allows for phonological processes present in the languages, like vowel harmony and desonorisation, to be implemented in a straightforward manner.  For example, in Tatar, the A and I archiphonemes found in the infinitive are harmonised to one of two vowels each, depending on the value of the preceding vowel; the basic form of this process can be implemented in one twol rule.
 
 The same morphological description is used for both analysis and generation. To avoid overgeneration, any alternative forms are 
 marked with one of two marks, {\tt {\small LR}} (only analyser) or {\tt {\small RL}} (only generator). Instead of the usual
@@ -148,8 +156,8 @@ then again the analyser without the {\tt {\small RL}} paths.
     <e><p><l>\textbf{юнәлеш}<s n="n"/></l><r>\textbf{йүнәлеш}<s n="n"/></r></p></e> \\
     <e><p><l>\textbf{борын}<s n="n"/></l><r>\textbf{танау}<s n="n"/></r></p></e> \\
     <e><p><l>\textbf{борын}<s n="n"/></l><r>\textbf{морон}<s n="n"/></r></p></e> \\
-    <e><p><l>\textbf{ераклык}<s n="n"/></l><r>\textbf{алыҫлыҡ}<s n="n"/></r></p></e> \\
-    <e><p><l>\textbf{ераклык}<s n="n"/></l><r>\textbf{йыраҡлыҡ}<s n="n"/></r></p></e>
+    <e><p><l>\textbf{ераклык}<s n="n"/></l><r>\textbf{алы{\qipa ҫ}лы{\qipa ҡ}}<s n="n"/></r></p></e> \\
+    <e><p><l>\textbf{ераклык}<s n="n"/></l><r>\textbf{йыра{\qipa ҡ}лы{\qipa ҡ}}<s n="n"/></r></p></e>
 \end{texttt}
 \caption{Example entries from the bilingual transfer lexicon. Tatar is on the left, and Bashkir on the right}
 \label{fig:bidix}
@@ -157,8 +165,7 @@ then again the analyser without the {\tt {\small RL}} paths.
 
 
 The bilingual lexicon currently contains 2,834 stem to stem correspondences and was build by hand by a bilingual 
-speaker of Tatar and Bashkir, translating a frequency list of the Russian National Corpus.\footnote{\url{http://ruscorpora.ru/en/}}
-into both languages in a spreadsheet. This spreadsheet was then converted into the Apertium
+speaker of Tatar and Bashkir, translating a frequency list of the Russian National Corpus\footnote{\url{http://ruscorpora.ru/en/}} into both languages in a spreadsheet. This spreadsheet was then converted into the Apertium
 XML dictionary format. 
 
 The entries consist largely of one-to-one stem-to-stem correspondences with part of speech, but also
@@ -167,7 +174,7 @@ include some entries with ambiguous translations (see e.g. Fig.~\ref{fig:bidix})
 \subsection{Disambiguation rules}
 
 The system has a morphological disambiguation module in the form of a 
-Constraint Grammar (CG) \cite{karlsson95}. The version of the formalism used is 
+Constraint Grammar (CG) \citep{karlsson95}. The version of the formalism used is 
 vislcg3.\footnote{\url{http://beta.visl.sdu.dk/constraint_grammar.html}}
 
 The grammar currently has only four rules, but given the closeness of the languages, the 
@@ -176,15 +183,15 @@ majority of ambiguity may be passed through from one language to the other.
 \subsection{Lexical selection rules}
 
 Likewise, lexical selection is not a large problem between Tatar and Bashkir, but a 
-number of rules can be written for ambiguous words, for example the Tatar 
+number of rules can be written for ambiguous words; for example, the Tatar 
 word \emph{борын} `nose (person), nose (ship)' can be translated into Bashkir 
 as either \emph{танау} `nose (person)' or \emph{морон} `nose (ship)'. A lexical selection
 rule chooses the translation \emph{танау} if the immediate context includes a proper 
 name.
 
-Another example is the word \emph{катлаулы} -- it is always translated into Bashkir 
-as \emph{ҡатмарлы}, except the collocaton \emph{катлаулы мәсьәлә} `a difficult matter/problem'. Here 
-it would be translated as \emph{ҡатлаулы мәсьәлә}.
+Another example is the word \emph{катлаулы} `layered' -- it is always translated into Bashkir 
+as \emph{{\qipa ҡ}атмарлы}, except in the collocaton \emph{катлаулы мәсьәлә} `a difficult matter/problem'. Here 
+it would be translated as \emph{{\qipa ҡ}атлаулы мәсьәлә}.
 
 %\subsection{Transfer rules}
 
@@ -222,8 +229,8 @@ it would be translated as \emph{ҡатлаулы мәсьәлә}.
 \label{sec:eval}
 
 Lexical coverage of the system is calculated over a freely available corpus of Bashkir, the Bashkir
-Wikipedia\footnote{\url{http://ba.wikipedia.org/}; {\tt bawiki-20111210-pages-articles.xml.bz2}}, and over two freely available corpora of 
-Tatar, the Tatar Wikipedia\footnote{\url{http://tt.wikipedia.org}; {\tt ttwiki-20111215-pages-articles.xml.bz2}} and the New Testament in Tatar. The version of the translation tested was {\tt {\small r37115}} from the Apertium SVN.\footnote{\url{https://apertium.svn.sourceforge.net/svnroot/apertium}}
+Wikipedia,\footnote{\url{http://ba.wikipedia.org/}; {\tt bawiki-20111210-pages-articles.xml.bz2}} and over two freely available corpora of 
+Tatar, the Tatar Wikipedia\footnote{\url{http://tt.wikipedia.org/}; {\tt ttwiki-20111215-pages-articles.xml.bz2}} and the New Testament in Tatar. The version of the translation tested was {\tt {\small r37137}} from the Apertium SVN.\footnote{\url{https://apertium.svn.sourceforge.net/svnroot/apertium}}
 
 \begin{table}
   \begin{center}
@@ -256,7 +263,7 @@ for the languages of Russia.
   \begin{tabular}{c|c|r|r|r}
    Corpus                 & Direction         & Tokens  & Unknown & WER  \\
   \hline
-   \multirow{2}{*}{story} & tt$\rightarrow$ba & 311     & 9  & 9.29\% \\
+   \multirow{2}{*}{story} & tt$\rightarrow$ba & 311     & 9  & 8.97\% \\
                           & ba$\rightarrow$tt & 312     & 1  & 7.72\%  \\
   \hline
   \end{tabular}
@@ -266,12 +273,12 @@ for the languages of Russia.
 \end{table}
 
 Table~\ref{table:wer} presents the Word Error Rate, an edit metric based on the Levenshtein 
-distance \cite{levenshtein/1966}. This measure was calculated once all the stems in the 
+distance \citep{levenshtein/1966}. This measure was calculated once all the stems in the 
 text had been added to the system, thus presents an upper bound on the current performance
 of the transfer lexicon, and the disambiguation and transfer rules. The difference in 
 the number of unknown words between translating Tatar$\rightarrow$Bashkir and vice versa
 is because certain forms were not found due to lack of morphophonological rules in the
-Tatar transducer.
+Tatar transducer.  % FIXME: really?  what about the Bashqort transducer??
 
 We calculate the WER instead of other MT evaluation metrics such as BLEU as the WER is 
 geared towards a particular task, that of measuring postedition effort. The translations 
@@ -282,13 +289,15 @@ so using BLEU would give an over-optimistic view of the quality.
 
 Looking at the errors, we found that the majority were due to mistakes in
 the morphophonology component, e.g.
-\begin{itemize}
+\begin{itemize}\setlength{\itemsep}{-0.2em}
+        \vspace{-0.5em}
   \item Noun declination with possessives. 
   \item Vowel harmony exceptions. Sometimes a word has back vowels in the last syllable and a `ь' at the end 
     of the word shows that front-vowel suffixes should be used. Words like this are often loan words 
-    from Arabic, e.g. \emph{табигать} `nature'.
+    from Arabic, e.g. \emph{табигать} `nature'.  % FIXME: I fixed this already :(
   \item When the previous word is unknown to the system,
     it is not currently able to generate the appropriate vowel harmony for clitics (e.g. \emph{да}, \emph{де} `and')
+        \vspace{-1pt}	 
 \end{itemize}
 
 %\cite{TyersAlperen2010}
@@ -310,7 +319,7 @@ We plan to continue development on the pair; the main work will be expanding the
 
 We would like to thank the anonymous reviewers for their helpful comments in improving the paper. This work has been partially funded by Spanish Ministerio de Ciencia e Innovación through project TIN2009-14009-C02-01.
 
-\bibliographystyle{lrec2006}
+\bibliographystyle{lrec2012}
 \bibliography{tt-ba}
 
 \end{document}
