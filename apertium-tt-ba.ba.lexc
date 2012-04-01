@@ -25,7 +25,7 @@ Multichar_Symbols
 %<itg%>            ! 
 %<dem%>            ! 
 %<qnt%>            ! 
-%<pron%>           ! 
+%<px%>           ! 
 %<attr%>           ! 
 %<subst%>          ! 
 %<advl%>          ! 
@@ -167,7 +167,7 @@ CASE ;
 
 LEXICON POSS
 
-%<pron%>:%>%{L%}%{I%}%{K%}%{I%} CASE ;
+%<px%>:%>%{L%}%{I%}%{K%}%{I%} CASE ;
 
 POSS-REAL ; 
 
@@ -3373,10 +3373,10 @@ LEXICON Verbs
 !! added for testing twol rules
 ҡуй:ҡуй V-TV-LEX ; ! ""
 һөй:һөй V-TV-LEX ; ! ""
-
 йәй:йәй V-TV-LEX ; ! ""
 йый:йый V-TV-LEX ; ! ""
 
+яу:яу V-IV-LEX ; ! ""
 
 LEXICON Abbreviations 
 

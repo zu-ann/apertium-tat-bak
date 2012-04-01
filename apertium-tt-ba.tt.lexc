@@ -43,6 +43,7 @@ Multichar_Symbols
 %<px3sp%>          !
 %<px1pl%>          !
 %<px2pl%>          !
+%<px%>             ! General possessive !! -ныкы/-неке
 
 ! Cases ! Килешләр ! Падежи
 %<nom%>            ! Баш килеш             ! Именительный
@@ -122,7 +123,6 @@ Multichar_Symbols
 %<postadv%>        ! e.g. "гына"
 %<vaux%>           ! Auxilary verb
 %<cnjadv%>         ! ~Союз 
-%<pron%>           ! FIXME: Pronoun? What is <prn> then? 
 %<det%>            ! Determiner
 %<qst%>            ! FIXME: Question?
 
@@ -211,8 +211,8 @@ CASE ;
 
 LEXICON POSS
 
-%<pron%>:%>н%{I%}к%{I%} CASE ;       !! -ныкы/-неке in Tatar   !! FIXME: this can appear after possessives too
-                                                               !! e.g. бала-лар-ым-ныкы "of my children"
+%<px%>:%>н%{I%}к%{I%} CASE ;       !! -ныкы/-неке in Tatar   !! FIXME: this can appear after possessives too
+                                                             !! e.g. бала-лар-ым-ныкы "of my children"
 POSS-REAL ;
 
 LEXICON SUBST
@@ -3338,9 +3338,10 @@ LEXICON Verbs
 !! added for testing twol rules
 куй:куй V-TV-AR-LEX ; ! ""
 сөй:сөй V-TV-AR-LEX ; ! ""
-
 җәй:җәй V-TV-IR-LEX ; ! ""
 җый:җый V-TV-IR-LEX ; ! ""
+
+яу:яу V-IV-AR-LEX ; ! ""
 
 LEXICON Abbreviations
 
