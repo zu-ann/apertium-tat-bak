@@ -98,63 +98,55 @@
 
 <!-- Section: Postpositions - Бәйлекләр - Послелоги -->
 
-    <e><p><l>алып<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>арасына<s n="post"/></l><r>№<s n="post"/></r></p></e>	<!-- These 3 are actually "auxillary nouns" - in postposition function they can be only in 3 cases: dat, abl, loc. Will be good to have auxnoun feature later (our "postnoun" or whatever) -->
-    <e><p><l>арасында<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>арасыннан<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>аркада<s n="post"/></l><r>#<s n="post"/></r></p></e>
-    <e><p><l>аркасында<s n="post"/></l><r>#<s n="post"/></r></p></e>
+    <e><p><l>алып<s n="post"/></l><r>алып<s n="post"/></r></p></e>
+    <e><p><l>арасына<s n="post"/></l><r>араһына<s n="post"/></r></p></e>	<!-- These 3 are actually "auxillary nouns" - in postposition function they can be only in 3 cases: dat, abl, loc. Will be good to have auxnoun feature later (our "postnoun" or whatever) -->
+    <e><p><l>арасында<s n="post"/></l><r>араһында<s n="post"/></r></p></e>
+    <e><p><l>арасыннан<s n="post"/></l><r>араһыннан<s n="post"/></r></p></e>
+    <e><p><l>аркада<s n="post"/></l><r>арҡала<s n="post"/></r></p></e>
+    <e><p><l>аркасында<s n="post"/></l><r>арҡаһында<s n="post"/></r></p></e>
     <e><p><l>аркылы<s n="post"/></l><r>арҡыры<s n="post"/></r></p></e>
+    <e><p><l>астына<s n="post"/></l><r>аҫтына<s n="post"/></r></p></e>
     <e><p><l>астында<s n="post"/></l><r>аҫтында<s n="post"/></r></p></e>
     <e><p><l>аша<s n="post"/></l><r>аша<s n="post"/></r></p></e>
     <e><p><l>башка<s n="post"/></l><r>башҡа<s n="post"/></r></p></e>
-    <e><p><l>башлап<s n="post"/></l><r>№башлап<s n="post"/></r></p></e>
+    <e><p><l>башлап<s n="post"/></l><r>башлап<s n="post"/></r></p></e>
     <e><p><l>белән<s n="post"/></l><r>менән<s n="post"/></r></p></e>
-    <e><p><l>бирле<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>буе<s n="post"/></l><r>№<s n="post"/></r></p></e>
+    <e><p><l>бирле<s n="post"/></l><r>бирле<s n="post"/></r></p></e>
+    <e><p><l>буе<s n="post"/></l><r>буйы<s n="post"/></r></p></e>
     <e><p><l>буенча<s n="post"/></l><r>буйынса<s n="post"/></r></p></e>
     <e><p><l>буйлап<s n="post"/></l><r>буйлап<s n="post"/></r></p></e>
+    <e><p><l>буларак<s n="post"/></l><r>булараҡ<s n="post"/></r></p></e>
     <e><p><l>бүтән<s n="post"/></l><r>бүтән<s n="post"/></r></p></e>
     <e><p><l>инде<s n="post"/></l><r>инде<s n="post"/></r></p></e>
-    <e><p><l>кадәр<s n="post"/></l><r>#<s n="post"/></r></p></e>
-    <e><p><l>караганда<s n="post"/></l><r>№<s n="post"/></r></p></e>
+    <e><p><l>кадәр<s n="post"/></l><r>ҡәҙәр<s n="post"/></r></p></e>
+    <e><p><l>караганда<s n="post"/></l><r>ҡарағанда<s n="post"/></r></p></e>
+    <e c=""><p><l>карамагында<s n="post"/></l><r>ҡарамағында<s n="post"/></r></p></e>
     <e><p><l>карамастан<s n="post"/></l><r>ҡарамаҫтан<s n="post"/></r></p></e>
     <e><p><l>каршы<s n="post"/></l><r>ҡаршы<s n="post"/></r></p></e>
-    <e><p><l>кебек<s n="post"/></l><r>#<s n="post"/></r></p></e>
+    <e><p><l>кебек<s n="post"/></l><r>кеүек<s n="post"/></r></p></e>
     <e><p><l>кирәк<s n="post"/></l><r>кәрәк<s n="post"/></r></p></e>
-    <e><p><l>күк<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>күрә<s n="post"/></l><r>№<s n="post"/></r></p></e>
+    <e><p><l>күк<s n="post"/></l><r>күк<s n="post"/></r></p></e>
+    <e><p><l>күрә<s n="post"/></l><r>күрә<s n="post"/></r></p></e>
     <e><p><l>өстенә<s n="post"/></l><r>№<s n="post"/></r></p></e>
     <e><p><l>өстендә<s n="post"/></l><r>№<s n="post"/></r></p></e>
     <e><p><l>өстеннән<s n="post"/></l><r>№<s n="post"/></r></p></e>
     <e><p><l>өчен<s n="post"/></l><r>өсөн<s n="post"/></r></p></e>
-    <e><p><l>саен<s n="post"/></l><r>№<s n="post"/></r></p></e>
+    <e><p><l>саен<s n="post"/></l><r>һайын<s n="post"/></r></p></e>
     <e><p><l>сәбәпле<s n="post"/></l><r>№<s n="post"/></r></p></e>
     <e><p><l>соң<s n="post"/></l><r>№<s n="post"/></r></p></e>
     <e><p><l>сыман<s n="post"/></l><r>№<s n="post"/></r></p></e>
     <e><p><l>таба<s n="post"/></l><r>#<s n="post"/></r></p></e>
-    <e><p><l>тапкыр<s n="post"/></l><r>#<s n="post"/></r></p></e>
+    <e><p><l>тапкыр<s n="post"/></l><r>тапҡыр<s n="post"/></r></p></e>
     <e><p><l>тарафыннан<s n="post"/></l><r>#<s n="post"/></r></p></e>
+    <e><p><l>тикле<s n="post"/></l><r>тиклем<s n="post"/></r></p></e>
     <e><p><l>турында<s n="post"/></l><r>#<s n="post"/></r></p></e>
     <e><p><l>тыш<s n="post"/></l><r>#<s n="post"/></r></p></e>
     <e><p><l>хакына<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>хакында<s n="post"/></l><r>№<s n="post"/></r></p></e>
+    <e><p><l>хакында<s n="post"/></l><r>хаҡында<s n="post"/></r></p></e>
     <e><p><l>хәтле<s n="post"/></l><r>№<s n="post"/></r></p></e>
     <e><p><l>чаклы<s n="post"/></l><r>№<s n="post"/></r></p></e>
     <e><p><l>шикелле<s n="post"/></l><r>№<s n="post"/></r></p></e>
     <e><p><l>элек<s n="post"/></l><r>№<s n="post"/></r></p></e>
-
-    <e c=""><p><l>буенча<s n="post"/></l><r>буйынса<s n="post"/></r></p></e>
-    <e c=""><p><l>кебек<s n="post"/></l><r>кеүек<s n="post"/></r></p></e>
-    <e c=""><p><l>карамагында<s n="post"/></l><r>ҡарамағында<s n="post"/></r></p></e>
-    <e c=""><p><l>тапкыр<s n="post"/></l><r>тапҡыр<s n="post"/></r></p></e>
-    <e c=""><p><l>тикле<s n="post"/></l><r>тиклем<s n="post"/></r></p></e>
-    <e c=""><p><l>хакында<s n="post"/></l><r>хаҡында<s n="post"/></r></p></e>
-    <e c=""><p><l>саен<s n="post"/></l><r>һайын<s n="post"/></r></p></e>
-    <e c=""><p><l>астына<s n="post"/></l><r>аҫтына<s n="post"/></r></p></e>
-    <e c=""><p><l>буйлап<s n="post"/></l><r>буйлап<s n="post"/></r></p></e>
-    <e c=""><p><l>буларак<s n="post"/></l><r>булараҡ<s n="post"/></r></p></e>
-
 
 <!-- Раздел: "Посленаречия" -->
 
