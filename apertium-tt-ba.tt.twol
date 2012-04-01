@@ -164,11 +164,12 @@ Cx:Cy <=> :CnsVoiceless/[ %>: | %  | :0 | :ь | :ъ ] _ ;
 %{U%}:ү <=> [ :FrontVow :Cns* :Cns ]/[ %>: | :0 ] _ ;  ! кайт>{U}:кайту
                        [ :FrontVow ]/[ %>: | :0 ] _ ;  ! сөйлә>{U}:сөйләү
             except
-                       [ :FrontVow ]/[ %>: | :0 ] _ [ :FrontVow ]/[ %>: | :0 ] ;
+                       [ :Vow ]/[ %>: | :0 ] _ [ :Vow ]/[ %>: | :0 ] ;
 
-"U > в between front vowels"
-%{U%}:в <=> [ :FrontVow ]/[ %>: | :0 ] _ [ :FrontVow ]/[ %>: | :0 ] ;
+"U > в between vowels"
+%{U%}:в <=> [ :Vow ]/[ %>: | :0 ] _ [ :Vow ]/[ %>: | :0 ] ;
 ! сөйлә>{U}>{s}{I}н:сөйләвен
+! уйна>{U}>{s}{I}н:уйнавы
 
 
 !!!! Special archiphonemes !!!!
