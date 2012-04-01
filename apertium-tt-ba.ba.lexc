@@ -153,6 +153,7 @@ LEXICON CASE
 %<acc%>:%>%{N%}%{I%} CLIT ;
 %<loc%>:%>%{L%}%{A%} CLIT ;
 %<abl%>:%>%{N%}%{A%}н CLIT ;
+%<loc%>%<attr%>:%>%{L%}%{A%}%{G%}%{I%} CLIT ;
 
 
 LEXICON POSS-REAL
@@ -175,7 +176,6 @@ POSS-REAL ;
 LEXICON SUBST
 
 %<pl%>:%>%{L%}%{A%}р POSS ;
-%<locattr%>:%>%{L%}%{A%}%{G%}%{I%} POSS ;
 POSS ;
 
 LEXICON NLEX
