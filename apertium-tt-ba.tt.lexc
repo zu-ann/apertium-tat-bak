@@ -217,7 +217,7 @@ POSS-REAL ;
 LEXICON NLEX-SG
 
 %<n%>: POSS ; 
-%<n%>%<locattr%>:%>%{L%}%{A%}%{G%}%{I%} POSS ;
+%<n%>%<locattr%>:%>%{D%}%{A%}%{G%}%{I%} POSS ;
 
 LEXICON NLEX-PL
 
@@ -226,7 +226,7 @@ LEXICON NLEX-PL
 LEXICON SUBST
 
 %<pl%>:%>%{L%}%{A%}р POSS ;
-%<locattr%>:%>%{L%}%{A%}%{G%}%{I%} POSS ;
+%<locattr%>:%>%{D%}%{A%}%{G%}%{I%} POSS ;
 POSS ; 
 
 LEXICON NLEX
