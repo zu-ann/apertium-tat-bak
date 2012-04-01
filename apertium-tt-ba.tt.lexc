@@ -3232,7 +3232,6 @@ LEXICON Verbs
 өстә:өстә V-TV-IR-LEX ; ! ""
 кабатла:кабатла V-TV-IR-LEX ; ! ""
 ат:ат V-TV-AR-LEX ; ! ""
-куй:куй V-TV-AR-LEX ; ! ""
 
 әйт:әйт V-TV-IR-LEX ; ! ""
 бел:бел V-TV-IR-LEX ; ! ""
@@ -3347,6 +3346,13 @@ LEXICON Verbs
 озат:озат V-TV-IR-LEX ; ! ""
 озата% бар:озата% бар V-TV-IR-LEX ; ! ""
 төя:төя V-TV-IR-LEX ; ! "'
+
+!! added for testing twol rules
+куй:куй V-TV-AR-LEX ; ! ""
+сөй:сөй V-TV-AR-LEX ; ! ""
+
+җәй:җәй V-TV-IR-LEX ; ! ""
+җый:җый V-TV-IR-LEX ; ! ""
 
 LEXICON Abbreviations
 
