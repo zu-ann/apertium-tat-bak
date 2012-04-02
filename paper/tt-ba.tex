@@ -14,13 +14,28 @@
 \defaultfontfeatures{PunctuationSpace=3,Scale=MatchLowercase,Mapping=tex-text}
 \newfontfeature{IPA}{+mgrk}
 %\setromanfont[IPA]{FreeSerif}
-\setromanfont{Times New Roman}
+\setromanfont[Scale=0.9]{Times New Roman}
 \newfontfamily\qipa[IPA,Scale=MatchLowercase]{FreeSerif}
 
 \newcommand{\email}[1]{\texttt{\href{mailto:#1}{#1}}}
 \usepackage{natbib}
+%\usepackage{natbib,natbibspacing}
 \usepackage{setspace}
 \usepackage{booktabs}
+
+%\setlength{\bibspacing}{\baselineskip-0.4em}
+
+\newenvironment{itemise}[1]{
+        \begin{itemize}\setlength{\itemsep}{-0.3em}
+		  %\setlength{\itemindent}{-1em}
+		  %\setlength{\leftmargin}{-2em}
+        \vspace{-0.6em}
+        #1
+}{
+        \end{itemize}
+        \vspace{-1pt}
+}
+
 
 %\setlength\titlebox{6.5cm}    % You can expand the title box if you
 % really have to
@@ -51,7 +66,7 @@ languages, on a par with similar systems.
 }
 
 \begin{document}
-\spacing{0.91}
+\spacing{1}
 \maketitleabstract
 
 \section{Introduction}
@@ -75,21 +90,22 @@ Aside from native speaker intuition, we also consulted the Bashkir Grammar of M.
 \section{Previous work}
 \label{sec:prev}
 
-There have been several previous works on making machine translation systems between 
-Turkic languages, although to our knowledge none are publically available. 
+Several previous works on making machine translation systems between 
+Turkic languages exist, although to our knowledge none are publically available.
 
-For systems between Turkish and the other Turkic languages, there have been, 
-for example, systems reported for Turkish-Crimean Tatar \citep{altintas01}, Turkish-Azerbaijani \citep{hamzaoglu93}, Turkish-Tatar \citep{suleymanov08} and Turkish-Turkmen \citep{tantug07}. 
+For systems between Turkish and other Turkic languages, there have been, 
+for example, systems reported for Turkish-Crimean Tatar \citep{altintas01}, Turkish-Azerbaijani \citep{hamzaoglu93}, Turkish-Tatar \citep{suleymanov08}, and Turkish-Turkmen \citep{tantug07}. 
 
 \section{System}
 \label{sec:sys}
 
-\begin{figure*}
+\begin{figure*}[htbp]
 \begin{center}
  \includegraphics[width=0.8\textwidth]{architecture.pdf}
 \end{center}
 \caption{The pipeline architecture of the Apertium system.}
 \label{fig:modules}
+%\vspace{-1em}
 \end{figure*}
 
 The system is based on the Apertium machine translation 
@@ -105,8 +121,7 @@ website.
 
 The Apertium translation engine consists of a Unix-style \emph{pipeline} or
 \emph{assembly line} with the following modules (see Fig.~\ref{fig:modules}):  
-\begin{itemize}\setlength{\itemsep}{-0.2em}
-        \vspace{-0.5em}
+\begin{itemise}
 \item A \emph{deformatter} which encapsulates the format information
  in the input as \emph{superblanks} that will then be seen
  as blanks between words by the other modules.
@@ -132,8 +147,7 @@ The Apertium translation engine consists of a Unix-style \emph{pipeline} or
  for each TL LF, by suitably inflecting it. 
 \item A \emph{reformatter} which de-encapsulates any format
   information.
-        \vspace{-1pt}	 
-\end{itemize}
+\end{itemise}
 
 
 \subsection{Morphological transducers}
@@ -152,7 +166,7 @@ compile/invert to compile the transducers, we compile twice, once the generator,
 then again the analyser without the {\tt {\small RL}} paths. 
 
 \subsection{Bilingual lexicon}
-\begin{figure*}
+\begin{figure*}[htbp]
 \begin{texttt}
     <e><p><l>\textbf{юнәлеш}<s n="n"/></l><r>\textbf{йүнәлеш}<s n="n"/></r></p></e> \\
     <e><p><l>\textbf{борын}<s n="n"/></l><r>\textbf{танау}<s n="n"/></r></p></e> \\
@@ -162,6 +176,7 @@ then again the analyser without the {\tt {\small RL}} paths.
 \end{texttt}
 \caption{Example entries from the bilingual transfer lexicon. Tatar is on the left, and Bashkir on the right}
 \label{fig:bidix}
+%\vspace{-1em}
 \end{figure*}
 
 
@@ -169,8 +184,8 @@ The bilingual lexicon currently contains 2,834 stem to stem correspondences and 
 speaker of Tatar and Bashkir, translating a frequency list of the Russian National Corpus\footnote{\url{http://ruscorpora.ru/en/}} into both languages in a spreadsheet. This spreadsheet was then converted into the Apertium
 XML dictionary format. 
 
-The entries consist largely of one-to-one stem-to-stem correspondences with part of speech, but also
-include some entries with ambiguous translations (see e.g. Fig.~\ref{fig:bidix}).
+Entries consist largely of one-to-one stem-to-stem correspondences with part of speech, but also
+include some entries with ambiguous translations (see e.g., Fig.~\ref{fig:bidix}).
 
 \subsection{Disambiguation rules}
 
@@ -190,13 +205,12 @@ as either \emph{танау} `nose (person)' or \emph{морон} `nose (ship)'. 
 rule chooses the translation \emph{танау} if the immediate context includes a proper 
 name.
 
-Another example is the word \emph{катлаулы} `layered' -- it is always translated into Bashkir 
-as \emph{{\qipa ҡ}атмарлы}, except in the collocaton \emph{катлаулы мәсьәлә} `a difficult matter/problem'. Here 
-it would be translated as \emph{{\qipa ҡ}атлаулы мәсьәлә}.
+Another example is the word \emph{катлаулы} `layered'.  It is always translated to Bashkir 
+as \emph{{\qipa ҡ}атмарлы}, except in the collocaton \emph{катлаулы мәсьәлә} `difficult matter/problem', which is translated as \emph{{\qipa ҡ}атлаулы мәсьәлә}.
 
 %\subsection{Transfer rules}
 
-\begin{table*}
+\begin{table*}[htbp]
 \centering
 \begin{tabular}{ll}
 %\hline
@@ -224,6 +238,7 @@ it would be translated as \emph{{\qipa ҡ}атлаулы мәсьәлә}.
 \bottomrule
 \end{tabular}
  \caption{Translation process for the phrase \emph{Һава бүген бик әйбәт, җылы гына} `The weather today is very nice, it is very warm'.}
+ %\vspace{-1em}
 \end{table*}
 
 \section{Evaluation}
@@ -233,7 +248,7 @@ Lexical coverage of the system is calculated over a freely available corpus of B
 Wikipedia,\footnote{\url{http://ba.wikipedia.org/}; {\tt bawiki-20111210-pages-articles.xml.bz2}} and over two freely available corpora of 
 Tatar, the Tatar Wikipedia\footnote{\url{http://tt.wikipedia.org/}; {\tt ttwiki-20111215-pages-articles.xml.bz2}} and the New Testament in Tatar. The version of the translation tested was {\tt {\small r37137}} from the Apertium SVN.\footnote{\url{https://apertium.svn.sourceforge.net/svnroot/apertium}}
 
-\begin{table}
+\begin{table}[htbp]
   \begin{center}
   \begin{tabular}{lrr}
   \toprule
@@ -246,6 +261,7 @@ Tatar, the Tatar Wikipedia\footnote{\url{http://tt.wikipedia.org/}; {\tt ttwiki-
    \bottomrule
   \end{tabular}
     \caption{Na\"ive vocabulary coverage over the three corpora.}
+ %\vspace{-1.5em}
     \label{table:coverage}
   \end{center}
 \end{table}
@@ -260,7 +276,7 @@ online,\footnote{\url{https://apertium.svn.sourceforge.net/svnroot/apertium/bran
 and was used for pedagogical purposes in a recently workshop on MT
 for the languages of Russia.
 
-\begin{table}
+\begin{table}[htbp]
   \begin{center}
   \begin{tabular}{ccrrr}
   \toprule
@@ -271,6 +287,7 @@ for the languages of Russia.
   \bottomrule
   \end{tabular}
     \caption{Word error rate and over the small test corpus.}
+ %\vspace{-2.5em}
     \label{table:wer}
   \end{center}
 \end{table}
@@ -280,9 +297,8 @@ distance \citep{levenshtein/1966}. This measure was calculated once all the stem
 text had been added to the system, thus presents an upper bound on the current performance
 of the transfer lexicon, and the disambiguation and transfer rules. The difference in 
 the number of unknown words between translating Tatar$\rightarrow$Bashkir and vice versa
-is because certain forms were not found due to lack of morphophonological rules in the
-Tatar transducer.  % FIXME: really?  what about the Bashqort transducer?? Just "due to lack of
-% morphophonological rules" I guess then. 
+is because certain forms were not found due to lack of corresponding morphophonological rules.
+
 We calculate the WER instead of other MT evaluation metrics such as BLEU as the WER is 
 geared towards a particular task, that of measuring postedition effort. The translations 
 of the story into Tatar and Bashkir were done in parallel to make them as close as possible,
@@ -290,18 +306,12 @@ so using BLEU would give an over-optimistic view of the quality.
 
 \subsection{Error analysis}
 
-Looking at the errors, we found that the majority were due to mistakes in
-the morphophonology component, e.g.
-\begin{itemize}\setlength{\itemsep}{-0.2em}
-        \vspace{-0.5em}
-  \item Noun declination with possessives. 
-  \item Vowel harmony exceptions. Sometimes a word has back vowels in the last syllable and a `ь' at the end 
-    of the word shows that front-vowel suffixes should be used. Words like this are often loan words 
-    from Arabic, e.g. \emph{табигать} `nature'.  % FIXME: I fixed this already :( J.N.W. Again - generalizing the case with just "Vowel harmony exceptions"? -I.S.
-  \item When the previous word is unknown to the system,
-    it is not currently able to generate the appropriate vowel harmony for clitics (e.g. \emph{да}, \emph{дә} `and')
-        \vspace{-1pt}	 
-\end{itemize}
+The majority of errors are currently due to mistakes and gaps in the morphophonology component; some minor problems still remain involving:
+\begin{itemise}
+  \item Combinations of case and possessive suffixes,
+  \item Orthographical representations of phonology,
+  \item Vowel harmony processing on clitics (e.g., \emph{да}/\emph{дә} `and') after unknown words.
+\end{itemise}
 
 %\cite{TyersAlperen2010}
 
