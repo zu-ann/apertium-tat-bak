@@ -19,7 +19,7 @@
     <sdef n="pred"     c="Predicative - Хәбәрлек сүз - Предикативное слово ! var, yok; мәҗбүр"/>
     <sdef n="qst"      c=""/>
     <sdef n="abbr"     c=""/>
-    <sdef n="ij"     c="Interjection - Междометие - Ымлык"/>
+    <sdef n="ij"       c="Interjection - Междометие - Ымлык"/>
 
     <sdef n="pers"     c="Personal - Зат (алмашлыгы) - Личное (местоимение)"/>
     <sdef n="itg"      c="Interrogative"/>
@@ -61,36 +61,36 @@
 
 <!-- Section: Interjections - Ымлыклар - Междометия -->
 
-    <e><p><l>алай<s n="ij"/></l><r>№алай<s n="ij"/></r></p></e>
-    <e><p><l>алай<b/>икән<s n="ij"/></l><r>№алай<b/>икән<s n="ij"/></r></p></e>
+    <e><p><l>алай<s n="ij"/></l><r>улай<s n="ij"/></r></p></e>
+    <e><p><l>алай<b/>икән<s n="ij"/></l><r>улай<b/>икән<s n="ij"/></r></p></e>
     <e><p><l>әйе<s n="ij"/></l><r>әйе<s n="ij"/></r></p></e>
 
 <!-- Section: Co-ordinating conjunctions - Тезүче теркәгечләр - Сочинительные союзы - -->
 
     <e><p><l>ә<s n="cnjcoo"/></l><r>ә<s n="cnjcoo"/></r></p></e>
-    <e><p><l>әле<s n="cnjcoo"/></l><r>№<s n="cnjcoo"/></r></p></e>
-    <e><p><l>әллә<s n="cnjcoo"/></l><r>№<s n="cnjcoo"/></r></p></e>
+    <e><p><l>әле<s n="cnjcoo"/></l><r>әле<s n="cnjcoo"/></r></p></e>
+    <e><p><l>әллә<s n="cnjcoo"/></l><r>әллә<s n="cnjcoo"/></r></p></e>
     <e><p><l>әмма<s n="cnjcoo"/></l><r>әммә<s n="cnjcoo"/></r></p></e>
-    <e><p><l>бәлки<s n="cnjcoo"/></l><r>№<s n="cnjcoo"/></r></p></e>
+    <e><p><l>бәлки<s n="cnjcoo"/></l><r>бәлки<s n="cnjcoo"/></r></p></e>
     <e><p><l>вә<s n="cnjcoo"/></l><r>үә<s n="cnjcoo"/></r></p></e>
     <e><p><l>да<s n="cnjcoo"/></l><r>да<s n="cnjcoo"/></r></p></e>
-    <e><p><l>исә<s n="cnjcoo"/></l><r>№<s n="cnjcoo"/></r></p></e>
+    <e><p><l>исә<s n="cnjcoo"/></l><r>иһә<s n="cnjcoo"/></r></p></e>
     <e><p><l>ләкин<s n="cnjcoo"/></l><r>ләкин<s n="cnjcoo"/></r></p></e>
-    <e><p><l>ни<s n="cnjcoo"/></l><r>№<s n="cnjcoo"/></r></p></e>	<!-- парлы булса: "ни... ни"-->
-    <e><p><l>тагын<s n="cnjcoo"/></l><r>№<s n="cnjcoo"/></r></p></e>
-    <e><p><l>тик<s n="cnjcoo"/></l><r>№<s n="cnjcoo"/></r></p></e>
-    <e><p><l>фәкать<s n="cnjcoo"/></l><r>№<s n="cnjcoo"/></r></p></e>
+    <e><p><l>ни<s n="cnjcoo"/></l><r>ни<s n="cnjcoo"/></r></p></e>	<!-- парлы булса: "ни... ни"-->
+    <e><p><l>тагын<s n="cnjcoo"/></l><r>тағын<s n="cnjcoo"/></r></p></e>
+    <e><p><l>тик<s n="cnjcoo"/></l><r>тик<s n="cnjcoo"/></r></p></e>
+    <e><p><l>фәкать<s n="cnjcoo"/></l><r>фәҡәт<s n="cnjcoo"/></r></p></e>
     <e><p><l>һәм<s n="cnjcoo"/></l><r>һәм<s n="cnjcoo"/></r></p></e>
     <e><p><l>янә<s n="cnjcoo"/></l><r>янә<s n="cnjcoo"/></r></p></e>
 
 <!-- Section: Sub-ordinating conjunctions - Ияртүче теркәгечләр - Подчинительные союзы - -->
 
-    <e><p><l>әгәр<s n="cnjsub"/></l><r>№<s n="cnjsub"/></r></p></e>
+    <e><p><l>әгәр<s n="cnjsub"/></l><r>әгәр<s n="cnjsub"/></r></p></e>
     <e><p><l>гәрчә<s n="cnjsub"/></l><r>№<s n="cnjsub"/></r></p></e>
     <e><p><l>гүяки<s n="cnjsub"/></l><r>№<s n="cnjsub"/></r></p></e>
     <e><p><l>ки<s n="cnjsub"/></l><r>№<s n="cnjsub"/></r></p></e>
-    <e><p><l>чөнки<s n="cnjsub"/></l><r>№<s n="cnjsub"/></r></p></e>
-    <e><p><l>ягъни<s n="cnjsub"/></l><r>№<s n="cnjsub"/></r></p></e>
+    <e><p><l>чөнки<s n="cnjsub"/></l><r>сөнки<s n="cnjsub"/></r></p></e>
+    <e><p><l>ягъни<s n="cnjsub"/></l><r>йәғни<s n="cnjsub"/></r></p></e>
 
 <!-- Section: Conjunctional adverbs -->	<!-- Maybe not needed-->
 
@@ -127,26 +127,26 @@
     <e><p><l>кирәк<s n="post"/></l><r>кәрәк<s n="post"/></r></p></e>
     <e><p><l>күк<s n="post"/></l><r>күк<s n="post"/></r></p></e>
     <e><p><l>күрә<s n="post"/></l><r>күрә<s n="post"/></r></p></e>
-    <e><p><l>өстенә<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>өстендә<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>өстеннән<s n="post"/></l><r>№<s n="post"/></r></p></e>
+    <e><p><l>өстенә<s n="post"/></l><r>өҫтөнә<s n="post"/></r></p></e>
+    <e><p><l>өстендә<s n="post"/></l><r>өҫтөндә<s n="post"/></r></p></e>
+    <e><p><l>өстеннән<s n="post"/></l><r>өҫтөннән<s n="post"/></r></p></e>
     <e><p><l>өчен<s n="post"/></l><r>өсөн<s n="post"/></r></p></e>
     <e><p><l>саен<s n="post"/></l><r>һайын<s n="post"/></r></p></e>
-    <e><p><l>сәбәпле<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>соң<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>сыман<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>таба<s n="post"/></l><r>#<s n="post"/></r></p></e>
+    <e><p><l>сәбәпле<s n="post"/></l><r>сәбәпле<s n="post"/></r></p></e>
+    <e><p><l>соң<s n="post"/></l><r>һуң<s n="post"/></r></p></e>
+    <e><p><l>сыман<s n="post"/></l><r>һымаҡ<s n="post"/></r></p></e>
+    <e><p><l>таба<s n="post"/></l><r>табан<s n="post"/></r></p></e>
     <e><p><l>тапкыр<s n="post"/></l><r>тапҡыр<s n="post"/></r></p></e>
-    <e><p><l>тарафыннан<s n="post"/></l><r>#<s n="post"/></r></p></e>
+    <e><p><l>тарафыннан<s n="post"/></l><r>тарафыннан<s n="post"/></r></p></e>
     <e><p><l>тикле<s n="post"/></l><r>тиклем<s n="post"/></r></p></e>
-    <e><p><l>турында<s n="post"/></l><r>#<s n="post"/></r></p></e>
-    <e><p><l>тыш<s n="post"/></l><r>#<s n="post"/></r></p></e>
-    <e><p><l>хакына<s n="post"/></l><r>№<s n="post"/></r></p></e>
+    <e><p><l>турында<s n="post"/></l><r>тураһында<s n="post"/></r></p></e>
+    <e><p><l>тыш<s n="post"/></l><r>тыш<s n="post"/></r></p></e>
+    <e><p><l>хакына<s n="post"/></l><r>№хаҡына<s n="post"/></r></p></e>
     <e><p><l>хакында<s n="post"/></l><r>хаҡында<s n="post"/></r></p></e>
     <e><p><l>хәтле<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>чаклы<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>шикелле<s n="post"/></l><r>№<s n="post"/></r></p></e>
-    <e><p><l>элек<s n="post"/></l><r>№<s n="post"/></r></p></e>
+    <e><p><l>чаклы<s n="post"/></l><r>саҡлы<s n="post"/></r></p></e>
+    <e><p><l>шикелле<s n="post"/></l><r>шикелле<s n="post"/></r></p></e>
+    <e><p><l>элек<s n="post"/></l><r>элек<s n="post"/></r></p></e>
 
 <!-- Раздел: "Посленаречия" -->
 
@@ -3114,12 +3114,12 @@
     <e><p><l>бүлеш<s n="v"/><s n="iv"/></l><r>бүлеш<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>пычран<s n="v"/><s n="iv"/></l><r>бысран<s n="v"/><s n="iv"/></r></p></e>
 
-
-   <e><p><l>куй<s n="v"/><s n="tv"/></l><r>ҡуй<s n="v"/><s n="tv"/></r></p></e>
-   <e><p><l>сөй<s n="v"/><s n="tv"/></l><r>һөй<s n="v"/><s n="tv"/></r></p></e>
-   <e><p><l>җәй<s n="v"/><s n="tv"/></l><r>йәй<s n="v"/><s n="tv"/></r></p></e>
-   <e><p><l>җый<s n="v"/><s n="tv"/></l><r>йый<s n="v"/><s n="tv"/></r></p></e>
-   <e><p><l>яу<s n="v"/><s n="iv"/></l><r>яу<s n="v"/><s n="iv"/></r></p></e>
+<!-- Verbs below were added for testing twol. Don't move them-->
+    <e><p><l>куй<s n="v"/><s n="tv"/></l><r>ҡуй<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>сөй<s n="v"/><s n="tv"/></l><r>һөй<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>җәй<s n="v"/><s n="tv"/></l><r>йәй<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>җый<s n="v"/><s n="tv"/></l><r>йый<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>яу<s n="v"/><s n="iv"/></l><r>яу<s n="v"/><s n="iv"/></r></p></e>
 
     <e><p><l>АКШ<s n="abbr"/></l><r>№<s n="abbr"/></r></p></e>
     <e><p><l>БР<s n="abbr"/></l><r>БР<s n="abbr"/></r></p></e>
