@@ -6,22 +6,23 @@ Multichar_Symbols
 ! Followed http://wiki.apertium.org/wiki/Turkic_languages
 
 ! Part of speech categories
-%<n%>              ! Noun                       ! Исем              ! Существительное
-%<np%>             ! Proper noun                ! Ялгызлык исем     ! Имя cобственное
-%<adj%>            ! Adjective                  ! Сыйфат            ! Прилагательное
-%<num%>            ! Numeral                    ! Сан               ! Числительное   
-%<prn%>            ! Pronoun                    ! Алмашлык          ! Местоимение
-%<v%>              ! Verb                       ! Фигыль            ! Глагол
-%<vaux%>           ! Auxilary verb              ! Ярдәмче фигыль    ! Вспомогательный гл.
-%<adv%>            ! Adverb                     ! Рәвеш             ! Наречие
-%<post%>           ! Postposition               ! Бәйлек            ! Послелог
-%<postadv%>        ! Postadverb                 !                   ! "Посленаречие"       !# "гына"
-%<cnjcoo%>         ! Co-ordinating conjunction  ! Тезүче теркәгеч   ! Сочинительный союз
-%<cnjsub%>         ! Sub-ordinating conjunction ! Ияртүче теркәгечч ! Подчинительный союз
-%<cnjadv%>         ! Adverbial conjunction      !                   ! ~Союз 
-%<part%>           ! Particle                   ! Кисәкчә           ! Частица
-%<ij%>             ! Interjection               ! Ымлык             ! Междометие
-%<abbr%>           ! Abbreviation               ! Кыскартылма       ! Аббревиатура 
+%<n%>          ! Noun                       ! Исем              ! Существительное
+%<np%>         ! Proper noun                ! Ялгызлык исем     ! Имя cобственное
+%<adj%>        ! Adjective                  ! Сыйфат            ! Прилагательное
+%<num%>        ! Numeral                    ! Сан               ! Числительное   
+%<prn%>        ! Pronoun                    ! Алмашлык          ! Местоимение
+%<det%>        ! Determiner                 ! ?Детерминатив?
+%<v%>          ! Verb                       ! Фигыль            ! Глагол
+%<vaux%>       ! Auxilary verb              ! Ярдәмче фигыль    ! Вспомогательный гл.
+%<adv%>        ! Adverb                     ! Рәвеш             ! Наречие
+%<post%>       ! Postposition               ! Бәйлек            ! Послелог
+%<postadv%>    ! Postadverb                 !                   ! "Посленаречие"       !# "гына"
+%<cnjcoo%>     ! Co-ordinating conjunction  ! Тезүче теркәгеч   ! Сочинительный союз
+%<cnjsub%>     ! Sub-ordinating conjunction ! Ияртүче теркәгеч  ! Подчинительный союз
+%<cnjadv%>     ! Adverbial conjunction      !                   ! ~Союз 
+%<part%>       ! Particle                   ! Кисәкчә           ! Частица
+%<ij%>         ! Interjection               ! Ымлык             ! Междометие
+%<abbr%>       ! Abbreviation               ! Кыскартылма       ! Аббревиатура 
 !аваз ияртеме ! (звуко)подражательное слово
 !модаль сүз   ! модальное слово 
 
@@ -30,24 +31,28 @@ Multichar_Symbols
 %<ant%>            ! Anthroponym  ! Кеше исеме
 %<cog%>            ! Cognomen     ! Фамилия
 %<org%>            ! Organization ! Оешма исеме
+!! gender of anthroponyms and cognomes
+%<m%>              ! Masculine    ! Мужской род
+%<f%>              ! Feminine     ! Женский род
+%<mf%>             ! Masculine/feminine !# basically cognomes without -ов/-ова ending
 
-!! for adjectives ?
+! "Syntactic" tags. Attributive use of non-adjectives etc.
 %<attr%>           ! Attributive
 %<subst%>          ! Substantive
 %<pred%>           ! Predicative
 %<advl%>           ! Adverbial
 
-! Сан ! Число
+! Number ! Сан ! Число
 %<sg%>             ! Singular  ! Берлек сан  ! Единственное число
 %<pl%>             ! Plural    ! Күплек сан  ! Множественное число
 
-! Тартым ! Принадлежность
-%<px1sg%>          !
-%<px2sg%>          !
-%<px3sp%>          !
-%<px1pl%>          !
-%<px2pl%>          !
-%<px%>             ! General possessive !! -ныкы/-неке
+! Possessives ! Тартым ! Притяжательные окончания
+%<px1sg%>          ! First person singular
+%<px2sg%>          ! Second person singular
+%<px3sp%>          ! Third person singular/plural
+%<px1pl%>          ! First person plural
+%<px2pl%>          ! Second person singular
+%<px%>             ! General possessive           !# н{I}к{I} (-ныкы/-неке)
 
 ! Cases ! Килешләр ! Падежи
 %<nom%>            ! Баш килеш             ! Именительный
@@ -58,26 +63,30 @@ Multichar_Symbols
 %<loc%>            ! Урын-вакыт килеше     ! Местно-временнной
 
 !! some additional ~cases
-%<locattr%>        ! Relativised locative  ! Местно-временной 2  ! -DAGI
-%<sim%>            ! Similative            !-дай/-дәй, -тай, -тәй
-!лишительный       ! -сыз/-сез !! not used after posessives
-!обладательный     ! -лы/-ле   !! not used after posessives
-!-ныкы/-неке       ! "predicativ genitive"="genitiv 2" also called "general possessive"
+%<locattr%>    ! Relativised locative=Locative attribute=Местно-временной2 !# DAGI !! FIXME:Not needed anymore, bcs we switched to <loc><attr>
+%<sim%>        ! Similative !# DAй (-дай/-дәй, -тай, -тәй) FIXME: here it is something else, used with <num>
+!лишительный   !# -сыз/-сез !! not used after posessives
+!обладательный !# -лы/-ле   !! not used after posessives
 
 ! Levels of comparison of adjectives ! Сыйфат дәрәҗәләре ! Степени сравнения прилагательных
-%<pst%>            ! Positive     ! Төп дәрәҗә
+%<pst%>            ! Positive     ! Төп дәрәҗә           FIXME: not needed actually
 %<comp%>           ! Comparative  ! Чагыштыру дәрәҗәсе
 %<sup%>            ! Superlative  ! Артыклык дәрәҗәсе
-!! Кимлек дәрәҗәсе регуляр форма түгел. Андый формадагыларны төп дәрәҗәдәге сыйфатлар дип аерым кертергә булыр (talking about "weakening")
+!! "weakening" form is not regular. So "weakened" :) adj are added as base lemmas.
+!! Very few adj have this form. I.e. яшел-яшькелт, сары-саргылт [but] ак-аксыл, кара-карасу.
+!! As a sublexicon maybe, so that they don't get <sup> ending, which is a nonsense
 
 ! Pronoun types ! Алмашлык төрләре ! Виды местоимений
 %<pers%>           ! Personal
 %<itg%>            ! Interrogative
+%<ref%>            ! Reflexive
+! Pronoun and determiner types
 %<dem%>            ! Demonstrative
 %<ind%>            ! Indefinite
 %<qnt%>            ! Quantifier
+
+! Numeral types
 %<ord%>            ! Ordinal
-%<ref%>            ! Reflexive
 
 ! Tense, aspect, mood
 %<imp%>            ! Imperative
@@ -86,10 +95,12 @@ Multichar_Symbols
 %<pass%>           ! Passive
 %<coop%>           ! Cooperative
 %<neg%>            ! Negative
+
 %<pres%>           ! -{A}
 %<past%>           ! -{G}{A}н 
 %<fut%>            ! -{I}р
 %<ifi%>            ! -{D}{I} 
+
 %<ger%>            ! -{U}
 %<ger1%>           ! -м{A}{K}
 %<ger2%>           ! -{I}п
@@ -99,18 +110,19 @@ Multichar_Symbols
 %<ger6%>           ! -{I}р / -{A}р
 %<ger7%>           ! -{A}ч{A}к
 %<ger8%>           ! -{E}с
-%<inf%>            ! Infinitive !  ! Инфинитив ! -{A/I}рг{A}
+%<vol%>            ! <pres><p3><sg>-с{I}-volition_endings    !# укый-сы-м килә, укый-сы-быз килә
+%<inf%>            ! Infinitive! Инфинитив ! -{A/I}рг{A}
 
 ! Transitivity ! Переходность
 %<tv%>             ! Transitive
 %<iv%>             ! Intransitive
 
-! Зат ! Лицо
-%<p1%>             !
-%<p2%>             !
-%<p3%>             !
+! Person ! Зат ! Лицо
+%<p1%>             ! First person
+%<p2%>             ! Second person
+%<p3%>             ! Third person
 
-! Пунктуация
+! Punctuaton ! Пунктуация
 %<sent%>           ! Sentence marker
 %<guio%>           ! Hyphen
 %<cm%>             ! Comma
@@ -121,11 +133,7 @@ Multichar_Symbols
 %<lpar%>           ! Parenthetical marker (left hand side) 
 
 ! Some additional tags
-%<m%>              ! Masculine  ! Мужской род
-%<f%>              ! Feminine   ! Женский род
-%<mf%>             ! Masculine / feminine
-%<det%>            ! Determiner
-%<qst%>            ! FIXME: Question?
+%<qst%>            ! FIXME: Question? Questioning clitics?
 
 %{L%}              ! Realised as
 %{G%}              ! Realised as
