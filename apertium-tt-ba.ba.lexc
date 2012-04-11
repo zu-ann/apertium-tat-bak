@@ -16,7 +16,7 @@ Multichar_Symbols
 %<vaux%>       ! Auxilary verb              ! Вспомогательный гл.
 %<adv%>        ! Adverb                     ! Наречие
 %<post%>       ! Postposition               ! Послелог
-%<postadv%     ! Postadverb                 ! "Посленаречие"       !# "ғына"
+%<postadv%>     ! Postadverb                 ! "Посленаречие"       !# "ғына"
 %<cnjcoo%>     ! Co-ordinating conjunction  ! Сочинительный союз
 %<cnjsub%>     ! Sub-ordinating conjunction ! Подчинительный союз
 %<cnjadv%>     ! Adverbial conjunction      ! ~Союз
@@ -147,6 +147,7 @@ Multichar_Symbols
 %{l%}              ! 
 
 %>                 !
+%~                 !
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                       M O R P H O T A C T I C S                         !!!
