@@ -7,26 +7,30 @@ Multichar_Symbols
 
 ! Part of speech categories
 %<n%>              ! Noun                       ! Исем              ! Существительное
+%<np%>             ! Proper noun                ! Ялгызлык исем     ! Имя cобственное
 %<adj%>            ! Adjective                  ! Сыйфат            ! Прилагательное
-%<num%>            ! Number                     ! Сан               ! Числительное   
+%<num%>            ! Numeral                    ! Сан               ! Числительное   
 %<prn%>            ! Pronoun                    ! Алмашлык          ! Местоимение
 %<v%>              ! Verb                       ! Фигыль            ! Глагол
+%<vaux%>           ! Auxilary verb              ! Ярдәмче фигыль    ! Вспомогательный гл.
 %<adv%>            ! Adverb                     ! Рәвеш             ! Наречие
 %<post%>           ! Postposition               ! Бәйлек            ! Послелог
+%<postadv%>        ! Postadverb                 !                   ! "Посленаречие"       !# "гына"
 %<cnjcoo%>         ! Co-ordinating conjunction  ! Тезүче теркәгеч   ! Сочинительный союз
-%<cnjsub%>         ! Sub-ordinating conjuction  ! Ияртүче теркәгечч ! Подчинительный союз
+%<cnjsub%>         ! Sub-ordinating conjunction ! Ияртүче теркәгечч ! Подчинительный союз
+%<cnjadv%>         ! Adverbial conjunction      !                   ! ~Союз 
 %<part%>           ! Particle                   ! Кисәкчә           ! Частица
 %<ij%>             ! Interjection               ! Ымлык             ! Междометие
+%<abbr%>           ! Abbreviation               ! Кыскартылма       ! Аббревиатура 
 !аваз ияртеме ! (звуко)подражательное слово
 !модаль сүз   ! модальное слово 
-%<abbr%>           ! Abbreviation               ! Аббревиатура 
 
-! Arbitrary subcategories
-!! for nouns
-%<np%>             ! Proper noun  ! Ялгызлык исем    ! Имя обственное
+! Proper noun types
 %<top%>            ! Toponym      ! Географик атама
 %<ant%>            ! Anthroponym  ! Кеше исеме
 %<cog%>            ! Cognomen     ! Фамилия
+%<org%>            ! Organization ! Оешма исеме
+
 !! for adjectives ?
 %<attr%>           ! Attributive
 %<subst%>          ! Substantive
@@ -120,9 +124,6 @@ Multichar_Symbols
 %<m%>              ! Masculine  ! Мужской род
 %<f%>              ! Feminine   ! Женский род
 %<mf%>             ! Masculine / feminine
-%<postadv%>        ! e.g. "гына"
-%<vaux%>           ! Auxilary verb
-%<cnjadv%>         ! ~Союз 
 %<det%>            ! Determiner
 %<qst%>            ! FIXME: Question?
 

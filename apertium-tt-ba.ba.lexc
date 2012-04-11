@@ -1,23 +1,38 @@
-Multichar_Symbols 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!     M O R P H O L O G I C A L · T R A N S D U C E R · F O R · BASHKIR     !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-%<n%>              ! Имя существительное 
-%<prn%>            ! Местоимение
-%<adv%>            ! Наречие
-%<det%>            ! 
-%<num%>            ! Число
-%<v%>              ! Глагол
-%<vaux%>           ! 
-%<np%>             ! Имя собственное
-%<adj%>            ! Прилагательное
-%<post%>           ! Послелог
-%<postadv%>        ! Посленаречие
-%<cnjcoo%>         ! Союз
-%<cnjadv%>         ! Союз
-%<abbr%>           ! Аббревиатура
+Multichar_Symbols
+! Followed http://wiki.apertium.org/wiki/Turkic_languages
 
-%<part%>           ! Частица
-%<pred%>           ! 
-%<qst%>            ! 
+! Part of speech categories
+%<n%>          ! Noun                       ! Имя существительное 
+%<np%>         ! Proper noun                ! Имя собственное
+%<adj%>        ! Adjective                  ! Прилагательное
+%<num%>        ! Numeral                    ! Числительное
+%<prn%>        ! Pronoun                    ! Местоимение
+%<v%>          ! Verb                       ! Глагол
+%<vaux%>       ! Auxilary verb              ! Вспомогательный гл.
+%<adv%>        ! Adverb                     ! Наречие
+%<post%>       ! Postposition               ! Послелог
+%<postadv%     ! Postadverb                 ! "Посленаречие"       !# "ғына"
+%<cnjcoo%>     ! Co-ordinating conjunction  ! Сочинительный союз
+%<cnjsub%>     ! Sub-ordinating conjunction ! Подчинительный союз
+%<cnjadv%>     ! Adverbial conjunction      ! ~Союз
+%<part%>       ! Particle                   ! Частица
+%<ij%>         ! Interjection               ! Междометие
+%<abbr%>       ! Abbreviation               ! Аббревиатура
+
+! Proper noun types
+%<top%>            ! Toponym      ! Топоним
+%<ant%>            ! Anthroponym  ! Личное имя
+%<cog%>            ! Cognomen     ! Фамилия
+%<org%>            ! Organization ! Организация
+
+%<det%>        ! 
+
+%<pred%>        ! 
+%<qst%>         ! 
 
 %<pers%>           ! 
 %<ref%>            ! 
@@ -40,10 +55,6 @@ Multichar_Symbols
 %<ord%>            ! 
 %<sim%>            ! 
 
-%<top%>            ! 
-%<ant%>            ! 
-%<cog%>            ! 
-
 %<iv%>             !
 %<tv%>             !
 
@@ -60,7 +71,6 @@ Multichar_Symbols
 %<px3sp%>          !
 %<px1pl%>          !
 %<px2pl%>          !
-
 
 %<sg%>             ! Единственное число
 %<pl%>             ! Множественное число
