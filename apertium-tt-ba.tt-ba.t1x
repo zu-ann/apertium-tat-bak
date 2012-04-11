@@ -27,6 +27,7 @@
       <attr-item tags="px3sp"/>
       <attr-item tags="px1pl"/>
       <attr-item tags="px2pl"/>
+      <attr-item tags="px"/>
     </def-attr>
 
     <def-attr n="nbr">
@@ -37,7 +38,6 @@
        
     <def-attr n="a_nom">
       <attr-item tags="n"/>
-      <attr-item tags="n.px"/>
       <attr-item tags="n.attr"/>
     </def-attr>
     
