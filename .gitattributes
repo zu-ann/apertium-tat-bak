@@ -39,6 +39,7 @@ paper/Makefile -text
 paper/architecture.obj -text
 paper/lrec2006.bst -text
 paper/lrec2006.sty -text
+paper/presentation/notes.txt -text
 paper/tt-ba.bib -text
 paper/tt-ba.tex -text
 tests/gerunds.yaml -text
