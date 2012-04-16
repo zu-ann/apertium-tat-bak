@@ -3113,6 +3113,7 @@
     <e><p><l>бүлеш<s n="v"/><s n="tv"/></l><r>бүлеш<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>бүлеш<s n="v"/><s n="iv"/></l><r>бүлеш<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>пычран<s n="v"/><s n="iv"/></l><r>бысран<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>капла<s n="v"/><s n="tv"/></l><r>ҡапла<s n="v"/><s n="tv"/></r></p></e>
 
 <!-- Verbs below were added for testing twol. Don't move them-->
     <e><p><l>куй<s n="v"/><s n="tv"/></l><r>ҡуй<s n="v"/><s n="tv"/></r></p></e>

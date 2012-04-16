@@ -373,8 +373,9 @@ LEXICON V-COMMON-PASSIVE
 %<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-FUT-IR ; 
 
 LEXICON V-NEG
-
-%<neg%>:%>м%{A%} V-COMMON-LEX ; 
+%<neg%>:%>м%{A%} V-COMMON-LEX ;
+%<neg%>%<ger2%>:%>м%{A%}%>%{E%}%>ч%{A%} POSS ;
+ 
 
 V-COMMON-LEX ; 
 
@@ -3477,6 +3478,7 @@ LEXICON Verbs
 бүлеш:бүлеш V-TV-IR-LEX ; ! ""
 бүлеш:бүлеш V-IV-IR-LEX ; ! ""
 пычран:пычран V-IV-IR-LEX ; ! ""
+капла:капла V-TV-IR-LEX ; ! ""
 
 !! added for testing twol rules
 куй:куй V-TV-AR-LEX ; ! ""
