@@ -13,7 +13,10 @@ Tests:
     кара<v><tv><ger><nom> : карау
     буя<v><tv><ger><nom> : буяу
     төя<v><tv><ger><nom> : төяү
-
+    укы<v><tv><ger><nom> : уку
+    төзе<v><tv><ger><nom> : төзү
+    бае<v><tv><ger><nom> : баю
+    бие<v><tv><ger><nom> : бию
 
   "[twol] general gerund phonology and orthography with px3":
     бар<v><iv><ger><px3sp><nom> : баруы
@@ -22,4 +25,8 @@ Tests:
     кара<v><tv><ger><px3sp><nom> : каравы
     буя<v><tv><ger><px3sp><nom> : буявы
     төя<v><tv><ger><px3sp><nom> : төяве
+    укы<v><tv><ger><px3sp><nom> : укуы
+    төзе<v><tv><ger><px3sp><nom> : төзүе
+    бае<v><tv><ger><px3sp><nom> : баюы
+    бие<v><tv><ger><px3sp><nom> : биюе
 
