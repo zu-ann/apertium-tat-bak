@@ -1,0 +1,12 @@
+1) 21/04/2012-selimcan /not finished yet/ 
+Sorted entries of bilingual dictionary; removed duplicated entries;
+     Large sublexicons (i.e. nouns) are divided alphabetically by the
+     first letter, from the second letter on words are sorted how
+     "M-x sort-lines" command of Emacs preffers it to do.
+
+WHY: 1. Mainly to have real numbers about how much stems we got.
+
+WHAT (may be) NEXT: 1. Check the bilingual dictionary for POS-miscategorizations;
+                    2. Update lexc files to the bilingual dictionary (kind of "align"
+                       them with bdix).
+======================================================================================  
