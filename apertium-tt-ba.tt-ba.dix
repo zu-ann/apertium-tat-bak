@@ -32,6 +32,7 @@
     <sdef n="ant"      c="Anthroponym"/>
     <sdef n="cog"      c="Cognomen"/>
     <sdef n="org"      c="Organization name"/>
+    <sdef n="al"      c="Other"/>
 
     <sdef n="m"        c="Мужской род"/>
     <sdef n="mf"       c="Мужской или женский род"/>
@@ -151,11 +152,11 @@
     <e><p><l>өстенә<s n="post"/></l><r>өҫтөнә<s n="post"/></r></p></e>
     <e><p><l>өчен<s n="post"/></l><r>өсөн<s n="post"/></r></p></e>
 
-<!-- SECTION: "Посленаречия" -->
+<!-- SECTION: Postadverbs - "Посленаречия" -->
 
     <e><p><l>гына<s n="postadv"/></l><r>ғына<s n="postadv"/></r></p></e>
 
-<!-- SECTION: Числительные -->
+<!-- SECTION: Numerals - Числительные -->
 
     <e><p><l>нуль<s n="num"/></l><r>нуль<s n="num"/></r></p></e>
     <e><p><l>бер<s n="num"/></l><r>бер<s n="num"/></r></p></e>
@@ -1913,7 +1914,6 @@
     <e c=""><p><l>Биишева<s n="np"/><s n="cog"/><s n="f"/></l><r>Биишева<s n="np"/><s n="cog"/><s n="f"/></r></p></e>
     <e c=""><p><l>Борис<s n="np"/><s n="ant"/><s n="m"/></l><r>Борис<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 
-
 <!-- SECTION: Adjectives - Прилагательные - Сыйфатлар -->
 
     <e><p><l>авыр<s n="adj"/></l><r>ауыр<s n="adj"/></r></p></e>
@@ -2629,7 +2629,7 @@
     <e c=""><p><l>былтыр<s n="adv"/></l><r>былтыр<s n="adv"/></r></p></e>
 
 
-<!-- Раздел: Глаголы -->
+<!-- SECTION: Verbs - Глаголы -->
 
     <e><p><l>бар<s n="pred"/></l><r>бар<s n="pred"/></r></p></e>
     <e><p><l>и<s n="pred"/></l><r>и<s n="pred"/></r></p></e>
