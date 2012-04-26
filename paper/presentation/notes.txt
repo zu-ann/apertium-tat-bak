@@ -1,5 +1,13 @@
+! 15 slides
 
 ==Intro==
+
+* Some history:
+** Apertium is a pretty successful platform for making RBMT systems 
+     particularly between closely related languages
+** But so far we don't have any released pairs with Turkic languages,
+     released means that they've got adequate (> 80%) coverage and 
+     pass quality controls
 
 * Objectives: 
 ** Create a pedagogical example for translating Turkic
@@ -60,9 +68,9 @@
 
 === Current projects ===
 
-* Chuvash--Turkish (Oksana Antonova, Hèctor Alòs i Font, Francis Tyers)
-* Tatar--Kazakh* (Ilnar Salimyzanov, Jonathan North Washington)
-* Tatar--Turkish* (Ramil ..., )
+* Chuvash--Turkish  (Oksana Antonova, Hèctor Alòs i Font, Francis Tyers)
+* Tatar--Kazakh*    (Ilnar Salimyzanov, Jonathan North Washington)
+* Tatar--Turkish*   (Ramil Aglyamzanov)
 * Turkmen--Turkish* (Yasin Gülbahçe, Gianluca Grossi, Francis Tyers)
 
 [* Funded by Google Summer of Code 2012]
@@ -81,5 +89,4 @@ alt       & --  &     &     &     &     &     &     &     &     &     &     &   
 [* Pending refactoring]
 
 ==Conclusion==
-
 
