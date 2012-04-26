@@ -60,7 +60,7 @@
 
 === Current projects ===
 
-* Chuvash--Turkish (Oksana Antonova, Hèctor Alos i Font, Francis Tyers)
+* Chuvash--Turkish (Oksana Antonova, Hèctor Alòs i Font, Francis Tyers)
 * Tatar--Kazakh* (Ilnar Salimyzanov, Jonathan North Washington)
 * Tatar--Turkish* (Ramil ..., )
 * Turkmen--Turkish* (Yasin Gülbahçe, Gianluca Grossi, Francis Tyers)
@@ -70,12 +70,12 @@
 === Turkic languages in Apertium ===
 
 * staging = tur-aze*, tur-kir*
-* nursery = tuk-tur, tat-bak
-* incubator = chv-tur, kaz-tat, tat-tur, kaz-kir
+* nursery = tuk-tur, tat-bak, tat-tur
+* incubator = chv-tur, kaz-tat, kaz-kir, chv-tat,
 
-          & alt & aze & bak & chv & kaz & kir & tat & tuk & tur & tuv & Uyghur & Uzbek & Yakut
+          & atv & aze & bak & chv & kaz & kir & nog & sah & tat & tuk & tur & tuv & uig & uzb 
 \hline
-alt       & --  &     &     &     &     &     &     &     &     &     &
+alt       & --  &     &     &     &     &     &     &     &     &     &     &     &     &
 \hline
 
 [* Pending refactoring]
