@@ -3,28 +3,235 @@
 \mode<presentation>
 
 
-\date{20th May 2012}
+\setbeamercolor{frametitle}{fg=lightred,bg=darkred}
+\setbeamercolor{title}{fg=lightred,bg=darkred}
+
+\usepackage[russian,english]{babel}
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} %PunctuationSpace=3,Scale=MatchLowercase,,Numbers=Lining}
+\setmainfont[]{Nimbus Sans L}
+\setsansfont[]{Nimbus Sans L}
+\setmonofont[]{Liberation Mono}
+
+% Chuvash colours are 203,0,0 and 255,254,0
+\definecolor{darkred}{RGB}{153,0,0}
+\definecolor{lightred}{RGB}{226,200,200}
+\definecolor{yellow}{RGB}{226,226,50}
+
+
+\usetheme{Warsaw}
+
+\usecolortheme[named=darkred]{structure}
+
+
+\newfontfamily\cyrtext[Scale=MatchLowercase]{Nimbus Sans L}
+\useoutertheme[subsection=false]{smoothbars}
+%\setbeamertemplate{footline}[page number]{} % header empty
+% \setbeamercolor{footer}{fg=blue,bg=lightred}
+%\setbeamercolor{footline}{fg=white,bg=lightred} 
+%    \setbeamercolor{page number in head/foot}{use=headline,fg=headline.fg,bg=frametitle.fg}
+\setbeamertemplate{footline}[page number]{} % header empty
+
+\setbeamertemplate{headline}[text line]{} % header empty
+
+\setbeamertemplate{navigation symbols}{}
+
+\newcommand{\atag}[1]{{\scriptsize{\texttt{#1}}}}
+
+
+
+%\date{20th May 2012}
+\date{}
 \title{A prototype machine translation system for Tatar and Bashkir \\
               based on free/open-source components}
-\author{{\bf Francis M. Tyers},\\ {\tt \href{mailto:ftyers@dlsi.ua.es}{ftyers@dlsi.ua.es}}\\Departament de Lenguatges i Sistemes Informàtics,\\Universitat d'Alacant\\
-~\\
-{\bf Jonathan North Washington},\\ {\tt \href{mailto:jonwashi@indiana.edu}{jonwashi@indiana.edu}}\\Department of Linguistics,\\Indiana University\\
-}
+
+%\author{Francis M. Tyers \and Jonathan North Washington \\ 
+%       U.A \and I.U \\
+%Ilnar Salimzyanov \and Rustam Battalov}
+%
+%\author{{\bf Francis M. Tyers}\\ {\tt \href{mailto:ftyers@dlsi.ua.es}{ftyers@dlsi.ua.es}}\\Dept. de Lleng. i Sist. Inform.,\\Universitat d'Alacant \and
+%{\bf Jonathan North Washington}\\ {\tt \href{mailto:jonwashi@indiana.edu}{jonwashi@indiana.edu}}\\Department of Linguistics,\\Indiana University\\
+%{\bf Ilnar Salimzyanov} \and
+%{\bf Rustam Battalov} 
+%}
 \begin{document}
 
 \begin{frame}
         \titlepage
+\centering
+\begin{tabular}{cc}
+ {\bf Francis M. Tyers} & {\bf Jonathan North Washington} \\
+ Dept. Lleng. i Sist. Inform. & Dept. Linguistics \\
+ Universitat d'Alacant & Indiana University \\
+ {\tt \href{mailto:ftyers@dlsi.ua.es}{ftyers@dlsi.ua.es}} & {\tt \href{mailto:jonwashi@indiana.edu}{jonwashi@indiana.edu}} \\ 
+ ~ & ~ \\
+ {\bf Ilnar Salimzyanov} & {\bf Rustam Batalov} \\
+ Kazan Federal University & Bashkir State University \\
+ {\tt \href{mailto:ilnar.salimzyan@gmail.com}{ilnar.salimzyan@gmail.com}} & {\tt \href{mailto:taqmaq@mail.ru}{taqmaq@mail.ru}} \\
+ ~ & ~ \\
+ ~ & ~ \\
+\end{tabular}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
   \frametitle{Introduction}
 
+\begin{onlyenv}<1>
+\begin{block}{Layout of the talk}
+
+  \begin{itemize}
+    \item Introduction
+    \item Description of architecture and development process
+    \item Evaluation
+    \item Discussion and future work
+  \end{itemize}
+
+\end{block}
+\end{onlyenv}
+
+\begin{onlyenv}<2>
+\begin{block}{Why make a Tatar $\leftrightarrow$ Bashkir MT system?}
+
+  \begin{itemize}
+    \item There are quite a few examples of MT systems made with Apertium
+    \begin{itemize}
+      \item but no working examples between ``morphologically complex'' languages
+    \end{itemize}
+
+    \item Course in Šupaškar (Čeboksary), January 2012
+    \begin{itemize}
+      \item Nearly all the languages of Russia are ``morphologically complex'', but
+          we had no example system to present.
+    \end{itemize} 
+
+    \item The idea was to create a pedagogical example
+    \begin{itemize}
+      \item A simple demonstration system 
+      \item that nonetheless showed all parts of a working system
+    \end{itemize}
+ 
+    \item We chose Tatar and Bashkir because,
+    \begin{itemize}
+      \item Native speakers available to help out
+      \item Good results could be accomplished with little work
+    \end{itemize}
+  \end{itemize}
+\end{block}
+\end{onlyenv}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Tatar and Bashkir} % Map
+
+\begin{onlyenv}<1>
+\includegraphics[width=\textwidth]{middlevolga19001500.jpg}
+\end{onlyenv}
+\begin{onlyenv}<2>
+
+\begin{block}{Tatar}
+
+\begin{itemize}
+  \item spoken by $>$ 6.5m  people
+  \item hargle bargle
+\end{itemize}
+
+\end{block}
+
+\begin{block}{Bashkir}
+
+\begin{itemize}
+  \item spoken by $>$ 1.3m people
+  \item some facts we made up
+\end{itemize}
+
+
+\end{block}
+
+\end{onlyenv}
+\begin{onlyenv}<3>
+
+Һава бүген бик әйбәт, җылы гына.  \\
+Һауа бөгөн бик әйбәт, йылы ғына. \\
+
+Hava bugün çok güzel, yeterince sıcak. \\
+Ҫанталӑк паян питӗ хитре, самай ӑшӑ. \\
+\end{onlyenv}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Apertium}
+
+\begin{block}{}
+
+\begin{itemize}
+  \item Free/open-source software (GPL licence)
+  \begin{itemize}
+    \item Not only the programs, but the data too!
+  \end{itemize}
+  \item Fairly mature data for over 30 language pairs
+  \item ... but so far no mature data for Turkic languages!
+\end{itemize}
+
+\end{block}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
   \frametitle{Architecture}
+
+\includegraphics[width=\textwidth]{../architecture.pdf}
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\fontsize{9pt}{11.2}\selectfont
+
+\begin{tabular}{l}
+%\hline
+%{\bf Stage} & {\bf Representation} \\
+\hline
+\hline
+ Һава бүген бик әйбәт, җылы гына. \\ 
+\hline
+{\bf Morphological analysis} \\
+\hline
+ \^{}Һава/һава\atag{<n>}\atag{<attr>}/һава\atag{<n>}\atag{<nom>\$} \^{}бүген/бүген\atag{<adv>\$}  \\
+              \^{}бик/бик\atag{<adv>}/бик\atag{<n>}\atag{<attr>}/бик\atag{<n>}\atag{<nom>\$} \\ 
+              \^{}әйбәт/әйбәт\atag{<adj>}/әйбәт\atag{<adj>}\atag{<subst>}\atag{<nom>\$}\^{},/,\atag{<cm>\$} \\ 
+              \^{}җылы/җылы\atag{<n>}\atag{<attr>}/җылы\atag{<n>}\atag{<nom>}/җылы\atag{<adj>}/җылы\atag{<adj>}\atag{<subst>}\atag{<nom>\$} \\
+              \^{}гына/гына\atag{<postadv>\$}\^{}./.\atag{<sent>\$} \\
+\hline
+{\bf Morphological disambiguation} \\
+\hline
+ \^{}Һава\atag{<n>}\atag{<nom>\$} \^{}бүген\atag{<adv>\$} \^{}бик\atag{<adv>\$} \^{}әйбәт\atag{<adj>\$}\^{},\atag{<cm>\$} \\ 
+              \^{}җылы\atag{<adj>\$} \^{}гына\atag{<postadv>\$}\^{}.\atag{<sent>\$}\\
+\hline
+{\bf Lexical transfer and selection} \\
+\hline
+ \^{}Һава\atag{<n>}\atag{<nom>}/Һауа\atag{<n>}\atag{<nom>\$} \^{}бүген\atag{<adv>}/бөгөн\atag{<adv>\$} \^{}бик\atag{<adv>}/бик\atag{<adv>\$} \\
+              \^{}әйбәт\atag{<adj>}/әйбәт\atag{<adj>\$}\^{},\atag{<cm>}/,\atag{<cm>\$} \^{}җылы\atag{<adj>}/йылы\atag{<adj>\$} \\ 
+              \^{}гына\atag{<postadv>}/ғына\atag{<postadv>\$}\^{}.\atag{<sent>}/.\atag{<sent>\$}\\
+\hline
+{\bf Structural transfer} \\
+\hline
+ \^{}Һауа\atag{<n>}\atag{<nom>\$} \^{}бөгөн\atag{<adv>\$} \^{}бик\atag{<adv>\$} \^{}әйбәт\atag{<adj>\$}\^{},\atag{<cm>\$} \\ 
+              \^{}йылы\atag{<adj>\$} \^{}ғына\atag{<postadv>\$}\^{}.\atag{<sent>\$}\\
+\hline
+{\bf Morphological generation} \\
+\hline
+ Һауа бөгөн бик әйбәт, йылы ғына. \\
+\hline
+\hline
+\end{tabular}
 
 \end{frame}
 
@@ -37,6 +244,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
   \frametitle{Evaluation}
+\end{frame}
+
+\begin{frame}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
