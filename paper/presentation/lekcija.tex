@@ -8,6 +8,7 @@
 
 \usepackage[russian,english]{babel}
 
+\usepackage{multirow}
 \usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{xltxtra}
@@ -40,6 +41,7 @@
 \setbeamertemplate{navigation symbols}{}
 
 \newcommand{\atag}[1]{{\scriptsize{\texttt{#1}}}}
+\newcommand{\itemise}{\itemize}
 
 
 
@@ -241,20 +243,101 @@ Hava bugün çok güzel, yeterince sıcak. \\
 
 \end{frame}
 
+\begin{frame}
+  \frametitle{Tools}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Speed}
+
+\begin{center}
+\begin{tabular}{cc}
+
+~ &  ~\\
+Tatar & Bashkir \\
+\end{tabular}
+\end{center}
+
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
   \frametitle{Evaluation}
+
+\begin{center}
+  \begin{tabular}{ccrrr}
+  \hline
+   Corpus                 & Direction         & Tokens  & Unknown & WER  \\
+  \hline
+   \multirow{2}{*}{story} & tt$\rightarrow$ba & 311     & 9  & 8.97\% \\
+                          & ba$\rightarrow$tt & 312     & 1  & 7.72\%  \\
+  \hline
+  \end{tabular}
+
+~\\
+
+  \begin{tabular}{lrr}
+  \hline
+   Corpus                  & Tokens    & Coverage\\
+  \hline
+   Tatar New Test.         & 163,603   & 72.04\% \\
+   Tatar Wikipedia         & 37,123    & 70.19\% \\
+  \hline
+   Bashkir Wikipedia       & 12,267    & 65.99\% \\
+  \hline
+  \end{tabular}
+
+\end{center}
+
 \end{frame}
 
 \begin{frame}
+  \frametitle{Weak points}
+
+\begin{itemize}
+  \item Majority of errors due to mistakes and gaps in Tatar morphophonology
+  \item Combinations of case and possessive suffixes
+  \item Orthographical representations of phonology
+  \item Vowel harmony processing on clitics (e.g., \emph{да}/\emph{дә} `and')  
+     after unknown words.
+  \item Hargle bargle
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Observations}
+
+\begin{itemize}
+  \item Importance of unified tagsets, and grammatical representations:
+  \begin{itemize}
+    \item If something is the same, tag it the same.
+    \item Otherwise you spend a lot of time on useless `transfer'
+      (e.g. ky, ~50 transfer rules, around 4 `real' rules)
+  \end{itemize}
+  \item Building the transducers and bilingual dictionary at the same time is good
+  \item Much easier to work with new code than adapt existing code
+  \begin{itemize}
+    \item Not to say that existing code can't be useful as a model, example
+  \end{itemize}
+
+\end{itemize}
 
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}
-  \frametitle{Conclusion}
+  \frametitle{Future work}
+
 \end{frame}
 
+\begin{frame}
+  \frametitle{Conclusion}
+
+\end{frame}
 
 
 \end{document}
