@@ -459,7 +459,9 @@ LEXICON V-TV-LEX
 
 LEXICON VAUX
 
-%<vaux%>: V-PERS-S2 ;
+%<vaux%>: V-COMMON-LEX ;
+%<vaux%>%<neg%>:%>м%{A%} V-COMMON-LEX ;
+
 
 !!!!!!!!!!!!!!!!!!!!!!     copula
 
@@ -679,6 +681,7 @@ LEXICON Determiners
 барлыҡ:барлыҡ DETQNTLEX ; ! ""
 
 бер:бер DETINDLEX ; ! ""
+берәр:берәр DETINDLEX ; ! ""
 бер% ниндәй:бер% ниндәй DETINDLEX ; ! ""
 
 LEXICON Numerals
@@ -722,6 +725,7 @@ LEXICON Numerals
 
 LEXICON Nouns 
 
+аҫт:аҫт NLEX ; ! ""
 абҙый:абҙый NLEX ; ! ""
 абруй:абруй NLEX ; ! ""
 август:август NLEX ; ! ""
@@ -3081,6 +3085,7 @@ LEXICON Adverbs
 
 түгел:түгел ADVLEX ; ! ""
 
+әкрен% генә:әкрен% генә ADVLEX ; ! ""
 хәҙер:хәҙер ADVLEX ; ! ""
 кисә:кисә ADVLEX ; ! ""
 әлегә:әлегә ADVLEX ; ! ""
@@ -3137,6 +3142,9 @@ LEXICON Verbs
 бар:бар A3 ; ! ""
 юҡ:юҡ A3 ; ! ""
 COP-I ; ! ""
+
+кил:кил VAUX ; ! ""
+ал:ал VAUX ; ! ""
 
 бул:бул V-IV-LEX ; ! ""
 тор:тор V-IV-LEX ; ! ""

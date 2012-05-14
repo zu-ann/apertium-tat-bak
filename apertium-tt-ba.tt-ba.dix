@@ -257,6 +257,7 @@
     <e><p><l>бар<s n="det"/><s n="qnt"/></l><r>бар<s n="det"/><s n="qnt"/></r></p></e>
     <e><p><l>барлык<s n="det"/><s n="qnt"/></l><r>барлыҡ<s n="det"/><s n="qnt"/></r></p></e>
     <e><p><l>бер<s n="det"/><s n="ind"/></l><r>бер<s n="det"/><s n="ind"/></r></p></e>
+    <e><p><l>берәр<s n="det"/><s n="ind"/></l><r>берәр<s n="det"/><s n="ind"/></r></p></e>
     <e><p><l>бернинди<s n="det"/><s n="ind"/></l><r>бер<b/>ниндәй<s n="det"/><s n="ind"/></r></p></e>
     <e><p><l>бу<s n="det"/><s n="dem"/></l><r>был<s n="det"/><s n="dem"/></r></p></e>
     <e><p><l>бөтен<s n="det"/><s n="qnt"/></l><r>бөтә<s n="det"/><s n="qnt"/></r></p></e>
@@ -2548,6 +2549,7 @@
     <e><p><l>аннары<s n="adv"/></l><r>№аннары<s n="adv"/></r></p></e>
     <e><p><l>аска<s n="adv"/></l><r>аҫҡа<s n="adv"/></r></p></e>
 
+    <e><p><l>әкрен<b/>генә<s n="adv"/></l><r>әкрен<b/>генә<s n="adv"/></r></p></e>
     <e><p><l>әйе<s n="adv"/></l><r>әйе<s n="adv"/></r></p></e>
     <e><p><l>әкрен<s n="adv"/></l><r>әкрен<s n="adv"/></r></p></e>
     <e><p><l>әлбәттә<s n="adv"/></l><r>әлбиттә<s n="adv"/></r></p></e>
@@ -2611,6 +2613,9 @@
     <e><p><l>и<s n="cop"/></l><r>и<s n="cop"/></r></p></e>
     <e><p><l>мәҗбүр<s n="pred"/></l><r>№<s n="pred"/></r></p></e>
     <e><p><l>юк<s n="adj"/></l><r>юҡ<s n="adj"/></r></p></e>
+
+    <e><p><l>ал<s n="vaux"/></l><r>ал<s n="vaux"/></r></p></e>
+    <e><p><l>кил<s n="vaux"/></l><r>кил<s n="vaux"/></r></p></e>
 
     <e><p><l>ал<s n="v"/><s n="tv"/></l><r>ал<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>алып<b/>бар<s n="v"/><s n="tv"/></l><r>алып<b/>бар<s n="v"/><s n="tv"/></r></p></e>
