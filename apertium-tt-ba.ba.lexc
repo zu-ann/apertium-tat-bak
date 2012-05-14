@@ -311,6 +311,8 @@ LEXICON NPTOPLEX
 
 %<np%>%<top%>: CASE ; 
 
+!!!!!!!!!!!!!!!!!!!!!!     ADJECTIVE'S (ADJECTIVIAL) INFLECTION
+
 LEXICON A3
 
 %<adj%>: CLIT ; 
@@ -322,6 +324,8 @@ LEXICON ALEX
 %<adj%>%<subst%>: SUBST ; 
 %<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} # ; 
 %<adj%>%<advl%>: CLIT ; 
+
+!!!!!!!!!!!!!!!!!!!!!!     VERBAL INFLECTION
 
 LEXICON V-PERS-S1 
 
@@ -357,12 +361,22 @@ V-PERS-S3-NO1SG ;
 
 LEXICON V-PERS-S4 ! Volition endings
 
-%<p1%>%<sg%>:%>%{I%}м CLIT ;
-%<p2%>%<sg%>:%>%{h%}%{I%}ң CLIT ;
-%<p3%>%<sg%>:%>%{h%}%{I%}%{n%} CLIT ;
-%<p1%>%<pl%>:%>б%{I%}ҙ CLIT ;
-%<p2%>%<pl%>:%>%{h%}%{I%}г%{I%}ҙ CLIT ;
-%<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
+! FIXME:NOTE: this works, but can be laid out better
+%<p1%>%<sg%>:м CLIT ;
+%<p2%>%<sg%>:ң CLIT ;
+%<p3%>%<sg%>: CLIT ;
+%<p1%>%<pl%>:б%{I%}ҙ CLIT ;
+%<p2%>%<pl%>:г%{I%}ҙ CLIT ;
+%<p3%>%<pl%>:%{L%}%{A%}р%{I%} CLIT ;
+
+!LEXICON V-PERS-S4 ! Volition endings
+
+!%<p1%>%<sg%>:%>%{I%}м CLIT ;
+!%<p2%>%<sg%>:%>%{h%}%{I%}ң CLIT ;
+!%<p3%>%<sg%>:%>%{h%}%{I%}%{n%} CLIT ;
+!%<p1%>%<pl%>:%>б%{I%}ҙ CLIT ;
+!%<p2%>%<pl%>:%>%{h%}%{I%}г%{I%}ҙ CLIT ;
+!%<p3%>%<pl%>:%>%{L%}%{A%}р CLIT ;
 
 LEXICON V-FINITE-FORMS
 
@@ -372,16 +386,21 @@ LEXICON V-FINITE-FORMS
 
 LEXICON V-NONFINITE-FORMS
 
-%<ger1%>:%>м%{A%}%{K%} POSS ;
-%<ger3%>:%>%{G%}%{A%}с POSS ;
-%<ger4%>:%>%{G%}%{A%}нс%{I%} POSS ;
-%<ger5%>:%>%{G%}%{A%}н POSS ;
-%<ger6%>:%>%{I%}р POSS ;
-%<inf%>:%>%{I%}рг%{A%} POSS ;
-%<ger7%>:%>%{A%}с%{A%}%{K%} POSS ;
-%<ger8%>:%>%{E%}һ V-PERS-S4 ;
+%<ger%>:%>%{U%} POSS-REAL ;
+%<ger1%>:%>м%{A%}%{K%} POSS-REAL ;
+%<ger3%>:%>%{G%}%{A%}с SUBST ;
+%<ger4%>:%>%{G%}%{A%}нс%{I%} POSS-REAL ;
+%<ger5%>:%>%{G%}%{A%}н POSS-REAL ;
+%<ger6%>:%>%{I%}р POSS-REAL ;
+%<inf%>:%>%{I%}рг%{A%} # ;
+%<ger7%>:%>%{A%}с%{A%}%{K%} POSS-REAL ;
+%<prc_vol%>:%>%{E%}һ%{I%} V-PERS-S4 ;   ! FIXME:NOTE: this is the first type of volitative
+                                        ! participle in Bashkir (see comment for <prc_vol> tag above).
+                                        ! Former it was called <ger8>.
+                                        ! A transfer rule to match bashkir prc_vol2 to tatar prc_vol is needed. /I.S./
+
 %<cond%>:%>һ%{A%} V-PERS-S2 ;
-%<vol%>:%>%{G%}%{I%} V-PERS-S2 ;
+%<prc_vol2%>:%>%{G%}%{I%} V-PERS-S2 ;   ! FIXME: check cont. class
 
 !%<imp%>%<p1%>%<sg%>:%>%{A%}й%{I%}м CLIT ; ! jussive ^____^
 %<imp%>%<p2%>%<sg%>: CLIT  ;
@@ -394,8 +413,8 @@ V-NONFINITE-FORMS ;
 
 LEXICON V-IRREG-LEX
 
-%<prc2%>:%>%{I%}п # ; ! FIXME: Check continuations
-%<gna9%>:%>%{I%}п # ; !FIXME: Check continuations
+%<prc2%>:%>%{I%}п # ;
+%<gna9%>:%>%{I%}п CLIT ;
 %<fut%>:%>%{I%}р V-PERS-S3 ; 
 %<neg%>%<fut%>:%>м%{A%}ҫ V-PERS-S3-NO1SG ; 
 %<neg%>%<fut%>%<p1%>%<sg%>:%>м%{A%}%>м CLIT ;
@@ -406,6 +425,7 @@ LEXICON V-NEG-LEX
 %<neg%>:%>м%{A%} V-COMMON-LEX ;
 %<neg%>%<prc2%>:%>м%{A%}%>%{E%}%>с%{A%} # ; ! FIXME: Check continuations
 %<neg%>%<gna9%>:%>м%{A%}%>%{E%}%>с%{A%} # ; ! FIXME: Check continuations
+
 V-COMMON-LEX ; 
 
 LEXICON V-IV-LEX
