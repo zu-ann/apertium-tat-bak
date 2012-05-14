@@ -12,6 +12,7 @@
 \usepackage{fontspec}
 \usepackage{xunicode}
 \usepackage{xltxtra}
+\usepackage{wasysym}
 \defaultfontfeatures{Mapping=tex-text} %PunctuationSpace=3,Scale=MatchLowercase,,Numbers=Lining}
 \setmainfont[]{Nimbus Sans L}
 \setsansfont[]{Nimbus Sans L}
@@ -267,18 +268,9 @@ Tatar & Bashkir \\
 \begin{frame}
   \frametitle{Evaluation}
 
+\begin{block}{Coverage}
+
 \begin{center}
-  \begin{tabular}{ccrrr}
-  \hline
-   Corpus                 & Direction         & Tokens  & Unknown & WER  \\
-  \hline
-   \multirow{2}{*}{story} & tt$\rightarrow$ba & 311     & 9  & 8.97\% \\
-                          & ba$\rightarrow$tt & 312     & 1  & 7.72\%  \\
-  \hline
-  \end{tabular}
-
-~\\
-
   \begin{tabular}{lrr}
   \hline
    Corpus                  & Tokens    & Coverage\\
@@ -289,8 +281,22 @@ Tatar & Bashkir \\
    Bashkir Wikipedia       & 12,267    & 65.99\% \\
   \hline
   \end{tabular}
-
 \end{center}
+\end{block}
+
+\begin{block}{Error rate}
+\begin{center}
+
+  \begin{tabular}{ccrrr}
+  \hline
+   Corpus                 & Direction         & Tokens  & Unknown & WER  \\
+  \hline
+   \multirow{2}{*}{story} & tt$\rightarrow$ba & 311     & 9  & 8.97\% \\
+                          & ba$\rightarrow$tt & 312     & 1  & 7.72\%  \\
+  \hline
+  \end{tabular}
+\end{center}
+\end{block}
 
 \end{frame}
 
@@ -349,6 +355,25 @@ Tatar & Bashkir \\
 \begin{frame}
   \frametitle{Conclusion}
 
+\begin{block}
+
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{Large}
+\begin{center}
+Рәхмәт \\ 
+Räxmät \\
+Рахмәт \\ 
+Teşekkürler\\
+~\\
+\smiley
+\end{center}
+\end{Large}
 \end{frame}
 
 
