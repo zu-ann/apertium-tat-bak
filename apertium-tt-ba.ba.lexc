@@ -287,7 +287,7 @@ LEXICON NUMLEX
 %<num%>: # ;
 %<num%>%<subst%>: SUBST ;
 %<num%>%<ord%>:%>%{I%}нч%{I%} SUBST ;
-%<num%>%<sim%>:%>%{A%}р SUBST ;
+%<num%>%<dist%>:%>%{A%}р SUBST ;
 
 LEXICON NPCOGMLEX
 
