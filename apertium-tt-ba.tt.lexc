@@ -902,6 +902,7 @@ LEXICON Numerals
 
 LEXICON Nouns 
 
+нәрсә:нәрсә NLEX ; ! "" FIXME: Check this is in tt-ba bidix
 абзый:абзый NLEX ; ! "" 
 абруй:абруй NLEX ; ! ""
 абый:абый NLEX ; ! "" 
@@ -2551,6 +2552,8 @@ LEXICON ProperNouns
 
 LEXICON Adjectives 
 
+бар:бар A2 ; ! ""
+юк:юк A2 ; ! ""
 сәбәпле:сәбәпле A1 ; ! ""
 абруйлы:абруйлы A1 ; ! ""
 автоматлаштырылған:автоматлаштырылған A1 ; ! ""
@@ -3424,7 +3427,6 @@ LEXICON Verbs
 тукта:тукта V-IV-IR-LEX ; ! ""
 тын% ал:тын% ал V-TV-IR-LEX ; ! ""
 тын:тын V-IV-AR-LEX ; ! ""
-тырыш:тырыш V-IV-IR-LEX ; ! ""
 тырыш:тырыш V-IV-IR-LEX ; ! ""
 тыңла:тыңла V-TV-IR-LEX ; ! ""
 тыңла:тыңла V-TV-IR-LEX ; ! ""

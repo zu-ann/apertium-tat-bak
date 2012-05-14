@@ -81,102 +81,103 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
   \frametitle{Introduction}
-
-\begin{onlyenv}<1>
-\begin{block}{Layout of the talk}
-
-  \begin{itemize}
-    \item Introduction
-    \item Description of architecture and development process
-    \item Evaluation
-    \item Discussion and future work
-  \end{itemize}
-
-\end{block}
-\end{onlyenv}
-
-\begin{onlyenv}<2>
-\begin{block}{Why make a Tatar $\leftrightarrow$ Bashkir MT system?}
-
-  \begin{itemize}
-    \item There are quite a few examples of MT systems made with Apertium
-    \begin{itemize}
-      \item but no working examples between ``morphologically complex'' languages
-    \end{itemize}
-
-    \item Course in Šupaškar (Čeboksary), January 2012
-    \begin{itemize}
-      \item Nearly all the languages of Russia are ``morphologically complex'', but
-          we had no example system to present.
-    \end{itemize} 
-
-    \item The idea was to create a pedagogical example
-    \begin{itemize}
-      \item A simple demonstration system 
-      \item that nonetheless showed all modules working
-    \end{itemize}
- 
-    \item We chose Tatar and Bashkir because,
-    \begin{itemize}
-      \item Native speakers available to help out
-      \item Good results could be accomplished with little work
-    \end{itemize}
-  \end{itemize}
-\end{block}
-\end{onlyenv}
-
+  
+  \begin{onlyenv}<1>
+    \begin{block}{Layout of the talk}
+    
+      \begin{itemize}
+        \item Introduction
+        \item Description of architecture and development process
+        \item Evaluation
+        \item Discussion and future work
+      \end{itemize}
+    
+    \end{block}
+  \end{onlyenv}
+  
+  \begin{onlyenv}<2>
+    \begin{block}{Why make a Tatar $\leftrightarrow$ Bashkir MT system?}
+    
+      \begin{itemize}
+        \item There are quite a few examples of MT systems made with Apertium
+        \begin{itemize}
+          \item but no working examples between ``morphologically complex'' languages
+        \end{itemize}
+    
+        \item Course in Šupaškar (Čeboksary), January 2012
+        \begin{itemize}
+          \item Nearly all the languages of Russia are ``morphologically complex'', but
+              we had no example system to present.
+        \end{itemize} 
+    
+        \item The idea was to create a pedagogical example
+        \begin{itemize}
+          \item A simple demonstration system 
+          \item that nonetheless showed all modules working
+        \end{itemize}
+     
+        \item We chose Tatar and Bashkir because,
+        \begin{itemize}
+          \item Native speakers available to help out
+          \item Good results could be accomplished with little work
+        \end{itemize}
+      \end{itemize}
+    \end{block}
+  \end{onlyenv}
+  
 \end{frame}
 
 \begin{frame}
   \frametitle{Tatar and Bashkir} % Map
-
-\begin{onlyenv}<1>
-\includegraphics[width=\textwidth]{middlevolga19001500.jpg}
-\end{onlyenv}
-\begin{onlyenv}<2>
-
-\begin{block}{Tatar}
-
-\begin{itemize}
-  \item spoken by $>$ 6.5m  people
-  \item hargle bargle
-\end{itemize}
-
-\end{block}
-
-\begin{block}{Bashkir}
-
-\begin{itemize}
-  \item spoken by $>$ 1.3m people
-  \item some facts we made up
-\end{itemize}
-
-
-\end{block}
-
-\end{onlyenv}
-\begin{onlyenv}<3>
-
-\begin{block}{Tatar and Bashkir}
-Һава бүген бик әйбәт, җылы гына.  \\
-Һауа бөгөн бик әйбәт, йылы ғына. \\
-\end{block}
-\begin{block}{Comparison with other Turkic languages}
-Hava bugün çok güzel, yeterince sıcak. \\
-Ҫанталӑк паян питӗ хитре, самай ӑшӑ. \\
-Ауа райы бүгін әбден жақсы, жылы. \\
-Аба бүгүн абдан жакшы, жетишинче жылуу. 
-\end{block}
-
-\end{onlyenv}
-
+  
+  \begin{onlyenv}<1>
+    \includegraphics[width=\textwidth]{middlevolga19001500.jpg}
+  \end{onlyenv}
+  \begin{onlyenv}<2>
+    
+    \begin{block}{Tatar}
+      
+      \begin{itemize}
+        \item spoken by $>$ 6.5m  people
+        \item hargle bargle %FIXME: more real stuff needed
+      \end{itemize}
+      
+    \end{block}
+      
+    \begin{block}{Bashkir}
+      
+      \begin{itemize}
+        \item spoken by $>$ 1.3m people
+        \item some facts we made up %FIXME: put real stuff here
+      \end{itemize}
+    
+    \end{block}
+    
+  \end{onlyenv}
+  \begin{onlyenv}<3>
+  
+    %FIXME: Add IPA 
+    \begin{block}{Tatar and Bashkir}
+      Һава бүген бик әйбәт, җылы гына.  \\
+      Һауа бөгөн бик әйбәт, йылы ғына. \\
+    \end{block}
+    
+    \begin{block}{Comparison with other Turkic languages}
+      Hava bugün çok güzel, yeterince sıcak. \\
+      Ҫанталӑк паян питӗ хитре, самай ӑшӑ. \\
+      Ауа райы бүгін әбден жақсы, жылы. \\
+      Аба бүгүн абдан жакшы, жетишинче жылуу. 
+    \end{block}
+  
+  \end{onlyenv}
+  
 \end{frame}
 
 \begin{frame}
   \frametitle{Apertium}
 
 \begin{center}
-\includegraphics[width=0.82\textwidth]{apertiumlangs.pdf}
+  \includegraphics[width=0.82\textwidth]{apertiumlangs.pdf}%FIXME: svg->pdf is ugly
 \end{center}
 \begin{block}{Overview}
   
@@ -205,28 +206,27 @@ Hava bugün çok güzel, yeterince sıcak. \\
 \begin{frame}
   \frametitle{Tools}
 
-\begin{block}{Helsinki Finite-State Toolkit (HFST)}
-  \begin{itemize}
-    \item Free/open-source implementation of the Xerox 
-       finite-state formalisms {\small {\tt lexc}}/{\small {\tt twol}}
-    \item Used for morphological analysis and generation
-  \end{itemize}
-\end{block}
-
-\begin{block}{VISL Constraint Grammar}
-  \begin{itemize}
-    \item Morphological disambiguation
-  \end{itemize}
-\end{block}
-
-\begin{block}{Apertium}
-  \begin{itemize}
-    \item Lexical and structural transfer
-    \item Build system
-  \end{itemize}
-\end{block}
-
-
+  \begin{block}{Helsinki Finite-State Toolkit (HFST)}
+    \begin{itemize}
+      \item Free/open-source implementation of the Xerox 
+         finite-state formalisms {\small {\tt lexc}}/{\small {\tt twol}}
+      \item Used for morphological analysis and generation
+    \end{itemize}
+  \end{block}
+  
+  \begin{block}{VISL Constraint Grammar}
+    \begin{itemize}
+      \item Rule-based morphological disambiguation
+    \end{itemize}
+  \end{block}
+  
+  \begin{block}{Apertium}
+    \begin{itemize}
+      \item Lexical and structural transfer
+      \item ``Platform'': Build system, ancilliary tools, etc.
+    \end{itemize}
+  \end{block}
+  
 \end{frame}
 
 
@@ -278,6 +278,19 @@ Hava bugün çok güzel, yeterince sıcak. \\
 \begin{frame}
   \frametitle{Development process}
 
+  \begin{itemize} % FIXME: check this
+    \item Stems in both Tatar and Bashkir are added to an online spreadsheet
+    \begin{itemize}
+      \item Added according to frequency in the RNC. % downsides
+      \item At the same time as translations, POS categories are added, and some
+        relevant subcategorisations (transitivity, Tatar infinitive)
+    \end{itemize}
+    \item Scripts are used to automate the process of converting the spreadsheet
+       to bilingual ({\small {\tt .dix}}) and monolingual ({\small {\tt .lexc}}) formats.
+    \item At the same time, the morphotactics and phonology are written
+       according to available grammatical descriptions
+    
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -304,7 +317,7 @@ Tatar & Bashkir \\
   \hline
    {\bf Corpus}            & {\bf Tokens}    & {\bf Coverage}\\
   \hline
-   Tatar New Test.         & 163,603   & 72.04\% \\
+   Tatar New Testament (NT) & 163,603   & 72.04\% \\
    Tatar Wikipedia         & 37,123    & 70.19\% \\
   \hline
    Bashkir Wikipedia       & 12,267    & 65.99\% \\
@@ -404,12 +417,19 @@ Tatar & Bashkir \\
 
     \begin{itemize}
       \item Turkish$\leftrightarrow$Chuvash
-      \item Tatar$\leftrightarrow$Kazakh$\dagger$
-      \item Turkish$\leftrightarrow$Turkmen$\dagger$
-      \item Turkish$\leftrightarrow$Tatar$\dagger$
+      \item Tatar$\leftrightarrow$Kazakh$\dag$
+      \item Turkish$\leftrightarrow$Turkmen$\dag$
+      \item Turkish$\leftrightarrow$Tatar$\dag$
+    \end{itemize}
+
+    \item We have worked on: 
+    \begin{itemize}
+      \item Turkish$\leftrightarrow$Azerbaijani$\ddag$
+      \item Turkish$\leftrightarrow$Kyrgyz$\ddag$
     \end{itemize}
   \end{itemize}
-    $\dagger$ As projects in the 2012 Google Summer of Code.
+  $\dag$ As projects in the 2012 Google Summer of Code. \\
+  $\ddag$ As projects in the 2011 Google Summer of Code.
 \end{block}
 
 \end{frame}

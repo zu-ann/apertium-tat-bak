@@ -23,6 +23,7 @@ Multichar_Symbols
 %<part%>       ! Particle                   ! Частица
 %<ij%>         ! Interjection               ! Междометие
 %<abbr%>       ! Abbreviation               ! Аббревиатура
+%<cop%>        ! Copula                     ! Svjazki
 
 ! Proper noun types
 %<top%>            ! Toponym      ! Топоним
@@ -37,7 +38,6 @@ Multichar_Symbols
 ! "Syntactic" tags. Attributive use of non-adjectives etc.
 %<attr%>           ! Attributive
 %<subst%>          ! Substantive
-%<pred%>           ! Predicative
 %<advl%>           ! Adverbial
 
 ! Number
@@ -101,7 +101,8 @@ Multichar_Symbols
 
 %<ger%>            ! -{U}
 %<ger1%>           ! -м{A}{K}
-%<ger2%>           ! -{I}п
+%<gna9%>           ! -{I}п
+%<prc2%>           ! -{I}п
 %<ger3%>           ! -{G}{A}с
 %<ger4%>           ! -{G}{A}нс{I}
 %<ger5%>           ! -{G}{A}н
@@ -252,6 +253,11 @@ LEXICON NPTOPLEX
 
 %<np%>%<top%>: CASE ; 
 
+LEXICON A3
+
+%<adj%>: CLIT ; 
+!%<pred%>: V-NONFINITE-FORMS ; 
+
 LEXICON ALEX
 
 %<adj%>: # ; 
@@ -330,7 +336,8 @@ V-NONFINITE-FORMS ;
 
 LEXICON V-IRREG-LEX
 
-%<ger2%>:%>%{I%}п POSS ;
+%<prc2%>:%>%{I%}п # ; ! FIXME: Check continuations
+%<gna9%>:%>%{I%}п # ; !FIXME: Check continuations
 %<fut%>:%>%{I%}р V-PERS-S3 ; 
 %<neg%>%<fut%>:%>м%{A%}ҫ V-PERS-S3-NO1SG ; 
 %<neg%>%<fut%>%<p1%>%<sg%>:%>м%{A%}%>м CLIT ;
@@ -339,7 +346,8 @@ LEXICON V-IRREG-LEX
 LEXICON V-NEG-LEX 
 
 %<neg%>:%>м%{A%} V-COMMON-LEX ;
-%<neg%>%<ger2%>:%>м%{A%}%>%{E%}%>с%{A%} POSS ;
+%<neg%>%<prc2%>:%>м%{A%}%>%{E%}%>с%{A%} # ; ! FIXME: Check continuations
+%<neg%>%<gna9%>:%>м%{A%}%>%{E%}%>с%{A%} # ; ! FIXME: Check continuations
 V-COMMON-LEX ; 
 
 LEXICON V-IV-LEX
@@ -475,15 +483,10 @@ LEXICON CALEX
 
 %<cnjadv%>: # ; 
 
-LEXICON PREDLEX
-
-%<pred%>: CLIT ; 
-!%<pred%>: V-NONFINITE-FORMS ; 
-
 LEXICON PREDLEX-I
 
-%<pred%>%<ger5%>:%>кән POSS ;
-%<pred%>%<ifi%>:%>не V-PERS-S2 ; 
+%<cop%>%<ger5%>:%>кән POSS ;
+%<cop%>%<ifi%>:%>не V-PERS-S2 ; 
 
 LEXICON ABBR 
 
@@ -1318,7 +1321,6 @@ LEXICON Nouns
 намыҫ:намыҫ NLEX ; ! ""
 насарлыҡ:насарлыҡ NLEX ; ! ""
 нәҙир:нәҙир NLEX ; ! ""
-нәмә:нәмә NLEX ; ! ""
 нәмә:нәмә NLEX ; ! ""
 немец:немец NLEX ; ! ""
 нәүбәт:нәүбәт NLEX ; ! ""
@@ -3033,8 +3035,8 @@ LEXICON Adverbs
 
 LEXICON Verbs 
 
-бар:бар PREDLEX ; ! ""
-юҡ:юҡ PREDLEX ; ! ""
+бар:бар A3 ; ! ""
+юҡ:юҡ A3 ; ! ""
 и:и PREDLEX-I ; ! ""
 
 бул:бул V-IV-LEX ; ! ""
@@ -3064,7 +3066,7 @@ LEXICON Verbs
 ишет:ишет V-TV-LEX ; ! ""
 ал:ал V-TV-LEX ; ! ""
 ярат:ярат V-TV-LEX ; ! ""
-тырыш:тырыш V-TV-LEX ; ! ""
+тырыш:тырыш V-IV-LEX ; ! ""
 күҙәт:күҙәт V-TV-LEX ; ! ""
 аңла:аңла V-TV-LEX ; ! ""
 бир:бир V-TV-LEX ; ! ""
@@ -3183,7 +3185,6 @@ LEXICON Verbs
 үт:үт V-TV-LEX ; ! ""
 онот:онот V-TV-LEX ; ! ""
 иҫкә% төшөр:иҫкә% төшөр V-TV-LEX ; ! ""
-тырыш:тырыш V-TV-LEX ; ! ""
 тотоп% тор:тотоп% тор V-TV-LEX ; ! ""
 үтен:үтен V-TV-LEX ; ! ""
 күрһәт:күрһәт V-TV-LEX ; ! ""

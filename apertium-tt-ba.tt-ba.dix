@@ -17,6 +17,7 @@
     <sdef n="cnjsub"   c="Subordinating conjunction - Ияртүче теркәгеч - Подчинительный союз"/>
     <sdef n="cnjadv"   c="Adverbial conjunction - ~Союз"/>
     <sdef n="pred"     c="Predicative - Хәбәрлек сүз - Предикативное слово ! var, yok; мәҗбүр"/>
+    <sdef n="cop"      c=""/>
     <sdef n="qst"      c=""/>
     <sdef n="abbr"     c="Abbreviation"/>
     <sdef n="ij"       c="Interjection - Междометие - Ымлык"/>
@@ -2631,10 +2632,10 @@
 
 <!-- SECTION: Verbs - Глаголы -->
 
-    <e><p><l>бар<s n="pred"/></l><r>бар<s n="pred"/></r></p></e>
-    <e><p><l>и<s n="pred"/></l><r>и<s n="pred"/></r></p></e>
+    <e><p><l>бар<s n="adj"/></l><r>бар<s n="adj"/></r></p></e>
+    <e><p><l>и<s n="cop"/></l><r>и<s n="cop"/></r></p></e>
     <e><p><l>мәҗбүр<s n="pred"/></l><r>№<s n="pred"/></r></p></e>
-    <e><p><l>юк<s n="pred"/></l><r>юҡ<s n="pred"/></r></p></e>
+    <e><p><l>юк<s n="adj"/></l><r>юҡ<s n="adj"/></r></p></e>
 
     <e><p><l>ал<s n="v"/><s n="tv"/></l><r>ал<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>алып<b/>бар<s n="v"/><s n="tv"/></l><r>алып<b/>бар<s n="v"/><s n="tv"/></r></p></e>
@@ -2889,8 +2890,6 @@
     <e><p><l>тыңла<s n="v"/><s n="tv"/></l><r>тыңла<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>тыңла<s n="v"/><s n="tv"/></l><r>тыңла<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>тырыш<s n="v"/><s n="iv"/></l><r>тырыш<s n="v"/><s n="iv"/></r></p></e>
-    <e><p><l>тырыш<s n="v"/><s n="tv"/></l><r>тырыш<s n="v"/><s n="tv"/></r></p></e>
-    <e><p><l>тырыш<s n="v"/><s n="tv"/></l><r>тырыш<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>уйла<s n="v"/><s n="tv"/></l><r>уйла<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>уйлап<b/>ал<s n="v"/><s n="tv"/></l><r>уйлап<b/>ал<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>уйна<s n="v"/><s n="tv"/></l><r>уйна<s n="v"/><s n="tv"/></r></p></e>
