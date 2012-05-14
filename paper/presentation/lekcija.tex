@@ -113,7 +113,7 @@
     \item The idea was to create a pedagogical example
     \begin{itemize}
       \item A simple demonstration system 
-      \item that nonetheless showed all parts of a working system
+      \item that nonetheless showed all modules working
     \end{itemize}
  
     \item We chose Tatar and Bashkir because,
@@ -157,13 +157,16 @@
 \end{onlyenv}
 \begin{onlyenv}<3>
 
+\begin{block}{Tatar and Bashkir}
 Һава бүген бик әйбәт, җылы гына.  \\
 Һауа бөгөн бик әйбәт, йылы ғына. \\
-
+\end{block}
+\begin{block}{Comparison with other Turkic languages}
 Hava bugün çok güzel, yeterince sıcak. \\
 Ҫанталӑк паян питӗ хитре, самай ӑшӑ. \\
 Ауа райы бүгін әбден жақсы, жылы. \\
 Аба бүгүн абдан жакшы, жетишинче жылуу. 
+\end{block}
 
 \end{onlyenv}
 
@@ -172,18 +175,22 @@ Hava bugün çok güzel, yeterince sıcak. \\
 \begin{frame}
   \frametitle{Apertium}
 
-\begin{block}{}
-
-\begin{itemize}
-  \item Free/open-source software (GPL licence)
+\begin{center}
+\includegraphics[width=0.82\textwidth]{apertiumlangs.pdf}
+\end{center}
+\begin{block}{Overview}
+  
   \begin{itemize}
-    \item Not only the programs, but the data too!
+    \item Free/open-source software (GPL licence)
+    \begin{itemize}
+      \item Not only the programs, but the data too!
+    \end{itemize}
+    \item Fairly mature data for over 30 language pairs
+    \item ... but so far no mature data for Turkic languages!
   \end{itemize}
-  \item Fairly mature data for over 30 language pairs
-  \item ... but so far no mature data for Turkic languages!
-\end{itemize}
-
+  
 \end{block}
+
 
 \end{frame}
 
@@ -194,6 +201,34 @@ Hava bugün çok güzel, yeterince sıcak. \\
 \includegraphics[width=\textwidth]{../architecture.pdf}
 
 \end{frame}
+
+\begin{frame}
+  \frametitle{Tools}
+
+\begin{block}{Helsinki Finite-State Toolkit (HFST)}
+  \begin{itemize}
+    \item Free/open-source implementation of the Xerox 
+       finite-state formalisms {\small {\tt lexc}}/{\small {\tt twol}}
+    \item Used for morphological analysis and generation
+  \end{itemize}
+\end{block}
+
+\begin{block}{VISL Constraint Grammar}
+  \begin{itemize}
+    \item Morphological disambiguation
+  \end{itemize}
+\end{block}
+
+\begin{block}{Apertium}
+  \begin{itemize}
+    \item Lexical and structural transfer
+    \item Build system
+  \end{itemize}
+\end{block}
+
+
+\end{frame}
+
 
 \begin{frame}[fragile]
 
@@ -246,12 +281,6 @@ Hava bugün çok güzel, yeterince sıcak. \\
 \end{frame}
 
 \begin{frame}
-  \frametitle{Tools}
-
-\end{frame}
-
-
-\begin{frame}
   \frametitle{Speed}
 
 \begin{center}
@@ -273,7 +302,7 @@ Tatar & Bashkir \\
 \begin{center}
   \begin{tabular}{lrr}
   \hline
-   Corpus                  & Tokens    & Coverage\\
+   {\bf Corpus}            & {\bf Tokens}    & {\bf Coverage}\\
   \hline
    Tatar New Test.         & 163,603   & 72.04\% \\
    Tatar Wikipedia         & 37,123    & 70.19\% \\
@@ -281,6 +310,7 @@ Tatar & Bashkir \\
    Bashkir Wikipedia       & 12,267    & 65.99\% \\
   \hline
   \end{tabular}
+
 \end{center}
 \end{block}
 
@@ -289,10 +319,10 @@ Tatar & Bashkir \\
 
   \begin{tabular}{ccrrr}
   \hline
-   Corpus                 & Direction         & Tokens  & Unknown & WER  \\
+   {\bf Corpus}           & {\bf Direction}   & {\bf Tokens}  & {\bf Unknown} & {\bf WER}  \\
   \hline
-   \multirow{2}{*}{story} & tt$\rightarrow$ba & 311     & 9  & 8.97\% \\
-                          & ba$\rightarrow$tt & 312     & 1  & 7.72\%  \\
+   \multirow{2}{*}{story} & {\small {\tt tt$\rightarrow$ba}} & 311     & 9  & 8.97\% \\
+                          & {\small {\tt ba$\rightarrow$tt}} & 312     & 1  & 7.72\%  \\
   \hline
   \end{tabular}
 \end{center}
@@ -303,14 +333,25 @@ Tatar & Bashkir \\
 \begin{frame}
   \frametitle{Weak points}
 
-\begin{itemize}
-  \item Majority of errors due to mistakes and gaps in Tatar morphophonology
-  \item Combinations of case and possessive suffixes
-  \item Orthographical representations of phonology
-  \item Vowel harmony processing on clitics (e.g., \emph{да}/\emph{дә} `and')  
-     after unknown words.
-  \item Hargle bargle
-\end{itemize}
+\begin{block}{Linguistic}
+  
+  \begin{itemize}
+    \item Majority of errors due to mistakes and gaps in Tatar morphophonology
+    \item Combinations of case and possessive suffixes
+    \item Orthographical representations of phonology
+    \item Coverage
+    \item Hargle bargle
+  \end{itemize}
+  
+\end{block}
+
+\begin{block}{Technical}
+  \begin{itemize}
+    \item Vowel harmony processing on clitics (e.g., \emph{да}/\emph{дә} `and')  
+       after unknown words.
+    \item Traditional methods of quality control are difficult to apply
+  \end{itemize} 
+\end{block}
 
 \end{frame}
 
@@ -349,6 +390,27 @@ Tatar & Bashkir \\
 
 \begin{frame}
   \frametitle{Future work}
+
+\begin{block}{For Tatar$\leftrightarrow$Bashkir:}
+  \begin{itemize}
+    \item Expand lexicons 
+    \item Improve morphophonology
+  \end{itemize}
+\end{block}
+
+\begin{block}{Other Turkic language projects:}
+  \begin{itemize}
+    \item We're currently working on:
+
+    \begin{itemize}
+      \item Turkish$\leftrightarrow$Chuvash
+      \item Tatar$\leftrightarrow$Kazakh$\dagger$
+      \item Turkish$\leftrightarrow$Turkmen$\dagger$
+      \item Turkish$\leftrightarrow$Tatar$\dagger$
+    \end{itemize}
+  \end{itemize}
+    $\dagger$ As projects in the 2012 Google Summer of Code.
+\end{block}
 
 \end{frame}
 
