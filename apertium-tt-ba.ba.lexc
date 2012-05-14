@@ -2,6 +2,8 @@
 !!  M O R P H O L O G I C A L · T R A N S D U C E R · F O R · B A S H K I R  !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+! See http://wiki.apertium.org/wiki/Turkic_lexicon
+
 Multichar_Symbols
 ! Followed http://wiki.apertium.org/wiki/Turkic_languages
 
@@ -11,25 +13,31 @@ Multichar_Symbols
 %<adj%>        ! Adjective                  ! Прилагательное
 %<num%>        ! Numeral                    ! Числительное
 %<prn%>        ! Pronoun                    ! Местоимение
-%<det%>        ! Determiner                 ! ?Детерминатив?
+%<det%>        ! Determiner                 ! Детерминатив
 %<v%>          ! Verb                       ! Глагол
 %<vaux%>       ! Auxilary verb              ! Вспомогательный гл.
 %<adv%>        ! Adverb                     ! Наречие
 %<post%>       ! Postposition               ! Послелог
-%<postadv%>     ! Postadverb                 ! "Посленаречие"       !# "ғына"
+%<postadv%>    ! Postadverb                 ! "Посленаречие" (*1)    !# "ғына"
 %<cnjcoo%>     ! Co-ordinating conjunction  ! Сочинительный союз
 %<cnjsub%>     ! Sub-ordinating conjunction ! Подчинительный союз
 %<cnjadv%>     ! Adverbial conjunction      ! ~Союз
 %<part%>       ! Particle                   ! Частица
 %<ij%>         ! Interjection               ! Междометие
 %<abbr%>       ! Abbreviation               ! Аббревиатура
-%<cop%>        ! Copula                     ! Svjazki
+%<cop%>        ! Copula                     ! Связка
+!%<ideo%>       ! Ideophone                  ! (Звуко)подражательное слово
+!модаль сүз     ! модальное слово 
+
+! *1. Асыҡлаган һүҙҙәренең артынан килә торған рәүешләр/"кисәксәләр" !# ғына, уҡ
 
 ! Proper noun types
 %<top%>            ! Toponym      ! Топоним
 %<ant%>            ! Anthroponym  ! Личное имя
 %<cog%>            ! Cognomen     ! Фамилия
 %<org%>            ! Organization ! Организация
+%<al%>             ! Other        ! Остальное
+
 !! gender of anthroponyms and cognomes
 %<m%>              ! Masculine    ! Мужской род
 %<f%>              ! Feminine     ! Женский род
@@ -62,12 +70,11 @@ Multichar_Symbols
 
 !! some additional ~cases
 %<locattr%>    ! Relativised locative=Locative attribute=Местно-временной2 !# LAGI !! FIXME:Not needed anymore, bcs we switched to <loc><attr>
-%<sim%>        ! Similative !# ?LAй? FIXME: here it is something else, used with <num>
+%<sim%>        ! Similative !# ?LAй
 !лишительный   !# -һыз/-һез !! not used after posessives
 !обладательный !# -Lы/-Lе   !! not used after posessives
 
 ! Levels of comparison of adjectives
-%<pst%>            ! Positive     FIXME: not needed actually
 %<comp%>           ! Comparative
 %<sup%>            ! Superlative
 !! "weakening" form is not regular. So "weakened" :) adj are added as base lemmas.
@@ -76,15 +83,18 @@ Multichar_Symbols
 
 ! Pronoun types
 %<pers%>           ! Personal
-%<itg%>            ! Interrogative
 %<ref%>            ! Reflexive
 ! Pronoun and determiner types
 %<dem%>            ! Demonstrative
 %<ind%>            ! Indefinite
+%<itg%>            ! Interrogative
 %<qnt%>            ! Quantifier
+%<neg%>            ! Negative    ! FIXME:NOTE: also used for verbs
 
 ! Numeral types
 %<ord%>            ! Ordinal
+%<coll%>           ! Collective  !# берәү, икәү
+%<dist%>           ! Distibutive !# берәр, икешәр
 
 ! Tense, aspect, mood
 %<imp%>            ! Imperative
@@ -92,25 +102,42 @@ Multichar_Symbols
 %<caus%>           ! 
 %<pass%>           ! 
 %<coop%>           ! 
-%<neg%>            ! 
 
 %<pres%>           ! -{A}
 %<past%>           ! -{G}{A}н
 %<fut%>            ! -{I}р
 %<ifi%>            ! -{N}{I}
 
+! Non-Finite verb forms ! WARNING: Number part of the tags is subject to change :)
+                        ! Stay up-to-date
+
+!! Participles
+%<prc_impf%>       ! -{E}    !# ул _уйный_ алмады; мин _килә_ алмадым
+%<prc2%>           ! -{I}п   !# "_Йоклап_ яткан мәче авызына тычкан үзе _килеп_ керми."
+%<prc_vol%>        ! -{G}{I} !# _барғым_ килә             ! FIXME:NOTE: as far as I know, there are two types of vol.prc in Bashkir:
+                                                          ! 1. looks like Tatar vol.prc, 2. the second is like in in the example above.
+                                                          ! {{test|tt|Бараһым килә.|Барасым килә.}}
+                                                          ! {{test|tt|Барғым килә.|Барасым килә.}}
+
+!! Verbal adverbs - Хәл фигыльләр - Глаголные наречия 
+%<gna_cond%>       ! -с{A}  !# "...кайда икәнен _белсә_ дә, әйтми..."
+%<gna9%>           ! -{I}п  !# "...ул вакытта инде кояш _баеп_, йолдызлар күренә башлаган иде..." (Ф.Хөсни)
+
+!! Gerunds - Исем фигыльләр
 %<ger%>            ! -{U}
 %<ger1%>           ! -м{A}{K}
-%<gna9%>           ! -{I}п
-%<prc2%>           ! -{I}п
 %<ger3%>           ! -{G}{A}с
 %<ger4%>           ! -{G}{A}нс{I}
 %<ger5%>           ! -{G}{A}н
 %<ger6%>           ! -{I}р
 %<ger7%>           ! -{A}с{A}{K}
 %<ger8%>           ! -{E}h
-%<vol%>            ! -{G}{I}
+
 %<inf%>            ! Infinitive ! Инфинитив ! -{I}рг{A}
+
+!!! the next will be removed soon; kept to let others know about changes
+%<ger2%>           ! -{I}п !WARNING: This was replaced with prc2 and gna9; turned off 
+%<vol%>            ! !WARNING: This was replaced with prc_vol
 
 ! Transitivity ! Переходность
 %<tv%>             ! Transitive
@@ -121,6 +148,11 @@ Multichar_Symbols
 %<p2%>             ! Second person
 %<p3%>             ! Third person
 
+! Clitics
+%<qst%>            ! Modal question particle
+%<mod_foc%>        ! focus thingy
+%<mod_ass%         ! assertive
+
 ! Punctuation
 %<sent%>           ! Sentence marker
 %<guio%>           ! Hyphen
@@ -130,9 +162,6 @@ Multichar_Symbols
 %<lquot%>          ! Quote marker (left hand side) 
 %<rpar%>           ! Parenthetical marker (right hand side) 
 %<lpar%>           ! Parenthetical marker (left hand side) 
-
-! Some additional tags
-%<qst%>            ! FIXME: Question? Questioning clitics?
 
 %{L%}              ! 
 %{N%}              ! 
@@ -170,6 +199,25 @@ Verbs ;
 Abbreviations ; 
 Punctuation ; 
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON SUBST
+
+N-INFL-COMMON ; 
+%<pl%>:%>%{L%}%{A%}р N-INFL-COMMON ;
+
+! NOTE: Some substantivized things might not have pl. form, numerals e.g. 
+! (not too sure, because in Tatar they have it: 
+! #1 <11 ones meaning pupils from a given class: # өчләр = "pupils from the 3. class" 
+! #2 "Мин белгәндә аңа, мөгаен, _иллеләр_ тирәсе булгандыр."
+!
+! If they don't have pl. form; link them to N-INFL-COMMON; if they do - to SUBST.
+!                                                                     /I.S./
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!     CLITICS
+
 LEXICON CLIT
 
 %+да%<cnjcoo%>:% %{D%}%{A%} # ;
@@ -180,38 +228,48 @@ LEXICON CLIT
 !%+уҡ%<part%>:% %{U%}%{K%} # ;
 # ;
 
+!!!!!!!!!!!!!!!!!!!!!!     NOMINAL INFLECTION (N-INFL-COMMON)
+
 LEXICON CASE
 
 %<nom%>: CLIT ;
 %<gen%>:%>%{N%}%{I%}ң CLIT ;
 %<dat%>:%>%{G%}%{A%} CLIT ;
 %<acc%>:%>%{N%}%{I%} CLIT ;
-%<loc%>:%>%{L%}%{A%} CLIT ;
 %<abl%>:%>%{N%}%{A%}н CLIT ;
-%<loc%>%<attr%>:%>%{L%}%{A%}%{G%}%{I%} CLIT ;
+%<loc%>:%>%{L%}%{A%} CLIT ;
 
+LEXICON ADJ-DAGI
+
+%<subst%>: CASE ; 
+%<attr%>: CLIT ;
+
+LEXICON GENPOSS-ETC
+
+%<px%>:%>%{L%}%{I%}%{K%}%{I%}{n} CASE ;
+%<loc%>:%>%{L%}%{A%}%{G%}%{I%} ADJ-DAGI ;
+%<sim%>:%>%{L%}%{A%}й CLIT ;       
+
+LEXICON CASE-ETC
+CASE ;
+GENPOSS-ETC ;
 
 LEXICON POSS-REAL
 
-%<px1sg%>:%>%{I%}м CASE ;
-%<px2sg%>:%>%{I%}ң CASE ;
-%<px3sp%>:%>%{h%}%{I%}%{n%} CASE ;
-%<px1pl%>:%>%{I%}б%{I%}ҙ CASE ;
-%<px2pl%>:%>%{I%}%{G%}%{I%}ҙ CASE ;
+%<px1sg%>:%>%{I%}м CASE-ETC ;
+%<px2sg%>:%>%{I%}ң CASE-ETC ;
+%<px3sp%>:%>%{h%}%{I%}%{n%} CASE-ETC ;
+%<px1pl%>:%>%{I%}б%{I%}ҙ CASE-ETC ;
+%<px2pl%>:%>%{I%}%{G%}%{I%}ҙ CASE-ETC ;
 
-CASE ; 
+CASE-ETC ; ! FIXME:NOTE:! this was temporarily put here because some gerunds and pronouns are linked
+                        ! to POSS-REAL. They should be linked to SUBST actually (and they will) /I.S./ 
 
-LEXICON POSS
+LEXICON N-INFL-COMMON 
+POSS-REAL ;
+CASE-ETC ;
 
-%<px%>:%>%{L%}%{I%}%{K%}%{I%}{n} CASE ;
-
-POSS-REAL ; 
-
-
-LEXICON SUBST
-
-%<pl%>:%>%{L%}%{A%}р POSS ;
-POSS ;
+!!!!!!!!!!!!!!!!!!!!!!     PART-OF-SPEECH LEXICONS (beginning)
 
 LEXICON NLEX
 
