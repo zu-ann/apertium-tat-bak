@@ -18,6 +18,7 @@
       <attr-item tags="dat"/>
       <attr-item tags="gen"/>
       <attr-item tags="loc"/>
+      <attr-item tags="loc.attr"/> <!-- FIXME: This should be dealt with differently -->
       <attr-item tags="abl"/>
     </def-attr>
        
