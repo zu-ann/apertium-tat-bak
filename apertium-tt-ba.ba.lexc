@@ -147,7 +147,9 @@ Multichar_Symbols
 %<p1%>             ! First person
 %<p2%>             ! Second person
 %<p3%>             ! Third person
-
+%<frm%>            ! Formality ! This is not really needed for tat-bak pair, but it is needed, e.g. for kaz-tat pair
+                               ! (or, let's say bak-kaz pair). So it won't hurt if we add it here.
+  
 ! Clitics
 %<qst%>            ! Modal question particle
 %<mod_foc%>        ! focus thingy
@@ -331,6 +333,7 @@ LEXICON V-PERS-S1
 
 %<p1%>%<sg%>:%>%{I%}м CLIT ;
 %<p2%>%<sg%>:%>%{h%}%{I%}ң CLIT ;
+%<p2%>%<frm%>%<sg%>:%{h%}%{I%}г%{I%}ҙ CLIT ; ! FIXME: Check 'Ни өчен беләһегеҙме?' ! <frm><sg> and <frm><pl> are the same forms in Bashkir; so maybe <frm><sp> would be better /I.S./
 %<p3%>%<sg%>:%> CLIT ;
 %<p1%>%<pl%>:%>б%{I%}ҙ CLIT ;
 %<p2%>%<pl%>:%>%{h%}%{I%}г%{I%}ҙ CLIT ;
@@ -452,10 +455,15 @@ LEXICON V-TV-LEX
 %<v%>%<tv%>%<coop%>:%>%{I%}ш V-NEG-LEX ; 
 %<v%>%<tv%>%<coop%>:%>%{I%}ш V-IRREG-LEX ;
 
+!!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
+
 LEXICON VAUX
 
 %<vaux%>: V-PERS-S2 ;
 
+!!!!!!!!!!!!!!!!!!!!!!     copula
+
+!!!!!!!!!!!!!!!!!!!!!!     PRONOUN'S INFLECTION
 
 LEXICON PRNLEX-PERS
 
@@ -524,7 +532,7 @@ LEXICON PRNDEM-UL       ! FIXME: Unify demonstrative pronouns later
 
 LEXICON PRNITGLEX
 
-%<prn%>%<itg%>: POSS ; 
+%<prn%>%<itg%>: POSS-REAL ; 
 
 LEXICON PRNDEMLEX
 
@@ -533,7 +541,7 @@ LEXICON PRNDEMLEX
 
 LEXICON PRNREFLEX
 
-%<prn%>%<ref%>: POSS ; 
+%<prn%>%<ref%>: POSS-REAL ; 
 
 LEXICON DETQNTLEX
 
@@ -2502,6 +2510,7 @@ LEXICON Adjectives
 иң% әһәмиәтле:иң% әһәмиәтле ALEX ; ! ""
 иңле:иңле ALEX ; ! ""
 иҫке:иҫке ALEX ; ! ""
+йылы:йылы ALEX ; ! ""
 йыраҡ:йыраҡ ALEX ; ! ""
 йыуан:йыуан ALEX ; ! ""
 йәнле:йәнле ALEX ; ! ""
