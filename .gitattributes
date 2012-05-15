@@ -45,7 +45,9 @@ paper/presentation/hist-ba.ps -text
 paper/presentation/hist-tt.ps -text
 paper/presentation/history.ba.log -text
 paper/presentation/history.tt.log -text
+paper/presentation/lekcija.bib -text
 paper/presentation/lekcija.tex -text
+paper/presentation/lrec2012.bst -text
 paper/presentation/middlevolga19001500.jpg -text
 paper/presentation/notes.txt -text
 paper/tt-ba.bib -text
