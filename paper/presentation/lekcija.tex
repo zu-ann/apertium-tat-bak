@@ -330,7 +330,20 @@
   \begin{itemize} % FIXME: check this
     \item Stems in both Tatar and Bashkir are added to an online spreadsheet
     \begin{itemize}
-      \item Added according to frequency in the RNC. % downsides
+      \item Added according to frequency in the RNC. % downsides: Well, I think that translation from a third X language is always a bit dangerous,
+                                                     % because it leads to duplication of stems. Another thing is (if the language we are translating
+                                                     % from is distant from other two), one has to be careful and not forget to check POS tags.
+                                                     % Me and Rustam forgot it often /or was it before me :)?/ and we got lot's of miscategorizations
+                                                     % when Russian adj. was translated with a n.attr (and the <adj> remained). It wasn't that bad initially,
+                                                     % but after introducing n.attr tag they clearly became mistakes.
+                                                     %
+                                                     % The best way seems to be to collect a corpus (somehow, even a small one) for one of the languages,
+                                                     % and translate wordforms from it by their frequency. And it turned out to be faster that way, becuase
+                                                     % sometimes you don't have to change anything at all, if wordform is actually a lemma. Just copy and paste it.
+                                                     % 
+                                                     % For some semiclosed categories (like country names) Wikipedia might be useful. E.g., look at the
+                                                     % category with all contry names and get them from there. (Let's see if I can use this for kaz-tat) /I.S./                 
+
       \item At the same time as translations, POS categories are added, and some
         relevant subcategorisations (transitivity, Tatar infinitive)
     \end{itemize}
@@ -453,7 +466,12 @@ Tatar & Bashkir \\
 
 \begin{block}{Parallel development}
   \begin{itemize}
-    \item Building the transducers and bilingual dictionary at the same time is good
+    \item Building the transducers and bilingual dictionary at the same time is good % Trying to translate a story or something real from the start
+                                                                                     % is also good (exp. for us, newbies), to get a wholistic view of the process
+                                                                                     % and e.g. to deal with really needed disambig rules first
+                                                                                     % and to learn to choose a translation equivalent which will work in most cases 
+                                                                                     % and not to forget to restrict others while working on spreadsheet etc.
+                                                                                     % /IMHO I.S./
   \end{itemize}
 \end{block}
 
