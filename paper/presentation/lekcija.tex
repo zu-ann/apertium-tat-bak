@@ -13,6 +13,7 @@
 \usepackage{xunicode}
 \usepackage{xltxtra}
 \usepackage{wasysym}
+\usepackage{url}
 \defaultfontfeatures{Mapping=tex-text} %PunctuationSpace=3,Scale=MatchLowercase,,Numbers=Lining}
 \setmainfont[]{Nimbus Sans L}
 \setsansfont[]{Nimbus Sans L}
@@ -310,6 +311,22 @@ Tatar & Bashkir \\
 \begin{frame}
   \frametitle{Evaluation}
 
+\begin{block}{Rules and lexica}
+  \begin{center}
+    \begin{tabular}{lr}
+    \hline
+     {\bf Corpus}                        & {\bf Entries}\\
+    \hline
+     Bilingual dictionary                & 2,685     \\
+     Disambiguation ({\small {\tt tt}} and {\small {\tt ba}}) & 6   \\
+     Transfer ({\small {\tt tt$\rightarrow$ba}}) & 3 \\
+     Transfer ({\small {\tt ba$\rightarrow$tt}}) & 3 \\
+    \hline
+    \end{tabular}
+  \end{center}  
+
+\end{block}
+
 \begin{block}{Coverage}
 
 \begin{center}
@@ -329,8 +346,13 @@ Tatar & Bashkir \\
 
 \begin{block}{Error rate}
 \begin{center}
-
-  \begin{tabular}{ccrrr} % FIXME: update these results
+  % NOTE: The performance without MT is:
+  %        tt->ba: 56,59% 
+  %        ba->tt: 56,41% 
+  % simple 'transliteration' (e.g. ҙ ҡ ғ → з к г):
+  %        ba->tt: 46.47%
+  %
+  \begin{tabular}{ccrrr} 
   \hline
    {\bf Corpus}           & {\bf Direction}   & {\bf Tokens}  & {\bf Unknown} & {\bf WER}  \\
   \hline
@@ -450,6 +472,10 @@ Tatar & Bashkir \\
 
 
 \end{block}
+
+\begin{center}
+Try it out! \url{http://elx.dlsi.ua.es/~fran/tt-ba/}
+\end{center}
 
 \end{frame}
 
