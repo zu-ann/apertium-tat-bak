@@ -99,6 +99,13 @@ alt       & --  &     &     &     &     &     &     &     &     &     &     &   
 == Tatar and Bashkir ==
 == Apertium ==
 == Architecture ==
+
+* Multiwords are analysed at the same time as any other lexicon item,
+   in an LRLM manner. (e.g. ... ...)
+
+* Some context insensitive morphological transfer is done in the transfer 
+   lexicon (bilingual dictionary) and other is done in the structural transfer.
+
 == Tools ==
 == Development process ==
 == Speed ==
@@ -107,3 +114,4 @@ alt       & --  &     &     &     &     &     &     &     &     &     &     &   
 == Observations ==
 == Future work ==
 == Conclusion ==
+
