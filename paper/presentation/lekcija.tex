@@ -1,4 +1,3 @@
-
 \documentclass[10pt,xetex]{beamer} %[compress, blue]
 \mode<presentation>
 
@@ -14,6 +13,9 @@
 \usepackage{xltxtra}
 \usepackage{wasysym}
 \usepackage{url}
+
+\usepackage{natbib}
+
 \defaultfontfeatures{Mapping=tex-text} %PunctuationSpace=3,Scale=MatchLowercase,,Numbers=Lining}
 \setmainfont[]{Nimbus Sans L}
 \setsansfont[]{Nimbus Sans L}
@@ -132,19 +134,23 @@
 
 \begin{frame}
   \frametitle{Tatar and Bashkir} % Map
-  
-  \begin{onlyenv}<1>
+  \framesubtitle{Geography}
 	%\begin{centering}
 		\vspace{0.2em}
 		\noindent\hspace{-2.75em}\includegraphics[width=1.175\textwidth]{middlevolga19001500.jpg}
 	%\end{centering}
-  \end{onlyenv}
-  \begin{onlyenv}<2>
+\end{frame}
+\begin{frame}
+	\frametitle{Tatar and Bashkir}
+	\framesubtitle{Demographics}
     
     \begin{block}{Tatar}
       
       \begin{itemize}
-        \item spoken by $>$ 6.5m people \citet{lewis09}
+        \item spoken by $>$ 6.5m people \citep{lewis2009}
+		  \item coofficial with Russian in Tatarstan
+		  \item minority language even in Tatarstan
+		  \item high rate of bilingualism with Russian
         \item hargle bargle %FIXME: more real stuff needed
       \end{itemize}
       
@@ -153,14 +159,51 @@
     \begin{block}{Bashkir}
       
       \begin{itemize}
-        \item spoken by $>$ 1.3m people \citet{lewis09}
+        \item spoken by $>$ 1.3m people \citep{lewis2009}
+		  \item coofficial with Russian in Bashqortostan
+		  \item minority language even in Tatarstan
+		  \item high rate of bilingualism with Russian
+		  \item classified as ``vulnerable'' by UNESCO
         \item some facts we made up %FIXME: put real stuff here
       \end{itemize}
     
     \end{block}
-    
+\end{frame}
+\begin{frame}
+	\frametitle{Tatar and Bashkir}
+	\framesubtitle{Comparison}
+ 
+  \begin{onlyenv}<1>
+	 \begin{block}{The similarities}
+	 	\begin{itemize}
+			\item very close relatives: same branch of Kypchak group of Turkic
+			\item share many innovations
+			\item high level of mutual intelligibility when spoken
+			\item large percentage of the lexicon are similar
+		\end{itemize}
+	\end{block}
+
+	\begin{block}{The differences}
+		\begin{itemize}
+			\item Bashkir has quite a few phonological innovations not found Tatar
+			\begin{itemize}
+				\item handful of extra historical changes
+				\item rounding harmony
+				\item desonorisation of high-sonority suffix-initial consonants\\cf.\ \citet{washington10}
+			\end{itemize}
+			\item a number of morphological differences
+			\begin{itemize}
+				\item e.g., different volitional participles
+			\end{itemize}
+			\item many inherent similarities are obscured:
+			\begin{itemize}
+				\item phonological and morphological differences
+				\item different orthographical systems
+			\end{itemize}
+		\end{itemize}
+	\end{block}
   \end{onlyenv}
-  \begin{onlyenv}<3>
+  \begin{onlyenv}<2>
   
     %FIXME: Add IPA 
     \begin{block}{Tatar and Bashkir}
@@ -172,7 +215,7 @@
       Hava bugün çok güzel, yeterince sıcak. \\
       Ҫанталӑк паян питӗ хитре, самай ӑшӑ. \\
       Ауа райы бүгін әбден жақсы, жылы. \\
-      Аба бүгүн абдан жакшы, жетишинче жылуу. 
+      Аба ырайы бүгүн аябай жакшы, жылуу.
     \end{block}
   
   \end{onlyenv}
