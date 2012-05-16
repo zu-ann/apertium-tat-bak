@@ -77,15 +77,15 @@
 \vspace{-4em}
 \begin{tabular}{cc}
  {\bf Francis M. Tyers} & {\bf Jonathan North Washington} \\
- Dept. Lleng. i Sist. Inform. & Depts. Linguistics \&\\
- Universitat d'Alacant & Central Eurasian Studies \\
-  & Indiana University \\
+ Grup Transducens & Depts. Linguistics \&\\
+ Dept. Lleng. i Sist. Inform. & Central Eurasian Studies \\
+ Universitat d'Alacant & Indiana University \\
  {\tt \href{mailto:ftyers@dlsi.ua.es}{ftyers@dlsi.ua.es}} & {\tt \href{mailto:jonwashi@indiana.edu}{jonwashi@indiana.edu}} \\ 
  ~ & ~ \\
  {\bf Ilnar Salimzyanov} & {\bf Rustam Batalov} \\
+ Department of Russian Philology & Department of Economics \\ 
  Kazan Federal University & Bashkir State University \\
  {\tt \href{mailto:ilnar.salimzyan@gmail.com}{ilnar.salimzyan@gmail.com}} & {\tt \href{mailto:taqmaq@mail.ru}{taqmaq@mail.ru}} \\
- ~ & ~ \\
  ~ & ~ \\
 \end{tabular}
 
@@ -216,22 +216,22 @@
     %FIXME: Check IPA with native speakers
 	\begin{block}{Tatar and Bashkir}
 		\begin{itemize}
-			\item[tat] Һава бүген бик әйбәт, җылы гына.  \\
+			\item[{\small {\tt tat}}] Һава бүген бик әйбәт, җылы гына.  \\
 			{\qipa [hɑwɑ bɵɣɘn bijk æjbæt, ʑələ ʁənɑ]}
-			\item[bak] Һауа бөгөн бик әйбәт, йылы ғына. \\
+			\item[{\small {\tt bak}}] Һауа бөгөн бик әйбәт, йылы ғына. \\
 			{\qipa [hɑwɑ bɵɣɵn bik æjbæt, jələ ʁənɑ]}
 		\end{itemize}
 	\end{block}
 
 	\begin{block}{Comparison with other Turkic languages}
 		\begin{itemize}
-			\item[tur] Hava bugün çok güzel, yeterince sıcak. \\
+			\item[{\small {\tt tur}}] Hava bugün çok güzel, yeterince sıcak. \\
 			{\qipa [hɑvɑ buɣyn ʧok gyzæl, jɛtʰɛrɪnʤɛ sɯʤɑkʰ]}
-			\item[chv] Ҫанталӑк паян питӗ хитре, самай ӑшӑ. \\
+			\item[{\small {\tt chv}}] Ҫанталӑк паян питӗ хитре, самай ӑшӑ. \\
 			{\qipa [ɕanˈtalək pɑˈjɑn ˈpitɘ xitˈre, saˈmaj ˈɔʂə]}
-			\item[kaz] Ауа райы бүгін әбден жақсы, жылы. \\
+			\item[{\small {\tt kaz}}] Ауа райы бүгін әбден жақсы, жылы. \\
 			{\qipa [ɑwɑ ɾɑjə bʉɣɘn æbdi̯ɘn ʐɑχsə, ʐələ]}
-			\item[kir] Аба ырайы бүгүн аябай жакшы, жылуу. \\
+			\item[{\small {\tt kir}}] Аба ырайы бүгүн аябай жакшы, жылуу. \\
 			{\qipa [ɑβɑ ɾɑjɯ βyɣyn ɑjɑβɑj ʥɑqʃɯ, ʥɯluː]}
 		\end{itemize}
 	\end{block}
@@ -244,8 +244,9 @@
   \frametitle{Apertium}
 
 \begin{center}
-  \includegraphics[width=0.82\textwidth]{apertiumlangs1.pdf}%FIXED: svg->pdf is ugly
+  \includegraphics[width=0.82\textwidth]{apertiumlangs.pdf}%FIXED: svg->pdf is ugly
 \end{center}
+
 \begin{block}{Overview}
   
   \begin{itemize}
@@ -266,7 +267,14 @@
 \begin{frame}
   \frametitle{Architecture}
 
-\includegraphics[width=\textwidth]{../architecture.pdf}
+\includegraphics[width=\textwidth]{architecture-ap.pdf} 
+\vspace{1em}
+\hrule
+\vspace{1em}
+\includegraphics[width=\textwidth]{architecture-ko.pdf} 
+\begin{flushright}
+{\tiny Tantuğ et al. (2007)}
+\end{flushright}
 
 \end{frame}
 
@@ -299,45 +307,76 @@
 
 \begin{frame}[fragile]
 
-\fontsize{9pt}{11.2}\selectfont
 
-\begin{tabular}{l}
-%\hline
-%{\bf Stage} & {\bf Representation} \\
-\hline
-\hline
- Һава бүген бик әйбәт, җылы гына. \\ 
-\hline
-{\bf Morphological analysis} \\
-\hline
- \^{}Һава/һава\atag{<n>}\atag{<attr>}/һава\atag{<n>}\atag{<nom>\$} \^{}бүген/бүген\atag{<adv>\$}  \\
-              \^{}бик/бик\atag{<adv>}/бик\atag{<n>}\atag{<attr>}/бик\atag{<n>}\atag{<nom>\$} \\ 
-              \^{}әйбәт/әйбәт\atag{<adj>}/әйбәт\atag{<adj>}\atag{<subst>}\atag{<nom>\$}\^{},/,\atag{<cm>\$} \\ 
-              \^{}җылы/җылы\atag{<n>}\atag{<attr>}/җылы\atag{<n>}\atag{<nom>}/җылы\atag{<adj>}/җылы\atag{<adj>}\atag{<subst>}\atag{<nom>\$} \\
-              \^{}гына/гына\atag{<postadv>\$}\^{}./.\atag{<sent>\$} \\
-\hline
-{\bf Morphological disambiguation} \\
-\hline
- \^{}Һава\atag{<n>}\atag{<nom>\$} \^{}бүген\atag{<adv>\$} \^{}бик\atag{<adv>\$} \^{}әйбәт\atag{<adj>\$}\^{},\atag{<cm>\$} \\ 
-              \^{}җылы\atag{<adj>\$} \^{}гына\atag{<postadv>\$}\^{}.\atag{<sent>\$}\\
-\hline
-{\bf Lexical transfer and selection} \\
-\hline
- \^{}Һава\atag{<n>}\atag{<nom>}/Һауа\atag{<n>}\atag{<nom>\$} \^{}бүген\atag{<adv>}/бөгөн\atag{<adv>\$} \^{}бик\atag{<adv>}/бик\atag{<adv>\$} \\
-              \^{}әйбәт\atag{<adj>}/әйбәт\atag{<adj>\$}\^{},\atag{<cm>}/,\atag{<cm>\$} \^{}җылы\atag{<adj>}/йылы\atag{<adj>\$} \\ 
-              \^{}гына\atag{<postadv>}/ғына\atag{<postadv>\$}\^{}.\atag{<sent>}/.\atag{<sent>\$}\\
-\hline
-{\bf Structural transfer} \\
-\hline
- \^{}Һауа\atag{<n>}\atag{<nom>\$} \^{}бөгөн\atag{<adv>\$} \^{}бик\atag{<adv>\$} \^{}әйбәт\atag{<adj>\$}\^{},\atag{<cm>\$} \\ 
-              \^{}йылы\atag{<adj>\$} \^{}ғына\atag{<postadv>\$}\^{}.\atag{<sent>\$}\\
-\hline
-{\bf Morphological generation} \\
-\hline
- Һауа бөгөн бик әйбәт, йылы ғына. \\
-\hline
-\hline
-\end{tabular}
+\begin{onlyenv}<1->
+\fontsize{9pt}{11.2}\selectfont
+  \begin{tabular*}{\textwidth}{l}
+  %\hline
+  %{\bf Stage} & {\bf Representation} \\
+  \hline
+  \hline
+   Һава бүген бик әйбәт, җылы гына. \\ 
+  \hline
+  \end{tabular*}
+\end{onlyenv}
+
+\begin{onlyenv}<2->
+\fontsize{9pt}{11.2}\selectfont
+  \begin{tabular*}{\textwidth}{l}
+  {\bf Morphological analysis} \\
+  \hline
+   \^{}Һава/һава\atag{<n>}\atag{<attr>}/һава\atag{<n>}\atag{<nom>\$} \^{}бүген/бүген\atag{<adv>\$}  \\
+                \^{}бик/бик\atag{<adv>}/бик\atag{<n>}\atag{<attr>}/бик\atag{<n>}\atag{<nom>\$} \\ 
+                \^{}әйбәт/әйбәт\atag{<adj>}/әйбәт\atag{<adj>}\atag{<subst>}\atag{<nom>\$}\^{},/,\atag{<cm>\$} \\ 
+                \^{}җылы/җылы\atag{<n>}\atag{<attr>}/җылы\atag{<n>}\atag{<nom>}/җылы\atag{<adj>}/җылы\atag{<adj>}\atag{<subst>}\atag{<nom>\$} \\
+                \^{}гына/гына\atag{<postadv>\$}\^{}./.\atag{<sent>\$} \\
+  \hline
+  \end{tabular*}
+\end{onlyenv}
+
+\begin{onlyenv}<3->
+\fontsize{9pt}{11.2}\selectfont
+  \begin{tabular*}{\textwidth}{l}
+  {\bf Morphological disambiguation} \\
+  \hline
+   \^{}Һава\atag{<n>}\atag{<nom>\$} \^{}бүген\atag{<adv>\$} \^{}бик\atag{<adv>\$} \^{}әйбәт\atag{<adj>\$}\^{},\atag{<cm>\$} \\ 
+                \^{}җылы\atag{<adj>\$} \^{}гына\atag{<postadv>\$}\^{}.\atag{<sent>\$}\\
+  \hline
+  \end{tabular*}
+\end{onlyenv}
+
+\begin{onlyenv}<4->
+\fontsize{9pt}{11.2}\selectfont
+  \begin{tabular*}{\textwidth}{l}
+  {\bf Lexical transfer and selection} \\
+  \hline
+   \^{}Һава\atag{<n>}\atag{<nom>}/Һауа\atag{<n>}\atag{<nom>\$} \^{}бүген\atag{<adv>}/бөгөн\atag{<adv>\$} \^{}бик\atag{<adv>}/бик\atag{<adv>\$} \\
+                \^{}әйбәт\atag{<adj>}/әйбәт\atag{<adj>\$}\^{},\atag{<cm>}/,\atag{<cm>\$} \^{}җылы\atag{<adj>}/йылы\atag{<adj>\$} \\ 
+                \^{}гына\atag{<postadv>}/ғына\atag{<postadv>\$}\^{}.\atag{<sent>}/.\atag{<sent>\$}\\
+  \hline
+  \end{tabular*}
+\end{onlyenv}
+
+\begin{onlyenv}<5->
+\fontsize{9pt}{11.2}\selectfont
+  \begin{tabular*}{\textwidth}{l}
+  {\bf Structural transfer} \\
+  \hline
+   \^{}Һауа\atag{<n>}\atag{<nom>\$} \^{}бөгөн\atag{<adv>\$} \^{}бик\atag{<adv>\$} \^{}әйбәт\atag{<adj>\$}\^{},\atag{<cm>\$} \\ 
+                \^{}йылы\atag{<adj>\$} \^{}ғына\atag{<postadv>\$}\^{}.\atag{<sent>\$}\\
+  \hline
+  \end{tabular*}
+\end{onlyenv}
+
+\begin{onlyenv}<6->
+\fontsize{9pt}{11.2}\selectfont
+  \begin{tabular*}{\textwidth}{l}
+  {\bf Morphological generation}\\
+  \hline
+   Һауа бөгөн бик әйбәт, йылы ғына. \\
+  \hline
+  \end{tabular*}
+\end{onlyenv}
 
 \end{frame}
 
@@ -428,9 +467,9 @@ Tatar & Bashkir \\
   % NOTE: The performance without MT is:
   %        tt->ba: 56,59% 
   %        ba->tt: 56,41% 
-  % simple 'transliteration' (e.g. ҙ ҡ ғ → з к г):
+  % simple 'transliteration' (e.g. ҙ ҡ ғ ҫ → з к г с; ч җ ъ → с й ø):
   %        ba->tt: 46.47%
-  %
+  %        tt->ba: 54,98%
   \begin{tabular}{ccrrr} 
   \hline
    {\bf Corpus}           & {\bf Direction}   & {\bf Tokens}  & {\bf Unknown} & {\bf WER}  \\
