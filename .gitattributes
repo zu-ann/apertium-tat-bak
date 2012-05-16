@@ -41,6 +41,7 @@ paper/lrec2006.bst -text
 paper/lrec2006.sty -text
 paper/presentation/Makefile -text
 paper/presentation/apertiumlangs.svg -text
+paper/presentation/apertiumlangs1.pdf -text
 paper/presentation/architecture-ap.obj -text
 paper/presentation/architecture-ko.obj -text
 paper/presentation/hist-ba-dec.ps -text
