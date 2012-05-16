@@ -43,7 +43,11 @@ paper/presentation/Makefile -text
 paper/presentation/apertiumlangs.svg -text
 paper/presentation/architecture-ap.obj -text
 paper/presentation/architecture-ko.obj -text
+paper/presentation/hist-ba-dec.ps -text
+paper/presentation/hist-ba-mar.ps -text
 paper/presentation/hist-ba.ps -text
+paper/presentation/hist-tt-dec.ps -text
+paper/presentation/hist-tt-mar.ps -text
 paper/presentation/hist-tt.ps -text
 paper/presentation/history.ba.dec-jan.log -text
 paper/presentation/history.ba.log -text
