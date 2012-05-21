@@ -14,7 +14,6 @@
 \usepackage{wasysym}
 \usepackage{url}
 
-\usepackage{natbib}
 \newcommand{\compresslist}{
 	\setlength{\itemsep}{1pt}
 	\setlength{\parskip}{0pt}
@@ -69,6 +68,7 @@
 %{\bf Ilnar Salimzyanov} \and
 %{\bf Rustam Battalov} 
 %}
+\usepackage{natbib}
 \begin{document}
 
 \begin{frame}
@@ -159,7 +159,6 @@
 		  \item coofficial with Russian in Tatarstan
 		  \item minority language even in Tatarstan
 		  \item high rate of bilingualism with Russian
-        \item hargle bargle %FIXME: more real stuff needed
       \end{itemize}
       
     \end{block}
@@ -169,10 +168,9 @@
       \begin{itemize}
         \item spoken by $>$ 1.3m people \citep{lewis2009}
 		  \item coofficial with Russian in Bashqortostan
-		  \item minority language even in Tatarstan
+		  \item minority language even in Bashqortostan
 		  \item high rate of bilingualism with Russian
 		  \item classified as ``vulnerable'' by UNESCO
-        \item some facts we made up %FIXME: put real stuff here
       \end{itemize}
     
     \end{block}
@@ -212,8 +210,28 @@
 	\end{block}
   \end{onlyenv}
   \begin{onlyenv}<2>
+	\begin{block}{Tatar and Bashkir}
+		\begin{itemize}
+			\item[{\small {\tt tat}}] Һава бүген бик әйбәт, җылы гына.  \\
+			{\qipa [hɑwɑ bɵɣɘn bijk æjbæt, ʑələ ʁənɑ]}
+			\item[{\small {\tt bak}}] Һауа бөгөн бик әйбәт, йылы ғына. \\
+			{\qipa [hɑwɑ bɵɣɵn bik æjbæt, jələ ʁənɑ]}
+		\end{itemize}
+	\end{block}
+
+		\begin{block}{Examples of the differences}
+			\begin{itemize}
+				\item[{\small {\tt tat}}] Барасым килә. `\textit{I want to go}'
+				\item[{\small {\tt bak}}] Барғым килә. `\textit{I want to go}'\\
+				Бараһым килә.
+			\end{itemize}	
+		\end{block}
+
+  \end{onlyenv}
+  \begin{onlyenv}<3>
   
     %FIXME: Check IPA with native speakers
+	(transcriptions are approximate)
 	\begin{block}{Tatar and Bashkir}
 		\begin{itemize}
 			\item[{\small {\tt tat}}] Һава бүген бик әйбәт, җылы гына.  \\
@@ -273,7 +291,7 @@
 \vspace{1em}
 \includegraphics[width=\textwidth]{architecture-ko.pdf} 
 \begin{flushright}
-{\tiny Tantuğ et al. (2007)}
+{\tiny Machine translation between Turkic languages (Tantuğ et al., 2007)}
 \end{flushright}
 
 \end{frame}
@@ -287,12 +305,19 @@
          finite-state formalisms {\small {\tt lexc}}/{\small {\tt twol}}
       \item Used for morphological analysis and generation
     \end{itemize}
+		\begin{center}
+		{\small \url{http://hfst.sf.net/}}
+		\end{center}
   \end{block}
   
   \begin{block}{VISL Constraint Grammar}
     \begin{itemize}
       \item Rule-based morphological disambiguation
     \end{itemize}
+		\begin{center}
+		{\small \url{http://beta.visl.sdu.dk/constraint\_grammar.html}}
+		\end{center}
+
   \end{block}
   
   \begin{block}{Apertium}
@@ -300,6 +325,10 @@
       \item Lexical and structural transfer
       \item ``Platform'': Build system, ancilliary tools, etc.
     \end{itemize}
+		\begin{center}
+		{\small \url{http://www.apertium.org/} }
+		\end{center}
+
   \end{block}
   
 \end{frame}
@@ -497,14 +526,13 @@ Tatar & Bashkir \\
 \begin{frame}
   \frametitle{Weak points}
 
-\begin{block}{Linguistic}
+\begin{block}{Linguistic: Majority of errors due to:}
   
   \begin{itemize} % FIXME: check if these are still true
-    \item Majority of errors due to mistakes and gaps in Tatar morphophonology
-    \item Combinations of case and possessive suffixes
-    \item Orthographical representations of phonology
-    \item Coverage
-    \item Hargle bargle
+    \item mistakes and gaps in Tatar morphophonology (certain combinations)\\
+    \item orthographical representations of phonology\\
+		e.g., tat: сәгать /{\qipa sæʁæt}/, сәгате /{\qipa sæʁætɘ}/, сәгатьтә /{\qipa sæʁættæ}/
+    \item coverage (not enough stems)
   \end{itemize}
   
 \end{block}
@@ -572,19 +600,20 @@ Tatar & Bashkir \\
 
     \begin{itemize}
       \item Turkish$\leftrightarrow$Chuvash
-      \item Tatar$\leftrightarrow$Kazakh$\dag$
-      \item Turkish$\leftrightarrow$Turkmen$\dag$
-      \item Turkish$\leftrightarrow$Tatar$\dag$
+      \item Tatar$\leftrightarrow$Kazakh¹
+      \item Turkish$\leftrightarrow$Turkmen¹
+      \item Turkish$\leftrightarrow$Tatar¹
     \end{itemize}
 
     \item We have worked on: 
     \begin{itemize}
-      \item Turkish$\leftrightarrow$Azerbaijani$\ddag$
-      \item Turkish$\leftrightarrow$Kyrgyz$\ddag$
+      \item Turkish$\leftrightarrow$Azerbaijani²
+      \item Turkish$\leftrightarrow$Kyrgyz²
     \end{itemize}
   \end{itemize}
-  $\dag$ As projects in the 2012 Google Summer of Code. \\
-  $\ddag$ As projects in the 2011 Google Summer of Code.
+  ¹ As projects in the 2012 Google Summer of Code \\
+  ² As projects in the 2011 Google Summer of Code \\
+  \hspace{3ex} (pending reworking of Turkish morphology)
 \end{block}
 
 \end{frame}
@@ -608,7 +637,8 @@ Tatar & Bashkir \\
 \end{block}
 
 \begin{center}
-Try it out! \url{http://elx.dlsi.ua.es/~fran/tt-ba/}
+Try it out! \url{http://elx.dlsi.ua.es/~fran/tt-ba/}\\
+Source on apertium svn.
 \end{center}
 
 \end{frame}
@@ -627,9 +657,9 @@ Teşekkürler\\
 \end{Huge}
 \end{frame}
 
-%\begin{frame}
-%\bibliographystyle{lrec2012}
-%\bibliography{lekcija}
-%\end{frame}
+\begin{frame}
+\bibliographystyle{apa}
+\bibliography{lekcija}
+\end{frame}
 %
 \end{document}
