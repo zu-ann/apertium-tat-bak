@@ -34,6 +34,8 @@ dev/ru-tt-ba.txt -text
 dev/testvoc-summary.ba-tt.txt -text
 dev/testvoc-summary.tt-ba.txt -text
 dev/testvoc.sh -text
+dev/words/bakcorpus_hitparade.txt.bz2 -text
+dev/words/tatcorpus_hitparade.txt.bz2 -text
 /modes.xml -text
 paper/Makefile -text
 paper/architecture.obj -text
