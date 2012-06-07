@@ -9,9 +9,7 @@
    
     <def-cat n="čast">
       <cat-item tags="qst"/>
-      <cat-item lemma="дыр" tags="part"/>
-      <cat-item lemma="лыр" tags="part"/>
-      <cat-item lemma="сы" tags="part"/>
+      <cat-item lemma="лыр" tags="mod_ind"/>
     </def-cat>
  
   </section-def-cats>

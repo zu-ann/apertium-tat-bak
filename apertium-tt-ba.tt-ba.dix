@@ -22,6 +22,8 @@
     <sdef n="abbr"     c="Abbreviation"/>
     <sdef n="ij"       c="Interjection - Междометие - Ымлык"/>
 
+    <sdef n="mod_ind"      c=""/>
+
     <sdef n="pers"     c="Personal - Зат (алмашлыгы) - Личное (местоимение)"/>
     <sdef n="itg"      c="Interrogative"/>
     <sdef n="ref"      c="Reflexive"/>
@@ -55,7 +57,7 @@
 
 <!-- Section: Particles - Кисәкчәләр - Частицы  -->
 
-    <e><p><l>дыр<s n="part"/></l><r>лыр<s n="part"/></r></p></e>
+    <e><p><l>дыр<s n="mod_ind"/></l><r>лыр<s n="mod_ind"/></r></p></e>
     <e><p><l>мы<s n="qst"/></l><r>мы<s n="qst"/></r></p></e>
     <e><p><l>сы<s n="part"/></l><r>сы<s n="part"/></r></p></e>
     <e><p><l>ук<s n="part"/></l><r>уҡ<s n="part"/></r></p></e>
@@ -2542,6 +2544,7 @@
     <e><p><l>кайда<s n="adv"/><s n="itg"/></l><r>ҡайҙа<s n="adv"/><s n="itg"/></r></p></e>
     <e><p><l>кайчан<s n="adv"/><s n="itg"/></l><r>ҡасан<s n="adv"/><s n="itg"/></r></p></e>
     <e><p><l>ничек<s n="adv"/><s n="itg"/></l><r>нисек<s n="adv"/><s n="itg"/></r></p></e>
+    <e><p><l>ни<b/>өчен<s n="adv"/><s n="itg"/></l><r>ни<b/>өсөн<s n="adv"/><s n="itg"/></r></p></e>
 
     <e><p><l>һичкайчан<s n="adv"/></l><r>һисҡасан<s n="adv"/></r></p></e>
 
@@ -2619,6 +2622,7 @@
     <e c="">  <p><l>әйтүләренчә<s n="adv"/></l><r>әйтеүҙәренсә<s n="adv"/></r></p></e>
     <e>       <p><l>әкрен<s n="adv"/></l><r>әкрен<s n="adv"/></r></p></e>
     <e>       <p><l>әкрен<b/>генә<s n="adv"/></l><r>әкрен<b/>генә<s n="adv"/></r></p></e>
+    <e>       <p><l>әлбәттә<s n="adv"/></l><r>әлбиттә<s n="adv"/></r></p></e>
     <e>       <p><l>әле<s n="adv"/></l><r>әле<s n="adv"/></r></p></e>
     <e>       <p><l>әлегә<s n="adv"/></l><r>әлегә<s n="adv"/></r></p></e>
 

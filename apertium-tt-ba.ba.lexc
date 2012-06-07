@@ -153,7 +153,8 @@ Multichar_Symbols
 ! Clitics
 %<qst%>            ! Modal question particle
 %<mod_foc%>        ! focus thingy
-%<mod_ass%         ! assertive
+%<mod_ass%>        ! assertive
+%<mod_ind%>        ! indefinite (expressing doubt)
 
 ! Punctuation
 %<sent%>           ! Sentence marker
@@ -224,8 +225,8 @@ LEXICON CLIT
 
 %+да%<cnjcoo%>:% %{D%}%{A%} # ;
 %+мы%<qst%>:%>м%{I%} # ;
-%+лыр%<part%>:%>%{L%}%{I%}р # ;
-%+сы%<part%>:%>с%{I%} # ;
+%+лыр%<mod_ind%>:%>%{L%}%{I%}р # ;
+
 !%+мы% ни%<qst%>:%>м%{I%}% ни # ;
 !%+уҡ%<part%>:% %{U%}%{K%} # ;
 # ;
@@ -605,6 +606,7 @@ LEXICON Conjunctions
 әммә:әммә CCLEX ; ! ""
 йә:йә CCLEX ; ! ""
 йәиһә:йәиһә CCLEX ; ! ""
+ни:ни CCLEX ; ! "neither... , nor ... (x2)"
 
 да:%~да CCLEX ; ! "" Dir/RL
 да:да CCLEX ; ! "" Dir/LR
@@ -631,6 +633,7 @@ LEXICON Postpositions
 башҡа:башҡа POSTLEX ; ! ""
 ҡарамаҫтан:ҡарамаҫтан POSTLEX ; ! ""
 аҫтында:аҫтында POSTLEX ; ! ""
+күрә:күрә POSTLEX ; ! ""
 
 буйынса:буйынса POSTLEX ; ! ""
 кеүек:кеүек POSTLEX ; ! ""
@@ -3077,6 +3080,7 @@ LEXICON Adjectives
 LEXICON Adverbs 
 
 нисек:нисек ADVITGLEX ; ! ""
+ни% өсөн:ни% өсөн ADVITGLEX ; ! "why,what for" Use/MT
 ҡайҙа:ҡайҙа ADVITGLEX ; ! ""
 ҡайҙан:ҡайҙан ADVITGLEX ; ! ""
 ҡасан:ҡасан ADVITGLEX ; ! ""
@@ -3147,6 +3151,7 @@ LEXICON Adverbs
 әйткәндәй:әйткәндәй ADVLEX ; ! ""
 әкрен% генә:әкрен% генә ADVLEX ; ! ""
 әкрен:әкрен ADVLEX ; ! ""
+әлбиттә:әлбиттә ADVLEX ; ! "certainly"
 әле:әле ADVLEX ; ! ""
 әлегә:әлегә ADVLEX ; ! ""
 
