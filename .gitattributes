@@ -38,7 +38,9 @@ dev/words/bakcorpus_hitparade.txt.bz2 -text
 dev/words/tatcorpus_hitparade.txt.bz2 -text
 /modes.xml -text
 paper/Makefile -text
+paper/architecture.eps -text
 paper/architecture.obj -text
+paper/architecture.pdf -text
 paper/lrec2006.bst -text
 paper/lrec2006.sty -text
 paper/presentation/Makefile -text
