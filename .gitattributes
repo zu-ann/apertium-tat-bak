@@ -6,23 +6,23 @@
 /Makefile~ -text
 /NEWS -text
 /README -text
-/apertium-tt-ba.ba-tt.lrx -text
-/apertium-tt-ba.ba-tt.rlx -text
-/apertium-tt-ba.ba-tt.t1x -text
-/apertium-tt-ba.ba-tt.t2x -text
-/apertium-tt-ba.ba.lexc -text
-/apertium-tt-ba.ba.twol -text
-/apertium-tt-ba.post-ba.dix -text
-/apertium-tt-ba.post-tt.dix -text
-/apertium-tt-ba.tt-ba.dix -text
-/apertium-tt-ba.tt-ba.lrx -text
-/apertium-tt-ba.tt-ba.rlx -text
-/apertium-tt-ba.tt-ba.t1x -text
-/apertium-tt-ba.tt-ba.t2x -text
-/apertium-tt-ba.tt.lexc -text
-/apertium-tt-ba.tt.twol -text
+/apertium-tat-bak.bak-tat.lrx -text
+/apertium-tat-bak.bak-tat.rlx -text
+/apertium-tat-bak.bak-tat.t1x -text
+/apertium-tat-bak.bak-tat.t2x -text
+/apertium-tat-bak.bak.lexc -text
+/apertium-tat-bak.bak.twol -text
+/apertium-tat-bak.post-bak.dix -text
+/apertium-tat-bak.post-tat.dix -text
+/apertium-tat-bak.tat-bak.dix -text
+/apertium-tat-bak.tat-bak.lrx -text
+/apertium-tat-bak.tat-bak.rlx -text
+/apertium-tat-bak.tat-bak.t1x -text
+/apertium-tat-bak.tat-bak.t2x -text
+/apertium-tat-bak.tat.lexc -text
+/apertium-tat-bak.tat.twol -text
 /autogen.sh -text
-/ba-tt.prob -text svneol=unset#unset
+/bak-tat.prob -text svneol=unset#unset
 /configure.ac -text
 dev/README -text
 dev/countstems-ba.sh -text
@@ -67,9 +67,9 @@ paper/presentation/middlevolga19001500.jpg -text
 paper/presentation/notes.txt -text
 paper/tt-ba.bib -text
 paper/tt-ba.tex -text
+/tat-bak.prob -text svneol=unset#unset
 tests/gerunds.yaml -text
 texts/Tekst_ba.txt -text svneol=unset#application/octet-stream
 texts/Tekst_tt.txt -text svneol=unset#application/octet-stream
 texts/story.ba.txt -text svneol=unset#application/octet-stream
 texts/story.tt.txt -text svneol=unset#application/octet-stream
-/tt-ba.prob -text svneol=unset#unset
