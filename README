@@ -1,27 +1,103 @@
+Tatar and Bashkir
+
+                            apertium-tat-bak
 ===============================================================================
-                       apertium-tt-ba (Tatar and Bashkir)
+
+This is an Apertium language pair for translating between Tatar
+and Bashkir. What you can use this language package for:
+
+* Translating between Tatar and Bashkir
+* Morphological analysis of Tatar and Bashkir
+* Part-of-speech tagging of Tatar and Bashkir
+
+For information on the latter two points, see subheading "For more 
+information" below
+
+Requirements
 ===============================================================================
+
+You will need the following software installed:
+
+* lttoolbox (>= 3.1.2)
+* apertium (>= 3.2.0)
+* vislcg3 (>= 0.9.7.5129)
+* hfst (>= svn revision 3600)
+* apertium-tat
+* apertium-bak
+
+If this does not make any sense, we recommend you look at: www.apertium.org
+
+Compiling
+===============================================================================
+
+Given the requirements being installed, you should be able to just run:
+
+$ ./configure
+$ make
+# make install
+
+You can use ./autogen.sh instead of ./configure you're compiling from
+SVN. If you're using a --prefix to ./configure, make sure it's the
+same one you used to install apertium itself.
 
 Testing
 ===============================================================================
 
+If you are in the source directory after running make, the following
+commands should work:
+
 $ echo "Әхмәт һәм Гөлнара уйнарға яраталар, улар һәр ваҡыт өй 
-    алдындағы баҡсала бергә уйнайҙар." | apertium -d . ba-tt
+    алдындағы баҡсала бергә уйнайҙар." | apertium -d . bak-tat
 
 Әхмәт һәм Гөлнара уйнарга яраталар, алар һәрвакыт өй 
     алдындагы бакчада бергә уйныйлар.
 
+After installing somewhere in $PATH, you should be able to do eg.
+
+$ echo "Әхмәт һәм Гөлнара уйнарға яраталар, улар һәр ваҡыт өй 
+    алдындағы баҡсала бергә уйнайҙар." | apertium bak-tat
+
+Әхмәт һәм Гөлнара уйнарга яраталар, алар һәрвакыт өй 
+    алдындагы бакчада бергә уйныйлар.
+
+
+The following command runs tests which are on the Apertium wiki page:
+
+$ ./regression-tests.sh 
+
+Files and data
+===============================================================================
+
+For monolingual data, see the modules apertium-tat and apertium-bak.
+
+* apertium-tat-bak.tat-bak.lrx         - Lexical selection rules for translating into Bashkir
+* apertium-tat-bak.tat-bak.t1x         - Transfer rules for translating into Bashkir (first pass)
+* apertium-tat-bak.tat-bak.t2x         - Transfer rules for  translating into Bashkir (second pass)
+
+* apertium-tat-bak.tat-bak.dix         - Bilingual dictionary 
+
+* apertium-tat-bak.tat-bak.lrx         - Lexical selection rules for translating into Tatar
+* apertium-tat-bak.tat-bak.t1x         - Transfer rules for translating into Tatar (first pass)
+* apertium-tat-bak.tat-bak.t2x         - Transfer rules for  translating into Tatar (second pass)
+
+* modes.xml                            - Translation modes
+
+For more information
+===============================================================================
+
+* http://wiki.apertium.org/wiki/Installation
+* http://wiki.apertium.org/wiki/Bashkir_and_Tatar
+* http://wiki.apertium.org/wiki/Using_an_lttoolbox_dictionary
+* http://wiki.apertium.org/wiki/Constraint_Grammar
 
 Help and support
 ===============================================================================
 
 If you need help using this language pair or data, you can contact:
 
-* Mailing lists: 
-
+* Mailing lists:
   - apertium-turkic@lists.sourceforge.net (Turkic language specific)
   - apertium-stuff@lists.sourceforge.net (General enquiries)
-
 * IRC: #apertium on irc.freenode.net
 
 See also the file AUTHORS included in this distribution.

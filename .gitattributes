@@ -6,8 +6,6 @@
 /Makefile~ -text
 /NEWS -text
 /README -text
-/apertium-tat-bak.bak-tat.LR.att.gz -text
-/apertium-tat-bak.bak-tat.RL.att.gz -text
 /apertium-tat-bak.bak-tat.lrx -text
 /apertium-tat-bak.bak-tat.rlx -text
 /apertium-tat-bak.bak-tat.t1x -text
@@ -16,8 +14,6 @@
 /apertium-tat-bak.bak.twol -text
 /apertium-tat-bak.post-bak.dix -text
 /apertium-tat-bak.post-tat.dix -text
-/apertium-tat-bak.tat-bak.LR.att.gz -text
-/apertium-tat-bak.tat-bak.RL.att.gz -text
 /apertium-tat-bak.tat-bak.dix -text
 /apertium-tat-bak.tat-bak.lrx -text
 /apertium-tat-bak.tat-bak.rlx -text
