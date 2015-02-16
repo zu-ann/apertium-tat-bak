@@ -72,4 +72,3 @@ texts/Tekst_ba.txt -text svneol=unset#application/octet-stream
 texts/Tekst_tt.txt -text svneol=unset#application/octet-stream
 texts/story.bak.txt -text svneol=unset#application/octet-stream
 texts/story.tat.txt -text svneol=unset#application/octet-stream
-/update-morphs.bash -text
