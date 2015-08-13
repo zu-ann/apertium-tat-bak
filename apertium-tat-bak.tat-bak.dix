@@ -216,7 +216,7 @@
     <e><p><l>кайдан<s n="prn"/><s n="itg"/></l><r>ҡайҙан<s n="prn"/><s n="itg"/></r></p></e>
     <e><p><l>кайсы<s n="prn"/><s n="itg"/></l><r>№<s n="prn"/><s n="itg"/></r></p></e>
     <e><p><l>кайчан<s n="prn"/><s n="itg"/></l><r>ҡасан<s n="prn"/><s n="itg"/></r></p></e>
-    <e><p><l>кая<s n="prn"/><s n="itg"/></l><r>ҡая<s n="prn"/><s n="itg"/></r></p></e>  
+    <e><p><l>кая<s n="prn"/><s n="itg"/></l><r>ҡая<s n="prn"/><s n="itg"/></r></p></e>
     <e><p><l>кем<s n="prn"/><s n="itg"/></l><r>кем<s n="prn"/><s n="itg"/></r></p></e>
     <e><p><l>күпме<s n="prn"/><s n="itg"/></l><r>№<s n="prn"/><s n="itg"/></r></p></e>
     <e><p><l>ни<s n="prn"/><s n="itg"/></l><r>ни<s n="prn"/><s n="itg"/></r></p></e>
@@ -1095,6 +1095,7 @@
     <e><p><l>сизү<s n="n"/></l><r>һиҙеү<s n="n"/></r></p></e>
     <e><p><l>система<s n="n"/></l><r>система<s n="n"/></r></p></e>
     <e><p><l>ситуация<s n="n"/></l><r>ситуация<s n="n"/></r></p></e>
+    <e><p><l>сишәмбе<s n="n"/></l><r>шишәмбе<s n="n"/></r></p></e>
     <e><p><l>совет<s n="n"/></l><r>совет<s n="n"/></r></p></e>
     <e><p><l>солдат<s n="n"/></l><r>һалдат<s n="n"/></r></p></e>
     <e><p><l>сорау<s n="n"/></l><r>һорау<s n="n"/></r></p></e>
@@ -1730,7 +1731,7 @@
 
 <!-- SECTION: Proper names - Ялгызлык исемнәр - Имена собственные -->
 
-    <e><p><l>Башкортстан<s n="np"/><s n="top"/></l><r>Башҡортостан<s n="np"/><s n="top"/></r></p></e>    
+    <e><p><l>Башкортстан<s n="np"/><s n="top"/></l><r>Башҡортостан<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Татарстан<s n="np"/><s n="top"/></l><r>Татарстан<s n="np"/><s n="top"/></r></p></e>
 
     <!-- Toponyms: Republics and regions of Russia -->
@@ -3137,7 +3138,7 @@
     <e><p><l>-<s n="guio"/></l><r>-<s n="guio"/></r></p></e>
     <e><p><l>—<s n="guio"/></l><r>—<s n="guio"/></r></p></e>
     <e><re>[.\?;:!"]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
-    <e><re>%?[0-9]+([.,][0-9]+)*[.,]*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e> 
+    <e><re>%?[0-9]+([.,][0-9]+)*[.,]*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
 
   </section>
 </dictionary>
