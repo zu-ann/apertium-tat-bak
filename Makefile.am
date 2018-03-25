@@ -87,6 +87,17 @@ $(PREFIX1).rlx.bin: $(AP_SRC1)/apertium-$(LANG1).$(LANG1).rlx
 $(PREFIX2).rlx.bin: $(AP_SRC2)/apertium-$(LANG2).$(LANG2).rlx
 	cg-comp $< $@
 
+###############################################################################
+## Tagger models
+###############################################################################
+
+$(PREFIX1).prob: $(AP_SRC1)/$(LANG1).prob
+	cp $< $@
+
+$(PREFIX2).prob: $(AP_SRC2)/$(LANG2).prob
+	cp $< $@
+
+
 
 ###############################################################################
 ## Lexical selection rules
